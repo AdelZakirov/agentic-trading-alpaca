@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alpaca-market-agent"
+version = "0.1.0"
+description = "Whole-market Alpaca data fetching for a trading agent"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["alpaca_agent*"]
