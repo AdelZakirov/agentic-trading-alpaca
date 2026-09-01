@@ -1,4 +1,4 @@
-# moneyheap Analysis API
+# moneyheap analysis API
 
 Use moneyheap when additional research would help a trading decision. Do not call it automatically for every ticker.
 
@@ -49,7 +49,7 @@ Trend, momentum, market regime, timing, support and resistance, volume, and inva
 - Always inspect the response status and response body on errors.
 - HTTP 422 means the request body is invalid. Read the validation body, correct the payload, and never retry the same request unchanged.
 - Do not use curl `--fail` while diagnosing because it hides the API's validation response body. If curl is unavoidable for a read-only diagnostic, preserve and inspect both the status and body; do not manually shell-escape a trading-research payload.
-- A successful moneyheap response is JSON. Use `python3 -m alpaca_agent.moneyheap` with one JSON request object on stdin so the code that receives the response also persists it. The helper writes the exact parsed response to a sibling `.json` artifact and one rendered Markdown artifact. If the file write or formatting step fails, it retries only local persistence from the captured in-memory response; never call moneyheap again to reconstruct, save, re-read, or reformat an already successful result. A new API request is permitted only after no valid response object was captured and the endpoint-specific retry rules allow it.
+- A successful moneyheap response is JSON. The helper that receives it also persists it. If formatting or writing fails, retry only local persistence from the captured response. Never call moneyheap again to reconstruct, save, re-read, or reformat a valid result. A new API request is permitted only when no valid response object was captured and the endpoint-specific retry rules allow it.
 
 ## Response
 
@@ -63,6 +63,16 @@ Trend, momentum, market regime, timing, support and resistance, volume, and inva
 
 `analysis` may be JSON or formatted text. Treat it as evidence, not as an order instruction.
 
-Save every successful response immediately using the Markdown and sibling-JSON research-file rules in `memory-contract.md`. Retain the already-returned JSON object in memory, use that same object for reasoning, and render the Markdown artifact directly from it while preserving all returned fields in the JSON sidecar. Keep the exact request prompt and previous context alongside it so later runs can understand what was asked and answered. If rendering or writing the Markdown file fails, retry only that local operation from the retained response; do not call moneyheap again.
+## Persistence
+
+Save every successful response immediately using Europe/Amsterdam time:
+
+`memory/research/YYYY-MM-DD/HHMMSS-{TICKER}-{fundamental|technical}.{md,json}`
+
+The sibling `.json` is the exact complete parsed object from the first valid response, including extra fields. Use that same captured object for reasoning and for rendering Markdown; never reconstruct or refetch it.
+
+The Markdown artifact must include request time, ticker, analysis type, endpoint, exact prompt and previous context, response model when present, and the complete analysis without shortening it. Render the analysis exactly once; do not duplicate the raw response object.
+
+Link the Markdown from today's log and from ticker memory when it affects a position, proposed trade, or future review. Do not copy the full response into the daily log, ticker file, or portfolio state.
 
 - HTTP 502: analyst failure; decide whether the remaining evidence is enough. Do not retry repeatedly.

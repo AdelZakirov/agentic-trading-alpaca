@@ -24,6 +24,19 @@ inspect the results, then adjust the expiration, strikes, option type, or other
 assumptions and query again when that would help. Refresh the final candidates
 before trading. One API call does not have to lead directly to a decision.
 
+For an advanced bearish candidate, the long-only stock restriction is a reason
+to investigate options, not a reason to reject the ticker. Begin with a focused
+put chain around the thesis horizon and relevant price levels. Compare at least
+a long put with a put debit spread when both are available and plausible; assess
+maximum loss, breakeven, payoff cap, implied volatility, theta, liquidity, and
+executable spread. Other supported bearish structures remain eligible when their
+full payoff and assignment or exercise risks fit the current risk posture.
+
+Before recording no bearish option trade, state either the examined expiration
+and strike area or the concrete condition that made a chain request pointless,
+such as no listed contracts, insufficient account permission, an invalid thesis,
+or clearly unusable liquidity. `Stock is long only` is not such a condition.
+
 Use the Alpaca credentials from `.env`. The option feed is `opra` or
 `indicative`, not the stock `iex` feed. Missing Greeks or implied volatility
 mean that the value is unavailable, not zero.

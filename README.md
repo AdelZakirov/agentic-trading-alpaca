@@ -201,7 +201,10 @@ discovery and then runs this deterministic pipeline at 16:00 Europe/Amsterdam.
 It runs only when Alpaca reports that the market is open, New York time is at
 least 10:00, and that market date has not already completed. A separate Sol
 automation runs Stage 2 at 16:30 only after verifying the current market day's
-completion marker and fresh Stage 1 artifacts.
+completion marker and fresh Stage 1 artifacts. A management-only pre-close
+automation starts at 20:30 Europe/Amsterdam and uses the Alpaca clock to enter
+the 15:15–15:50 New York window. It may hold, reduce, close, cancel, or replace
+existing exposure and orders, but it cannot open or enlarge a position.
 
 Check whether a run is due without changing any data:
 

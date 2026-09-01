@@ -8,24 +8,28 @@ At each run, read:
 
 1. `memory/portfolio-state.md` completely.
 2. `memory/lessons.md` completely.
-3. Today's `memory/logs/YYYY-MM-DD.md` when present.
-4. The latest earlier log linked from `portfolio-state.md` only when needed.
-5. `memory/positions/README.md`.
-6. The ticker file for each live position, open order, proposed trade, active ghost set, or material earlier decision.
-7. Each active ghost file and any completed ghost file needed for an evaluation or lesson under review.
-8. Only the latest research files linked from those ticker files when they are relevant to the current decision.
+3. Today's `memory/logs/YYYY-MM-DD-summary.md` when present. Using a targeted search or tail, confirm its `Covers full log through` value matches the latest `run-checkpoint` marker in `memory/logs/YYYY-MM-DD.md` and that no nonblank log content follows that marker. Do not load the full log merely to perform this check.
+4. If today's summary is absent, its checkpoint does not match, or content follows the latest marker, read the uncaptured tail or necessary sections of the full daily log and repair the summary. Read the complete full log only when targeted recovery cannot establish the current decision state.
+5. Prefer the latest earlier dated summary linked from `portfolio-state.md`; read its full log only when details omitted from the summary are material to the current decision.
+6. `memory/positions/README.md`.
+7. The ticker file for each live position, open order, proposed trade, active ghost set, or material earlier decision.
+8. `memory/ghost-trades/index.md` completely. Do not load every active ghost file.
+9. Load an individual ghost file only when its indexed checkpoint is due or overdue, the real trade filled further or was reduced, closed, or rolled, an indexed objective ghost trigger may have activated, or its completion or lesson is under review.
+10. Only the latest research files linked from those ticker files when they are relevant to the current decision.
 
 Do not load every old log.
 
 ## Write
 
-Capture each moneyheap JSON response as soon as the first successful request returns. Keep that response object in memory and render and save it into the required Markdown research artifact. If rendering or persistence fails, retry only the local render or write from the captured response; never repeat the successful API call merely to recreate the file. After final Alpaca reconciliation:
+Persist a successful moneyheap response immediately under [moneyheap-api.md](moneyheap-api.md). After final Alpaca reconciliation:
 
-1. Append the run to today's Europe/Amsterdam log.
+1. Append the detailed run to today's Europe/Amsterdam full log, without a checkpoint marker yet.
 2. Create or update relevant ghost files, including any completed evaluations.
-3. Update `memory/lessons.md` when a completed evaluation provides generalizable evidence.
-4. Update relevant `memory/positions/{TICKER}.md` files.
-5. Rewrite `memory/portfolio-state.md`.
+3. Rewrite `memory/ghost-trades/index.md` after any ghost creation, update, completion, or real-path state change.
+4. Update `memory/lessons.md` when a completed evaluation provides generalizable evidence.
+5. Update relevant `memory/positions/{TICKER}.md` files.
+6. Rewrite `memory/portfolio-state.md`.
+7. Append `<!-- run-checkpoint: ISO-8601 Europe/Amsterdam timestamp -->` to the full log and rewrite today's dated summary with the identical checkpoint.
 
 If Alpaca state is incomplete or unreliable, keep the previous portfolio snapshot and record the failure in today's log.
 
@@ -40,7 +44,7 @@ Keep `portfolio-state.md` short. Include:
 - latest stock decision and option decision for each reviewed ticker;
 - active ghost-set count and any evaluations due before the next run;
 - risk posture, constraints, breaches, main risks, and reassessment triggers;
-- links to the latest log and relevant ticker files;
+- links to the latest dated summary, full log, and relevant ticker files;
 - errors or reconciliation warnings.
 
 ## Daily log
@@ -49,31 +53,37 @@ Append every run to `memory/logs/YYYY-MM-DD.md`. Record the timestamp, market st
 
 Record the investment decision separately from execution. For BUY or SELL, record whether it was submitted, not submitted, or blocked and why.
 
+## Compact daily summary
+
+Rewrite `memory/logs/YYYY-MM-DD-summary.md` after every completed run. It is the normal entry point for today's history; `YYYY-MM-DD.md` remains the append-only audit record.
+
+Start the summary with its update time, an exact `Covers full log through` checkpoint matching the latest full-log `run-checkpoint`, and a link to the full log. Keep it current-state oriented and aim for at most 6,000 characters; exceed that only to preserve unresolved risk or execution facts.
+
+Include only decision-relevant context not already obvious from `portfolio-state.md`:
+
+- material actions and thesis changes today;
+- unresolved orders, conditional decisions, blockers, and exact next triggers;
+- research conclusions still relevant to current positions or near-term candidates;
+- active ghost count, due evaluations, lesson changes, material errors, and reconciliation warnings;
+- links to the detailed log, ticker memory, research, or ghost files when detail may be needed.
+
+Do not reproduce the full chronology, complete research, quote sequences, ghost definitions, or portfolio tables. Replace superseded facts rather than accumulating them. The summary is a cache, not a source of truth: Alpaca, the full log, ticker files, and research artifacts win on disagreement.
+
 ## moneyheap research
 
-Save each new complete response to:
-
-`memory/research/YYYY-MM-DD/HHMMSS-{TICKER}-{fundamental|technical}.md`
-
-Use Europe/Amsterdam time. The Markdown file must include the request time, ticker, analysis type, endpoint, exact prompt and previous context, response model when present, and the complete returned analysis without shortening it. It must contain that analysis exactly once under one rendered analysis section; do not also paste the raw response object into the Markdown file. The exact parsed response object belongs in a sibling file with the same stem and a `.json` suffix.
-
-The source for both artifacts must be the complete JSON object captured from the first successful API call, including any additional fields the service returns. Use that same in-memory object for reasoning and for rendering the Markdown file. Do not reconstruct it or obtain it with another request. If rendering or saving fails, retain the captured response and retry only the local render or file write. A new API request is allowed only after a request failure where no valid response object was captured, subject to the moneyheap API retry rules.
-
-Link the file from today's log. Also link it from the ticker file when it affects an open position, proposed trade, or future review. Do not copy the full response into the daily log, ticker file, or portfolio state.
+Before new moneyheap research, read [moneyheap-api.md](moneyheap-api.md). It defines request handling, artifact paths, exact-response persistence, and retry rules. Link saved research from today's log and from the ticker file when relevant; do not copy the full response into other memory files.
 
 ## Ghost trades
 
-Store each ghost set at:
+Before a real order, follow [ghost-pretrade.md](ghost-pretrade.md). After an actual fill or when an indexed evaluation or trigger is due, follow [ghost-lifecycle.md](ghost-lifecycle.md).
 
-`memory/ghost-trades/YYYY-MM-DD/{REAL_CLIENT_ORDER_ID}.md`
+Keep `memory/ghost-trades/index.md` as the compact routing source. One row per ghost set must include its file link, ticker, status, real-path state, evaluation end, last completed checkpoint, next checkpoint, any objective trigger that requires attention between checkpoints, and last update. Use `None outside checkpoints` when no separate trigger exists. The full ghost file remains authoritative for definitions, marks, and evaluations.
 
-The date is the real trade's first fill date. Follow `ghost-trades.md` for creation, pricing, checkpoints, completion, and comparison. Link the ghost file from the daily log and ticker file; keep only its status and next evaluation date in portfolio state.
-
-Ghost trades never appear as Alpaca positions or orders and never affect portfolio totals, exposure, buying power, or risk-limit calculations.
+Link each created ghost file from the daily log and ticker file. Keep only the aggregate active count and evaluations due before the next run in portfolio state.
 
 ## Lessons
 
-Keep durable learned principles in `memory/lessons.md` using `lessons-learned.md`. Read the whole file before making decisions. Keep case detail in ghost files and daily logs rather than expanding the lesson text.
+Read `memory/lessons.md` completely before making decisions. Before completing an evaluation or changing durable lessons, read [lessons-learned.md](lessons-learned.md). Keep case detail in ghost files and daily logs rather than expanding lesson text.
 
 ## Ticker memory
 

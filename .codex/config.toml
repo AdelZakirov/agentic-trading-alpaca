@@ -1,0 +1,15 @@
+# Trading-project context configuration.
+# These overrides apply only when Codex trusts and runs inside this repository.
+
+# Firebase belongs to a different project and is not needed by this workflow.
+[mcp_servers.firebase]
+enabled = false
+
+# Stage 0-2 use Alpaca's REST API directly. Keep the installed Alpaca connector
+# available to other projects, but do not expose it in this trading project.
+[apps.alpaca]
+enabled = false
+
+# Unrelated skill filtering lives in ~/.codex/trading.config.toml because the
+# current Codex build applies skills.config from named/user profiles, not from
+# the project config layer. Start CLI sessions with `--profile trading`.
