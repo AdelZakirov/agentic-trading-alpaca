@@ -7,11 +7,11 @@
 - Quantity: 250 shares
 - Average entry: $40.41
 - Cost basis: $10,102.50
-- Latest reconciled price: $40.45
-- Latest market value: $10,112.50
-- Latest unrealized P/L: $10.00
+- Latest reconciled price: $39.54
+- Latest market value: $9,885.00
+- Latest unrealized P/L: -$217.50 (-2.153%)
 - Open orders: none
-- Reconciled: 2026-09-01 19:29 Europe/Amsterdam
+- Reconciled: 2026-09-02 18:38 Europe/Amsterdam
 
 ## Current plan
 
@@ -37,3 +37,9 @@
 
 - Broker order `50e20244-c806-4b7f-a0a3-2c11114c24eb` filled 250 shares at average $40.41 at `2026-09-01T16:53:30.128337357Z`.
 - No option order submitted.
+
+### 2026-09-02
+
+- Alpaca confirmed 250 shares at $40.41 average, current $39.57, market value $9,892.50, unrealized P/L -$210; no open order.
+- Stock HOLD and option HOLD. Price remains above the $38.90 invalidation, though today's pullback and an abnormally wide IEX checkpoint quote increase monitoring priority.
+- Ghost checkpoint used the conservative $39.38 bid; the Sep. 18 $40/$45 spread ghost marked $1.16 executable.

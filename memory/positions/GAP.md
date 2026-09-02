@@ -7,11 +7,11 @@
 - Quantity: 200 shares
 - Average entry: $22.55
 - Cost basis: $4,510.00
-- Latest reconciled price: $21.975
-- Latest market value: $4,395.00
-- Latest unrealized P/L: -$115.00 (-2.550%)
+- Latest reconciled price: $22.27
+- Latest market value: $4,454.00
+- Latest unrealized P/L: -$56.00 (-1.242%)
 - Open orders: none
-- Reconciled: 2026-09-01 19:29 Europe/Amsterdam
+- Reconciled: 2026-09-02 18:38 Europe/Amsterdam
 
 ## Current plan
 
@@ -45,3 +45,9 @@
 
 - Alpaca reconciled 200 shares at average $22.55, current $22.145, market value $4,429.00, unrealized P/L -$81.00; no open orders.
 - Fresh technical research still favors a healthy post-earnings retest, but the live quote is below the $22.20 pivot. Stock HOLD; no add and no option order while the $21.60 daily-close invalidation remains intact.
+
+### 2026-09-02
+
+- Alpaca confirmed 200 shares at $22.55 average, current $22.255, market value $4,451, unrealized P/L -$59; no open order.
+- Stock HOLD and option HOLD. Price reclaimed the $22.20 pivot and remains above the $21.60 daily-close invalidation; targets and 2026-09-04 review remain unchanged.
+- Ghost catch-up checkpoint recorded at a $22.25 executable bid.

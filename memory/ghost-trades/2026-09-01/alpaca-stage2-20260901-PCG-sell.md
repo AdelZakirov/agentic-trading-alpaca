@@ -54,3 +54,10 @@ PCG's synchronized utility/wildfire-liability breakdown, extreme distribution vo
 
 Use one common market-data timestamp for the real closed path and both scoreable alternatives at each checkpoint. Price retained stock from the executable bid; compare total wealth including the real sale proceeds and the alternative's retained exposure. Record continuation drawdown, any reclaim, liquidity, and the effect of the avoided PCG gap risk. Ghosts never reach Alpaca and never affect portfolio totals, buying power, or risk posture.
 
+## Catch-up checkpoint for 2026-09-01 close
+
+- Observed: 2026-09-02T16:28:06Z; PCG bid/ask $13.04/$13.06 with positive size. This is a disclosed late checkpoint.
+- Real full exit: CLOSED at $13.20; incremental P/L from the decision reference is $0 and realized trade P/L versus the original $13.42 entry remains -$165.
+- `HOLD_FULL`: retained-value change -$120 at the $13.04 bid versus the $13.20 decision reference.
+- `HALF_SELL`: retained-half change -$60; sold-half proceeds unchanged.
+- The real full exit leads both retention alternatives at this mark. Sell-thesis invalidation above $13.70/$14.00 was not active. Next checkpoint: 2026-09-02 regular-market close.

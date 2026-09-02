@@ -71,3 +71,11 @@ MU's strong fundamental case and technical support plan justified a bounded pull
 
 Use one common market-data timestamp for every scoreable path at each checkpoint. Mark long stock at the executable bid. The breakout alternative remains unentered until its objective trigger. Ghosts never reach Alpaca or affect portfolio state.
 
+## Catch-up checkpoint for 2026-09-01 close
+
+- Observed: 2026-09-02T16:28:05Z; MU bid/ask $944.81/$945.70.
+- Real MU stock: OPEN; value $11,337.72; P/L approximately +$57.76 (+0.51%).
+- `NO_TRADE`: $0.
+- `HALF_SIZE_MU`: value $5,668.86; P/L +$28.86 (+0.51%).
+- `BREAKOUT_ENTRY_MU`: UNENTERED; sustained trade above $970 did not occur.
+- No $922 invalidation or $985 target was triggered. Next checkpoint: 2026-09-02 regular-market close.

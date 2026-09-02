@@ -72,3 +72,11 @@ SLB's high-volume breakout remained technically sponsored, and the live pullback
 
 Use one common market-data timestamp for the real stock path and all scoreable ghosts at each checkpoint. Mark long stock exits from the executable bid; mark the option spread from the executable side of each leg. Record open/closed status, P/L, percentage return, capital at risk, drawdown, time decay, IV, and liquidity. Ghosts never reach Alpaca and never affect portfolio totals, buying power, or risk posture.
 
+## Catch-up checkpoint for 2026-09-01 close
+
+- Observed: approximately 2026-09-02T16:28:06Z. The scheduled prior-close checkpoint was missed; current executable marks are used consistently.
+- Real SLB stock: OPEN, $58.05 bid; value $4,644; P/L approximately -$15.37 (-0.33%).
+- `NO_TRADE`: $0.
+- `HALF_SIZE_SLB`: value $2,322; P/L -$8.40 (-0.36%).
+- `SEP11_58_62_CALL_SPREAD`: executable value $0.95 ($1.25 long-call bid less $0.30 short-call ask); P/L -$25 (-20.83%) versus $1.20 entry. Long IV/delta/theta 34.29%/0.5244/-0.0721; short 37.17%/0.1397/-0.0426.
+- No $56.90 invalidation or $60.20 target was triggered. Next checkpoint: 2026-09-02 regular-market close.

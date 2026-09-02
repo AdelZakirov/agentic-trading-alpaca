@@ -71,3 +71,11 @@ HOOD's revenue/margin momentum and emerging uptrend remained constructive after 
 
 Use one market-data timestamp for all scoreable paths at every checkpoint. Mark long stock at the executable bid and the spread from executable leg sides. Ghosts never reach Alpaca or affect portfolio state.
 
+## Catch-up checkpoint for 2026-09-01 close
+
+- Observed: approximately 2026-09-02T16:28:07Z; HOOD bid/ask $106.01/$106.09.
+- Real HOOD stock: OPEN; value $7,950.75; P/L +$124.65 (+1.59%).
+- `NO_TRADE`: $0.
+- `HALF_SIZE_HOOD`: value $3,922.37; P/L +$59.94 (+1.55%).
+- `SEP11_107_115_CALL_SPREAD`: executable value $2.23 ($3.41 long-call bid less $1.18 short-call ask); P/L +$13 (+6.19%) versus $2.10 entry.
+- No $101 review or $98.80 invalidation was triggered. Next checkpoint: 2026-09-02 regular-market close.

@@ -97,3 +97,13 @@ At every checkpoint, use one common observation timestamp for the real path and 
 - Pricing assumptions: conservative executable marks; no fees or slippage modeled unless later documented.
 - Missing data: no missing entry quote data; future checkpoint data is not yet available.
 - Lesson review: deferred until the common evaluation window completes.
+
+## Catch-up checkpoint for 2026-09-01 close
+
+- Observed: approximately 2026-09-02T16:28:04Z. The scheduled prior-close checkpoint was missed; all paths use this disclosed catch-up observation.
+- Real GAP: OPEN, $22.25 executable bid; value $4,450; P/L -$60 (-1.33%).
+- `NO_TRADE`: $0.
+- `HALF_SIZE_GAP`: value $2,225; P/L -$30 (-1.33%).
+- `PYPL_STOCK`: $54.10 bid; value $4,869; P/L +$72.90 (+1.52%).
+- `VISN_STOCK`: $6.33 bid; value $3,165; P/L -$10 (-0.31%).
+- No invalidation or target was triggered at the observation. Next checkpoint: 2026-09-02 regular-market close.

@@ -7,14 +7,14 @@
 - Quantity: 12 shares
 - Average entry: $939.996667
 - Cost basis: approximately $11,279.96
-- Latest reconciled price: $939.07
-- Latest market value: $11,268.84
-- Latest unrealized P/L: -$11.120004
+- Latest reconciled price: $945.86
+- Latest market value: $11,350.32
+- Latest unrealized P/L: +$70.359996 (+0.624%)
 - Open orders: none
 - Client order ID: `alpaca-stage2-20260901-MU-buy`
 - Broker order ID: `5b38c8ed-64d1-4efe-ac7d-b68c5a4dc97d`
 - Broker status: `filled`; filled 12/12 at average $939.996667 at `2026-09-01T17:23:58.05634105Z`
-- Reconciled: 2026-09-01 19:29 Europe/Amsterdam
+- Reconciled: 2026-09-02 18:38 Europe/Amsterdam
 
 ## Current plan
 
@@ -40,3 +40,8 @@
 
 - Submitted broker order `5b38c8ed-64d1-4efe-ac7d-b68c5a4dc97d` for 12 shares at a $940 day limit. Final status `new`, 0/12 filled.
 - Later reconciliation confirmed the order filled 12/12 at average $939.996667 at `2026-09-01T17:23:58.05634105Z`; the position is now OPEN.
+
+### 2026-09-02
+
+- Alpaca confirmed 12 shares at $939.996667 average, current $945.165, market value $11,341.98, unrealized P/L +$62.02; no open order.
+- Stock HOLD and option HOLD. Price remains above $922 and below the $985 first target. The $970 breakout ghost trigger remains unentered.

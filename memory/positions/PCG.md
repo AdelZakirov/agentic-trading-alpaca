@@ -9,7 +9,7 @@
 - Closing fill: 750 shares sold at $13.20
 - Realized P/L versus average entry: -$165.00 before fees
 - Open orders: none
-- Reconciled: 2026-09-01 17:02 Europe/Amsterdam
+- Reconciled: 2026-09-02 18:28 Europe/Amsterdam
 
 ## Current plan
 
@@ -48,3 +48,8 @@
 
 - Alpaca reconciled no PCG position after the full SELL: client order `alpaca-stage2-20260901-PCG-sell`, broker order `40ebd237-635b-4d47-bdd5-5bbb3c5ba58f`, 750/750 filled at $13.20 at `2026-09-01T14:49:51.361275348Z`.
 - Fresh moneyheap technical research confirmed strong bearish continuation risk, extreme distribution, and no confirmed base. The earlier intraday <$13.40 trigger was superseded by current evidence only for execution timing; the position was closed before the $13.00 clean-break trigger because the risk/reward no longer favored retaining exposure.
+
+### 2026-09-02
+
+- Alpaca confirms no PCG position or open order. Current bid/ask was $13.04/$13.06, still below the $13.70/$14.00 re-entry conditions.
+- Stock HOLD/no re-entry and option HOLD/avoid. Both active PCG ghost sets received catch-up checkpoints; the full exit remains ahead of retention alternatives at the current mark.

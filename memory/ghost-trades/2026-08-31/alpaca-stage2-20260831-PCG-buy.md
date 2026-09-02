@@ -75,3 +75,12 @@ PCG fell roughly 19% after California wildfire-liability protections disappointe
 ## Tracking rules
 
 At every checkpoint, use one common observation timestamp. Mark the real and half-size stock paths from the same live stock bid if still open. Mark the long-call path at its executable bid. Record P/L, percentage return, capital at risk, drawdown when available, liquidity, spread, time decay, and volatility effects. The ghost paths never reach Alpaca and never enter portfolio exposure, buying power, or risk calculations.
+
+## Catch-up checkpoint for 2026-09-01 close
+
+- Observed: approximately 2026-09-02T16:28:06Z. The exact prior-close option quote was unavailable; this catch-up uses one current observation window and does not manufacture a historical mark.
+- Real stock path: CLOSED on 2026-09-01 at $13.20; realized P/L -$165 versus $13.42 entry.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_STOCK`: treated with the same real-path exit decision at $13.20; P/L -$75 versus $13.40 entry.
+- `SEP11_13_5_CALL`: current executable bid $0.30; value $600 for 20 contracts; P/L -$460 (-43.40%) versus $1,060 premium. IV 64.48%, delta 0.3915, theta -0.0287; bid/ask $0.30/$0.39.
+- Next checkpoint: 2026-09-02 regular-market close.

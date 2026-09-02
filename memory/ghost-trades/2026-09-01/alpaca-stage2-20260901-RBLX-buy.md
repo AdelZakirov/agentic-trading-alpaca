@@ -69,3 +69,11 @@ The RBLX breakout retest held support and live liquidity normalized. The trade t
 
 Use one market-data timestamp for all scoreable paths at every checkpoint. Mark long stock at the executable bid and the spread from executable leg sides. Ghosts never reach Alpaca or affect portfolio state.
 
+## Catch-up checkpoint for 2026-09-01 close
+
+- Observed: approximately 2026-09-02T16:28:06Z. IEX stock quote was abnormally wide at $39.38/$41.46, so conservative bid marks are retained with an explicit quote-quality warning.
+- Real RBLX stock: OPEN; value $9,845 at bid; P/L -$257.50 (-2.55%).
+- `NO_TRADE`: $0.
+- `HALF_SIZE_RBLX`: value $4,922.50; P/L -$128.75 (-2.55%).
+- `SEP18_40_45_CALL_SPREAD`: executable value $1.16 ($1.67 long-call bid less $0.51 short-call ask); P/L -$63 (-35.20%) versus $1.79 entry.
+- The $38.90 invalidation was not triggered by available trade/position evidence. Next checkpoint: 2026-09-02 regular-market close.
