@@ -1,5 +1,113 @@
 # Alpaca Trading Agent
 
+## One-page write-up
+
+Machine Earning is an autonomous investing agent for people who want to invest
+but do not have the time or market expertise to research companies, follow prices,
+and manage trades themselves.
+
+The main idea is to build an autonomous trading system that can research
+opportunities, make portfolio decisions, execute trades through Alpaca, and learn
+from the outcomes.
+
+### AI logic
+
+The system works in three stages.
+
+**Stage 0 collects market data.** It pulls the available US stocks from Alpaca,
+recent prices and historical daily bars, validates the data, and stores it locally.
+
+**Stage 1 looks for interesting opportunities.** Instead of asking an LLM to
+randomly browse thousands of stocks, normal Python code first reduces the market
+to a much smaller shortlist.
+
+It looks for signals such as unusual volume, momentum and breakouts, volatility
+expansion, stretched prices, and other unusual market behaviour.
+
+The shortlist is also enriched with external attention signals. For example, what
+traders are discussing in online communities and which stocks are currently
+attracting analyst attention.
+
+This gives the AI a focused list of companies worth investigating.
+
+**Stage 2 is where the agent takes over.** For promising candidates, the agent
+explores fundamental and technical analysis. It then combines that research with
+current prices, portfolio exposure, liquidity, existing positions, and its own
+risk policy.
+
+For every candidate it can decide to:
+
+**BUY, SELL, or HOLD**
+
+When appropriate, it can choose between trading the stock itself or using an
+option.
+
+The agent also keeps persistent memory about its portfolio, previous decisions,
+and lessons learned.
+
+### Risk gates
+
+The agent is autonomous, but it is not allowed to trade blindly.
+
+Before taking new risk it checks the current Alpaca account, positions, open
+orders, and market state. It forms a portfolio-level risk view first, instead of
+treating every ticker independently.
+
+Every trade needs a clear thesis, position size, expected holding period, and an
+invalidation condition.
+
+Order execution is handled separately from investment reasoning. Before sending
+or changing an order, the agent loads the execution rules, submits the action,
+and then checks Alpaca again to confirm what actually happened.
+
+It never assumes that an order was filled just because it was submitted.
+
+There is also a hard safety gate around the trading environment. The project is
+configured for **Alpaca paper trading only**. If the expected paper-trading
+configuration is not present, the agent must not submit orders.
+
+### Alpaca infrastructure
+
+Alpaca is the source of truth for market and portfolio state.
+
+The system uses Alpaca for:
+
+- market assets and price data
+- account state
+- current positions
+- open orders
+- stock and option trading
+- order status and reconciliation
+
+Market data is cached locally in SQLite, so the agent does not need to rebuild its
+entire dataset on every run.
+
+The workflow can run automatically during the trading day: first updating the
+market and shortlist, then running the autonomous trading cycle, and later running
+a management-only cycle that can reduce or close risk before the market closes.
+
+### Ghost Trades and Lessons Learned
+
+One extra part of the system is **Ghost Trades**.
+
+When the agent makes a real trade, it can also record alternative decisions it
+could have made, such as waiting, choosing a different position size, or using
+another instrument.
+
+These alternatives are simulated only. They never reach Alpaca and never affect
+the portfolio.
+
+Later, the agent compares the real decision with the ghost alternatives.
+
+That lets it learn not only from obvious mistakes, but also from missed
+opportunities and decisions that turned out to be unexpectedly good.
+
+The useful conclusions are stored in a small persistent **lessons learned** memory
+and can influence future trading cycles.
+
+The result is an agent that does more than place trades: it continuously
+researches, acts, checks itself, and gradually builds its own trading experience.
+
 ## What this is
 
 This repository contains an agentic trading workflow for Alpaca paper trading. It
