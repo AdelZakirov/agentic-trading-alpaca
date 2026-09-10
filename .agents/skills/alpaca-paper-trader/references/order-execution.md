@@ -39,12 +39,6 @@ Use client ID `alpaca-stage2-YYYYMMDD-{symbol}-{side}` and check for it before s
 
 After any submission or mutation, read the order again and refresh the account and positions. Report broker status exactly. Only `filled` means filled.
 
-## Alpaca endpoints
+## Alpaca transport
 
-Use credentials from `.env` as `APCA-API-KEY-ID` and `APCA-API-SECRET-KEY` headers.
-
-- `GET ${ALPACA_ENDPOINT}/orders/{order_id}`
-- `GET ${ALPACA_ENDPOINT}/orders:by_client_order_id?client_order_id=...`
-- `POST ${ALPACA_ENDPOINT}/orders`
-- `PATCH ${ALPACA_ENDPOINT}/orders/{order_id}`
-- `DELETE ${ALPACA_ENDPOINT}/orders/{order_id}`
+Use the execution tools and reconciliation sequence in [alpaca-mcp.md](alpaca-mcp.md); no direct REST/CLI order calls.

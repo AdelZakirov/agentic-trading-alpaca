@@ -1,17 +1,6 @@
 # Options research
 
-For options research, use the Alpaca Option Chain API:
-
-```text
-GET https://data.alpaca.markets/v1beta1/options/snapshots/{UNDERLYING}?feed=indicative
-```
-
-Pass the underlying ticker in the path. When useful, filter by:
-
-- `type=call|put`
-- `strike_price_gte` and `strike_price_lte`
-- `expiration_date_gte` and `expiration_date_lte`
-- `limit` and `page_token`
+Use `alpaca_paper.get_option_chain` with underlying_symbol, type, expiration/strike filters, limit/page_token and explicit feed=indicative.
 
 The response can include the latest bid and ask, latest trade, implied
 volatility, and delta, gamma, theta, vega, and rho for each contract.
@@ -37,7 +26,7 @@ and strike area or the concrete condition that made a chain request pointless,
 such as no listed contracts, insufficient account permission, an invalid thesis,
 or clearly unusable liquidity. `Stock is long only` is not such a condition.
 
-Use the Alpaca credentials from `.env`. Explicitly set `feed=indicative` for
+The MCP launcher loads project credentials. Explicitly set `feed=indicative` for
 option-data requests in this paper-trading skill. The API value is `indicative`
 (not `inductive` or the stock feed `iex`). Do not request `opra` unless the user
 explicitly asks to change the feed.
@@ -62,11 +51,7 @@ inspect that response before declaring a data blocker. Check trading permission
 separately on the account. Do not stop option analysis merely because OPRA is
 unavailable, or present indicative data as live consolidated market prices.
 
-Option orders use the normal Alpaca order endpoint:
-
-```text
-POST ${ALPACA_ENDPOINT}/orders
-```
+Option orders use `alpaca_paper.place_option_order`.
 
 Use the option contract symbol for a single-leg order. For a multi-leg order,
 follow Alpaca's current `mleg` order format. Check the account's option trading

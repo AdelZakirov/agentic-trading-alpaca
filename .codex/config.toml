@@ -5,10 +5,17 @@
 [mcp_servers.firebase]
 enabled = false
 
-# Enable the installed market-data-only Alpaca connector.
+# Use the project paper MCP server instead of duplicate market-data tools.
 [apps.alpaca]
-enabled = true
+enabled = false
 
 # Unrelated skill filtering lives in ~/.codex/trading.config.toml because the
 # current Codex build applies skills.config from named/user profiles, not from
 # the project config layer. Start CLI sessions with `--profile trading`.
+
+[mcp_servers.alpaca_paper]
+command = "/Users/adel/Projects/alpaca-hack/.venv-mcp/bin/python"
+args = ["/Users/adel/Projects/alpaca-hack/scripts/alpaca_mcp.py"]
+startup_timeout_sec = 30
+tool_timeout_sec = 90
+enabled_tools = ["get_clock", "get_calendar", "get_account_info", "get_account_activities", "get_account_config", "get_portfolio_history", "get_all_positions", "get_open_position", "get_orders", "get_order_by_id", "get_order_by_client_id", "place_stock_order", "place_option_order", "replace_order_by_id", "cancel_order_by_id", "exercise_options_position", "do_not_exercise_options_position", "get_asset", "get_all_assets", "get_option_contracts", "get_option_contract", "get_stock_latest_quote", "get_stock_snapshot", "get_stock_bars", "get_stock_quotes", "get_option_chain", "get_option_snapshot", "get_option_latest_quote", "get_option_bars", "get_option_trades", "get_corporate_action_announcements"]

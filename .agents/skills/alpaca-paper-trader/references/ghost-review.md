@@ -12,7 +12,7 @@ No pending packet does not preclude a due market-close checkpoint. Read the comp
 
 ## Work
 
-Read ghost-lifecycle.md and lessons-learned.md once, plus current lessons. Read ghost-pretrade.md only to interpret definitions or import a newly filled trade. Confirm the exact paper endpoint and flag before read-only Alpaca requests. Reconcile fills/partial fills/reductions/rolls from broker records and immutable trading decisions; order status alone is not proof of a fill. Import existing legacy definitions rather than inventing alternatives. Never create alternatives with hindsight.
+Read ghost-lifecycle.md and lessons-learned.md once, plus current lessons. Read ghost-pretrade.md only to interpret definitions or import a newly filled trade. Read alpaca-mcp.md once and use only its read tools for all Alpaca requests; no REST/CLI fallback or broker mutations. Reconcile fills/partial fills/reductions/rolls from broker records and immutable trading decisions; order status alone is not proof of a fill. Import existing legacy definitions rather than inventing alternatives. Never create alternatives with hindsight.
 
 Open only newly handed-off definition files and files for new fills, changed real paths, due checkpoints or completed comparisons awaiting evaluation. Use common observation times and original rules. Late observations are catch-ups, not historical closing quotes. Missing executable option sides or ambiguous rules remain UNSCORABLE/uncertain. Do not evaluate an unfinished comparison merely because its real position closed. Market-closed status is normal: use suitable historical observations where available, never present stale latest quotes as exact close marks.
 

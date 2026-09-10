@@ -359,3 +359,28 @@ unloaded while the Codex automations are active.
   not accidentally use an in-progress daily candle.
 - IEX volumes are only IEX volumes; they must not be interpreted as consolidated
   US-market volume.
+
+## Alpaca transport for trading agents
+
+Stage 2, pre-close management and ghost reviewers use the project `alpaca_paper`
+MCP server. Stage 0 bulk collection and local screening/Moneyheap/memory commands
+are unchanged. The previous Alpaca client/CLI remains available for later testing.
+
+Setup once in this checkout:
+
+```bash
+python3 -m venv .venv-mcp
+.venv-mcp/bin/python -m pip install -r requirements-mcp.txt
+```
+
+`.codex/config.toml` launches `scripts/alpaca_mcp.py` with the separate environment.
+The launcher reads credentials from the ignored project `.env`, requires the exact
+paper endpoint and paper flag, and starts the official server. No credentials are
+stored in MCP configuration. For another checkout, update the two absolute paths
+in the server configuration. Start a new task after configuration changes.
+
+Offline order-transport checks (mock HTTP only):
+
+```bash
+.venv-mcp/bin/python -m unittest discover -s tests/mcp -q
+```
