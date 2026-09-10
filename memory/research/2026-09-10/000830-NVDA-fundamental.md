@@ -1,0 +1,133 @@
+# moneyheap research: NVDA fundamental
+
+- Request time: 2026-09-10T00:08:30.860482+02:00
+- Ticker: NVDA
+- Analysis type: fundamental
+- Endpoint: /v1/analysis/fundamental
+
+## Prompt
+
+As of 2026-09-10, Assess earnings trajectory, AI/data-center demand durability, gross-margin and capex risks, valuation versus growth, upcoming catalysts/events, analyst revisions, and what would invalidate a 1–2 week bullish thesis. Reconcile the current quote with a no-chase versus pullback entry question.
+
+## Previous context
+
+null
+
+## Analysis
+
+# NVIDIA Corporation (NASDAQ: NVDA) Fundamental Analysis Report
+**As of September 10, 2026** | **Current Price:** $223.67
+
+---
+
+### 1. Fundamentals Snapshot
+
+* **Earnings Trajectory & Growth:** NVDA continues its exceptional hyper-scale growth trajectory. Trailing twelve-month (TTM) revenue stands at **$302.97B** (+105.9% YoY revenue growth), driven by ongoing AI data center acceleration, Blackwell scaling, and Vera Rubin platform transition. TTM diluted EPS is **$7.90**, with forward EPS projected to reach **$15.52** (+96.4% expected expansion).
+* **Profitability & Margin Profile:** Industry-leading profitability with gross margins at **74.67%**, operating margins at **66.24%**, and net profit margins at **63.66%**. Operating income over the trailing period reached record levels, backed by immense pricing power across full-stack AI architectures.
+* **Balance Sheet & Liquidity:** Highly fortified balance sheet with **$62.47B** in total cash/cash equivalents against **$38.86B** in total debt, representing a healthy net cash position of ~$23.61B. Current ratio sits at **4.59x**, quick ratio at **2.92x**, and Debt-to-Equity is modest at **16.97%**.
+* **Cash Flow Generation:** Robust cash conversion with **$134.36B** in trailing operating cash flow and **$41.81B** in free cash flow (FCF), despite elevated working capital and supply chain co-investments to secure advanced packaging and high-bandwidth memory (HBM).
+
+---
+
+### 2. Valuation vs Peers / Sector
+
+| Ticker | Company | Market Cap | Trailing P/E | Forward P/E | P/B | Beta |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **NVDA** | **NVIDIA Corp.** | **$5.40T** | **28.31x** | **14.41x** | **23.59x** | **2.22** |
+| **AMD** | Advanced Micro Devices | $850.67B | 33.59x | ~26.50x | 12.65x | 2.48 |
+| **AVGO** | Broadcom Inc. | $1.73T | 18.79x | ~16.20x | 17.42x | 1.46 |
+
+* **Valuation Summary:** On a PEG basis, NVDA trades at an attractive **0.59x** (forward) and **0.58x** (trailing), indicating that valuation is not stretched relative to its triple-digit earnings growth rate. Trading at **14.41x forward P/E**, NVDA remains valued at a discount to direct computing peer AMD (33.59x P/E) despite superior margins and ecosystem lock-in.
+
+---
+
+### 3. Analysts (Consensus + Targets + yfinance Excerpt)
+
+* **Consensus Rating:** **1.3 – Strong Buy** (Mean Score: 1.28)
+* **Analyst Recommendations Breakdown (57 Analysts):**
+  * **Strong Buy:** 9
+  * **Buy:** 48
+  * **Hold:** 2
+  * **Sell:** 1
+  * **Strong Sell:** 0
+* **Price Targets:**
+  * **Target Mean:** **$327.65** (+46.5% upside from $223.67)
+  * **Target Median:** **$315.00** (+40.8% upside)
+  * **Target High:** **$515.00**
+  * **Target Low:** **$180.00**
+* **Analyst Excerpt & Sentiment:** Wall Street sentiment remains overwhelmingly bullish. Upward estimate revisions reflect strong visibility into next-generation Vera Rubin enterprise rollouts and sovereign/enterprise AI adoption, offsetting minor concerns around memory component pricing.
+
+---
+
+### 4. News: Short Themes/Impact Summary + Full List
+
+#### Themes & Impact:
+1. **Full-Stack Platform Evolution & Vera Rubin Monetization:** NVIDIA's transition from selling discrete GPUs to full "AI factory" turnkey systems (Blackwell and Vera Rubin platforms) is boosting revenue per gigawatt and locking in cloud/enterprise demand.
+2. **Margin Defense Amid Rising Component Costs:** Higher HBM/memory costs pose short-term gross margin friction, but pricing leverage and software/networking attach rates keep margins above 74%.
+3. **M&A and Ecosystem Dominance:** Expanding developer software footprint (e.g., reported AI deals like Hugging Face) further strengthens CUDA's developer moat.
+
+#### Full News List:
+1. **Nvidia Is No Longer Just a Chip Company. It’s the Infrastructure Platform for Al...**
+   * *Source:* 24/7 Wall St. | *Date:* Sep 7, 2026
+   * *Summary:* Highlights Jensen Huang’s positioning of NVIDIA as an end-to-end AI factory infrastructure provider rather than a pure semiconductor vendor.
+   * *URL:* `https://finance.yahoo.com/technology/ai/articles/nvidia-no-longer-just-chip-165014878.html`
+2. **Nvidia is no longer just a chip company. It’s the infrastructure platform for all of AI**
+   * *Source:* 24/7 Wall St. on MSN | *Date:* Sep 7, 2026
+   * *Summary:* Analyzes NVIDIA's revenue scaling per gigawatt from Hopper ($18B) to Vera Rubin ($40B), widening the competitive lead over competitors.
+   * *URL:* `https://www.msn.com/en-us/money/technology/nvidia-is-no-longer-just-a-chip-company-it-s-the-infrastructure-platform-for-all-of-ai/ar-AA2bKEoh?ocid=BingNewsVerp`
+3. **Dear Nvidia Stock Fans, Mark Your Calendars for September 10**
+   * *Source:* Barchart | *Date:* Sep 8, 2026
+   * *Summary:* Outlines expectations for NVIDIA's early September showcase, focusing on product roadmaps, enterprise AI deployment, and customer commitments.
+   * *URL:* `https://finance.yahoo.com/markets/stocks/articles/dear-nvidia-stock-fans-mark-194239279.html`
+4. **Here Is How to Play Nvidia Stock After Its Blockbuster AI Deal**
+   * *Source:* Barchart | *Date:* Sep 4, 2026
+   * *Summary:* Examines strategic implications and software lock-in following NVIDIA's expanded open-source and developer tooling acquisitions.
+   * *URL:* `https://finance.yahoo.com/technology/ai/articles/play-nvidia-stock-blockbuster-ai-125227937.html`
+5. **Prediction: Vera Rubin Is About to Become a $20 Billion Windfall for Nvidia by...**
+   * *Source:* Motley Fool | *Date:* Sep 4, 2026
+   * *Summary:* Details the earnings ramp of the Vera Rubin GPU generation and strong guidance targeting quarterly revenue milestones above $100B.
+   * *URL:* `https://finance.yahoo.com/technology/ai/articles/prediction-vera-rubin-become-20-162000285.html`
+6. **Memory Costs Rise: Can NVIDIA Protect Its 70%+ Gross Margin?**
+   * *Source:* Zacks | *Date:* Sep 3, 2026
+   * *Summary:* Analyzes potential gross margin headwinds from elevated high-bandwidth memory input costs versus NVIDIA's pricing power.
+   * *URL:* `https://finance.yahoo.com/markets/stocks/articles/memory-costs-rise-nvidia-protect-123100346.html`
+7. **This One Metric Is Why I’m Going to Keep Buying Nvidia Hand-Over-Fist**
+   * *Source:* 247wallst.com | *Date:* Sep 3, 2026
+   * *Summary:* Focuses on NVIDIA's persistent net profit margins and return on equity (>100%) as enduring indicators of monopoly-like economic rents.
+   * *URL:* `https://247wallst.com/investing/2026/09/03/this-one-metric-is-why-im-going-to-keep-buying-nvidia-hand-over-fist/`
+8. **Micron, Nvidia, and the September Effect: What 98 Years of Data Say Investors...**
+   * *Source:* Motley Fool | *Date:* Sep 3, 2026
+   * *Summary:* Reviews seasonal semiconductor volatility in September alongside structural multi-year secular tailwinds in AI compute.
+   * *URL:* `https://finance.yahoo.com/markets/stocks/articles/micron-nvidia-september-effect-98-203000875.html`
+9. **Nvidia Q2 earnings on deck: Focus on Vera Rubin ramp-up, AI financing**
+   * *Source:* Seeking Alpha on MSN | *Date:* Aug 24, 2026
+   * *Summary:* Pre-earnings review emphasizing customer Capex sustainability, sovereign AI buildouts, and Vera Rubin transition visibility.
+   * *URL:* `https://www.msn.com/en-us/news/other/nvidia-q2-earnings-on-deck-focus-on-vera-rubin-ramp-up-ai-financing/ar-AA2aUBTw?ocid=BingNewsVerp`
+10. **Nvidia reports earnings on Aug. 26. Here are 3 other artificial intelligence (AI) chip stocks I'll be watching instead**
+    * *Source:* The Motley Fool on MSN | *Date:* Aug 23, 2026
+    * *Summary:* Discusses supply chain ripple effects and capital spending across the broader semiconductor and memory landscape.
+    * *URL:* `https://www.msn.com/en-us/news/technology/nvidia-reports-earnings-on-aug-26-here-are-3-other-artificial-intelligence-ai-chip-stocks-i-ll-be-watching-instead/ar-AA2aQd88?ocid=BingNewsVerp`
+
+---
+
+### 5. Detailed Strategic & Tactical Assessment
+
+* **AI/Data-Center Demand Durability:** Hyperscaler capex plans (Microsoft, Meta, Google, Amazon) remain aggressive, shifting increasingly toward AI cluster buildouts and reasoning compute workloads. Sovereign AI initiatives and enterprise adoption extend demand visibility well into 2027.
+* **Gross-Margin & Capex Risks:** While memory cost pressures (HBM3e/HBM4) and packaging ramp costs represent minor margin friction, NVIDIA's platform pricing power and high-margin software/networking revenue (Spectrum-X, InfiniBand) maintain gross margins comfortably above 74%.
+* **Catalysts & Events:** Ongoing product keynotes/showcases (September 10 event), updates on Vera Rubin architecture shipments, and upcoming hyperscaler earnings reports confirming continuous datacenter capex commitments.
+* **1–2 Week Thesis Invalidation Risks:** A short-term pullback would be triggered if:
+  1. Broader macroeconomic / tech sector multiple compression occurs (September seasonality, high beta of 2.22).
+  2. Severe export restriction tightenings or supply chain bottlenecks at foundry/packaging partners emerge.
+  3. Hyperscalers signal near-term capex digestion or delayed cluster rollouts.
+* **Quote Reconciliation: No-Chase vs. Pullback Entry:**
+  * At **$223.67**, NVDA is trading near the upper boundary of its 52-week range ($164.27–$236.54) and above its 50-day moving average ($211.23) and 200-day moving average ($196.90).
+  * **Tactical Conclusion:** While the long-term fundamental story is outstanding with a forward P/E of only 14.4x and a PEG of 0.59x, short-term traders should **avoid aggressive chasing at highs** near resistance ($230–$236). Optimal tactical accumulation occurs on dips toward the **$205–$215 support band** (around the 50-day SMA).
+
+---
+
+### 6. Fundamentals Rating: Strong
+
+* **Dominant Financial Profile:** Exceptional >105% YoY top-line growth paired with >63% net margins and ROE exceeding 100%.
+* **Compelling Growth-Adjusted Valuation:** A forward P/E of 14.41x and PEG ratio of 0.59x provide substantial fundamental margin of safety relative to projected double-digit earnings growth.
+* **Balance Sheet Fortress:** Over $62B in cash/equivalents with strong free cash flow generation enables aggressive R&D reinvestment and ongoing capital returns.
+* **Unrivaled Competitive Moat:** Full-stack hardware, networking, and CUDA software integration creates high switching costs across global AI infrastructure.

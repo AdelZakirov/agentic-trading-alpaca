@@ -1,45 +1,15 @@
-# RBLX — OPEN
+# RBLX
 
-## Current Alpaca state
-
-- Instrument: common stock
-- Side: long
-- Quantity: 250 shares
-- Average entry: $40.41
-- Cost basis: $10,102.50
-- Latest reconciled price: $39.54
-- Latest market value: $9,885.00
-- Latest unrealized P/L: -$217.50 (-2.153%)
-- Open orders: none
-- Reconciled: 2026-09-02 18:38 Europe/Amsterdam
+## Current state
+Alpaca confirmed 75 shares at $44.67, market value $3,350.25, unrealized P/L +$319.50. Fresh IEX quote was $44.72 bid / $44.77 ask, below the $45.70–$46.00 trim zone and above $44.15–$44.50 support. HOLD, no add, and no option order; no discretionary trim was warranted away from the target zone.
 
 ## Current plan
 
-- Thesis: bullish breakout retest and normalized liquidity support a continuation move.
-- Confidence: moderate-high.
-- Holding period: roughly one to two weeks, through 2026-09-11 unless invalidated earlier.
-- Targets: $42.50-$43.00 first objective; $45.00-$45.75 extension.
-- Invalidation: loss or daily close below $38.90.
-- Size rationale: 250 shares, with approximately $377.50 planned technical risk from the actual fill; correlated growth exposure constrained the size.
-- Stock decision: BUY filled 250/250 at $40.41.
-- Option decision: HOLD; Sep. 18 $40/$45 call spread was viable but stock gives cleaner support management without expiry risk.
+HOLD 75 до 11 сентября; не покупать у $45–$45.75. Поддержка $44.15–$44.50, пересмотр защиты при $43.20, уровень мониторинга без нового стоп-ордера. В $45.50–$46 оценить дальнейшую фиксацию, не назначать автоматически более высокую цель. Умеренная уверенность в восстановлении при общей долгосрочной слабости. Опционы не открывать; 75 акций не покрывают стандартный call.
 
-## Relevant evidence
 
-- Shortlist: [`../../data/stage1_shortlist.md`](../../data/stage1_shortlist.md)
-- Technical research: [`../research/2026-09-01/165514-RBLX-technical.md`](../research/2026-09-01/165514-RBLX-technical.md)
-- Active ghost set: [`../ghost-trades/2026-09-01/alpaca-stage2-20260901-RBLX-buy.md`](../ghost-trades/2026-09-01/alpaca-stage2-20260901-RBLX-buy.md)
-- Daily log: [`../logs/2026-09-01.md`](../logs/2026-09-01.md)
+Fresh independent research: [181217-RBLX-technical.md](../research/2026-09-10/181217-RBLX-technical.md)
 
-## History
-
-### 2026-09-01
-
-- Broker order `50e20244-c806-4b7f-a0a3-2c11114c24eb` filled 250 shares at average $40.41 at `2026-09-01T16:53:30.128337357Z`.
-- No option order submitted.
-
-### 2026-09-02
-
-- Alpaca confirmed 250 shares at $40.41 average, current $39.57, market value $9,892.50, unrealized P/L -$210; no open order.
-- Stock HOLD and option HOLD. Price remains above the $38.90 invalidation, though today's pullback and an abnormally wide IEX checkpoint quote increase monitoring priority.
-- Ghost checkpoint used the conservative $39.38 bid; the Sep. 18 $40/$45 spread ghost marked $1.16 executable.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/RBLX.jsonl) — load only for a specific past decision.

@@ -1,0 +1,32 @@
+[
+  {
+    "ghost_id": "alpaca-stage2-20260831-GAP-buy",
+    "source": "memory/ghost-trades/2026-08-31/alpaca-stage2-20260831-GAP-buy.md",
+    "review_status": "awaiting_backfill"
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260831-PCG-buy",
+    "source": "memory/ghost-trades/2026-08-31/alpaca-stage2-20260831-PCG-buy.md",
+    "review_status": "awaiting_backfill"
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260901-PCG-sell",
+    "source": "memory/ghost-trades/2026-09-01/alpaca-stage2-20260901-PCG-sell.md",
+    "review_status": "awaiting_backfill"
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260901-SLB-buy",
+    "source": "memory/ghost-trades/2026-09-01/alpaca-stage2-20260901-SLB-buy.md",
+    "review_status": "awaiting_backfill"
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260901-SLB-option-buy",
+    "source": "memory/ghost-trades/2026-09-01/alpaca-stage2-20260901-SLB-option-buy.md",
+    "review_status": "awaiting_backfill"
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260904-SMMT-buy",
+    "source": "memory/ghost-trades/2026-09-04/alpaca-stage2-20260904-SMMT-buy.md",
+    "review_status": "awaiting_backfill"
+  }
+]

@@ -11,9 +11,6 @@
 - Research: [`../research/2026-09-01/190515-TAP-technical.md`](../research/2026-09-01/190515-TAP-technical.md)
 - Daily log: [`../logs/2026-09-01.md`](../logs/2026-09-01.md)
 
-## History
-
-### 2026-09-01
-
-- Advanced from technical rank 12 and assessed through technical research plus a focused put chain. No trade submitted.
-- Latest trade remained near $39.73-$39.74, above the $39.50 breakdown trigger and below the retest zone. No order submitted.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/TAP.jsonl) — load only for a specific past decision.

@@ -1,13 +1,16 @@
 # Filled ghost-set lifecycle
 
-Read this reference when a real order first fills, when a partially filled real order changes, or when an active ghost checkpoint or completion is due.
+Owned exclusively by the separate ghost reviewer. Read when a real order first fills, its real path changes, or a ghost checkpoint/completion is due. The trading agent uses ghost-pretrade.md and publishes confirmed execution facts through ghost_queue; it does not read or execute this lifecycle.
 
 Ghost trades never reach Alpaca or affect portfolio totals, exposure, buying power, or risk limits. Their risk figures describe only the hypothetical comparison.
 
-## Create the set after a fill
+## Adopt the definition and activate after a fill
 
-Create one file per real client order at `memory/ghost-trades/YYYY-MM-DD/{REAL_CLIENT_ORDER_ID}.md`, where the date is the real trade's first fill date. Copy the alternatives and contemporaneous observations recorded before submission; never redefine them with hindsight. Mark the set `ACTIVE` until its common evaluation period ends, then `COMPLETE`.
+For new packets, adopt the original file listed in handoff.json `ghost_files`; do not create a second file or rename it to the fill date. The trader created it before submission and ownership transferred on finish. Preserve original definitions, evidence and evaluation rules; append reviewer tracking separately. Use the packet snapshot to verify the initial definition when needed. If a source file is missing, restore it from that snapshot. A differing source may contain legitimate earlier reviewer updates: never blindly overwrite it; reconcile by decision ID and original sections.
 
+Keep `WAITING_FOR_FILL` until a real fill is confirmed; then record actual evaluation start under the predeclared rule and mark `ACTIVE`, later `COMPLETE` when the common window ends. A cancelled/rejected order with no fill is `NO_FILL`, not a completed investment outcome. Keep `NOT_SUBMITTED` studies separate from filled-trade statistics; evaluate only if their own observation window and baseline were specified before outcomes.
+
+Legacy packets without a ghost_files manifest may contain pre-submission definitions in the trading log. Reuse existing files by original order/decision ID first; create a missing legacy file only from that contemporaneous evidence, never invented alternatives.
 For a partial fill, update the real path with later fills while keeping one ghost set and the original alternatives.
 
 Record:
@@ -36,8 +39,8 @@ Use conservative executable marks: bid to exit a long and ask to cover a short, 
 
 At the common end, compare decision quality as well as outcome. Identify which alternative did better or worse, why, and which original choice the result tests. Normalize for capital or maximum loss when raw P/L would make different sizes misleading.
 
-Before the decision-quality review or any durable lesson update, read [lessons-learned.md](lessons-learned.md) completely. Link the completed set from the ticker file and daily log. Update `memory/lessons.md` only when the evidence is generalizable.
+Before the decision-quality review or any durable lesson update, read [lessons-learned.md](lessons-learned.md) completely. Keep links in the ghost file and reviewer-state.md; never edit trading logs or ticker files. Upsert its compact assessment using completed-reviews.md before archiving. Update `memory/lessons.md` only when the evidence is generalizable.
 
 ## Maintain the routing index
 
-After creating or changing a ghost file, update its row in `memory/ghost-trades/index.md`. Record the real-path state, evaluation end, last completed checkpoint, next checkpoint, any still-pending objective trigger that needs attention between checkpoints, status, and update time. Remove a trigger after it activates or becomes impossible; mark `COMPLETE` sets with no next checkpoint. Do not copy ghost definitions, quote history, or P/L detail into the index.
+After creating or changing a ghost file, update its row in `memory/ghost-trades/index.md`. Record the real-path state, evaluation end, last completed checkpoint, next checkpoint, any still-pending objective trigger that needs attention between checkpoints, status, and update time. Remove a trigger after it activates or becomes impossible; keep completed-but-unreviewed sets in the working index until assessment is persisted, then move their routing rows to archive-index.md with no next checkpoint. Preserve full files and stable lesson links. Do not copy ghost definitions, quote history, or P/L detail into the index.

@@ -1,0 +1,87 @@
+# moneyheap research: GWRE technical
+
+- Request time: 2026-09-10T00:15:37.928424+02:00
+- Ticker: GWRE
+- Analysis type: technical
+- Endpoint: /v1/analysis/technical
+
+## Prompt
+
+As of 2026-09-10, Analyze the current bearish/stretched technical structure against the SaaS-transition case. Focus on trend, volume, support/resistance, momentum, volatility, event risk, recovery confirmation and invalidation. No order instruction.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Trend & Momentum Read
+* **Primary & Intermediate Trend:** **Severe Bearish Breakdown.** GWRE suffered a violent post-event gap-down on September 4, 2026 (falling from a September 3 close of $202.84 to open at $166.85), followed by consecutive days of heavy distribution. Price closed on September 9, 2026, at **$142.24**, decisively breaking both the **50-day SMA ($161.78)** and the **200-day SMA ($156.40)**.
+* **Momentum Oscillators:**
+  * **RSI (14-day):** Plunged from overbought levels (74.97 on Aug 28) to **34.34**, rapidly heading toward oversold territory without yet forming a bullish divergence.
+  * **MACD (12, 26, 9):** Sharp bearish crossover and rapid acceleration downward. MACD line is at **1.39**, diving below the Signal line (**8.38**), with the Histogram widening negatively to **-6.98**.
+  * **Stochastic (14, 3, 3):** Fast %K is at **4.82** and %D is at **30.61**, indicating extreme short-term stretched/oversold conditions.
+  * **ROC (10-day):** **-24.52%**, reflecting severe rate-of-change downside exhaustion.
+
+---
+
+### 2. Regime Call: Trending vs. Chopping
+* **Regime:** **Strong Trend (Downside Liquidation Regime).**
+* **Evidence:** **ADX (14) stands at 38.01**, well above the 25.0 trend threshold. The directional movement index shows overwhelming seller dominance, with **-DI at 46.18** compared to **+DI at 22.80**. The previous multi-month uptrend has completely flipped into an active impulsive downtrend.
+
+---
+
+### 3. Timing: SaaS-Transition Narrative vs. Technical Setup
+* **Fundamental Context vs. Technical Reality:** While Guidewire’s multi-year cloud/SaaS transition (ARR expansion and subscription margin ramp) provides a long-term fundamental bull case, market structure takes precedence in the near term. The post-earnings repricing represents institutional multiple de-rating and margin/guidance reset risk.
+* **Long Entry Timing (Mean Reversion / Value Re-entry):**
+  * *Do not catch a falling knife.* Although price is technically stretched below the 20-day Lower Bollinger Band ($149.20, %B = -0.10), buying requires **reclamation of support and stabilization**.
+  * **Trigger for Tactical Bounce:** A daily close back above **$149.50–$150.00** accompanied by a bullish RSI/Stochastic divergence or an inside-day reversal candle.
+  * **Trigger for SaaS-Transition Position Accumulation:** Wait for a successful retest of the **$134.00–$136.00** structural base (July 2026 consolidation area) with declining volume and an ADX contraction.
+* **Trim / Sell-Into-Strength Timing:**
+  * Relief bounces toward broken support-turned-resistance at the **200-day SMA ($156.40)** or the **50-day SMA / Gap Resistance ($161.80–$166.85)** should be treated as exit/trim liquidity for trapped longs.
+
+---
+
+### 4. Risk: Invalidation, Stop Placement & Position Sizing
+* **Current Volatility:** **ATR (14-day) has spiked to $10.54** (7.41% of share price), and 20-day standard deviation widened to **17.09**.
+* **Long Trade Risk Parameters (if initiating on reversal confirmation):**
+  * **Stop Invalidation:** Below the structural swing shelf at **$133.50** (or a 1.5× ATR trailing buffer below entry).
+  * **Position Sizing:** Due to elevated ATR ($10.54), standard position sizing must be reduced by ~40–50% to maintain a constant account risk budget (e.g., $ risk / (1.5 × ATR)).
+* **Short Trade Invalidation:** A daily close back above the **200-day SMA ($156.40)** invalidates the immediate breakdown continuation.
+
+---
+
+### 5. Support & Resistance Levels
+* **Immediate Resistance:**
+  * **R1:** **$149.20 – $150.00** (Lower Bollinger Band & psychological round level).
+  * **R2:** **$156.40** (200-day SMA pivot).
+  * **R3:** **$161.80 – $166.85** (50-day SMA & September 4 gap-down origin).
+  * **R4:** **$183.38** (20-day SMA / Middle Bollinger Band).
+* **Downside Support / Price Targets:**
+  * **S1:** **$134.00 – $136.00** (July 2026 consolidation shelf & June 5 reaction low).
+  * **S2:** **$124.00 – $127.00** (June 8–9 inflection area).
+  * **S3:** **$102.40 – $107.80** (June 2026 cycle bottom).
+
+---
+
+### 6. Volume & Confirmation Analysis
+* **Distribution Profile:** The September 4 event breakdown traded **216,162 shares**, more than 3× average volume, confirming heavy institutional liquidation rather than retail noise.
+* **Follow-Through:** September 8 (183k) and September 9 (138k) volume remained elevated as price continued cascading lower, with **On-Balance Volume (OBV)** falling to **-1,553,302** and **Accumulation/Distribution (A/D)** dropping to **-391,656**. 
+* **Takeaway:** Distribution has not yet exhausted; no absorption or accumulation volume signature has appeared.
+
+---
+
+### 7. Peer / Related-Ticker Context
+* **Sector Peer (NOW - ServiceNow):** Peer SaaS bellwether `NOW` has also undergone a modest early-September correction (pulling back from $148.06 to $131.10, ~11.5%), indicating broader enterprise software multiple compression.
+* **Relative Weakness:** `GWRE` has fallen over **31%** from its recent high ($207.49 to $142.24) over the exact same period, reflecting significant idiosyncratic event/execution risk above and beyond general cloud software beta.
+
+---
+
+### 8. Final Technical Signal & Summary
+
+**Technical Signal: BEARISH (Short-Term Stretched / Awaiting Base)**
+
+* **Decisive Moving Average Breakdown:** GWRE lost both the 50-day ($161.78) and 200-day ($156.40) SMAs on heavy institutional gap-down volume, shattering the prior multi-month intermediate uptrend.
+* **Momentum Trend Intact:** ADX at 38.01 with -DI at 46.18 confirms high-momentum downside continuation, while MACD histogram (-6.98) continues to expand negatively.
+* **Stretched Oscillator Conditions:** While extreme %B (-0.10) and Stochastic %K (4.82) indicate the move is technically oversold, there is no structural reversal candle or volume exhaustion.
+* **Strategy Execution:** Respect the technical damage over the fundamental SaaS-transition thesis until price establishes a confirmed base near the **$134.00–$136.00** support zone or reclaims **$150.00+**.

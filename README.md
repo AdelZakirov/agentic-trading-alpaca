@@ -1,4 +1,4 @@
-# Alpaca Trading Agent
+# Machine Earning
 
 ## One-page write-up
 
@@ -150,8 +150,8 @@ flowchart TB
     classDef source fill:#EEF2FF,stroke:#6366F1,color:#111827;
     classDef step fill:#F5F3FF,stroke:#7C3AED,color:#111827;
     classDef state fill:#ECFDF5,stroke:#059669,color:#111827;
-    class market,signals source;
-    class stage0,stage1,shortlist,research,decision,ghost step;
+    class market,signals,secondOpinion source;
+    class stage0,stage1,shortlist,research,comparison,decision,ghost step;
     class memory,alpaca state;
 ```
 
@@ -198,6 +198,22 @@ Run the dependency-free test suite with:
 ```bash
 python3 -m unittest discover -v
 ```
+
+## Local trading dashboard
+
+The lightweight dashboard reads the current Markdown and shortlist artifacts on
+each refresh, so `memory/` remains the source of truth. Start it from the
+repository root with:
+
+```bash
+python3 dashboard/server.py
+```
+
+Then open <http://127.0.0.1:8765>. The page includes the plain-English daily
+summary, reconciled portfolio, decisions, research links, ghost trades,
+lessons, and full activity history. The About link opens the project description
+in its own page; source documents also open in a separate view. No frontend
+dependencies or build step are required.
 
 ## Local data interface for Stage 1
 

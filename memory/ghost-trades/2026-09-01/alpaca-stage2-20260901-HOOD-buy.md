@@ -78,4 +78,55 @@ Use one market-data timestamp for all scoreable paths at every checkpoint. Mark 
 - `NO_TRADE`: $0.
 - `HALF_SIZE_HOOD`: value $3,922.37; P/L +$59.94 (+1.55%).
 - `SEP11_107_115_CALL_SPREAD`: executable value $2.23 ($3.41 long-call bid less $1.18 short-call ask); P/L +$13 (+6.19%) versus $2.10 entry.
-- No $101 review or $98.80 invalidation was triggered. Next checkpoint: 2026-09-02 regular-market close.
+- No $101 review or $98.80 invalidation was triggered. Next checkpoint: 2026-09-03 regular-market close.
+
+## Catch-up checkpoint for 2026-09-02 close
+
+- Observed: approximately 2026-09-03T14:37:57Z using the current Alpaca IEX executable bid, before the later HOOD management reduction. The scheduled 2026-09-02 close was unavailable, so this is a disclosed catch-up mark.
+- Real HOOD stock: 75 shares at the $122.55 bid; value $9,191.25; P/L +$1,365.15 (+17.44%) versus the $104.348 fill.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_HOOD`: 37 shares at $122.55; value $4,534.35; P/L +$671.92 (+17.40%) versus the $104.39 simulated entry.
+- `SEP11_107_115_CALL_SPREAD`: executable value $6.37 ($15.74 long-call bid less $9.37 short-call ask); P/L +$427 (+203.33%) versus the $2.10 simulated debit.
+- The real stock had exceeded the documented $117.50-$121 extension target at this observation. After this checkpoint, the real path sold 25 shares at $121.984; the residual is 50 shares. Next checkpoint: 2026-09-03 regular-market close.
+
+## Real-path target reduction — 2026-09-03
+
+- At `2026-09-03T14:39:58.821160929Z`, the real path sold 25 of 75 shares at $121.984 after exceeding the $117.50-$121 extension target. Sale proceeds were $3,049.60; 50 shares remain.
+- Initial post-fill observation at approximately `2026-09-03T14:41:15Z`: retained 50 shares at the $121.84 executable bid were worth $6,092.00. Sale proceeds plus retained value were $9,141.60, for cumulative real-path P/L of +$1,315.50 (+16.81%) versus the original $7,826.10 cost.
+- The option and half-size alternatives were not redefined after the management action and remain scheduled for the common 2026-09-03 close checkpoint. The residual real stock now uses $117.50 as a profit-protection review level; the original $98.80 thesis invalidation remains the hard failure level.
+
+## 2026-09-03 close checkpoint
+
+- Observed from Alpaca at approximately `2026-09-03T19:59:59Z`: HOOD executable IEX bid $120.01; Sep. 11 $107 call $17.69/$18.33 and $115 call $10.97/$11.54.
+- Real HOOD path: $3,049.60 realized sale proceeds plus 50 shares at $120.01, total value $9,050.10; cumulative P/L +$1,224.00 (+15.64%) versus the original $7,826.10 cost.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_HOOD`: 37 shares at $120.01; value $4,440.37; P/L +$577.94 (+14.96%).
+- `SEP11_107_115_CALL_SPREAD`: executable value $6.15 ($17.69 long-call bid less $11.54 short-call ask); P/L +$405 (+192.86%) versus the $2.10 debit.
+- The daily close remained above the $117.50 residual profit-review level. Next checkpoint: 2026-09-04 regular-market close.
+
+## 2026-09-04 close checkpoint
+
+- Common stock mark: $122.06 executable bid near the close.
+- Real path: $3,049.60 sale proceeds plus 50 shares worth $6,103.00; total $9,152.60 and cumulative P/L +$1,326.50 (+16.95%). `NO_TRADE`: $0. `HALF_SIZE_HOOD`: 37 shares worth $4,516.22 and P/L +$653.79 (+16.93%).
+- `SEP11_107_115_CALL_SPREAD`: last-trade bars imply a $7.23 reference value, but no synchronized executable sides were recovered; formally UNSCORABLE at this checkpoint.
+- The $117.50 residual review remained intact. Next checkpoint: 2026-09-08 regular-market close.
+
+## 2026-09-08 close checkpoint
+
+- Alpaca's 2026-09-08 daily bar closed at $117.37; this is an official-bar, non-executable reference because a synchronized closing quote was not preserved.
+- Real path after the prior 25-share sale: $3,049.60 proceeds plus 50 shares at $117.37 = $8,918.10, P/L +$1,092.00 versus the original $7,826.10 cost. `HALF_SIZE_STOCK`: 37 shares at $117.37 = $4,342.69, P/L +$480.26. `NO_TRADE`: $0.
+- The option alternative remains formally UNSCORABLE without synchronized executable option sides. The $117.37 daily close activated the residual profit-review rule.
+- Next checkpoint: 2026-09-09 regular-market close.
+
+## 2026-09-09 close checkpoint
+
+- Alpaca's official 2026-09-09 daily bar closed at $115.29 (high $121.38, low $115.105); this is a non-executable proxy because the near-close quote was abnormally wide at $115.25/$120.99.
+- Real path, including the separate 2026-09-09 20-share management trim: $3,049.60 + $2,337.00 prior proceeds plus 30 shares at $115.29 = $8,845.30, P/L +$1,019.20 versus the $7,826.10 initial cost. `HALF_SIZE_HOOD`: 37 shares at $115.29 = $4,265.73, P/L +$403.30. `NO_TRADE`: $0.
+- The $117.50 residual review remained active; the $101 review and $98.80 hard invalidation were not reached. The option alternative remains UNSCORABLE without synchronized executable option sides.
+- Next checkpoint: 2026-09-10 regular-market close.
+
+## 2026-09-10 close checkpoint
+
+- Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: HOOD close `$113.33`; the after-close quote was wide at `$109.17/$120.65`, so the bar is a disclosed non-executable proxy.
+- Real path, including the separate 25-share and 20-share management trims: `$3,049.60 + $2,337.00` proceeds plus 30 shares worth `$3,399.90` = `$8,786.50`, P/L `+$960.40` versus the `$7,826.10` entry cost. `HALF_SIZE_HOOD`: 37 shares worth `$4,193.21`, P/L `+$330.78`; `NO_TRADE`: `$0`.
+- The residual close stayed above the `$112.50-$113.20` structural review band; the $101 review and $98.80 hard invalidation were not reached. The option path remains UNSCORABLE without synchronized executable close sides. Next checkpoint: 2026-09-11 regular-market close.

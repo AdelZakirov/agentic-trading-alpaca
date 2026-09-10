@@ -1,0 +1,18 @@
+{
+  "from": "All nomination sources, preserved in shortlist order.",
+  "reason_shortlist": "Verbatim Reason/Reasons cells; community uses Source details because its table has no reason. Arrays align with shortlist_details.",
+  "technical": "Existing values copied unchanged from Stage 1; missing tickers recovered from local bars using the same Stage1Screener and full eligible universe. pct_* are percentile ranks, not returns.",
+  "fractions": "Returns, growth, margins, ROE, short_float, yields, upside, EPS revision and normalized debt_to_equity are ratios: 0.15 = 15%.",
+  "debt_to_equity": "Yahoo debtToEquity divided by 100.",
+  "peg": "Yahoo trailingPegRatio; no silent substitution of another PEG definition.",
+  "distance_sma20": "Stage 1 definition: (close - SMA20) / close, not divided by SMA20.",
+  "atr14_pct": "ATR14 divided by closing price.",
+  "normalized_move_1d": "Absolute one-day price change divided by ATR14.",
+  "stretch_atr": "Absolute distance from SMA20 divided by ATR14.",
+  "estimates": "Yahoo 0q averages and revisions. 0q is not guaranteed to match the next announcement; missing mapping must not be invented.",
+  "eps_revision_30d": "(current - 30daysAgo) / abs(30daysAgo); null for zero/missing denominator.",
+  "fcf_yield": "Only when market cap is positive and currency equals financialCurrency.",
+  "earnings": "Calendar estimates; date ranges preserved. days_to_earnings uses UTC calendar date, not trading days.",
+  "freshness": "yahoo_fetched_at is retrieval time, not update time of every metric; technical_as_of and price_as_of are separate.",
+  "missing": "Null does not mean zero or bad investment. yahoo_errors records request failures; missing_fields records absent values. ETF fields may be inapplicable."
+}

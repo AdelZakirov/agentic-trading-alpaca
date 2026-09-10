@@ -1,0 +1,90 @@
+# moneyheap research: NVST technical
+
+- Request time: 2026-09-03T19:49:51.437760+02:00
+- Ticker: NVST
+- Analysis type: technical
+- Endpoint: /v1/analysis/technical
+
+## Prompt
+
+For an aggressive one-week paper trade on 2026-09-03, assess NVST after a fresh JPMorgan Overweight upgrade with a $32 target. Stage 1 price was $27.41; today's live range is about $27.21-$28.20 and current trade about $27.53. Determine trend, volume confirmation, entry trigger, targets, invalidation, and whether stock or defined-risk calls offer favorable timing.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Trend + Momentum Read
+* **Daily Trend Structure:** NVST maintains an intermediate uptrend above its rising 50-day SMA ($27.17) and 200-day SMA ($25.22), though short-term price action has pulled back from the August peak ($29.00). 
+* **Momentum Indicators:**
+  * **RSI (14):** 50.57 — reset from overbought August levels back to dead-center neutral, establishing a launchpad for a bounce.
+  * **MACD (12, 26, 9):** MACD line (-0.008) vs Signal (0.117); histogram at -0.125 shows downward momentum decelerating after the late-August slide.
+  * **Stochastic (14, 3, 3):** Hooking up from oversold territory (%K 18.88, %D 18.86).
+  * **Bollinger Bands (20, 2):** Middle band sits at $27.63, upper band at $28.67, and lower band at $26.59. Today’s action ($27.53) is testing the 20-day midline.
+
+---
+
+### 2. Regime: Chopping (Range-Bound with Bullish Skew)
+* **Regime Call:** **Chopping / Range Consolidation**.
+* **Why:** The 14-day **ADX is 15.82** (well below the 20.0 trend threshold), confirming absence of an active daily directional trend. Bandwidth is compressed at 7.53%. Price is oscillating within a well-defined $26.60–$28.70 channel, making mean-reversion swing tactics more effective than breakout chasing.
+
+---
+
+### 3. Timing: Entry, Targets, and Instrument Framing
+* **1-Week Trade Timing:**
+  * **Intraday Entry Trigger:** The morning upgrade spike to $28.20 experienced an immediate fade to $27.21, finding buyers right above the rising 50-day SMA ($27.17). A base has formed between $27.45 and $27.55.
+  * **Aggressive Long Trigger:** Enter in the **$27.45–$27.55** zone or on a confirmed 15-minute close above the 20-day SMA (**$27.65**).
+  * **Profit Targets (1-Week Horizon):**
+    * **Target 1:** **$28.20** (retest of today's intraday high / recent pivot).
+    * **Target 2:** **$28.67–$28.70** (upper Bollinger Band and mid-August breakdown level).
+    * **Stretch Target:** **$29.00** (August swing high).
+* **Instrument Choice (Stock vs. Defined-Risk Calls):**
+  * **Underlying Stock is Preferred:** Given the chopping regime (ADX ~15.8) and 1-week horizon, headline upgrades elevate front-week option implied volatility and expose naked calls to rapid theta decay and post-gap IV crush. 
+  * **Option Alternative:** If using options, use **defined-risk vertical call spreads** (e.g., $27.50 / $29.00 bull call spread expiring in 1–2 weeks) rather than naked out-of-the-money calls to neutralize theta drag.
+
+---
+
+### 4. Risk: Invalidation, Stop, and Sizing
+* **ATR (14):** **$0.85** (~3.09% of price).
+* **Technical Invalidation:** A sustained drop below the 50-day SMA ($27.17) and today's intraday low ($27.21).
+* **Hard Stop:** **$26.95** (~0.7× ATR below entry, keeping risk within ~2.1% of capital).
+* **Position Sizing Rule:**
+  $$\text{Shares} = \left\lfloor \frac{\text{Risk Dollars}}{|27.53 - 26.95|} \right\rfloor = \left\lfloor \frac{\text{Risk Dollars}}{\$0.58} \right\rfloor$$
+  * *Example:* For a $500 max paper trade risk, position size is $\approx 862\text{ shares}$ (~$23,730 position value).
+
+---
+
+### 5. Key Support & Resistance Levels
+* **Resistance:**
+  * **R1:** $27.65 (20-day SMA / intraday pivot)
+  * **R2:** $28.20 (September 3 intraday high)
+  * **R3:** $28.67–$28.70 (Upper Bollinger Band & August 12 pivot)
+  * **R4:** $29.00 (August 11–13 top)
+* **Support:**
+  * **S1:** $27.40–$27.45 (Intraday base / Stage 1 reference $27.41)
+  * **S2:** $27.17–$27.21 (50-day SMA & today’s intraday low)
+  * **S3:** $26.60–$26.65 (Lower Bollinger Band & Sep 1 low)
+
+---
+
+### 6. Volume & Confirmation Notes
+* **Volume Behaviour:** Late August saw declining volume on pullbacks (drying up toward ~1.2M–1.5M shares), indicating an absence of aggressive institutional distribution.
+* **Intraday Action:** The high-volume opening push absorbed early profit-takers. Intraday volume has dried up as the price consolidated between $27.45 and $27.55, forming a constructive base rather than rolling over to new lows.
+
+---
+
+### 7. Peer / Industry Context
+* **Dental/MedTech Peers:**
+  * **XRAY (Dentsply Sirona):** Posted a sharp +4.9% breakout on September 2, moving from $10.76 to $11.29 on elevated volume (4.6M shares).
+  * **ALGN (Align Technology):** Rebounded back into the $159.00–$160.00 area after holding $154 support.
+* **Takeaway:** The peer basket is demonstrating constructive sector rotation and bottom-fishing interest, providing sector-level tailwinds for NVST.
+
+---
+
+### 8. Final Technical Signal: Bullish (1-Week Tactical)
+
+* **Why:**
+  * **Confluence Support Defense:** Price tested and cleanly held the rising 50-day SMA ($27.17) and Stage 1 support ($27.41) after absorbing morning gap-faders.
+  * **Momentum Reset:** RSI (50.57) and Stochastic (%K 18.88) are rebounding from oversold/neutral readings with favorable risk/reward ($0.58 risk vs. $1.15+ reward to R2/R3).
+  * **Peer Tailwinds:** Sector peers XRAY and ALGN are showing positive rotation, supporting follow-through towards the upper range boundary ($28.67–$29.00).

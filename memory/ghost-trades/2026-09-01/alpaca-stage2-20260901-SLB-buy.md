@@ -1,6 +1,6 @@
 # Ghost set: alpaca-stage2-20260901-SLB-buy
 
-- Status: ACTIVE
+- Status: COMPLETE
 - Real client order ID: `alpaca-stage2-20260901-SLB-buy`
 - Broker order ID: `db61b37c-6fcb-4dbc-a39f-672bbc8be16c`
 - Ticker: SLB
@@ -79,4 +79,36 @@ Use one common market-data timestamp for the real stock path and all scoreable g
 - `NO_TRADE`: $0.
 - `HALF_SIZE_SLB`: value $2,322; P/L -$8.40 (-0.36%).
 - `SEP11_58_62_CALL_SPREAD`: executable value $0.95 ($1.25 long-call bid less $0.30 short-call ask); P/L -$25 (-20.83%) versus $1.20 entry. Long IV/delta/theta 34.29%/0.5244/-0.0721; short 37.17%/0.1397/-0.0426.
-- No $56.90 invalidation or $60.20 target was triggered. Next checkpoint: 2026-09-02 regular-market close.
+- No $56.90 invalidation or $60.20 target was triggered. Next checkpoint: 2026-09-03 regular-market close.
+
+## Catch-up checkpoint for 2026-09-02 close
+
+- Observed: approximately 2026-09-03T14:37:57Z using the current Alpaca IEX executable bid and focused indicative option marks. The scheduled 2026-09-02 close was unavailable, so this is a disclosed catch-up mark.
+- Real SLB stock: 80 shares at the $58.72 bid; value $4,697.60; P/L +$38.23 (+0.82%) versus the $58.242124 fill.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_SLB`: 40 shares at $58.72; P/L +$18.40 (+0.79%) versus the $58.26 simulated entry.
+- `SEP11_58_62_CALL_SPREAD`: executable value $1.25 ($1.51 long-call bid less $0.26 short-call ask); P/L +$5 (+4.17%) versus the $1.20 simulated debit.
+- No $56.90 invalidation or $60.20 target was triggered. Next checkpoint: 2026-09-03 regular-market close.
+
+## 2026-09-03 close checkpoint
+
+- Observed from Alpaca at approximately `2026-09-03T19:59:59Z`: SLB $57.41/$57.43; Sep. 11 $58 call $0.79/$1.02; Sep. 11 $62 call $0.10/$0.14.
+- Real SLB stock: OPEN, 80 shares at $57.41; value $4,592.80; P/L -$66.57 (-1.43%) versus the $58.242124 fill.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_SLB`: 40 shares at $57.41; P/L -$34.00 (-1.46%).
+- `SEP11_58_62_CALL_SPREAD`: executable value $0.65 ($0.79 long-call bid less $0.14 short-call ask); P/L -$55 (-45.83%) versus the $1.20 simulated debit.
+- The $56.90 invalidation and $60.20 target were not triggered. Next and final checkpoint: 2026-09-04 regular-market close.
+
+## Real-path exit — 2026-09-04
+
+- The 2026-09-04 session opened below $56.90 and failed to reclaim $57.05. The real path sold all 80 shares at an average $56.62 at `2026-09-04T14:47:37.047510754Z`.
+- Realized P/L was approximately -$129.77 before fees versus the $58.242124 entry. The common evaluation still completes at the 2026-09-04 close, when the alternatives will be marked consistently.
+- Separate exit-decision comparison: [`../2026-09-04/alpaca-stage2-20260904-SLB-sell.md`](../2026-09-04/alpaca-stage2-20260904-SLB-sell.md).
+
+## 2026-09-04 close completion
+
+- Endpoint quote: SLB $57.50/$57.52 at `2026-09-04T19:59:59.996801485Z`.
+- Real stock: CLOSED at $56.62; realized P/L about -$129.77 (-2.79%). `NO_TRADE`: $0. `HALF_SIZE_SLB`: under the identical invalidation, 40 shares exit at $56.62 for -$65.60 (-2.81%).
+- `SEP11_58_62_CALL_SPREAD`: no synchronized executable close was recoverable. Last-trade-bar references were $0.72 for the $58 call and a stale $0.10 for the $62 call, so the endpoint is UNSCORABLE rather than manufacturing a spread value.
+- Outcome: no-trade beat the bullish entry; reducing size only scaled the same losing thesis. The breakout shelf failed within the planned window.
+- Decision review: thesis/research was reasonable but forecast failed; stock was cleaner than the wide option alternative; entry timing was early; size and execution were disciplined. No new durable lesson beyond existing invalidation and option-overlap guidance.

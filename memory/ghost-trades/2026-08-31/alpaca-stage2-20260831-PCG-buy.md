@@ -1,6 +1,6 @@
 # Ghost set: alpaca-stage2-20260831-PCG-buy
 
-- Status: ACTIVE
+- Status: COMPLETE
 - Real client order ID: `alpaca-stage2-20260831-PCG-buy`
 - Broker order ID: `96895785-d9f4-4134-9a2e-e063533e2203`
 - Ticker: PCG
@@ -83,4 +83,32 @@ At every checkpoint, use one common observation timestamp. Mark the real and hal
 - `NO_TRADE`: $0.
 - `HALF_SIZE_STOCK`: treated with the same real-path exit decision at $13.20; P/L -$75 versus $13.40 entry.
 - `SEP11_13_5_CALL`: current executable bid $0.30; value $600 for 20 contracts; P/L -$460 (-43.40%) versus $1,060 premium. IV 64.48%, delta 0.3915, theta -0.0287; bid/ask $0.30/$0.39.
-- Next checkpoint: 2026-09-02 regular-market close.
+- Next checkpoint: 2026-09-03 regular-market close.
+
+## Catch-up checkpoint for 2026-09-02 close
+
+- Observed: approximately 2026-09-03T14:37:57Z using the current Alpaca IEX executable bid. The scheduled 2026-09-02 close was unavailable, so this is a disclosed catch-up mark.
+- Real PCG: CLOSED at $13.20; realized P/L -$165 versus the $13.42 fill; decision-reference value remains $9,900.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_STOCK`: retain 375 shares at the $13.57 bid; value $5,088.75; incremental P/L +$138.75 versus the $13.20 decision reference.
+- `HOLD_FULL`: retain 750 shares at the $13.57 bid; value $10,177.50; incremental P/L +$277.50 versus the $13.20 decision reference.
+- The real full exit now trails both retention alternatives at this catch-up mark, but the sell-thesis invalidation above $13.70/$14.00 has not activated. No re-entry is allowed below the documented confirmation levels. Next checkpoint: 2026-09-03 regular-market close.
+
+## 2026-09-03 close checkpoint
+
+- Observed from Alpaca IEX at approximately `2026-09-03T19:59:56Z`; PCG was $13.95/$13.96 and the Sep. 11 $13.50 call was $0.66/$0.80.
+- Real PCG remains CLOSED at $13.20 with realized P/L -$165 versus the $13.42 entry.
+- `NO_TRADE`: $0.
+- The previously tracked half-size retention comparison marked 375 shares at $13.95, value $5,231.25 and P/L +$206.25 versus its $13.40 simulated entry. This path is retained as previously tracked despite the original identical-exit wording; no historical definition was rewritten.
+- `SEP11_13_5_CALL`: executable value $1,320 for 20 contracts at the $0.66 bid; P/L +$260 (+24.53%) versus $1,060 premium. IV 57.40%, delta 0.6904, theta -0.0289; bid/ask $0.66/$0.80.
+- PCG formed a higher low and closed at $13.955, above $13.70, activating the documented sell-thesis invalidation/reclaim condition. No real re-entry was made. Next and final checkpoint: 2026-09-04 regular-market close.
+
+## 2026-09-04 close completion
+
+- Observed from Alpaca IEX at `2026-09-04T19:59:59.996493062Z`; PCG was $14.31/$14.33. This is the common endpoint.
+- Real path: CLOSED at $13.20; final realized P/L -$165 (-1.64%) versus the $13.42 entry.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_STOCK`: 375 shares at $14.31; value $5,366.25 and P/L +$341.25 (+6.79%) versus $13.40.
+- `SEP11_13_5_CALL`: no synchronized historical executable close quote was available. The option's 2026-09-04 last-trade bar closed at $0.90, implying a non-executable reference value of $1,800 and +$740 versus premium, but the path is formally UNSCORABLE at an executable endpoint.
+- Outcome: both scoreable retention alternatives beat the real early exit; the half-size stock also beat no-trade. The capitulation thesis was directionally sound, but management abandoned the original daily-close invalidation on intraday continuation evidence and missed the recovery.
+- Decision review: thesis/research good; forecast mixed-to-good; stock instrument appropriate; timing and exit discipline weak; sizing acceptable for the stated gap risk; execution quality good. This supports a low-confidence lesson to preserve the stated time basis of an invalidation unless new evidence explicitly changes the thesis.

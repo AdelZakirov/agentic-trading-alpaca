@@ -1,0 +1,111 @@
+# moneyheap research: MMED fundamental
+
+- Request time: 2026-09-10T18:10:57.607828+02:00
+- Ticker: MMED
+- Analysis type: fundamental
+- Endpoint: /v1/analysis/fundamental
+
+## Prompt
+
+Independent fresh research as of September 10 2026. Use current sourced facts; distinguish uncertain claims. MiniMed Group NASDAQ MMED (NOT MindMed). Existing 125 shares cost 23.76 current 22.66. Assess latest quarterly results, recent IPO/lockup supply, exact verified catalysts, 1-5 session holding merit vs exit; independently derive invalidation. Verify ticker identity.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Fundamentals Snapshot
+
+* **Ticker Identity Verification:** Verified as **MiniMed Group, Inc. (NASDAQ: MMED)**, the diabetes technology spin-off/subsidiary of Medtronic plc (headquartered in Northridge, CA), specializing in Automated Insulin Delivery (AID) systems, smart insulin pens (InPen), and continuous glucose monitoring (CGM) integration. *(Note: Distinct from Mind Medicine / MNMD).*
+* **Current Price (as of Sep 10, 2026):** $22.65 (User Position: 125 shares @ $23.76 cost basis; unrealized loss: -$1.11/sh or -4.67%).
+* **Revenue & Growth:** TTM Revenue of **$3.22B**, growing at **+16.6% YoY**, driven by strong adoption of automated insulin delivery (780G ecosystem) and smart MDI consumables.
+* **Profitability & Margins:**
+  * Gross Margin: **56.89%** ($1.83B TTM Gross Profit).
+  * EBITDA: **$286.0M** (EBITDA Margin: 8.88%).
+  * GAAP Net Income: **-$314.0M** (TTM EPS: -$1.12), largely reflecting carve-out, separation, and scaling expenses. 
+  * Forward Profitability: Consensus Forward EPS is projected to turn positive at **+$0.65 to +$0.68**.
+* **Balance Sheet & Cash Flow:**
+  * Total Cash & Equivalents: **$207.0M** ($0.74/share).
+  * Total Debt: **$59.0M** (very low Debt-to-Equity of 1.63%). Net Cash: **+$148.0M**.
+  * Liquidity: Current Ratio of **1.81**, Quick Ratio of **1.27**.
+  * Operating Cash Flow: **-$105.0M** (TTM) as the company invests in commercial supply-chain expansion and new sensor integration.
+
+---
+
+### 2. Valuation vs. Peers and Sector
+
+| Metric | MiniMed Group (MMED) | Insulet (PODD) | DexCom (DXCM) | Tandem Diabetes (TNDM) | Sector Median |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Market Cap** | **$6.37B** | $9.39B | $31.72B | $1.26B | — |
+| **EV / Revenue** | **1.94x** | ~4.2x | ~7.8x | ~1.4x | ~3.5x |
+| **P / S (TTM)** | **1.98x** | 4.6x | 8.1x | 1.5x | ~3.2x |
+| **P / B Ratio** | **1.76x** | 6.60x | 12.10x | 9.65x | ~3.8x |
+| **Forward P/E** | **34.88x** | 17.56x | 26.91x | 106.0x | ~25.0x |
+| **EV / EBITDA** | **21.87x** | 15.2x | 22.4x | N/A | ~18.0x |
+
+**Valuation Context:** MMED trades at a noticeable discount on an asset and top-line basis (**1.76x P/B** and **1.98x P/S**) compared to pure-play peers like Insulet and DexCom. This discount is attributable to the recent spin-off status, high parent ownership, and current GAAP unprofitability, offering expansion potential as earnings inflect positive in FY2027.
+
+---
+
+### 3. Analysts Consensus and Price Targets
+
+* **Consensus Rating:** **Buy** (Mean score: **1.54 / 5.0**, where 1 = Strong Buy).
+* **Breakdown (12 Opinions):** 1 Strong Buy, 10 Buy, 1 Hold, 1 Sell, 0 Strong Sell.
+* **Price Targets:**
+  * **Low Target:** $15.00
+  * **Median Target:** $26.00 *(+14.8% from $22.65)*
+  * **Mean Target:** $24.83 *(+9.6% from $22.65)*
+  * **High Target:** $28.00 *(+23.6% from $22.65)*
+* **Analyst Excerpt:** Wall Street maintains an overwhelmingly constructive stance, anticipating market share recovery in AID pumps following the Abbott sensor integration and operating margin leverage heading into calendar 2027.
+
+---
+
+### 4. News & Catalysts Summary (Last 14 Days)
+
+#### Core Themes & Fundamental Impact
+* **Product Rollout & Expansion:** Commercial shipments of the MiniMed Flex integrating Abbott's Instinct sensor commenced in late August, directly strengthening MiniMed's competitive standing against Tandem and Insulet.
+* **IPO Lockup Expiration Window:** The standard 180-day lockup following the March 6, 2026 IPO passed around September 2, 2026. Selling pressure has remained well-contained without structural float flooding from parent Medtronic.
+
+#### Verified Sourced News
+1. **MiniMed Group, Inc. (MMED) Stock Forecasts**
+   * *Source:* Yahoo Finance | *Date:* September 2, 2026
+   * *Summary:* Research report highlighting consensus growth outlook, valuation models, and forward profitability inflection for MMED post-lockup.
+   * *URL:* `https://finance.yahoo.com/research/reports/MS_0P0001YJR3_AnalystReport_1788392385000`
+2. **MiniMed Ships MiniMed Flex With Abbott's Smallest Instinct Sensor**
+   * *Source:* Yahoo Finance | *Date:* August 19, 2026
+   * *Summary:* MiniMed commenced commercial shipments of its next-generation MiniMed Flex AID pump integrating Abbott’s low-profile Instinct sensor, broadening patient choice.
+   * *URL:* `https://finance.yahoo.com/healthcare/articles/minimed-ships-minimed-flex-abbotts-161400179.html`
+
+---
+
+### 5. Specific Tactical & Strategic Assessment
+
+#### A. IPO & Lockup Supply Dynamics
+* **IPO Date:** March 6, 2026.
+* **Lockup Expiry:** 180-day lockup expired on **September 2, 2026**.
+* **Capital Structure:** Shares outstanding stand at 281.35M, but Medtronic and insiders hold **89.92%**, leaving a tight public float of only **28.01M shares**.
+* **Short Interest Dynamics:** Short interest is **5.90M shares (20.66% of float)** with a **5.08-day short ratio**. Because the lockup expiration did not trigger an institutional dump, the heavy short interest represents potential short-covering fuel.
+
+#### B. Exact Verified Catalysts
+1. **Commercial Ramp of MiniMed Flex + Abbott Sensor:** Expanding total addressable AID market share against Tandem Control-IQ and Omnipod 5.
+2. **FY2027 Non-GAAP Profit Inflection:** Expected transition from TTM net losses to full-year forward EPS of +$0.65–$0.68.
+3. **Short Squeeze / Float Scarcity:** Over 20% of the active float is sold short; any positive institutional accumulation can trigger forced covering.
+
+#### C. 1–5 Session Holding Merit vs. Exit
+* **Verdict:** **HOLD.**
+* **Rationale:** Selling right now locks in an unnecessary ~4.7% loss immediately after the post-lockup expiration window (Sep 2) has cleared without breakdown. MMED remains in a constructive multi-month uptrend well above its 50-day MA ($18.53), consolidating within striking distance of its 52-week high ($24.43). A retest of your $23.76 break-even level and the median target of $26.00 is technically and fundamentally favored in the near term.
+
+#### D. Independently Derived Invalidation
+* **Technical Invalidation:** A daily close below **$21.20** (the key breakout support and swing low) or trailing stop below **$20.80** (~8% downside risk). A break below this level signals failure of the post-lockup base.
+* **Fundamental Invalidation:** Any secondary offering announcement by Medtronic plc to liquidate part of its 89.9% stake directly into the public market, or unexpected FDA regulatory delays on future sensor integrations.
+
+---
+
+### 6. Fundamentals Rating & Rationale
+
+### **Rating: Moderate (Leaning Strong)**
+
+* **Solid Double-Digit Top-Line Growth (+16.6%):** MiniMed is demonstrating robust commercial momentum in diabetes technology, with annual revenue surpassing $3.2B and healthy gross margins near 57%.
+* **Prudent Balance Sheet:** Carries minimal debt ($59M) against $207M in cash, insulating the business from balance sheet distress while it bridges to positive GAAP operating margins.
+* **Near-Term Catalyst Alignment:** The newly launched Abbott Instinct sensor integration, passing of the September 2 lockup date, and a crowded short float (20.7%) create favorable supply-demand asymmetry for existing shareholders.

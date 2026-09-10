@@ -9,5 +9,8 @@ description = "Whole-market Alpaca data fetching for a trading agent"
 requires-python = ">=3.11"
 dependencies = []
 
+[project.optional-dependencies]
+screening = ["yfinance>=1.2,<2"]
+
 [tool.setuptools.packages.find]
 include = ["alpaca_agent*"]

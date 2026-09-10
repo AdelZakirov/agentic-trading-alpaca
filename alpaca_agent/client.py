@@ -95,6 +95,57 @@ class AlpacaClient:
             raise AlpacaAPIError("The clock endpoint did not return an object")
         return response
 
+    def get_account(self) -> dict[str, Any]:
+        response = self._get_json(self.settings.trading_endpoint, "/account", {})
+        if not isinstance(response, dict):
+            raise AlpacaAPIError("The account endpoint did not return an object")
+        return response
+
+    def get_positions(self) -> list[dict[str, Any]]:
+        response = self._get_json(self.settings.trading_endpoint, "/positions", {})
+        if not isinstance(response, list):
+            raise AlpacaAPIError("The positions endpoint did not return a list")
+        return [position for position in response if isinstance(position, dict)]
+
+    def get_orders(
+        self,
+        *,
+        status: str = "open",
+        after: str | None = None,
+        limit: int = 100,
+        direction: str = "asc",
+        nested: bool = True,
+    ) -> list[dict[str, Any]]:
+        response = self._get_json(
+            self.settings.trading_endpoint,
+            "/orders",
+            {
+                "status": status,
+                "after": after,
+                "limit": limit,
+                "direction": direction,
+                "nested": str(nested).lower(),
+            },
+        )
+        if not isinstance(response, list):
+            raise AlpacaAPIError("The orders endpoint did not return a list")
+        return [order for order in response if isinstance(order, dict)]
+
+    def get_account_activities(
+        self,
+        *,
+        activity_types: str = "FILL",
+        date_value: str | None = None,
+    ) -> list[dict[str, Any]]:
+        response = self._get_json(
+            self.settings.trading_endpoint,
+            "/account/activities",
+            {"activity_types": activity_types, "date": date_value},
+        )
+        if not isinstance(response, list):
+            raise AlpacaAPIError("The account activities endpoint did not return a list")
+        return [activity for activity in response if isinstance(activity, dict)]
+
     def fetch_snapshots(self, symbols: list[str]) -> dict[str, Any]:
         if not symbols:
             return {}

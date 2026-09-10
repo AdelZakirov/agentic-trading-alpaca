@@ -1,46 +1,15 @@
-# HOOD — OPEN
+# HOOD
 
-## Current Alpaca state
-
-- Instrument: common stock
-- Side: long
-- Quantity: 75 shares
-- Average entry: $104.348
-- Cost basis: $7,826.10
-- Latest reconciled price: $105.955
-- Latest market value: $7,946.625
-- Latest unrealized P/L: +$120.525 (+1.540%)
-- Open orders: none
-- Reconciled: 2026-09-02 18:38 Europe/Amsterdam
+## Current state
+Alpaca confirmed 30 shares at $114.29, market value $3,428.70, unrealized P/L +$298.50. Fresh IEX quote was $114.29 bid / $115.75 ask, an unusually wide spread. HOLD above the $112.00 daily-close structural review; no trim into the wide quote, no add, and no option order. Overnight posture remains reduced core exposure without a broker stop.
 
 ## Current plan
 
-- Thesis: fundamental revenue/margin momentum plus the emerging uptrend can continue after liquidity normalized.
-- Confidence: moderate-high.
-- Holding period: roughly one to two weeks, through 2026-09-11 unless invalidated earlier.
-- Targets: $111.50-$112.45 first objective; $117.50-$121 extension.
-- Review/invalidation: review on a daily close below $101; hard technical invalidation $98.80.
-- Size rationale: 75 shares, approximately $251.10 risk to review and $416.10 to hard invalidation from the actual fill; correlated growth exposure constrained the size.
-- Stock decision: BUY filled 75/75 at average $104.348.
-- Option decision: HOLD; Sep. 11 $107/$115 spread was viable but stock avoids theta and expiry-cliff risk.
+HOLD 30, без добавления, обзор до закрытия и 11 сентября. Ближайшая поддержка $112; закрытие ниже — пересмотр на сокращение. $107.50 — более глубокое техническое разрушение, не разрешение автоматически игнорировать $112. Отскок к $116.30–$117.50 оценить первым, $121–$124.50 — повторный обзор прибыли. Это уровни мониторинга, не новые ордера. Опционы не открывать: дополнительная fintech-beta/распад времени.
 
-## Relevant evidence
 
-- Shortlist: [`../../data/stage1_shortlist.md`](../../data/stage1_shortlist.md)
-- Fundamental research: [`../research/2026-09-01/175350-HOOD-fundamental.md`](../research/2026-09-01/175350-HOOD-fundamental.md)
-- Technical research: [`../research/2026-09-01/175432-HOOD-technical.md`](../research/2026-09-01/175432-HOOD-technical.md)
-- Active ghost set: [`../ghost-trades/2026-09-01/alpaca-stage2-20260901-HOOD-buy.md`](../ghost-trades/2026-09-01/alpaca-stage2-20260901-HOOD-buy.md)
-- Daily log: [`../logs/2026-09-01.md`](../logs/2026-09-01.md)
+Fresh independent research: [181144-HOOD-technical.md](../research/2026-09-10/181144-HOOD-technical.md)
 
-## History
-
-### 2026-09-01
-
-- Broker order `1bd84d34-24c6-4d66-857b-85cecdeaed71` filled 75 shares at average $104.348 at `2026-09-01T16:53:50.588860122Z`.
-- No option order submitted.
-
-### 2026-09-02
-
-- Alpaca confirmed 75 shares at $104.348 average, current $106.05, market value $7,953.75, unrealized P/L +$127.65; no open order.
-- Stock HOLD and option HOLD. The $101 review and $98.80 hard invalidation remain intact; targets remain $111.50-$112.45 and $117.50-$121.
-- Ghost checkpoint: real stock +$124.65 at the executable bid; the Sep. 11 $107/$115 spread ghost was +$13.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/HOOD.jsonl) — load only for a specific past decision.

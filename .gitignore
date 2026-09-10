@@ -18,3 +18,16 @@ data/daily_shortlist.lock
 data/daily_shortlist_state.json
 data/daily-shortlist.stdout.log
 data/daily-shortlist.stderr.log
+data/second_opinion/
+
+# Local-only second opinion
+alpaca_agent/second_opinion.py
+tests/test_second_opinion.py
+.agents/skills/alpaca-paper-trader/references/second-opinion.md
+# Generated working copies and build caches
+/tmp/
+/.presentation-build/
+/.presentation-title-edit/
+*.egg-info/
+*.lock
+/.venv-mcp/

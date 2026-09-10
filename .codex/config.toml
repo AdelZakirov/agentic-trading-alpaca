@@ -5,10 +5,9 @@
 [mcp_servers.firebase]
 enabled = false
 
-# Stage 0-2 use Alpaca's REST API directly. Keep the installed Alpaca connector
-# available to other projects, but do not expose it in this trading project.
+# Enable the installed market-data-only Alpaca connector.
 [apps.alpaca]
-enabled = false
+enabled = true
 
 # Unrelated skill filtering lives in ~/.codex/trading.config.toml because the
 # current Codex build applies skills.config from named/user profiles, not from

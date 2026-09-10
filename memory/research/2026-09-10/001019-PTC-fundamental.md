@@ -1,0 +1,130 @@
+# moneyheap research: PTC fundamental
+
+- Request time: 2026-09-10T00:10:19.292139+02:00
+- Ticker: PTC
+- Analysis type: fundamental
+- Endpoint: /v1/analysis/fundamental
+
+## Prompt
+
+As of 2026-09-10, Assess PTC where a buy consensus/upside conflicts with negative recent growth/earnings and bearish stretched technicals. Focus on subscription transition, ARR/FCF, valuation, estimate revisions, catalysts, and concrete conditions for a tactical recovery versus further downside.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Fundamentals Snapshot
+
+* **Current Stock Price:** $128.89 *(52-Week Range: $108.50 – $208.56; 50-day SMA: $136.86; 200-day SMA: $148.52)*
+* **Market Capitalization:** $13.99 Billion | **Enterprise Value (EV):** $15.72 Billion
+* **Revenue & Profitability:**
+  * **TTM Revenue:** $2.95 Billion *(Quarterly revenue YoY: -6.8%)*
+  * **Gross Margin:** 84.50%
+  * **Operating Margin:** 28.23% | **EBITDA Margin:** 43.20% ($1.28B EBITDA)
+  * **Diluted EPS (TTM):** $10.31 | **Forward EPS:** $8.91 *(Quarterly earnings YoY: -16.0%)*
+* **Cash Flow & Balance Sheet:**
+  * **Operating Cash Flow (TTM):** $955.3 Million | **Free Cash Flow (TTM):** $1.03 Billion
+  * **Cash & Equivalents:** $351.45 Million | **Total Debt:** $1.61 Billion *(Net Debt: ~$1.26B)*
+  * **Current Ratio / Quick Ratio:** 1.03x / 0.89x | **Debt-to-Equity:** 46.34%
+
+---
+
+### 2. Valuation vs. Peers & Sector
+
+| Metric | PTC Inc. (PTC) | Autodesk (ADSK) | Sector Median (Application Software) |
+| :--- | :--- | :--- | :--- |
+| **Trailing P/E** | **12.50x** | ~18.2x | ~28.0x |
+| **Forward P/E** | **14.47x** | 14.54x | ~25.0x |
+| **EV / EBITDA** | **12.32x** | ~17.5x | ~18.5x |
+| **Price / Sales (TTM)** | **4.73x** | ~7.8x | ~6.5x |
+| **Price / Book** | **4.11x** | 12.76x | ~5.5x |
+| **PEG Ratio** | **1.25x – 1.32x** | ~1.60x | ~1.85x |
+
+**Valuation Assessment:** PTC trades at a pronounced discount to broad application software peers and below Autodesk on EV/EBITDA (12.3x vs 17.5x) and P/S (4.7x vs 7.8x). The low forward multiple reflects market skepticism over recent top-line reported contractions following portfolio reshaping, even while FCF generation remains robust.
+
+---
+
+### 3. Analysts Consensus & Price Targets
+
+* **Consensus Rating:** **Buy** *(Average Rating Score: 1.95 – 2.0)*
+* **Analyst Breakdown (20 Opinions):**
+  * **Strong Buy:** 2
+  * **Buy:** 10
+  * **Hold:** 7
+  * **Sell:** 0
+  * **Strong Sell:** 1
+* **Price Targets:**
+  * **Mean Target:** $173.35 *(+34.5% implied upside)*
+  * **Median Target:** $167.50 *(+30.0% implied upside)*
+  * **High Target:** $230.00 *(+78.5% implied upside)*
+  * **Low Target:** $140.00 *(+8.6% implied upside)*
+* **Analyst Takeaways:** The Street maintains an optimistic consensus based on cash flow conversion and ARR trajectory, viewing the gap between reported revenue and underlying recurring metrics as a temporary artifact of business model transitions and divestitures.
+
+---
+
+### 4. News Themes & List
+
+#### Key Themes & Fundamental Impact
+* **ARR Expansion Outpacing Reported Revenue:** Q3 constant currency ARR expanded 9.0%–9.5% YoY, driven by solid CAD (+8%) and PLM performance, outstripping headline GAAP revenue declines caused by portfolio rationalization.
+* **Capital Return & Share Repurchases:** Management increased its share buyback target to ~$1.625B, taking advantage of the depressed valuation to retire shares accretively.
+* **Portfolio Realignment:** Divestitures and SaaS focus have reinforced PTC's core positioning as an industrial "System of Record."
+
+#### News List
+1. **PTC forecasts 9% to 9.5% constant currency ARR growth in FY 2026 as it raises share repurchase target to about $1.625B**
+   * *Source:* Seeking Alpha | *Date:* 2026-07-29
+   * *Summary:* PTC posted $60M in net new ARR for Q3 and reaffirmed strong constant currency ARR and FCF outlook while boosting buybacks.
+   * *URL:* `https://seekingalpha.com/news/4621129-ptc-forecasts-9-percent-to-9_5-percent-constant-currency-arr-growth-in-fy-2026-as-it-raises`
+2. **PTC Inc.: Fiscal Q3 Earnings Snapshot**
+   * *Source:* WTOP News / AP | *Date:* 2026-07-28
+   * *Summary:* PTC reported quarterly net income of $118.8M ($1.03/share), matching revised operational benchmarks.
+   * *URL:* `https://wtop.com/news/2026/07/ptc-inc-fiscal-q3-earnings-snapshot/`
+3. **PTC Earnings: Resources From Divestiture Reinforce Ambition as System of Record**
+   * *Source:* Morningstar, Inc. | *Date:* 2026-07-29
+   * *Summary:* Highlighted 9% constant currency ARR growth, driven by CAD (8% growth) and ServiceMax/Windchill lifecycle suites.
+   * *URL:* `https://www.morningstar.com/company-reports/1491493-ptc-earnings-resources-from-divestiture-reinforce-ambition-as-system-of-record`
+4. **PTC stock: Analyst estimates & ratings**
+   * *Source:* MSN | *Date:* 2026-08-17
+   * *Summary:* Detailed Wall Street estimates, highlighting the gap between industrial digital transformation demand and PTC's compressed trading multiples.
+   * *URL:* `https://www.msn.com/en-us/money/technology/ptc-stock-analyst-estimates-ratings/ar-AA2aoxXm?ocid=BingNewsVerp`
+
+---
+
+### 5. Deep-Dive: Resolving the Consensus vs. Negative Growth & Technical Conflict
+
+#### A. Subscription Transition & ARR vs. Reported Revenue Disconnect
+* **The Distortion:** Headline trailing revenue shows a -6.8% YoY drop and earnings contraction (-16% YoY). This divergence is largely driven by the sunset of legacy upfront license models, revenue timing shifts, and portfolio pruning.
+* **Underlying ARR Reality:** Constant currency Annual Recurring Revenue (ARR) continues to expand at **9.0%–9.5%**, showing consistent demand across Windchill (PLM), Creo (CAD), and ServiceMax.
+* **Free Cash Flow Durability:** FCF of **$1.03B** translates to a high FCF conversion rate relative to GAAP net income, supporting a current FCF yield of ~7.4%.
+
+#### B. Estimate Revisions & Multiples Context
+* Consensus forward EPS of $8.91 incorporates near-term manufacturing softness and conservatism. However, at **14.5x Forward P/E** and **12.3x EV/EBITDA**, downside multiple compression is largely priced in compared to industrial tech peers (Autodesk at 14.5x P/E with lower FCF margin).
+* The buyback program (~$1.625B authorization) provides an organic EPS buffer against near-term macro friction.
+
+#### C. Catalysts
+1. **Convergence of ARR to GAAP Revenue:** As legacy license run-off stabilizes, reported revenue growth will align back toward high single-digit ARR growth.
+2. **SaaS Acceleration & Cross-Selling:** Expansion of Onshape, Arena, and Codebeamer within enterprise accounts.
+3. **Capital Return Acceleration:** Accelerated buyback execution at low valuation multiples reducing share count.
+
+#### D. Tactical Recovery vs. Further Downside Conditions
+
+* **Conditions for Tactical Recovery / Upside Realization:**
+  * **Technical / Price Action:** A confirmed breakout and weekly close above the 50-day SMA ($136.86), reclaiming the $140.00 support-turned-resistance zone.
+  * **Fundamental Execution:** Net new quarterly ARR sustaining above $55M–$60M and full-year FCF exceeding $1.05B.
+  * **Macro / Demand:** Stabilization in European and US industrial PMI / manufacturing Capex.
+
+* **Triggers for Further Downside Risk:**
+  * **Technical Breakdown:** Violation of intermediate support around the $120.00–$122.00 shelf, exposing the 52-week low of $108.50.
+  * **Fundamental Deterioration:** Constant currency ARR deceleration below 7%, or renewal rate compression in core CAD/PLM lines.
+  * **Cash Flow Degradation:** Operating cash flow slipping below $850M annualized due to extended enterprise sales cycles.
+
+---
+
+### 6. Fundamentals Rating & Rationale
+
+**Rating:** **Moderate** *(with Strong Value/Cash Flow Support)*
+
+* **High-Quality Recurring Core vs. Growth Headwinds:** Underlying 9%–9.5% ARR growth and >$1.0B in FCF confirm business model stability, but headline revenue (-6.8%) and earnings contraction (-16%) warrant a cautious rating until GAAP turnaround materializes.
+* **Compelling Valuation Floor:** Trading at ~12.3x EV/EBITDA and a ~7.4% FCF yield, downside is heavily cushioned by balance sheet strength and active share buybacks.
+* **Clear Tactical Inflection Point:** While Wall Street consensus targets offer +30%–35% upside, stock appreciation requires technical stabilization above the 50-day SMA ($136.86) and confirmation that industrial IT spending delays have bottomed out.

@@ -1,6 +1,6 @@
 # Ghost set: alpaca-stage2-20260831-GAP-buy
 
-- Status: ACTIVE
+- Status: COMPLETE
 - Real client order ID: `alpaca-stage2-20260831-GAP-buy`
 - Broker order ID: `71e19ef0-330e-4f7a-ba13-2158a7a8c941`
 - Ticker: GAP
@@ -106,4 +106,32 @@ At every checkpoint, use one common observation timestamp for the real path and 
 - `HALF_SIZE_GAP`: value $2,225; P/L -$30 (-1.33%).
 - `PYPL_STOCK`: $54.10 bid; value $4,869; P/L +$72.90 (+1.52%).
 - `VISN_STOCK`: $6.33 bid; value $3,165; P/L -$10 (-0.31%).
-- No invalidation or target was triggered at the observation. Next checkpoint: 2026-09-02 regular-market close.
+- No invalidation or target was triggered at the observation. Next checkpoint: 2026-09-03 regular-market close.
+
+## Catch-up checkpoint for 2026-09-02 close
+
+- Observed: approximately 2026-09-03T14:37:57Z using the current Alpaca IEX executable bid. The scheduled 2026-09-02 close was unavailable, so this is a disclosed catch-up mark.
+- Real GAP: OPEN, 200 shares at the $22.22 bid; value $4,444; P/L -$66 (-1.46%) versus the $22.55 fill.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_GAP`: 100 shares at $22.22; P/L -$33 (-1.46%) versus the $22.55 simulated ask entry.
+- `PYPL_STOCK`: 90 shares at the $54.19 bid; value $4,877.10; P/L +$81.00 (+1.69%) versus the $53.29 simulated entry.
+- `VISN_STOCK`: 500 shares at the $6.45 bid; value $3,225.00; P/L +$50.00 (+1.57%) versus the $6.35 simulated entry.
+- No GAP invalidation or target was triggered. Next checkpoint: 2026-09-03 regular-market close.
+
+## 2026-09-03 close checkpoint
+
+- Observed from Alpaca IEX at approximately `2026-09-03T19:59:59Z`; all stock paths use the contemporaneous executable bid.
+- Real GAP: OPEN, 200 shares at $22.31; value $4,462; P/L -$48 (-1.06%) versus the $22.55 fill.
+- `NO_TRADE`: $0.
+- `HALF_SIZE_GAP`: 100 shares at $22.31; P/L -$24 (-1.06%).
+- `PYPL_STOCK`: 90 shares at $56.81; value $5,112.90; P/L +$316.80 (+6.61%).
+- `VISN_STOCK`: 500 shares at $6.37; value $3,185; P/L +$10 (+0.31%).
+- No GAP invalidation or target was triggered. Next checkpoint: 2026-09-04 regular-market close.
+
+## 2026-09-04 close completion
+
+- Observed from Alpaca IEX at `2026-09-04T19:59:59.999695116Z`: GAP $22.41/$22.43 and PYPL $54.93/$54.95. VISN had no usable close quote; its official IEX close was $6.395 and is used only as a disclosed non-executable proxy.
+- Real GAP: 200 shares at $22.41; value $4,482 and P/L -$28 (-0.62%). `HALF_SIZE_GAP`: P/L -$14 (-0.62%). `NO_TRADE`: $0.
+- `PYPL_STOCK`: 90 shares at $54.93; value $4,943.70 and P/L +$147.60 (+3.08%). `VISN_STOCK`: proxy value $3,197.50 and proxy P/L +$22.50 (+0.71%); formally UNSCORABLE at an executable endpoint.
+- Outcome: PYPL clearly outperformed GAP; no-trade modestly outperformed GAP; the full and half GAP sizes had the same percentage result and neither invalidation nor target fired.
+- Decision review: earnings thesis and stock selection were plausible but opportunity ranking was mixed; timing did not capture follow-through; size and execution were disciplined; no option-selection issue was tested. One modest underperformance does not justify a durable lesson change.

@@ -1,20 +1,26 @@
 # Ghost-trade routing index
 
-- Updated: 2026-09-02 18:28 Europe/Amsterdam
-- Active sets: 10
+- Updated: 2026-09-10 19:11 Europe/Amsterdam
+- Active sets: 18
 - Source of truth: each linked ghost file; this index controls which files need to be loaded.
 
 | Ghost set | Ticker | Status | Real path | Evaluation end | Last checkpoint | Next checkpoint | Between-checkpoint trigger | Last updated |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| [`alpaca-stage2-20260831-PCG-buy`](2026-08-31/alpaca-stage2-20260831-PCG-buy.md) | PCG | ACTIVE | Position closed 2026-09-01 at $13.20 | 2026-09-04 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | None outside checkpoints | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260831-GAP-buy`](2026-08-31/alpaca-stage2-20260831-GAP-buy.md) | GAP | ACTIVE | 200 shares open | 2026-09-04 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | None outside checkpoints | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260901-PCG-sell`](2026-09-01/alpaca-stage2-20260901-PCG-sell.md) | PCG | ACTIVE | Exit filled; position closed | 2026-09-04 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | None outside checkpoints | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260901-SLB-buy`](2026-09-01/alpaca-stage2-20260901-SLB-buy.md) | SLB | ACTIVE | 80 shares open | 2026-09-04 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | None outside checkpoints | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260901-SLB-option-buy`](2026-09-01/alpaca-stage2-20260901-SLB-option-buy.md) | SLB | ACTIVE | One Sep. 11 $58/$62 call spread open | 2026-09-04 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | None outside checkpoints | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260901-RBLX-buy`](2026-09-01/alpaca-stage2-20260901-RBLX-buy.md) | RBLX | ACTIVE | 250 shares open | 2026-09-11 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | None outside checkpoints | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260901-HOOD-buy`](2026-09-01/alpaca-stage2-20260901-HOOD-buy.md) | HOOD | ACTIVE | 75 shares open | 2026-09-11 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | None outside checkpoints | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260901-MU-buy`](2026-09-01/alpaca-stage2-20260901-MU-buy.md) | MU | ACTIVE | 12 shares open | 2026-09-11 close | 2026-09-01 catch-up observed 2026-09-02 | 2026-09-02 close | `BREAKOUT_ENTRY_MU`: sustained trade above $970 | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260902-MMED-buy`](2026-09-02/alpaca-stage2-20260902-MMED-buy.md) | MMED | ACTIVE | 250 shares open | 2026-09-09 close | None; initial mark recorded | 2026-09-02 close | `PULLBACK_22_75`: executable ask at or below $22.75; material secondary/lockup filing | 2026-09-02 18:28 |
-| [`alpaca-stage2-20260902-GTLB-buy`](2026-09-02/alpaca-stage2-20260902-GTLB-buy.md) | GTLB | ACTIVE | 150 shares open | 2026-09-09 close | None; initial mark recorded | 2026-09-02 close | `BREAKOUT_52_80`: hourly close above $52.80 | 2026-09-02 18:28 |
-
-Load a linked file only when its next checkpoint is due or overdue, its real path changes, its between-checkpoint trigger may have activated, or completion or lesson review requires it.
+| [`alpaca-stage2-20260901-RBLX-buy`](2026-09-01/alpaca-stage2-20260901-RBLX-buy.md) | RBLX | ACTIVE | 100 sold at target; 150 shares remain | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | None outside checkpoints | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260901-HOOD-buy`](2026-09-01/alpaca-stage2-20260901-HOOD-buy.md) | HOOD | ACTIVE | 45 shares sold across trims; 30 remain | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | Daily close below $112.50-$113.20 structural review | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260901-MU-buy`](2026-09-01/alpaca-stage2-20260901-MU-buy.md) | MU | ACTIVE | 6 sold at target; 6 shares remain | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | None outside checkpoints | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260903-HOOD-sell`](2026-09-03/alpaca-stage2-20260903-HOOD-sell.md) | HOOD | ACTIVE | 45 shares sold across trims; 30 remain | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | Structural close below $112.50-$113.20 | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260904-SLB-sell`](2026-09-04/alpaca-stage2-20260904-SLB-sell.md) | SLB | ACTIVE | All 80 shares sold at $56.62 | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | `SLB_57_05_RECLAIM`: activated; score retained path | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260904-SLB-option-sell`](2026-09-04/alpaca-stage2-20260904-SLB-option-sell.md) | SLB | ACTIVE | Spread closed for $0.29 credit | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | `SLB_56_25`: underlying below session low | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260904-NVDA-buy`](2026-09-04/alpaca-stage2-20260904-NVDA-buy.md) | NVDA | ACTIVE | Position stopped at $231.699294 | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | None outside checkpoints | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260904-MU-sell`](2026-09-04/alpaca-stage2-20260904-MU-sell.md) | MU | ACTIVE | 6 sold at $999.03; 6 shares remain | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | `MU_985_SUPPORT`: 15-minute close below $985 | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260904-RBLX-sell`](2026-09-04/alpaca-stage2-20260904-RBLX-sell.md) | RBLX | ACTIVE | 100 sold at $42.515; 150 shares remain | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | `RBLX_41_40`: underlying below $41.40 | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260904-NVDA-reentry-buy`](2026-09-04/alpaca-stage2-20260904-NVDA-reentry-buy.md) | NVDA | ACTIVE | Position stopped at $229.645839 | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | None outside checkpoints | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260908-GTLB-sell`](2026-09-08/alpaca-stage2-20260908-GTLB-sell.md) | GTLB | ACTIVE | All 150 shares sold at $47.42 | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | None outside checkpoints | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260909-MSTR-option-sell`](2026-09-09/alpaca-stage2-20260909-MSTR-option-sell.md) | MSTR | ACTIVE | Final spread closed at $6.35 | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | None outside checkpoints | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260909-HOOD-sell`](2026-09-09/alpaca-stage2-20260909-HOOD-sell.md) | HOOD | ACTIVE | 20 sold at $116.85; 30 shares remain | 2026-09-11 close | 2026-09-09 close | 2026-09-10 close | Structural close below $112.50-$113.20 | 2026-09-10 19:11 |
+| [`alpaca-stage2-20260910-GAP-sell`](2026-09-10/alpaca-stage2-20260910-GAP-sell.md) | GAP | ACTIVE | 200 shares sold at $20.83; position closed | 2026-09-11 close | Initial post-fill | 2026-09-10 close | None outside checkpoints | 2026-09-10 18:50 |
+| [`alpaca-stage2-20260910-NVDA-buy`](2026-09-10/alpaca-stage2-20260910-NVDA-buy.md) | NVDA | ACTIVE | 55 shares bought at $217.97; protected by separate GTC management handoff | 2026-09-24 close | Initial post-fill | 2026-09-10 close | None outside checkpoints | 2026-09-10 18:50 |
+| [`alpaca-stage2-20260910-RBLX-sell`](2026-09-10/alpaca-stage2-20260910-RBLX-sell.md) | RBLX | ACTIVE | 75 sold at $45.16; 75 shares remain | 2026-09-12 close | Initial post-fill | 2026-09-10 close | None outside checkpoints | 2026-09-10 18:50 |
+| [`alpaca-stage2-20260910-SMMT-sell`](2026-09-10/alpaca-stage2-20260910-SMMT-sell.md) | SMMT | ACTIVE | 500 sold at $17.09; 500 shares remain under replacement OCO | 2026-09-11 close | Initial post-fill | 2026-09-10 close | None outside checkpoints | 2026-09-10 18:52 |
+| [`alpaca-stage2-20260910-NVDA-oco`](2026-09-10/alpaca-stage2-20260910-NVDA-oco.md) | NVDA | ACTIVE | GTC target/stop accepted for existing 55-share position | 2026-09-11 close | Initial acceptance | 2026-09-10 close | None outside checkpoints | 2026-09-10 18:52 |

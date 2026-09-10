@@ -30,26 +30,6 @@
 - Active ghost sets: [`../ghost-trades/2026-08-31/alpaca-stage2-20260831-PCG-buy.md`](../ghost-trades/2026-08-31/alpaca-stage2-20260831-PCG-buy.md), [`../ghost-trades/2026-09-01/alpaca-stage2-20260901-PCG-sell.md`](../ghost-trades/2026-09-01/alpaca-stage2-20260901-PCG-sell.md)
 - Daily log: [`../logs/2026-09-01.md`](../logs/2026-09-01.md)
 
-## History
-
-### 2026-08-31
-
-- Initiated 750-share long position through client order `alpaca-stage2-20260831-PCG-buy`.
-- Broker order `96895785-d9f4-4134-9a2e-e063533e2203` filled 750 shares at $13.42 at 2026-08-31T16:59:10.06429999Z.
-- No option order submitted.
-
-### 2026-08-31 — second normal run
-
-- Alpaca reconciled 750 shares at average $13.42, current $13.585, market value $10,188.75, unrealized P/L +$123.75; no open orders.
-- Fresh technical reconciliation found the prior $16.60 reference stale relative to the live $13.52–$13.53 quote and replaced it with live-price management: defend $13.40–$13.50, exit on intraday <$13.40 or close <$13.20, and trim into $14.00–$14.20.
-- Stock decision HOLD; no add. Option decision HOLD. GAP was selected as the only new exposure, preserving sector diversification and approximately 85% cash.
-
-### 2026-09-01
-
-- Alpaca reconciled no PCG position after the full SELL: client order `alpaca-stage2-20260901-PCG-sell`, broker order `40ebd237-635b-4d47-bdd5-5bbb3c5ba58f`, 750/750 filled at $13.20 at `2026-09-01T14:49:51.361275348Z`.
-- Fresh moneyheap technical research confirmed strong bearish continuation risk, extreme distribution, and no confirmed base. The earlier intraday <$13.40 trigger was superseded by current evidence only for execution timing; the position was closed before the $13.00 clean-break trigger because the risk/reward no longer favored retaining exposure.
-
-### 2026-09-02
-
-- Alpaca confirms no PCG position or open order. Current bid/ask was $13.04/$13.06, still below the $13.70/$14.00 re-entry conditions.
-- Stock HOLD/no re-entry and option HOLD/avoid. Both active PCG ghost sets received catch-up checkpoints; the full exit remains ahead of retention alternatives at the current mark.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/PCG.jsonl) — load only for a specific past decision.

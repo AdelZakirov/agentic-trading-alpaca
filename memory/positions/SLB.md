@@ -1,19 +1,14 @@
-# SLB — OPEN
+# SLB — CLOSED
 
-## Current Alpaca state
+## Final Alpaca state
 
-- Instrument: common stock
-- Side: long
-- Quantity: 80 shares
-- Average entry: $58.242124
-- Cost basis: $4,659.36992
-- Latest reconciled stock price: $58.01
-- Latest stock market value: $4,640.80
-- Latest stock unrealized P/L: -$18.57 (-0.399%)
-- Option position: long 1 `SLB260911C00058000` at $1.25 and short 1 `SLB260911C00062000` at $0.17; atomic net fill $1.08 on broker order `204e01a8-2c35-47f0-a042-3c88581e2364`
-- Latest option position marks: long market value $126, short market value -$28; Alpaca leg P/L net -$10. Conservative executable checkpoint spread mark $0.95 and P/L -$13.
+- Stock position: CLOSED; 80 shares sold at average $56.62 on broker order `27449aaa-eb9b-4276-8bbc-d781b20f3cda`
+- Stock realized P/L: approximately -$129.77 before fees versus the $58.242124 entry
+- Option position: CLOSED; Sep. 11 $58/$62 spread exited for a $0.29 credit on broker order `a2636576-7a05-4aae-b48a-dc1fb65049d3`
+- Option leg fills: $58 call sold at $0.44 and $62 call covered at $0.15
+- Option realized P/L: -$79 before fees versus the $1.08 debit
 - Open orders: none
-- Reconciled: 2026-09-02 18:38 Europe/Amsterdam
+- Reconciled: 2026-09-04 16:50 Europe/Amsterdam
 
 ## Current plan
 
@@ -23,29 +18,18 @@
 - Targets: $60.20-$60.50 first trim; $61.80-$62.50 runner.
 - Invalidation: break or close below $56.90, with the $57.30-$57.42 breakout shelf as the key support test.
 - Size rationale: approximately $4,665 notional, about 4.7% of equity at entry; planned stop risk approximately $107 before slippage while retaining over 90% cash.
-- Stock decision: BUY 80 shares executed and filled 80/80 at $58.242124.
-- Option decision: HOLD one filled Sep. 11 $58/$62 call debit spread. Manage tactically through the 2026-09-04 review and avoid expiration/assignment without a fresh decision.
-- Review triggers: $57.30-$57.42 support, $56.90 invalidation, $60.20-$60.50, $61.80-$62.50, commodity/EIA news, and the 2026-09-04 close.
+- Stock decision: SELL 80/80 filled at $56.62 after the $56.90 invalidation failed and the tactical horizon ended.
+- Option decision: CLOSE one spread filled at a $0.29 credit because both calls were out of the money and theta dominated the failed tactical thesis.
+- Re-entry watch only: stabilization near $54.75-$55.00 or a fresh evidence-backed reclaim; no automatic re-entry.
 
 ## Relevant evidence
 
 - Shortlist: [`../../data/stage1_shortlist.md`](../../data/stage1_shortlist.md)
 - Technical research: [`../research/2026-09-01/165312-SLB-technical.md`](../research/2026-09-01/165312-SLB-technical.md)
+- Exit technical research: [`../research/2026-09-04/163702-SLB-technical.md`](../research/2026-09-04/163702-SLB-technical.md)
 - Active ghost set: [`../ghost-trades/2026-09-01/alpaca-stage2-20260901-SLB-buy.md`](../ghost-trades/2026-09-01/alpaca-stage2-20260901-SLB-buy.md)
 - Daily log: [`../logs/2026-09-01.md`](../logs/2026-09-01.md)
 
-## History
-
-### 2026-09-01
-
-- Initiated 80-share long position through client order `alpaca-stage2-20260901-SLB-buy`.
-- Broker order `db61b37c-6fcb-4dbc-a39f-672bbc8be16c` filled 80 shares at average $58.242124 at `2026-09-01T15:02:22.008309992Z`.
-- No option order submitted.
-- Later submitted atomic Sep. 11 $58/$62 call-spread order `9a13c4ca-3604-4c90-bd47-8d8e4f951e2f` at $1.05 debit under client ID `alpaca-stage2-20260901-SLB-option-buy`; it filled 0/1 and was replaced once.
-- Replacement order `204e01a8-2c35-47f0-a042-3c88581e2364` is `new`, filled 0/1, at a $1.08 debit as of 19:56 Europe/Amsterdam. It is not yet a position, and no ghost set exists until a fill is confirmed.
-
-### 2026-09-02
-
-- Alpaca confirmed replacement order `204e01a8-2c35-47f0-a042-3c88581e2364` filled 1/1 at a $1.08 net debit at `2026-09-01T18:02:12.483149Z`; the two option legs are now a live spread position.
-- Stock HOLD and option HOLD. SLB is $58.055, above $56.90 invalidation and below the $60.20-$60.50 first target. No open order.
-- Created [`../ghost-trades/2026-09-01/alpaca-stage2-20260901-SLB-option-buy.md`](../ghost-trades/2026-09-01/alpaca-stage2-20260901-SLB-option-buy.md) for the late-confirmed spread fill.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/SLB.jsonl) — load only for a specific past decision.

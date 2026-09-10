@@ -16,7 +16,7 @@ import sys
 import time
 from collections import Counter, defaultdict
 from collections.abc import Iterable, Mapping, Sequence
-from dataclasses import asdict, dataclass, replace
+from dataclasses import asdict, dataclass, field, replace
 from datetime import date, timedelta
 from pathlib import Path
 from statistics import mean, median, pstdev
@@ -207,6 +207,7 @@ class ScreenResult:
     exclusions: dict[str, int]
     runtime_seconds: float
     community_interest: tuple[CommunityMention, ...] = ()
+    all_features: dict[str, TickerFeatures] = field(default_factory=dict, repr=False)
 
     @property
     def candidate_count(self) -> int:
@@ -986,6 +987,7 @@ class Stage1Screener:
             exclusions=dict(sorted(exclusions.items())),
             runtime_seconds=runtime,
             community_interest=community_mentions,
+            all_features=features_by_ticker,
         )
 
 

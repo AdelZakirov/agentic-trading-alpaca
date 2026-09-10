@@ -1,0 +1,56 @@
+[
+  {
+    "ticker": "MMED",
+    "type": "fundamental",
+    "path": "memory/research/2026-09-10/181057-MMED-fundamental.md",
+    "json": "memory/research/2026-09-10/181057-MMED-fundamental.json"
+  },
+  {
+    "ticker": "NVDA",
+    "type": "technical",
+    "path": "memory/research/2026-09-10/181120-NVDA-technical.md",
+    "json": "memory/research/2026-09-10/181120-NVDA-technical.json"
+  },
+  {
+    "ticker": "HOOD",
+    "type": "technical",
+    "path": "memory/research/2026-09-10/181144-HOOD-technical.md",
+    "json": "memory/research/2026-09-10/181144-HOOD-technical.json"
+  },
+  {
+    "ticker": "MU",
+    "type": "technical",
+    "path": "memory/research/2026-09-10/181200-MU-technical.md",
+    "json": "memory/research/2026-09-10/181200-MU-technical.json"
+  },
+  {
+    "ticker": "RBLX",
+    "type": "technical",
+    "path": "memory/research/2026-09-10/181217-RBLX-technical.md",
+    "json": "memory/research/2026-09-10/181217-RBLX-technical.json"
+  },
+  {
+    "ticker": "TMO",
+    "type": "fundamental",
+    "path": "memory/research/2026-09-10/181238-TMO-fundamental.md",
+    "json": "memory/research/2026-09-10/181238-TMO-fundamental.json"
+  },
+  {
+    "ticker": "BRZE",
+    "type": "fundamental",
+    "path": "memory/research/2026-09-10/181302-BRZE-fundamental.md",
+    "json": "memory/research/2026-09-10/181302-BRZE-fundamental.json"
+  },
+  {
+    "ticker": "PINS",
+    "type": "fundamental",
+    "path": "memory/research/2026-09-10/181321-PINS-fundamental.md",
+    "json": "memory/research/2026-09-10/181321-PINS-fundamental.json"
+  },
+  {
+    "ticker": "ASO",
+    "type": "fundamental",
+    "path": "memory/research/2026-09-10/181340-ASO-fundamental.md",
+    "json": "memory/research/2026-09-10/181340-ASO-fundamental.json"
+  }
+]

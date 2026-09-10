@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A lightweight view of Machine Earning's paper-trading decisions and memory.">
+  <title>Machine Earning · Paper trader</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Machine Earning paper trader home">
+        <img class="brand-logo" src="/assets/logo.png" alt="">
+        <span><strong>Machine Earning</strong><small>paper trader</small></span>
+      </a>
+      <div class="sidebar-label">Workspace</div>
+      <nav class="nav-list">
+        <a class="nav-item active" href="#overview"><span class="nav-icon">◌</span> Overview</a>
+        <a class="nav-item" href="#portfolio"><span class="nav-icon">▦</span> Portfolio</a>
+        <a class="nav-item" href="#research"><span class="nav-icon">⌕</span> Research</a>
+        <a class="nav-item" href="#ghost-trades"><span class="nav-icon">◇</span> Ghost trades</a>
+        <a class="nav-item" href="#activity"><span class="nav-icon">≡</span> Activity</a>
+        <a class="nav-item" href="/about.html" target="_blank" rel="noreferrer" aria-label="Open About in a new window"><span class="nav-icon">i</span> About <span class="nav-external">↗</span></a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="status-line"><span class="status-dot"></span> Paper account</div>
+        <p>Markdown is the source of truth.</p>
+      </div>
+    </aside>
+
+    <div class="main-shell" id="top">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>Workspace</span><span class="breadcrumb-slash">/</span><strong>Overview</strong></div>
+        <div class="topbar-actions">
+          <span class="reconciled-label" id="reconciled-label">Loading current memory…</span>
+          <button class="button button-quiet" id="refresh-button" type="button">Refresh</button>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <div id="loading-state" class="state-panel">Reading the latest agent memory…</div>
+        <div id="error-state" class="state-panel is-hidden" role="alert">
+          <strong>Couldn’t load the dashboard.</strong>
+          <span>Check that the local dashboard server is running, then try again.</span>
+          <button class="button" id="retry-button" type="button">Try again</button>
+        </div>
+
+        <div id="dashboard-content" class="is-hidden">
+          <section class="page-heading" id="overview" aria-labelledby="page-title">
+            <div>
+              <p class="eyebrow">Stage 2 · paper account</p>
+              <h1 id="page-title">Good evening, I’m caught up.</h1>
+              <p class="page-subtitle" id="page-subtitle">A plain-English readout of what I did, what changed, and what I’m watching.</p>
+            </div>
+            <div class="date-stamp" id="date-stamp"></div>
+          </section>
+
+          <section class="summary-panel" aria-labelledby="summary-title">
+            <div class="section-kicker"><span class="agent-badge">A</span><span>Agent note</span><span class="source-note" id="summary-source"></span></div>
+            <div class="summary-layout">
+              <div>
+                <h2 id="summary-title">Today’s summary</h2>
+                <p class="summary-copy" id="summary-copy"></p>
+              </div>
+              <div class="summary-actions">
+                <a class="button button-secondary" id="summary-link" target="_blank" rel="noreferrer">Open daily summary <span>↗</span></a>
+                <div class="summary-updated" id="summary-updated"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="metric-grid" aria-label="Account at a glance">
+            <div class="metric"><span class="metric-label">Equity</span><strong id="metric-equity">—</strong><span class="metric-detail" id="metric-return">—</span></div>
+            <div class="metric"><span class="metric-label">Cash available</span><strong id="metric-cash">—</strong><span class="metric-detail">Not a target, just the current balance</span></div>
+            <div class="metric"><span class="metric-label">Long market value</span><strong id="metric-long-value">—</strong><span class="metric-detail" id="metric-exposure">—</span></div>
+            <div class="metric"><span class="metric-label">Open positions</span><strong id="metric-positions">—</strong><span class="metric-detail" id="metric-orders">—</span></div>
+          </section>
+
+          <div class="content-grid">
+            <div class="primary-column">
+              <section class="section-block" id="portfolio" aria-labelledby="portfolio-title">
+                <div class="section-header"><div><p class="eyebrow">Current state</p><h2 id="portfolio-title">Portfolio</h2></div><a class="text-link" id="portfolio-source" target="_blank" rel="noreferrer">View source ↗</a></div>
+                <div class="table-wrap">
+                  <table class="data-table portfolio-table"><thead><tr><th>Holding</th><th>Quantity</th><th>Last</th><th>Value</th><th class="align-right">P/L</th></tr></thead><tbody id="portfolio-body"></tbody></table>
+                </div>
+                <div class="order-callout"><div class="callout-icon">↗</div><div><span class="eyebrow">Open order</span><p id="open-order-detail">—</p></div><a class="text-link" id="order-source" target="_blank" rel="noreferrer">Details ↗</a></div>
+              </section>
+
+              <section class="section-block" id="decisions" aria-labelledby="decisions-title">
+                <div class="section-header"><div><p class="eyebrow">Decision trail</p><h2 id="decisions-title">Recent decisions</h2></div><a class="text-link" id="decisions-source" target="_blank" rel="noreferrer">Full log ↗</a></div>
+                <div class="decision-list" id="decision-list"></div>
+              </section>
+
+              <section class="section-block" id="research" aria-labelledby="research-title">
+                <div class="section-header"><div><p class="eyebrow">Why these names</p><h2 id="research-title">Research & candidates</h2></div><a class="text-link" id="shortlist-source" target="_blank" rel="noreferrer">Open shortlist ↗</a></div>
+                <div class="tabs" role="tablist" aria-label="Candidate source">
+                  <button class="tab active" role="tab" aria-selected="true" data-research-tab="expert">Expert attention</button>
+                  <button class="tab" role="tab" aria-selected="false" data-research-tab="community">Community</button>
+                  <button class="tab" role="tab" aria-selected="false" data-research-tab="technical">Technical</button>
+                </div>
+                <div class="candidate-list" id="candidate-list"></div>
+                <div class="research-notes" id="research-notes"></div>
+              </section>
+            </div>
+
+            <aside class="secondary-column">
+              <section class="side-panel" aria-labelledby="watch-title">
+                <div class="section-header compact"><div><p class="eyebrow">Pay attention</p><h2 id="watch-title">On my radar</h2></div></div>
+                <div class="watch-list" id="watch-list"></div>
+              </section>
+
+              <section class="side-panel" id="ghost-trades" aria-labelledby="ghost-title">
+                <div class="section-header compact"><div><p class="eyebrow">Counterfactuals</p><h2 id="ghost-title">Ghost trades</h2></div><a class="text-link" id="ghost-source" target="_blank" rel="noreferrer">Index ↗</a></div>
+                <div class="ghost-summary"><strong id="ghost-count">—</strong><span>active sets</span></div>
+                <div class="ghost-list" id="ghost-list"></div>
+              </section>
+
+              <section class="side-panel" id="lessons" aria-labelledby="lessons-title">
+                <div class="section-header compact"><div><p class="eyebrow">Memory</p><h2 id="lessons-title">Lessons learned</h2></div><a class="text-link" id="lessons-source" target="_blank" rel="noreferrer">Open ↗</a></div>
+                <div class="lesson-content" id="lesson-content"></div>
+              </section>
+            </aside>
+          </div>
+
+          <section class="section-block activity-section" id="activity" aria-labelledby="activity-title">
+            <div class="section-header"><div><p class="eyebrow">Durable record</p><h2 id="activity-title">Full activity history</h2></div><span class="source-note">Every session stays in Markdown</span></div>
+            <div class="activity-list" id="activity-list"></div>
+          </section>
+
+          <footer class="page-footer"><span id="footer-generated">—</span><span>Local paper trading only · no live orders</span></footer>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Ghost set: alpaca-stage2-20260901-SLB-option-buy
 
-- Status: ACTIVE
+- Status: COMPLETE
 - Logical real client order ID: `alpaca-stage2-20260901-SLB-option-buy`
 - Original broker order ID: `9a13c4ca-3604-4c90-bd47-8d8e4f951e2f`
 - Filled replacement broker order ID: `204e01a8-2c35-47f0-a042-3c88581e2364`
@@ -47,6 +47,40 @@ The real trade adds small defined-risk leverage to an active SLB breakout-pullba
 - `NO_TRADE`: $0.
 - `SEP11_58_LONG_CALL`: $1.25 bid; P/L -$2 (-1.57%).
 - `ADD_20_SLB_STOCK`: $58.05 bid; P/L +$4.20 (+0.36%).
-- Next checkpoint: 2026-09-02 regular-market close.
+- Next checkpoint: 2026-09-03 regular-market close.
+
+## Catch-up checkpoint for 2026-09-02 close
+
+- Observed: approximately 2026-09-03T14:38:20Z using current Alpaca IEX stock and indicative option marks. The scheduled 2026-09-02 close was unavailable, so this is a disclosed catch-up mark.
+- Real spread: executable value $1.25 ($1.51 long-call bid less $0.26 short-call ask); P/L +$17 (+15.74%) versus the $1.08 actual debit.
+- `NO_TRADE`: $0.
+- `SEP11_58_LONG_CALL`: $1.51 bid; P/L +$24 (+18.90%) versus the $1.27 simulated ask entry.
+- `ADD_20_SLB_STOCK`: 20 shares at the $58.72 bid; P/L +$17.60 (+1.52%) versus the $57.84 simulated entry.
+- The underlying remained above the $56.90 invalidation and below the $60.20-$60.50 first target. Next checkpoint: 2026-09-03 regular-market close.
 
 Ghosts never reach Alpaca or affect portfolio totals, exposure, buying power, or risk limits.
+
+## 2026-09-03 close checkpoint
+
+- Observed from Alpaca at approximately `2026-09-03T19:59:59Z`: SLB $57.41/$57.43; Sep. 11 $58 call $0.79/$1.02; Sep. 11 $62 call $0.10/$0.14.
+- Real spread: executable value $0.65; P/L -$43 (-39.81%) versus the $1.08 fill.
+- `NO_TRADE`: $0.
+- `SEP11_58_LONG_CALL`: $0.79 bid; P/L -$48 (-37.80%) versus the $1.27 simulated ask entry.
+- `ADD_20_SLB_STOCK`: 20 shares at $57.41; P/L -$8.60 (-0.74%) versus $57.84.
+- The underlying remained above $56.90 and below $60.20. Next and final checkpoint: 2026-09-04 regular-market close.
+
+Ghosts never reach Alpaca or affect portfolio totals, exposure, buying power, or risk limits.
+
+## Real-path exit — 2026-09-04
+
+- After the underlying broke the tactical invalidation, the real path closed the Sep. 11 $58/$62 spread atomically at `2026-09-04T14:48:15.710180388Z`.
+- The $58 call sold at $0.44 and the $62 call was covered at $0.15, producing a $0.29 net credit and a -$79 realized result versus the $1.08 debit before fees.
+- The common evaluation still completes at the 2026-09-04 close. Separate exit-decision comparison: [`../2026-09-04/alpaca-stage2-20260904-SLB-option-sell.md`](../2026-09-04/alpaca-stage2-20260904-SLB-option-sell.md).
+
+## 2026-09-04 close completion
+
+- Real spread: CLOSED for $0.29 credit; realized P/L -$79 (-73.15%) versus the $1.08 debit. `NO_TRADE`: $0.
+- `SEP11_58_LONG_CALL`: the $58 call's 2026-09-04 last-trade bar closed at $0.72, a non-executable proxy P/L of -$55; formally UNSCORABLE at the endpoint without a synchronized bid.
+- `ADD_20_SLB_STOCK`: identical invalidation implies an exit at $56.62; P/L -$24.40 (-2.11%) versus $57.84.
+- Outcome: no-trade was best; the small stock add lost less in both dollars and percentage than the real spread. Defined maximum loss did not compensate for theta, spread cost, and duplication of the existing stock thesis.
+- Decision review: underlying thesis failed; strategy/overlap selection was weak; strikes and short expiry amplified the loss; sizing capped dollars and execution was bounded. This supports the existing option-payoff/overlap lesson without increasing its evidence count beyond the completed SLB decision set.

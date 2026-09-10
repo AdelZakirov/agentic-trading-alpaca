@@ -1,17 +1,33 @@
 # Position memory
 
-Live positions and durable ticker decisions:
+Current portfolio quantities and risk: [portfolio state](../portfolio-state.md). Each ticker file contains its latest recorded state and plan; history/*.jsonl is read only for a specific past decision. Broker reconciliation remains authoritative.
 
-- [PCG](PCG.md) — CLOSED after full exit; active sell ghost retained for comparison.
-- [GAP](GAP.md) — 200-share long position; tactical post-earnings continuation.
-- [SLB](SLB.md) — 80-share long position; tactical bullish breakout pullback.
-- [RBLX](RBLX.md) — 250-share long position; bullish breakout retest.
-- [HOOD](HOOD.md) — 75-share long position; bullish fundamental/technical continuation.
-- [MU](MU.md) — 12-share long position; bounded pullback entry at $940.
-- [MMED](MMED.md) — 250-share long position; one-week earnings/squeeze continuation.
-- [GTLB](GTLB.md) — 150-share long position; post-earnings continuation from the $50 shelf.
-- [MSTR](MSTR.md) — no position; working two-lot Sep. 11 $125/$135 call-spread order.
-
-- Bearish material watches: [PINS](PINS.md), [EIX](EIX.md), [TAP](TAP.md), [AON](AON.md), and [TTWO](TTWO.md); none has a submitted order.
-- PCG is CLOSED after the 2026-09-01 full exit.
-- SLB also holds one filled Sep. 11 $58/$62 bull call spread. One MSTR multi-leg order was open at the latest reconciliation.
+- [AON](AON.md)
+- [ASO](ASO.md)
+- [BKNG](BKNG.md)
+- [BRZE](BRZE.md)
+- [CHWY](CHWY.md)
+- [EIX](EIX.md)
+- [ETN](ETN.md)
+- [FIGR](FIGR.md)
+- [GAP](GAP.md)
+- [GTLB](GTLB.md)
+- [HOOD](HOOD.md)
+- [INTC](INTC.md)
+- [MMED](MMED.md)
+- [MSTR](MSTR.md)
+- [MU](MU.md)
+- [NVDA](NVDA.md)
+- [PCG](PCG.md)
+- [PINS](PINS.md)
+- [QCOM](QCOM.md)
+- [RBLX](RBLX.md)
+- [SLB](SLB.md)
+- [SMMT](SMMT.md)
+- [SNOW](SNOW.md)
+- [SPY](SPY.md)
+- [TAP](TAP.md)
+- [TMO](TMO.md)
+- [TTAN](TTAN.md)
+- [TTWO](TTWO.md)
+- [ULTA](ULTA.md)

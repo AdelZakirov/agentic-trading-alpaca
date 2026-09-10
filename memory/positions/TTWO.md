@@ -11,9 +11,6 @@
 - Research: [`../research/2026-09-01/190838-TTWO-technical.md`](../research/2026-09-01/190838-TTWO-technical.md)
 - Daily log: [`../logs/2026-09-01.md`](../logs/2026-09-01.md)
 
-## History
-
-### 2026-09-01
-
-- Advanced from technical rank 13 and assessed through technical research plus a focused put chain. No trade submitted.
-- Multi-quote validation showed latest trade near $218.59 but a persistently unusable underlying quote; neither researched trigger was active. No order submitted.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/TTWO.jsonl) — load only for a specific past decision.

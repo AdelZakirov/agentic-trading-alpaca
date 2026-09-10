@@ -11,9 +11,6 @@
 - Research: [`../research/2026-09-01/185723-AON-technical.md`](../research/2026-09-01/185723-AON-technical.md)
 - Daily log: [`../logs/2026-09-01.md`](../logs/2026-09-01.md)
 
-## History
-
-### 2026-09-01
-
-- Advanced from the bearish shortlist and assessed through technical research plus a focused put chain. No trade submitted.
-- Multi-quote validation showed latest trades around $324.61-$324.87 but a persistently unusable quoted spread; neither researched trigger was active. No order submitted.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/AON.jsonl) — load only for a specific past decision.

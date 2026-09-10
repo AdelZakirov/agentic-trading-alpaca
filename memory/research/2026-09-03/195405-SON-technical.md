@@ -1,0 +1,85 @@
+# moneyheap research: SON technical
+
+- Request time: 2026-09-03T19:54:05.084655+02:00
+- Ticker: SON
+- Analysis type: technical
+- Endpoint: /v1/analysis/technical
+
+## Prompt
+
+For an aggressive one-week bearish paper trade on 2026-09-03, assess Sonoco after Bank of America downgraded it to Neutral and cut its target to $60 from $69. Prior close was $54.705; today's range is about $50.85-$53.88 and current trade about $52.32, down roughly 4.4%. Determine whether bearish continuation is actionable, preferred entry or retest, targets, invalidation, and whether a long put or defined-risk put spread is plausible given likely liquidity.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Trend + Momentum Read
+* **Trend:** SON has suffered a decisive technical breakdown. After topping near $60.50–$60.70 in late July and consolidating between $56.50 and $59.50 through August, price has broken below its 20-day and 50-day moving average cluster ($57.26 20-day SMA). Today’s gap-down through the $53.80–$54.00 multi-week shelf established a fresh 3-month low.
+* **Momentum:** 
+  * **MACD (12, 26, 9):** Bearish expansion; MACD (-0.33) is descending further below the signal line (+0.20) with histogram accelerating lower to -0.53.
+  * **RSI (14-period):** Plunging from 40.78 yesterday toward the low 30s intraday, confirming strong downward momentum with no bullish divergence.
+  * **Directional Movement (14-period):** $-DI$ (28.74) is dominant over $+DI$ (15.94), signaling seller control.
+
+---
+
+### 2. Regime: Trend vs. Chop
+* **Regime Call:** **Breakdown / Trending Bearish** (transitioning out of multi-week distribution).
+* **Why:** While the trailing 14-day ADX was subdued (12.74) due to August’s horizontal range, today’s breakdown below the lower Bollinger Band ($54.68) and violation of the $53.86 swing low confirms an exit from the consolidation phase into an active markdown trend. Linear regression slope is negative ($-0.138$) and steepening.
+
+---
+
+### 3. Timing: Entry & Trade Setup
+Bearish continuation is **actionable**. The morning sell-off to $50.85 was followed by a mid-day dead-cat bounce to $52.92 that is now rolling over near $52.20–$52.32.
+
+* **Preferred Entry Options:**
+  1. **Market / Pullback Fade (Aggressive):** Enter short at current levels ($52.20–$52.60) or on a minor bounce retest toward **$52.85–$53.10** (intraday resistance).
+  2. **Breakdown Trigger:** Sell-stop on a sustained break below **$52.00**, confirming the resumption of the morning downtrend.
+* **Profit Targets (1-Week Horizon):**
+  * **Target 1 (T1):** **$50.85** (retest of today's intraday low).
+  * **Target 2 (T2):** **$49.50–$50.00** (psychological round number and May 2026 horizontal consolidation shelf).
+  * **Target 3 (T3 - Stretch):** **$48.00–$48.50** (late May/early June base support).
+
+---
+
+### 4. Risk: Invalidation, Stop & Instrument Sizing
+* **Hard Invalidation / Stop-Loss:** **$53.95–$54.10** (just above today's open at $53.88 and prior support-turned-resistance at $54.09).
+* **ATR Stop Framing:** 1.0x ATR(14) ($1.53) above the current price ($52.32) places a volatility stop at **$53.85**.
+* **Position Sizing:** For a \$1,000 risk budget with short equity/CFD entry at $52.32 and stop at $53.95 (risk per share = $1.63), position size is $\approx 613$ shares.
+* **Option Feasibility (Put vs. Spread):**
+  * **Liquidity Caution:** SON is a mid-cap packaging name with modest options open interest and wider bid-ask spreads.
+  * **Instrument Recommendation:** An outright long put will suffer from post-downgrade IV inflation and wide spreads. A **defined-risk bear put debit spread** (e.g., long $52.50 Put / short $50.00 Put or long $50.00 Put / short $47.50 Put) is significantly preferable to mitigate volatility crush, widen delta capture, and cap spread slippage.
+
+---
+
+### 5. Support / Resistance Levels
+* **Resistance:**
+  * **R1 (Intraday Pivot):** $52.85–$53.00
+  * **R2 (Gap/Breakdown Invalidation):** $53.88–$54.10
+  * **R3 (Prior Range Base / 20-day SMA):** $56.50–$57.26
+* **Support:**
+  * **S1 (Session Low):** $50.85
+  * **S2 (Major Swing Base):** $49.50–$50.00
+  * **S3 (Q2 Support Shelf):** $47.50–$48.00
+
+---
+
+### 6. Volume + Confirmation
+* **Institutional Selling:** Elevated volume on the gap down demonstrates institutional repositioning following the BofA downgrade and target cut.
+* **Accumulation/Distribution Metrics:** On-Balance Volume (OBV at $-5.03\text{M}$) and Chaikin A/D Oscillator ($-955\text{k}$) were deeply negative prior to the break, confirming stealth distribution throughout August that has now manifested in price discovery lower.
+
+---
+
+### 7. Peer & Sector Comparison
+* Packaging peers like **Packaging Corp of America (PKG)** have also been under systematic pressure (PKG sliding from $\approx\$255$ to $\approx\$233$ over the past two weeks).
+* Sector-wide headwinds across container and packaging peers (PKG, AMCR, GEF) confirm broad institutional liquidation rather than an isolated, quick-to-rebound event.
+
+---
+
+### 8. Final Technical Signal
+**Signal:** **BEARISH**
+
+* **Structural Breakdown:** Clean violation of the multi-month $54.00 support floor following a distribution top.
+* **Bearish Momentum Alignment:** Expanding negative MACD histogram, diving RSI, and dominant $-DI$ over $+DI$.
+* **Distribution Confirmation:** Heavy volume confirmation and deeply negative OBV/ADOSC metrics support a 1-week continuation move toward the $49.50–$50.85 zone.

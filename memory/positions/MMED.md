@@ -1,41 +1,15 @@
-# MMED — OPEN
+# MMED
 
-## Current Alpaca state
-
-- Instrument: common stock
-- Side: long
-- Quantity: 250 shares
-- Average entry: $23.76
-- Cost basis: $5,940.00
-- Latest reconciled price: $23.82
-- Latest market value: $5,955.00
-- Latest unrealized P/L: +$15.00 (+0.253%)
-- Open orders: none
-- Client order ID: `alpaca-stage2-20260902-MMED-buy`
-- Broker order ID: `6df8ca70-8023-41ea-85db-f3513ac7b239`
-- Reconciled: 2026-09-02 18:38 Europe/Amsterdam
+## Current state
+Alpaca confirmed 125 shares at $22.33, market value $2,791.25, unrealized P/L −$178.75. Fresh IEX quote was $22.29 bid / $22.35 ask. The quote is below the $22.40 daily-close review intraday, but that time-basis invalidation is not confirmed before the close; preserve the stated basis and reassess on the closing print. HOLD, no add, and no option order.
 
 ## Current plan
 
-- Thesis: Q1 beat, raised guidance, tight public float, and heavy short interest can extend the high-volume breakout over one week despite early-September lockup/supply risk.
-- Confidence: moderate-high.
-- Holding period: through 2026-09-09 unless invalidated earlier.
-- Targets: $25 first trim; $26-$26.50 extension.
-- Invalidation: review on a daily close below $22.40; hard failure below $21.80 or a material secondary/lockup supply filing.
-- Size rationale: 250 shares, $5,940 notional, approximately $490 planned risk to $21.80 before gaps/slippage.
-- Stock decision: BUY filled 250/250 at $23.76.
-- Option decision: HOLD/no order; Sep. 18 $22.50/$25 calls were wide and offered poor conservative payoff versus stock.
+HOLD 125 без добавления до обзора 11 сентября. Выручка Q1 $843m и повышение годового organic growth до 10.5% подтверждены SEC; 4–6% роста квартала обусловлены лишней неделей. $22.40 daily-close review и $21.80 hard review сохранить как оперативные уровни (не размещённые ордера). Не расширять риск до $20.80 из ответа moneyheap. Lockup-поставка остаётся неопределённостью, отсутствие продажи не доказано. Опционы не открывать: небольшая equity-позиция и непроверенная цена/ликвидность.
 
-## Relevant evidence
 
-- Shortlist: [`../../data/stage1_shortlist.md`](../../data/stage1_shortlist.md)
-- Fundamental research: [`../research/2026-09-02/180913-MMED-fundamental.md`](../research/2026-09-02/180913-MMED-fundamental.md)
-- Technical research: [`../research/2026-09-02/180548-MMED-technical.md`](../research/2026-09-02/180548-MMED-technical.md)
-- Active ghost set: [`../ghost-trades/2026-09-02/alpaca-stage2-20260902-MMED-buy.md`](../ghost-trades/2026-09-02/alpaca-stage2-20260902-MMED-buy.md)
-- Daily log: [`../logs/2026-09-02.md`](../logs/2026-09-02.md)
+Fresh independent research: [181057-MMED-fundamental.md](../research/2026-09-10/181057-MMED-fundamental.md)
 
-## History
-
-### 2026-09-02
-
-- Submitted a 250-share day limit at $23.90 and filled 250/250 at $23.76 at `2026-09-02T16:22:09.499780108Z`.
+## Memory provenance
+Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
+[History](history/MMED.jsonl) — load only for a specific past decision.
