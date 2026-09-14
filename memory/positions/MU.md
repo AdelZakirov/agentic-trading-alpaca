@@ -1,7 +1,7 @@
 # MU
 
 ## Current state
-Alpaca confirmed 6 shares at $980.39, market value $5,882.34, unrealized P/L +$242.38. Fresh IEX quote was $979.88 bid / $986.00 ask, a $6.12 spread. HOLD above the $955 review level and below the $1,000–$1,020 trim zone; no discretionary sale into the abnormal spread, no add, and no option order. MU remains correlated with NVDA and carries late-September earnings gap risk.
+Alpaca final reconciliation confirmed 6 shares at mark $975.0697, market value $5,850.42, unrealized P/L +$210.46. Latest delayed-SIP quote was $974.80 bid / $974.95 ask. HOLD above the $955 review level and below the $1,000–$1,020 trim zone; no discretionary sale, no add, and no option order. MU remains correlated with NVDA and carries late-September earnings gap risk.
 
 ## Current plan
 

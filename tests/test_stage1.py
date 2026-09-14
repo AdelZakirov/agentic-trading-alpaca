@@ -50,6 +50,23 @@ def make_bars(
 
 
 class Stage1FeatureTests(unittest.TestCase):
+    def test_feature_date_is_last_observed_bar_not_requested_date(self):
+        bars = make_bars('OLD', [100.0] * 100)
+        requested = bars[-1].date + timedelta(days=7)
+        features = calculate_features(bars, requested)
+        self.assertEqual(features.as_of_date, bars[-1].date)
+        self.assertEqual(features.to_dict()['as_of_date'], bars[-1].date.isoformat())
+
+    def test_stale_history_cannot_enter_rankings(self):
+        fresh = make_bars('FRESH', [100.0] * 100)
+        stale = make_bars('OLD', [100.0] * 98 + [200.0], [100_000] * 98 + [10_000_000])
+        assets = {t: Asset(t, 'NYSE', 'active', 'us_equity', True, True, True) for t in ('FRESH', 'OLD')}
+        result = Stage1Screener(MarketDataset(assets, {}, {'FRESH': fresh, 'OLD': stale})).screen(fresh[-1].date)
+        self.assertEqual(result.exclusions['stale_history'], 1)
+        self.assertIn('FRESH', result.all_features)
+        self.assertNotIn('OLD', result.all_features)
+        self.assertNotIn('OLD', [c.ticker for c in result.candidates])
+
     def test_apewisdom_client_parses_ranked_results(self) -> None:
         class FakeResponse:
             def __enter__(self) -> "FakeResponse":

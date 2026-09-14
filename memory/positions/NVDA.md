@@ -1,7 +1,7 @@
 # NVDA
 
 ## Current state
-Alpaca confirmed 55 shares at $218.08, market value $11,994.40, unrealized P/L +$6.05. Fresh IEX quote was $218.03 bid / $218.06 ask. HOLD inside the exact GTC OCO: parent `41aef279-077e-4007-afb3-6d7636b82bf4` target $226.00 `new`, stop leg `8dc0aeb9-ed37-4e36-918f-c7297d998ede` at $210.50 `held`; 0 filled. No replacement, cancellation, add, or option order.
+Alpaca final reconciliation confirmed 55 shares at mark $218.26, market value $12,004.30, unrealized P/L +$15.95. Latest delayed-SIP quote was $218.34 bid / $218.40 ask. HOLD inside the exact GTC OCO: parent `41aef279-077e-4007-afb3-6d7636b82bf4` target $226.00 `new`, stop leg `8dc0aeb9-ed37-4e36-918f-c7297d998ede` at $210.50 `held`; 0 filled. No replacement, cancellation, add, or option order.
 
 ## Current plan
 

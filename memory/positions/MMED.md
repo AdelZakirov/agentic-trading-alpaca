@@ -1,7 +1,7 @@
 # MMED
 
 ## Current state
-Alpaca confirmed 125 shares at $22.33, market value $2,791.25, unrealized P/L −$178.75. Fresh IEX quote was $22.29 bid / $22.35 ask. The quote is below the $22.40 daily-close review intraday, but that time-basis invalidation is not confirmed before the close; preserve the stated basis and reassess on the closing print. HOLD, no add, and no option order.
+Alpaca final reconciliation confirmed 125 shares at mark $22.50, market value $2,812.50, unrealized P/L −$157.50. Latest delayed-SIP quote was $22.00 bid / $23.50 ask and unusually wide, with a timestamp later than the Alpaca clock. The daily bar closed at $22.50, above the $22.40 daily-close review level; preserve that time basis. HOLD, no add, and no option order.
 
 ## Current plan
 

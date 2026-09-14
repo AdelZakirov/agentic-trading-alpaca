@@ -143,6 +143,24 @@ def complete_technical(features, tickers, as_of, db_path):
     return recovered, dates
 
 
+def technical_dates(features, tickers, as_of, db_path):
+    """Use per-symbol provenance; verify legacy artifacts against stored bars."""
+    dates = {t: features.get(t, {}).get('as_of_date') for t in tickers}
+    unknown = [t for t in tickers if not dates[t]]
+    if unknown and db_path.exists():
+        import sqlite3
+        connection = sqlite3.connect(db_path.resolve().as_uri() + '?mode=ro', uri=True)
+        try:
+            for ticker in unknown:
+                dates[ticker] = connection.execute(
+                    'SELECT MAX(bar_date) FROM bars WHERE symbol = ? AND bar_date <= ?',
+                    (ticker, as_of),
+                ).fetchone()[0]
+        finally:
+            connection.close()
+    return dates
+
+
 def build(shortlist, screen, output, workers=2, timeout=45, ttl=3600, db_path=None):
     text = shortlist.read_text(); data = json.loads(screen.read_text()); rows = shortlist_rows(text)
     features = {c['ticker']: c.get('features') or {} for c in data['candidates']}
@@ -151,16 +169,21 @@ def build(shortlist, screen, output, workers=2, timeout=45, ttl=3600, db_path=No
         from .config import load_dotenv
         load_dotenv()
         db_path = Path(os.getenv('ALPACA_DB_PATH', 'data/market.sqlite3'))
-    recovered, recovered_dates = complete_technical(features, [r['ticker'] for r in rows], data['as_of_date'], db_path)
+    recovered, _ = complete_technical(features, [r['ticker'] for r in rows], data['as_of_date'], db_path)
     features.update(recovered)
+    dates = technical_dates(features, [r['ticker'] for r in rows], data['as_of_date'], db_path)
     root = output / (datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')+'-'+hashlib.sha256(text.encode()).hexdigest()[:8]); root.mkdir(parents=True)
     cache = output / 'yahoo-cache'; cache.mkdir(exist_ok=True)
     with ThreadPoolExecutor(max_workers=workers) as pool:
         results = pool.map(lambda r: acquire(r['ticker'],cache,timeout,ttl), rows)
         for row, result in zip(rows, results):
             row.update(result['row']); f = features.get(row['ticker'], {})
+            actual_date = dates[row['ticker']]
+            status = 'stale' if actual_date and actual_date != data['as_of_date'] else 'missing' if not f or not actual_date else 'partial' if any(f.get(k) is None for k in TECH) else 'ok'
+            if status in ('stale', 'missing'):
+                f = {}  # Keep the nomination, but never expose stale/unverified ranking inputs.
             row.update({k:f.get(k) for k in TECH})
-            row.update(technical_source='stage1_recovered_from_db' if row['ticker'] in recovered else 'stage1_screen', technical_as_of=recovered_dates.get(row['ticker'], data['as_of_date']), technical_status='missing' if not f else 'partial' if any(f.get(k) is None for k in TECH) else 'ok')
+            row.update(technical_source='stage1_recovered_from_db' if row['ticker'] in recovered else 'stage1_screen', technical_as_of=actual_date, technical_status=status)
             row['missing_fields'] += [k for k in TECH if row[k] is None]
             _atomic_write(root / f"{row['ticker']}-yahoo.json",json.dumps(result,ensure_ascii=False,allow_nan=False))
             print(f"{row['ticker']}: Yahoo={row['yahoo_status']}, technical={row['technical_status']}",flush=True)
@@ -173,6 +196,7 @@ def build(shortlist, screen, output, workers=2, timeout=45, ttl=3600, db_path=No
         writer = csv.DictWriter(handle,fieldnames=columns);writer.writeheader()
         for row in rows: writer.writerow({k:json.dumps(v,ensure_ascii=False) if isinstance(v,(list,dict)) else v for k,v in row.items()})
     dictionary = {'from':'All nomination sources, preserved in shortlist order.', 'reason_shortlist':'Verbatim Reason/Reasons cells; community uses Source details because its table has no reason. Arrays align with shortlist_details.', 'technical':'Existing values copied unchanged from Stage 1; missing tickers recovered from local bars using the same Stage1Screener and full eligible universe. pct_* are percentile ranks, not returns.', 'fractions':'Returns, growth, margins, ROE, short_float, yields, upside, EPS revision and normalized debt_to_equity are ratios: 0.15 = 15%.', 'debt_to_equity':'Yahoo debtToEquity divided by 100.', 'peg':'Yahoo trailingPegRatio; no silent substitution of another PEG definition.', 'distance_sma20':'Stage 1 definition: (close - SMA20) / close, not divided by SMA20.', 'atr14_pct':'ATR14 divided by closing price.', 'normalized_move_1d':'Absolute one-day price change divided by ATR14.', 'stretch_atr':'Absolute distance from SMA20 divided by ATR14.', 'estimates':'Yahoo 0q averages and revisions. 0q is not guaranteed to match the next announcement; missing mapping must not be invented.', 'eps_revision_30d':'(current - 30daysAgo) / abs(30daysAgo); null for zero/missing denominator.', 'fcf_yield':'Only when market cap is positive and currency equals financialCurrency.', 'earnings':'Calendar estimates; date ranges preserved. days_to_earnings uses UTC calendar date, not trading days.', 'freshness':'yahoo_fetched_at is retrieval time, not update time of every metric; technical_as_of and price_as_of are separate.', 'missing':'Null does not mean zero or bad investment. yahoo_errors records request failures; missing_fields records absent values. ETF fields may be inapplicable.'}
+    dictionary['technical_freshness'] = 'technical_as_of is the actual last bar date, never the requested screen date. stale means it differs from the screen date; unknown provenance is missing. Both have null technical features. Retain these tickers for nontechnical research; missing/stale evidence is not a bearish signal.'
     _atomic_write(root/'fields.json',json.dumps(dictionary,ensure_ascii=False,indent=2))
     # Stable entry points beside the source shortlist; dated artifacts remain auditable.
     for source, name in [('screening.csv', 'stage1_enriched.csv'), ('screening.json', 'stage1_enriched.json'), ('fields.json', 'stage1_enriched_fields.json')]:

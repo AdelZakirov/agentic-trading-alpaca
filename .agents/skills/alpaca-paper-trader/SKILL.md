@@ -61,6 +61,8 @@ Use project server `alpaca_paper` for all agent Alpaca reads and mutations, incl
 
 ## Compact data-tool output
 
+Discover tools by exact name; if inventory is needed, print names only (`ALL_TOOLS.filter(t => t.name.startsWith('mcp__alpaca_paper__')).map(t => t.name)`). Read the description/schema only for the specific tool whose arguments are unknown. Never print the full filtered metadata catalog. Decode MCP responses using alpaca-mcp.md before printing; never stringify entire result envelopes.
+
 Use MCP for quote and option-chain reads. When custom Python is needed, use a multiline script with explicit indentation: collect rows inside the loop, then print the selected result once after the loop. Never print the growing accumulator on every iteration. Avoid semicolon-packed loop bodies, where a trailing print can accidentally remain inside the loop.
 
 Save large raw responses to a local artifact and return its path, counts and decision-relevant fields. For option chains, filter by the requested expiration/strike range and show relevant quotes and Greeks. If output is truncated, narrow columns or read disjoint row batches; do not rerun the same full dump with a larger output limit. This limits displayed data, not required ticker coverage or execution reconciliation.

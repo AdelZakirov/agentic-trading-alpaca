@@ -1,7 +1,7 @@
 # HOOD
 
 ## Current state
-Alpaca confirmed 30 shares at $114.29, market value $3,428.70, unrealized P/L +$298.50. Fresh IEX quote was $114.29 bid / $115.75 ask, an unusually wide spread. HOLD above the $112.00 daily-close structural review; no trim into the wide quote, no add, and no option order. Overnight posture remains reduced core exposure without a broker stop.
+Alpaca final reconciliation confirmed 30 shares at mark $112.32, market value $3,369.60, unrealized P/L +$239.40. Latest positive delayed-SIP quote was $112.52 bid / $112.57 ask, but its timestamp was later than the Alpaca clock and was treated as timing-limited evidence. HOLD above the $112.00 daily-close structural review; no trim, no add, and no option order. Overnight posture remains reduced core exposure without a broker stop.
 
 ## Current plan
 

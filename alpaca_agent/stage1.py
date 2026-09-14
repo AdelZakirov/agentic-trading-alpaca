@@ -150,7 +150,7 @@ class TickerFeatures:
     def to_dict(self) -> dict[str, Any]:
         values = asdict(self)
         values.pop("ticker")
-        values.pop("as_of_date")
+        values["as_of_date"] = self.as_of_date.isoformat()
         return values
 
 
@@ -423,7 +423,7 @@ def calculate_features(
 
     return TickerFeatures(
         ticker=current.symbol,
-        as_of_date=screen_date or current.date,
+        as_of_date=current.date,
         price=current.close,
         return_1d=return_1d,
         return_5d=return_5d,
@@ -907,6 +907,9 @@ class Stage1Screener:
             bars = [bar for bar in self.dataset.history.get(ticker, ()) if bar.date <= requested_date]
             if len(bars) < self.config.min_history_days:
                 exclusions["insufficient_history"] += 1
+                continue
+            if max(bar.date for bar in bars) != requested_date:
+                exclusions["stale_history"] += 1
                 continue
             if any(not _valid_bar(bar) for bar in bars):
                 exclusions["invalid_data"] += 1

@@ -10,9 +10,9 @@ At each run, read:
 2. `memory/lessons.md` completely.
 3. Today's `memory/logs/YYYY-MM-DD-summary.md` when present. Using a targeted search or tail, confirm its `Covers full log through` value matches the latest `run-checkpoint` marker in `memory/logs/YYYY-MM-DD.md` and that no nonblank log content follows that marker. Do not load the full log merely to perform this check.
 4. If today's summary is absent, its checkpoint does not match, or content follows the latest marker, read the uncaptured tail or necessary sections of the full daily log and repair the summary. Read the complete full log only when targeted recovery cannot establish the current decision state.
-5. Prefer the latest earlier dated summary linked from `portfolio-state.md`; read its full log only when details omitted from the summary are material to the current decision.
+5. Read the latest earlier dated summary linked from `portfolio-state.md` only to answer a current decision question not resolved by current portfolio/ticker state and today's summary. Read its full log only for material details absent from that summary.
 6. `memory/positions/README.md`.
-7. The ticker file for each live position, open order, proposed trade, or material earlier decision.
+7. The ticker file for each live position, open order or proposed trade. Read other ticker files only for a specific current decision question.
 8. Only the latest research files linked from those ticker files when relevant to the current decision.
 
 Trading agents do not read the ghost index or ghost histories. Read active lessons as priors; open one lesson's evidence only if a specific contradiction requires it.
@@ -40,7 +40,7 @@ Keep `portfolio-state.md` short. Include:
 - shortlist path and date;
 - equity, cash, market value, return, position count, and open-order count;
 - current positions and open orders;
-- latest stock decision and option decision for each reviewed ticker;
+- stock/option plans for current positions and open orders, plus actionable watch conditions with a concrete next trigger; keep rejected candidates and other completed screening decisions in the daily log;
 - latest published trading handoff ID;
 - risk posture, constraints, breaches, main risks, and reassessment triggers;
 - links to the latest dated summary, full log, and relevant ticker files;

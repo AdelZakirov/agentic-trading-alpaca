@@ -17,18 +17,47 @@ class EnrichedScreenTests(unittest.TestCase):
     def test_left_join_keeps_missing_ticker_and_nulls(self):
         with TemporaryDirectory() as d:
             p=Path(d);(p/'list.md').write_text(TEXT)
-            (p/'screen.json').write_text(json.dumps({'as_of_date':'2026-09-08','candidates':[{'ticker':'ABC','features':{'relative_volume_20':2.5}}]}))
+            (p/'screen.json').write_text(json.dumps({'as_of_date':'2026-09-08','candidates':[{'ticker':'ABC','features':{'relative_volume_20':2.5,'as_of_date':'2026-09-08'}}]}))
             row={k:None for k in list(INFO)+EXTRA}; row.update(missing_fields=[],yahoo_status='error')
             with patch('alpaca_agent.enriched_screen.acquire',side_effect=lambda *a:{'row':dict(row,missing_fields=[]),'raw':None}):
                 root, rows=build(p/'list.md',p/'screen.json',p/'out',db_path=p/'absent.sqlite3')
             self.assertEqual(rows[0]['relative_volume_20'],2.5)
             self.assertEqual(rows[1]['technical_status'],'missing')
             self.assertIsNone(rows[1]['relative_volume_20'])
+            self.assertIsNone(rows[1]['technical_as_of'])
             self.assertEqual(len(json.loads((root/'screening.json').read_text())),2)
             self.assertNotIn('NaN',(root/'screening.json').read_text())
 
     def test_nan_cleaned(self):
         self.assertIsNone(clean(float('nan')))
+
+    def test_stale_and_unknown_features_are_not_exposed(self):
+        with TemporaryDirectory() as d:
+            p=Path(d); (p/'list.md').write_text(TEXT)
+            (p/'screen.json').write_text(json.dumps({'as_of_date':'2026-09-08','candidates':[
+                {'ticker':'ABC','features':{'as_of_date':'2026-09-04','relative_volume_20':10}},
+                {'ticker':'XYZ','features':{'relative_volume_20':20}},
+            ]}))
+            row={k:None for k in list(INFO)+EXTRA}; row.update(yahoo_status='error')
+            with patch('alpaca_agent.enriched_screen.acquire',side_effect=lambda *a:{'row':dict(row,missing_fields=[]),'raw':None}):
+                _, rows=build(p/'list.md',p/'screen.json',p/'out',db_path=p/'absent.sqlite3')
+            self.assertEqual([r['technical_status'] for r in rows], ['stale','missing'])
+            self.assertEqual([r['technical_as_of'] for r in rows], ['2026-09-04',None])
+            self.assertTrue(all(r['relative_volume_20'] is None for r in rows))
+            self.assertEqual(rows[0]['reason_shortlist'], ['exact mentions','Exact reason.'])
+
+    def test_legacy_feature_dates_use_database_not_screen_date(self):
+        import sqlite3
+        from contextlib import closing
+        from alpaca_agent.enriched_screen import technical_dates
+        with TemporaryDirectory() as d:
+            p=Path(d)/'bars.sqlite3'
+            with closing(sqlite3.connect(p)) as c:
+                c.execute('CREATE TABLE bars (symbol TEXT, bar_date TEXT)')
+                c.executemany('INSERT INTO bars VALUES (?, ?)', [('ABC','2026-09-04'),('ABC','2026-09-09'),('XYZ','2026-09-08')])
+                c.commit()
+            self.assertEqual(technical_dates({'ABC':{},'XYZ':{}}, ['ABC','XYZ'], '2026-09-08',p),
+                             {'ABC':'2026-09-04','XYZ':'2026-09-08'})
 
     def test_yahoo_derivations_negative_eps_and_date_range(self):
         from types import SimpleNamespace

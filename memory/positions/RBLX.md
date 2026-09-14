@@ -1,7 +1,7 @@
 # RBLX
 
 ## Current state
-Alpaca confirmed 75 shares at $44.67, market value $3,350.25, unrealized P/L +$319.50. Fresh IEX quote was $44.72 bid / $44.77 ask, below the $45.70–$46.00 trim zone and above $44.15–$44.50 support. HOLD, no add, and no option order; no discretionary trim was warranted away from the target zone.
+Alpaca final reconciliation confirmed 75 shares at mark $45.5015, market value $3,412.61, unrealized P/L +$381.86. Latest delayed-SIP quote was $45.51 bid / $45.80 ask, still wide enough to avoid discretionary trimming. HOLD, no add, and no option order; retain the $45.70–$46.00 trim review and $44.15–$44.50 support framework.
 
 ## Current plan
 

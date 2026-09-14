@@ -1,25 +1,30 @@
-## Latest pre-close management reconciliation — 2026-09-10T21:17:42.795862+02:00
-Run/handoff `23596246-bb8b-4a52-ab51-6eb73e422488` was published successfully. Paper clock was open at 15:17:42 America/New_York with a normal 16:00 close. Six stock positions and two protective GTC OCO groups reconciled; no orders were submitted, replaced, canceled, or filled in this run. Fresh IEX quotes supported HOLD for all six; no options were opened. SMMT remains the main overnight gap risk near its $16.75 stop, while MU/NVDA remain correlated semiconductor exposure. Dashboard sync succeeded. [Daily summary](logs/2026-09-10-summary.md).
+## Latest Stage 2 reconciliation — 2026-09-12T06:59:02+02:00
+Current management-only run `e1078b10-589a-4b8d-ae9a-dd2350362c2b` is persisted and published. Alpaca paper account is ACTIVE and unblocked. The timing gate was reached at 2026-09-11 15:30:12 America/New_York with a normal 16:00 close. Final reconciliation later reported the market closed at 21:42:26 ET; no orders were mutated.
 
 # Portfolio state
 
-Generated 2026-09-10T21:17:42.795862+02:00; completed trading run `23596246-bb8b-4a52-ab51-6eb73e422488`; published handoff `23596246-bb8b-4a52-ab51-6eb73e422488`.
-Shortlist `data/stage1_shortlist.md`: technical 2026-09-09, expert 2026-09-10. Independent rerun; prior lessons/research/posture deliberately excluded per user, no comparison claimed.
-Alpaca 2026-09-10T15:17:42.795862-04:00: equity $101163.73, cash $65301.79, market value $35861.94, buying power $361620.59, options buying power $81177.93, six positions, two open OCO groups (four legs including held stops). No risk-increasing open orders. Lifetime return not independently established.
+Generated 2026-09-12T06:59:02+02:00; management-only cycle for the 2026-09-11 market date.
+Shortlist `data/stage1_shortlist.md` was not required. No new position or added exposure was permitted.
+Alpaca final state: equity $101,460.66, cash $65,106.23, long market value $36,364.43, position market value $36,374.43, buying power $342,743.32, options buying power $73,595.94, eight positions, and three open parent order groups.
 
-| Ticker | Qty | Mark | Value | Latest stock / option decision |
-|---|---:|---:|---:|---|
-| [HOOD](positions/HOOD.md) | 30 | 114.29 | 3428.70 | HOLD / no new options |
-| [MMED](positions/MMED.md) | 125 | 22.33 | 2791.25 | HOLD; daily-close review at $22.40 / no new options |
-| [MU](positions/MU.md) | 6 | 980.39 | 5882.34 | HOLD; wide quote / no new options |
-| [NVDA](positions/NVDA.md) | 55 | 218.08 | 11994.40 | HOLD inside $226/$210.50 GTC OCO / no new options |
-| [RBLX](positions/RBLX.md) | 75 | 44.67 | 3350.25 | HOLD below trim zone / no new options |
-| [SMMT](positions/SMMT.md) | 500 | 16.83 | 8415.00 | HOLD inside $18.50/$16.75 GTC OCO / no new options |
+| Ticker | Qty | Mark/value | Decision |
+|---|---:|---:|---|
+| [HOOD](positions/HOOD.md) | 30 | $112.32 / $3,369.60 | HOLD above $112 daily-close review |
+| [MMED](positions/MMED.md) | 125 | $22.50 / $2,812.50 | HOLD; daily close remained above $22.40 |
+| [MU](positions/MU.md) | 6 | $975.07 / $5,850.42 | HOLD above $955; no trim before $1,000–$1,020 |
+| [NVDA](positions/NVDA.md) | 55 | $218.26 / $12,004.30 | HOLD inside $226/$210.50 GTC OCO |
+| [RBLX](positions/RBLX.md) | 75 | $45.50 / $3,412.61 | HOLD; bid below trim-review band |
+| [SMMT](positions/SMMT.md) | 500 | $17.70 / $8,850.00 | HOLD inside $18.50/$16.75 GTC OCO |
+| [COO](positions/COO.md) | +1/-1 | $0.65 / -$0.10 option marks | HOLD defined-risk Sep. 18 $55/$50 put spread |
+| [META](positions/META.md) | 30 pending | $644 limit | HOLD existing GTC bracket; 0/30 filled |
 
-Previous SMMT reduction remains confirmed: 500 sold at $17.09, broker 580c204c-3ff8-4638-af9e-71ba2f103ab1, gross realized −$120. Current SMMT OCO `c9e3996c-4e38-47d5-b2a8-d816918d14e1`: 500, $18.50 `new` / $16.75 `held` GTC. Current NVDA OCO `41aef279-077e-4007-afb3-6d7636b82bf4`: 55, $226 `new` / $210.50 `held` GTC. Both remained unchanged and unfilled in this run.
+Open orders: META parent `7b8307ed-843f-4a0f-8bbc-ac18767df539` remains `new`, GTC $644 buy with held $678 target and $634.50 stop; NVDA parent `41aef279-077e-4007-afb3-6d7636b82bf4` remains `new`, GTC $226 target / $210.50 stop; SMMT parent `c9e3996c-4e38-47d5-b2a8-d816918d14e1` remains `new`, GTC $18.50 target / $16.75 stop. All quantities are exact and zero-filled. No stale entry was canceled because the META bracket was created the same day, remains the researched $640–$644 pullback, and retains protective held legs.
 
-Risk: moderate caution, confidence moderate. Hypothetical SMMT −30%, MU/NVDA −10%, other three −15% = $5793, 5.72% equity. Temporary aggregate stress envelope ~$6000 and SMMT sleeve ~$2600; not probability/VaR and not universal position caps. No cash floor. No material active breach after SMMT reduction. Residual gap, semiconductor correlation, partial-day data and options-feed uncertainty remain. Reassess before close/September 11 or on material events; no automatic watcher created. Monitoring levels for unprotected HOOD/MMED/MU/RBLX are in ticker files, not broker stops.
+Risk posture: selective aggressive with moderate caution and confidence moderate. Gross stock exposure is about 35.8% of equity; MU/NVDA semiconductor correlation, SMMT clinical/regulatory gap risk, COO spread liquidity/decay, and unprotected HOOD/MMED/MU/RBLX monitoring levels remain the main risks. No material breach. Reassess on MMED daily close below $22.40, NVDA/SMMT OCO trigger, COO $50–$51 target or daily close above $55.60, META fill/stop/target, or material event. No cash floor was imposed.
 
-New candidates: TMO WATCH $575–$595 + tactical confirmation; ASO WATCH $48.50–$50.50; PINS WATCH close >$18.85 or confirmed $19.10 reclaim; BRZE WATCH $24.73–$25 reclaim. Stock no BUY selected / options no new orders for each. Stronger remaining alternatives and all 39 rows: [coverage](../data/independent-stage2-16e6df9f/coverage.md).
+Lessons applied: bounded/idempotent execution, current-quote reconciliation, option payoff/overlap mapping, explicit target activation, preserving daily-close invalidation, and persistent overnight protection. No new order, replacement, cancellation, or fill occurred.
 
-Errors: initial sandbox DNS failure required approved external reads; no broker read or mutation was assumed without reconciliation. Current OPRA/indicative findings remain informational only; no option order was selected. trdrbot stale ~48h excluded. [Independent report](../data/independent-stage2-16e6df9f/report-ru.md), [summary](logs/2026-09-10-summary.md), [full log](logs/2026-09-10.md). Dashboard sync succeeded after publication.
+Latest published trading handoff: `e1078b10-589a-4b8d-ae9a-dd2350362c2b`.
+Warnings: IEX returned zero asks and timestamps after the clock; SIP was unavailable (403 subscription restriction), so delayed-SIP quotes were used as labeled and not treated as contemporaneous execution proof. No direct Alpaca REST/CLI fallback was used. Dashboard sync succeeded after publication at 2026-09-12T12:47:44Z.
+
+Links: [2026-09-11 summary](logs/2026-09-11-summary.md) · [2026-09-11 full log](logs/2026-09-11.md) · [positions](positions/README.md)
