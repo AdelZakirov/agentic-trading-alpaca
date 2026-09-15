@@ -98,3 +98,16 @@ Reserved for the separate ghost reviewer.
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: NVDA close `$218.37`; the after-close quote had no ask and a `$209.47` bid, so the official bar is a disclosed non-executable proxy.
 - Real 55-share path: `$12,010.35` marked value versus `$11,988.35` actual entry cost, P/L `+$22.00` (`+0.18%`). A2 (full 150-share confirmation-size entry): `$32,755.50` versus its fixed `$32,731.50` simulated cost, P/L `+$24.00` (`+0.07%`). A3 (no new NVDA trade): `$0`.
 - A1 (hourly confirmation) remained unentered; the session high reached `$220.98`, but no hourly close above the fixed `$220.50-$221.00` confirmation band occurred. No target or `$210.50` invalidation event occurred. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: NVDA close `$218.17`; this is a disclosed non-executable proxy.
+- Real 55-share path: `$11,999.35` marked value versus `$11,988.35` actual entry cost, P/L `+$11.00`. A2 (150 shares): `$32,725.50` versus `$32,731.50` simulated cost, P/L `-$6.00`; A3 (no new NVDA trade): `$0`.
+- A1 remained unentered; no target or `$210.50` invalidation event occurred. The study remains active through the 2026-09-24 endpoint. Next checkpoint: 2026-09-14 regular-market close.
+
+## 2026-09-14 stop and close checkpoint
+
+- The separate management handoff's equivalent GTC stop filled all 55 shares on 2026-09-14: order `8dc0aeb9-ed37-4e36-918f-c7297d998ede`, `55/55` sold at average `$209.732181`, with the final fill at `2026-09-14T13:35:28.038901Z`. The original entry comparison's real path is therefore closed by the documented stop, while the hypothetical alternatives remain tracked through the common `2026-09-24` endpoint.
+- IEX 1-minute bars after the final stop fill ranged from `$208.94` to `$212.745`; the near-close IEX quote at `2026-09-14T19:59:35.795470387Z` was `$210.82` bid / `$210.84` ask. No `$226.00` target touch was observed after the stop, and A1 remained unentered because the original `$220.50` hourly-confirmation condition was not established.
+- Real 55-share path: actual realized P/L `-$453.08` versus the `$217.97` fill. A2 (150 shares): `-$1,271.67`, using the confirmed stop execution price as a disclosed common-exit proxy for the unsubmitted larger position; this is not a 150-share broker fill. A3 (no new NVDA trade): `$0`. A1 remains `UNSCORABLE`/unentered.
+- The stop was triggered before this checkpoint, so no new lesson is supported. Next checkpoint for the remaining hypothetical paths: 2026-09-15 regular-market close.

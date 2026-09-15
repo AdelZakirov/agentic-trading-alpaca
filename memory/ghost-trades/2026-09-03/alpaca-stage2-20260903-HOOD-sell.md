@@ -96,3 +96,9 @@ Ghosts never reach Alpaca or affect portfolio state, exposure, buying power, or 
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: HOOD close `$113.33`; the after-close quote was wide at `$109.17/$120.65`, so the bar is a disclosed non-executable proxy.
 - Real path, including the separate 20-share 2026-09-09 management trim: `$3,049.60 + $2,337.00` proceeds plus 30 shares worth `$3,399.90` = `$8,786.50`, incremental P/L `-$344.75` versus the `$9,131.25` pre-trade reference. `HOLD_FULL_HOOD`: `$8,499.75` (`-$631.50`); `SELL_HALF_HOOD`: `$8,811.29` (`-$319.96`).
 - The larger fixed half-trim led the real path by `$24.79`; the real path led full retention by `$286.75`. The `$117.50` residual review remained active, while the `$98.80` hard invalidation and `$112.50-$113.20` structural close failure were not confirmed. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: HOOD close `$112.59`; this is a disclosed non-executable proxy because no synchronized closing quote was preserved.
+- Real path, including the separate later 20-share management trim: `$3,049.60 + $2,337.00` proceeds plus 30 shares worth `$3,377.70` = `$8,764.30`, incremental P/L `-$366.95` versus the `$9,131.25` pre-trade reference. `HOLD_FULL_HOOD`: `$8,444.25` (`-$687.00`); `SELL_HALF_HOOD`: `$8,783.17` (`-$348.08`).
+- The fixed half-trim led the real path by `$18.87`, while the real path led full retention by `$320.05`. The close sits inside the structural review band; no hard invalidation was reached. Comparison complete; no lesson change.

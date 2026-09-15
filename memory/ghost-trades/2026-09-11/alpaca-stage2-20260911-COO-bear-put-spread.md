@@ -75,3 +75,10 @@
 - Current positions confirm the intended one-by-one long/short spread; no COO order remains open. No discrepancy or reviewer-side broker mutation occurred.
 - No market-close checkpoint is scored in this run: the Alpaca clock still showed the regular session open at `2026-09-11T15:14:52-04:00`. A later stock/option snapshot returned timestamps around `19:30Z`, later than that clock reading, so those marks are retained as a timestamp-quality data gap rather than used as a checkpoint.
 - Next checkpoint: next regular-session close after this activation, `2026-09-14`, or earlier if COO reaches `$50.00`, `$51.00`, `$55.60`, or `$57.40`.
+
+## 2026-09-14 close checkpoint
+
+- The Alpaca IEX 1Day bar closed COO at `$54.185` on the 2026-09-14 regular session, with an intraday range of `$53.62-$54.965`. The close was neither the `$50.00-$51.00` target nor the daily-close invalidation above `$55.60`; no hard review above `$57.40` was triggered.
+- Near-close indicative option quotes were timestamped `2026-09-14T19:59:59.96479891Z` for the long `$55` put (`$0.93` bid / `$1.68` ask) and `2026-09-14T19:59:35.05213903Z` for the short `$50` put (`$0.00` bid / `$0.07` ask). The conservative liquidation value was `$0.86` per spread, or `$86`, versus the `$195` debit, for real-path P/L of `-$109`.
+- A (outright Sep 18 `$55` put) marked at `$93` versus its fixed `$202.90` cost, P/L `-$109.90`. B (Oct 16 `$55/$50` spread) used near-close indicative bids/asks of `$1.87/$2.47` and `$0.23/$0.48`, marking at `$139` versus its fixed `$223` cost, P/L `-$84`. C (no trade): `$0`.
+- The options marks are indicative rather than firm OPRA quotes, so this checkpoint is `partial`; no lesson is supported from one mark. Next checkpoint: 2026-09-15 regular-market close, or earlier on a stated trigger.

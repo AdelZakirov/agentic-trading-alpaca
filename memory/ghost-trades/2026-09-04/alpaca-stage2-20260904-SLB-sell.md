@@ -82,3 +82,9 @@ Ghosts never reach Alpaca or affect portfolio state, exposure, buying power, or 
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: SLB close `$56.005`; the after-close quote was wide at `$53.02/$58.13`, so the bar is a disclosed non-executable proxy.
 - Real path remains fixed at `$4,529.60` proceeds. `HOLD_80_TO_CLOSE`: 80 shares at the close proxy = `$4,480.40`, trailing real by `$49.20`; `SELL_HALF_40`: `$2,263.60` proceeds plus 40 shares worth `$2,240.20` = `$4,503.80`, trailing real by `$25.80`. The previously activated `WAIT_RECLAIM_57_05` matches full retention.
 - The immediate exit still leads the retention paths at this checkpoint. No new lesson is supported. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: SLB close `$56.05`; this is a disclosed non-executable proxy because no synchronized closing quote was preserved.
+- Real path remains fixed at `$4,529.60` proceeds. `HOLD_80_TO_CLOSE`: 80 shares worth `$4,484.00`, trailing real by `$45.60`; `SELL_HALF_40`: `$2,263.60` proceeds plus 40 shares worth `$2,242.00` = `$4,505.60`, trailing real by `$24.00`. Activated `WAIT_RECLAIM_57_05` matches full retention.
+- Immediate exit leads the retention alternatives at the endpoint. The comparison is complete; the official-bar proxy and the earlier intraday reclaim do not support a new lesson.

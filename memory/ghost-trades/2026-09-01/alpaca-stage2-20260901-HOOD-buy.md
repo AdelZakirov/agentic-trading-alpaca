@@ -130,3 +130,9 @@ Use one market-data timestamp for all scoreable paths at every checkpoint. Mark 
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: HOOD close `$113.33`; the after-close quote was wide at `$109.17/$120.65`, so the bar is a disclosed non-executable proxy.
 - Real path, including the separate 25-share and 20-share management trims: `$3,049.60 + $2,337.00` proceeds plus 30 shares worth `$3,399.90` = `$8,786.50`, P/L `+$960.40` versus the `$7,826.10` entry cost. `HALF_SIZE_HOOD`: 37 shares worth `$4,193.21`, P/L `+$330.78`; `NO_TRADE`: `$0`.
 - The residual close stayed above the `$112.50-$113.20` structural review band; the $101 review and $98.80 hard invalidation were not reached. The option path remains UNSCORABLE without synchronized executable close sides. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: HOOD close `$112.59`; this is a disclosed non-executable proxy because no synchronized closing quote was preserved.
+- Real path: `$3,049.60 + $2,337.00` proceeds plus 30 shares worth `$3,377.70` = `$8,764.30`, P/L `+$938.20` versus the `$7,826.10` entry cost. `HALF_SIZE_HOOD`: 37 shares worth `$4,165.83`, P/L `+$303.40`; `NO_TRADE`: `$0`.
+- The real path led the half-size alternative by `$634.80`. The close sits inside the documented `$112.50-$113.20` structural review band; the $101 review and $98.80 hard invalidation were not reached. The option path remains UNSCORABLE. Comparison complete; no lesson change.

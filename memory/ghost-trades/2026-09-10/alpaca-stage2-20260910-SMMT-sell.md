@@ -85,3 +85,9 @@ Pending. Prior OCO must be canceled and confirmed terminal; replacement OCO prot
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: SMMT close `$17.005`; the after-close quote was wide at `$15.96/$18.08`, so the bar is a disclosed non-executable proxy. The replacement 500-share GTC OCO remained unfilled; the `$16.75` stop and `$18.50` target did not trigger.
 - Real path: `$8,545.00` sale proceeds plus 500 retained shares worth `$8,502.50` = `$17,047.50`, or `-$42.50` versus the `$17,090.00` pre-trade sleeve reference. `HOLD_ALL`: `$17,005.00` (`-$85.00`); `EXIT_ALL`: fixed `$17,090.00`; `REDUCE_250`: `$17,026.25` (`-$63.75`).
 - Full exit led the real path by `$42.50`; the real half reduction led the 250-share trim by `$21.25` and full retention by `$42.50` at this proxy. Next checkpoint: 2026-09-11 endpoint.
+
+## 2026-09-11 endpoint
+
+- The exact endpoint was `2026-09-11T19:45:00Z` (15:45 ET). Alpaca IEX 1-minute bar close `$17.495` is used as a disclosed non-executable endpoint proxy.
+- Real path: `$8,545.00` sale proceeds plus 500 retained shares worth `$8,747.50` = `$17,292.50`, incremental P/L `+$202.50` versus the `$17,090.00` pre-trade sleeve reference. `HOLD_ALL`: `$17,495.00` (`+$405.00`); `EXIT_ALL`: `$17,090.00` (`$0`); `REDUCE_250`: `$17,393.75` (`+$303.75`).
+- Full retention led the real half reduction by `$202.50`; the real path led `REDUCE_250` by `$101.25` and full exit by `$202.50`. The replacement OCO had not triggered by the endpoint. Comparison complete with partial data; no lesson change.

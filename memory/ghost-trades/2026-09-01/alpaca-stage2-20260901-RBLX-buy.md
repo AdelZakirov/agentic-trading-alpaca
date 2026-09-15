@@ -128,3 +128,9 @@ Use one market-data timestamp for all scoreable paths at every checkpoint. Mark 
 - Observed at the common close timestamp `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: RBLX close `$44.85`; the after-close quote was wide at `$42.58/$47.41`, so the bar is a disclosed non-executable proxy.
 - Real path after the earlier 100-share reduction: `$4,251.50` proceeds plus 150 shares worth `$6,727.50` = `$10,979.00`, P/L `+$876.50` versus the `$10,102.50` entry cost. `HALF_SIZE_RBLX`: `$5,606.25` value, P/L `+$555.00`; `NO_TRADE`: `$0`.
 - The runner remained above `$41.40` and below the `$45.00-$45.75` extension. The option alternative remains UNSCORABLE without synchronized executable close sides. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: RBLX close `$45.495`; this is a disclosed non-executable proxy because no synchronized closing quote was preserved.
+- Real path: `$4,251.50` proceeds plus 150 shares worth `$6,824.25` = `$11,075.75`, P/L `+$973.25` versus the `$10,102.50` entry cost. `HALF_SIZE_RBLX`: 125 shares worth `$5,686.88`, P/L `+$635.63`; `NO_TRADE`: `$0`.
+- The real path led the half-size alternative by `$337.63`; the runner remained above `$41.40` and the close finished inside the documented `$45.00-$45.75` extension zone. `SEP18_40_45_CALL_SPREAD` remains UNSCORABLE because no synchronized executable leg sides were recovered. The comparison is complete with no lesson change.

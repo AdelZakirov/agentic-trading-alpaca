@@ -1,15 +1,11 @@
 # HOOD
 
-## Current state
-Alpaca final reconciliation confirmed 30 shares at mark $112.32, market value $3,369.60, unrealized P/L +$239.40. Latest positive delayed-SIP quote was $112.52 bid / $112.57 ask, but its timestamp was later than the Alpaca clock and was treated as timing-limited evidence. HOLD above the $112.00 daily-close structural review; no trim, no add, and no option order. Overnight posture remains reduced core exposure without a broker stop.
+Updated 2026-09-15T21:07:50+02:00; broker source LIVE.
 
-## Current plan
+Long 15 shares at $104.34 average. SELL 15 of 30 FILLED at $108.94 on 2026-09-15T18:55:59.003411657Z; order bb4040e2-0e27-4916-93a9-41d1bfbf27b1, client alpaca-stage2-20260915-HOOD-sell. No active HOOD order.
 
-HOLD 30, без добавления, обзор до закрытия и 11 сентября. Ближайшая поддержка $112; закрытие ниже — пересмотр на сокращение. $107.50 — более глубокое техническое разрушение, не разрешение автоматически игнорировать $112. Отскок к $116.30–$117.50 оценить первым, $121–$124.50 — повторный обзор прибыли. Это уровни мониторинга, не новые ордера. Опционы не открывать: дополнительная fintech-beta/распад времени.
+Fresh momentum deterioration explicitly changed intraday HOLD to partial de-risking; not a fabricated close-trigger activation. Retain rebound optionality with reduced fintech risk. Daily close below $107.50 triggers review of remaining 15; reclaim $108.50 and $110 required before considering an add. At scheduled management, assess executable bid $116.30–117.50 for further trim; $121–124.50 is a later profit review, not a standing order or continuous-touch promise. Review September 16 after Fed, sooner on invalidation.
 
+No options: indicative Oct16 105/95 put spread costs $4.08 ($408 maximum loss), expiry breakeven $100.92; 100-share contract is poorly matched to remaining 15 and simple trim is cleaner.
 
-Fresh independent research: [181144-HOOD-technical.md](../research/2026-09-10/181144-HOOD-technical.md)
-
-## Memory provenance
-Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
-[History](history/HOOD.jsonl) — load only for a specific past decision.
+[Latest technical](../research/2026-09-15/204907-HOOD-technical.md). [History](history/HOOD.jsonl).

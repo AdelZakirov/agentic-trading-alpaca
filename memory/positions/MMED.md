@@ -1,15 +1,9 @@
 # MMED
 
-## Current state
-Alpaca final reconciliation confirmed 125 shares at mark $22.50, market value $2,812.50, unrealized P/L −$157.50. Latest delayed-SIP quote was $22.00 bid / $23.50 ask and unusually wide, with a timestamp later than the Alpaca clock. The daily bar closed at $22.50, above the $22.40 daily-close review level; preserve that time basis. HOLD, no add, and no option order.
+Updated 2026-09-15T21:07:50+02:00; CLOSED, broker confirms zero shares and no open MMED order.
 
-## Current plan
+SELL all 125 FILLED at $22.06 on 2026-09-15T18:56:47.635431998Z; order a74e2a30-cf84-40bb-9283-59469547fbfe, client alpaca-stage2-20260915-MMED-sell. Prior completed close $21.98 activated $22.40 review. September 14 Medtronic exchange offer changes the contained-supply tactical thesis; expected October 9 expiry extends beyond original 1–10-session horizon. Refused wider stop/weekly $19 framing. Do not reopen without a new post-offer supply/base assessment.
 
-HOLD 125 без добавления до обзора 11 сентября. Выручка Q1 $843m и повышение годового organic growth до 10.5% подтверждены SEC; 4–6% роста квартала обусловлены лишней неделей. $22.40 daily-close review и $21.80 hard review сохранить как оперативные уровни (не размещённые ордера). Не расширять риск до $20.80 из ответа moneyheap. Lockup-поставка остаётся неопределённостью, отсутствие продажи не доказано. Опционы не открывать: небольшая equity-позиция и непроверенная цена/ликвидность.
+No option replacement: Oct16 22.5/20 put spread estimated debit $3.35 exceeds $2.50 width; outright 22.5 put quote $0.93/$3.97 is too wide and expiry breakeven $18.53 requires a deeper move.
 
-
-Fresh independent research: [181057-MMED-fundamental.md](../research/2026-09-10/181057-MMED-fundamental.md)
-
-## Memory provenance
-Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
-[History](history/MMED.jsonl) — load only for a specific past decision.
+[Latest fundamental](../research/2026-09-15/205122-MMED-fundamental.md). [Primary announcement](https://news.medtronic.com/2026-09-14-Medtronic-Launches-Exchange-Offer-to-Complete-Separation-of-MiniMed-Group%2C-Inc). [History](history/MMED.jsonl).

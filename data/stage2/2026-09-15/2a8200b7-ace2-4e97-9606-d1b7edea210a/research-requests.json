@@ -1,0 +1,56 @@
+[
+  {
+    "ticker": "SPY",
+    "analysis_type": "technical",
+    "prompt": "Evaluate SPY as of September15 2026 about15:00 New York around756.9. September14 completed close760.755, today open760.11 high760.32 low756.18. Fed calendar confirmsSeptember15-16 meeting. Is756.50-759 support being defended or failing? Compare bounded entry now versus waiting after Fed decision for2-8week horizon. Provide current trend, explicit invalidation, downside scenarios, and stock versus options merits. Public ticker analysis only.",
+    "previous_context": null
+  },
+  {
+    "ticker": "MMED",
+    "analysis_type": "fundamental",
+    "prompt": "Verify NASDAQ MMED is MiniMed Group, not MindMed. As ofSeptember15 2026 around22.0, September14 completed close21.98 below22.40 review level. Reassess fresh product/earnings evidence, IPO and precisely sourced lockup/secondary supply risks, short interest and1-10session hold versus exit. Do not use realized-loss aversion or cost-basis reasoning. Derive thesis invalidation and stock versus options choice. Public company research only.",
+    "previous_context": null
+  },
+  {
+    "ticker": "MTDR",
+    "analysis_type": "fundamental",
+    "prompt": "As ofSeptember15 2026 around63.50 evaluate fresh KeyCorp/UBS target raises September14-15, oil sensitivity, cash flow versus capex/acquisitions, leverage and valuation. Stage1 completedSeptember14 shows+13.9%20day,+3.4%5day, EPS0qrevision+8.4%, forwardPE7.0, negative reportedFCFyield. Resolve whether these support1-4week long entry or are priced in; give public sourced catalysts, downside scenario, invalidation, entry range and stock/options merit.",
+    "previous_context": null
+  },
+  {
+    "ticker": "DT",
+    "analysis_type": "fundamental",
+    "prompt": "Assess Dynatrace as ofSeptember15 2026 around55.17 after BMO target raise and BTIG Buy reiteration. Stage1 completedSeptember14:+8.5%20days,+4.4%day, 0.84relative volume; forwardPE24, FCFyield3.4%, debt/equity0.065, next estimated earnings50days. Evaluate1-4week opportunity, software fundamentals, whether analyst attention has fresh information, public sourced catalysts, entry bounds, downside/invalidation, and stock versus options choice.",
+    "previous_context": null
+  },
+  {
+    "ticker": "GSK",
+    "analysis_type": "fundamental",
+    "prompt": "Analyze GSK as ofSeptember15 2026 around50.11 after fresh Berenberg Hold-to-Buy upgrade. Stage1 completedSeptember14:+4.0%day butflat5days, forwardPE10.1 and1.86%ATR. Evaluate1-4week diversification opportunity, precisely timed regulatory/trial/litigation risks, current valuation and products, entry bounds and downside scenarios, invalidation and stock/options merits. Public company research only.",
+    "previous_context": null
+  },
+  {
+    "ticker": "NTSK",
+    "analysis_type": "fundamental",
+    "prompt": "Identify NTSK and analyze as ofSeptember15 2026 around17.42. September14 completed breakout+15.65%day,+22%5day,3.72relative volume,5.66%ATR; Yahoo forwardPE630, debt/equity4.67 and missing next earnings. Resolve recent earnings/IPO/supply/corporate event catalyst and data comparability. Is1-10session breakout continuation investable versus chasing? Give sourced currentfacts, objective entry/invalidation, gap-risk downside andstock/options choice.",
+    "previous_context": null
+  },
+  {
+    "ticker": "ENVA",
+    "analysis_type": "fundamental",
+    "prompt": "Analyze Enova International as ofSeptember15 2026 around173.2 after two fresh analyst target cuts with bullish ratings retained. September14 completed20dayreturn-15%, day+1.8%; forwardPE8.27,debt/equity3.37. Is there a concrete bearishcredit/funding/thesis catalyst orjusttarget recalibration? Evaluate1-4week bullish/bearish scenarios, entry/invalidation/targets, andlong put versusdefined-risk putspread merit. Public company research only.",
+    "previous_context": null
+  },
+  {
+    "ticker": "TENB",
+    "analysis_type": "fundamental",
+    "prompt": "Identify exact public cause of TENB September14 +16.54%day and7.05relativevolume, September15 around38.6 versus priorcompleted35.08. Check binding acquisition/tender/corporate action versus earnings/reversal. Is remaining1-10session upside actionable or deal-capped? Give sourced currentterms/timing, valuation andliquidity, entry/invalidation/downside andstock/options choice.",
+    "previous_context": null
+  },
+  {
+    "ticker": "GEV",
+    "analysis_type": "fundamental",
+    "prompt": "As ofSeptember15 2026 around879 evaluate contradictory three-firm analyst attention September14-15 including bullishupgrade and sharplybearishinitiation. September14 completedday-8.6%,20days-17.7%,2.02relativevolume, forwardPE34.7 andreportedFCFyield6.7%. Resolve catalyst, orderquality, powerdemand, valuation andcashflow, whether1-4week longreversal orbearishoptions hasedge. Give objective entry/targets/invalidation andfactsversusjudgment.",
+    "previous_context": null
+  }
+]

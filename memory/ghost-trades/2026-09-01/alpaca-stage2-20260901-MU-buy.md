@@ -130,3 +130,9 @@ Use one common market-data timestamp for every scoreable path at each checkpoint
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: MU close `$980.47`; the after-close quote was wide at `$927.31/$1,027.38`, so the bar is a disclosed non-executable proxy.
 - Real path after the six-share target sale: `$5,994.18` proceeds plus six shares worth `$5,882.82` = `$11,877.00`, P/L `+$597.04` versus the `$11,279.96` entry cost. `HALF_SIZE_MU`: six shares worth `$5,882.82`, P/L `+$242.82`; `NO_TRADE`: `$0`. The earlier conditional breakout result remains fixed at its low-confidence `+$30.72` observation.
 - The retained runner closed below its raised `$985` review level. The 15-minute `$984.18` close at `15:15Z` and later sub-$985 closes confirm the related profit-protection review trigger; no retrospective broker action is attributed to this ghost set. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: MU close `$975.12`; this is a disclosed non-executable proxy because no synchronized closing quote was preserved.
+- Real path: `$5,994.18` proceeds plus six shares worth `$5,850.72` = `$11,844.90`, P/L `+$564.94` versus the `$11,279.96` entry cost. `HALF_SIZE_MU`: six shares worth `$5,850.72`, P/L `+$210.72`; `NO_TRADE`: `$0`. The conditional breakout result remains fixed at its earlier low-confidence `+$30.72` observation.
+- The profit-protection review stayed active below `$985`; no retrospective execution is added. The real path led the half-size alternative by `$354.22`. Comparison complete; no lesson change.

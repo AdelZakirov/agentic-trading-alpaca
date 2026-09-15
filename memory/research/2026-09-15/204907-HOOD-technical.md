@@ -1,0 +1,90 @@
+# moneyheap research: HOOD technical
+
+- Request time: 2026-09-15T20:49:07.995068+02:00
+- Ticker: HOOD
+- Analysis type: technical
+- Endpoint: /v1/analysis/technical
+
+## Prompt
+
+Analyze HOOD public market structure as of September15 2026 around14:50 New York. IEX bid106.40 ask106.52; September14 close114.345; September15 open111.45 high112.81 low106.20. Assess sharp selloff, trend, volume, support/resistance, current versus stale facts, and1-5session bull/base/bear scenarios. Does evidence favor immediate de-risking or waiting for daily-close confirmation? Compare stock and defined-risk bearish option expressions at the ticker level. No account or portfolio information is provided.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Trend + Momentum Read
+* **Daily Moving Averages**: Price is trading around **$106.12–$106.45**, breaching below the rising 20-day SMA (**$108.48** / 20-day Bollinger Middle Band). The 50-day SMA sits below at **$103.23**, serving as the next major trend-support threshold.
+* **Momentum Oscillators**: 
+  * **RSI(14)** has fallen sharply from **57.33** to **48.86**, slipping into sub-50 bearish momentum territory.
+  * **MACD (12, 26, 9)** has executed a fresh **bearish crossover** with MACD at **3.72** slipping below the Signal line at **4.06** (Histogram negative at **-0.35** for the first time since mid-August).
+  * **Directional Movement**: **-DI (23.37)** has crossed above **+DI (22.74)**, confirming seller dominance over buyer initiative.
+
+---
+
+### 2. Regime Call: Chopping / Corrective Range
+* **Regime**: **Chopping / Range Transition** (ADX = **19.90**, below the 20.0 trend-strength threshold).
+* **Driver**: After the sharp run-up from August lows (~$90.73) to the September 8 high ($125.25), HOOD has failed to sustain higher highs. The failure to retest the upper Bollinger Band ($125.10) and today’s breakdown below the 20-day mean ($108.48) confirms the market has shifted from a strong directional uptrend into an active mean-reverting/corrective chop regime.
+
+---
+
+### 3. Timing & Scenario Setups (1–5 Sessions)
+
+#### 1–5 Session Scenarios
+* **Bull Scenario (Probability: 20%)**: Intraday buyers defend $106.00, pushing price back above $108.50 (20-day SMA). A daily close above $110.00 would open a retest of the $112.80–$114.35 gap resistance.
+* **Base Scenario (Probability: 55%)**: Chop and range consolidation between the 50-day SMA (**$103.20–$103.50**) and the 20-day SMA (**$108.50**), digesting the sudden supply surge without immediate recovery.
+* **Bear Scenario (Probability: 25%)**: Decisive breakdown below the 50-day SMA ($103.23) and psychological $100.00, triggering an accelerated flush toward the August value shelf at **$93.50–$95.50**.
+
+#### Tactical Execution & De-risking vs. Close Confirmation
+* **De-risking Verdict**: Evidence favors **immediate intraday de-risking / trimming** rather than waiting for the daily close. HOOD sliced through its key intermediate pivot ($108.50) with heavy late-session volume, triggered an active MACD sell signal, and -DI crossed +DI. Waiting for the daily close risks absorbing an additional ~3% move down toward the 50-day SMA ($103.23).
+* **Entry Trigger (Re-entry Long)**: Only after a confirmed daily close back above **$108.50** with an intraday reclaim of **$110.00**.
+* **Bearish Expression Comparison**:
+  * **Underlying Stock Short**: Capital-intensive with unhedged upside risk against high beta/short-squeeze reflexivity.
+  * **Defined-Risk Bearish Option Expression (Preferred)**: Long Put Vertical Spread (e.g., buying 105 Put / selling 95 Put, 15–30 DTE). Caps maximum loss if the stock reverses at the 50-day SMA while leveraging the high ATR ($6.36) expansion on a breakdown.
+
+---
+
+### 4. Risk Framing (ATR-Aware)
+* **Daily ATR (14)**: **$6.36** (~6.0% of price).
+* **Bearish Position Invalidation / Stop**: Stop-loss on short/hedge exposure anchored at **$111.50–$112.80** (day's high & session breakdown origin; ~1.0× ATR above current levels).
+* **Long Protective Stop / Invalidation**: Tight invalidation below today’s session low at **$106.00**; hard stop below the 50-day SMA at **$102.50**.
+* **Position Sizing Guide**:
+  $$\text{Shares} = \left\lfloor \frac{\text{Risk Dollars}}{|\text{Entry} - \text{Stop}|} \right\rfloor$$
+  *With current ATR at $6.36, scale position size down by ~30–40% relative to quiet market conditions to accommodate wider volatility bounds.*
+
+---
+
+### 5. Support / Resistance Levels & Watchpoints
+* **Major Resistance**:
+  * **$108.48–$108.50**: 20-day SMA / Middle Bollinger Band (primary overhead resistance).
+  * **$111.45–$112.81**: September 15 session open and intraday high.
+  * **$114.35**: September 14 close / breakdown shelf.
+  * **$125.00–$125.25**: September 8 swing high / 52-week peak.
+* **Key Support**:
+  * **$106.00–$106.20**: September 15 intraday session low.
+  * **$103.20–$103.50**: 50-day SMA & September 1–2 consolidation base.
+  * **$100.00–$100.70**: Psychological handle & August 31 swing low ($100.73).
+  * **$93.50–$95.50**: August breakout shelf.
+
+---
+
+### 6. Volume + Confirmation Notes
+* **Intraday Flow**: Volume accelerated heavily on the breakdown between 14:00 and 14:45 NY (bars recording 53k+ shares on the 15-min chart), showing liquidation rather than passive absorption.
+* **Cumulative Indicators**: On-Balance Volume (OBV at **-783,597**) and Chaikin A/D Oscillator (**-423,264**) show strong distribution pressure over recent sessions, confirming that the move is institutionally led rather than retail noise.
+
+---
+
+### 7. Peer & Sector Context
+* **Crypto/Retail Trading High-Beta Peer (COIN)**: Down heavily on September 15 (opened $183.64, dropped to $168.46; -11.9%), illustrating broad liquidation across retail trading and crypto-adjacent fintech.
+* **Traditional Brokerage Peer (SCHW)**: Up modestly (+0.6% at $107.99), highlighting that the weakness is specific to high-beta, crypto/retail speculation proxies rather than systemic traditional financial weakness.
+
+---
+
+### 8. Final Technical Signal: Bearish (Tactical / Short-Term)
+
+* **Loss of Intermediate Trend Support**: Decisive intraday breach of the 20-day SMA ($108.48) with expanding range.
+* **Momentum Sell Signals**: Daily MACD bearish signal-line crossover and RSI falling below 50.
+* **High-Beta Fintech Headwinds**: Sympathy weakness confirmed by sharp parallel selloffs in key retail trading peers (COIN down ~12%).
+* **Immediate Target Zone**: High probability of testing the 50-day SMA support at **$103.20–$103.50** over the next 1–3 sessions.

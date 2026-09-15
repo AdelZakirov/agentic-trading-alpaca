@@ -77,3 +77,8 @@ Ghosts never reach Alpaca or affect portfolio state, exposure, buying power, or 
 
 - The real spread exit remains fixed at a `$0.29` credit and realized `-$79` before fees. No synchronized executable close was available for both option legs through the configured Alpaca OPRA route, so `HOLD_SPREAD`, the activated `WAIT_BREAK_56_25`, and `CLOSE_AT_TODAY_CLOSE` remain UNSCORABLE; no stale or non-executable option mark is substituted.
 - SLB's official 1Day close was `$56.005` at the common `2026-09-10T20:00:00Z` checkpoint, and the regular-session low of `$55.15` confirms that the `$56.25` break trigger activated. This underlying bar is context only and does not manufacture an option P/L. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- The real spread exit remains fixed at a `$0.29` credit and realized `-$79` before fees. No synchronized executable historical market was recovered for either option path, so `HOLD_SPREAD`, activated `WAIT_BREAK_56_25`, and `CLOSE_AT_TODAY_CLOSE` remain UNSCORABLE; no last-trade or underlying mark is substituted for option P/L.
+- SLB's official 1Day close was `$56.05` and remains context only. The underlying break condition had already activated on 2026-09-10. The comparison is complete with partial data and no lesson change.

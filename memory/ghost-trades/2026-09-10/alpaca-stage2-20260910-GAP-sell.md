@@ -97,3 +97,9 @@ Reserved for the separate ghost reviewer.
 - Real exit proceeds remain fixed at `$4,166.00` from the confirmed 200-share sale at `$20.83`. A1 (hold through the next close) marks at `$4,181.00`, leading the real exit by `$15.00` at this checkpoint.
 - A2 (wait for a micro-bounce exit) was not activated; the daily high reached `$21.26`, but no executable bid in the predeclared `$21.05-$21.20` zone was preserved. A3 (tight `$20.75` stop) saw the bar low at `$20.72`, confirming the price trigger but not an exact hypothetical stop fill, so its outcome remains UNSCORABLE.
 - The `$21.60` invalidation remained below the close; no hindsight change is made. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: GAP close `$21.51`; this is a disclosed non-executable proxy.
+- Real exit proceeds remain fixed at `$4,166.00`, or `+$8.00` versus the `$4,158.00` decision-time reference. `A1_HOLD_THROUGH_CLOSE`: `$4,302.00`, or `+$144.00` and `$136.00` ahead of the real exit.
+- `A2_WAIT_MICRO_BOUNCE` remains UNSCORABLE because no executable bid in the predeclared `$21.05-$21.20` zone was preserved; `A3_TIGHT_STOP` remains UNSCORABLE because the hypothetical stop execution was not observable. The `$21.60` invalidation remained above the close. Comparison complete; no lesson change.

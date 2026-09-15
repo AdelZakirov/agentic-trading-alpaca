@@ -1,30 +1,28 @@
-## Latest Stage 2 reconciliation — 2026-09-12T06:59:02+02:00
-Current management-only run `e1078b10-589a-4b8d-ae9a-dd2350362c2b` is persisted and published. Alpaca paper account is ACTIVE and unblocked. The timing gate was reached at 2026-09-11 15:30:12 America/New_York with a normal 16:00 close. Final reconciliation later reported the market closed at 21:42:26 ET; no orders were mutated.
-
 # Portfolio state
 
-Generated 2026-09-12T06:59:02+02:00; management-only cycle for the 2026-09-11 market date.
-Shortlist `data/stage1_shortlist.md` was not required. No new position or added exposure was permitted.
-Alpaca final state: equity $101,460.66, cash $65,106.23, long market value $36,364.43, position market value $36,374.43, buying power $342,743.32, options buying power $73,595.94, eight positions, and three open parent order groups.
+Generated 2026-09-15T21:10:06+02:00; last completed trading cycle 2a8200b7-ace2-4e97-9606-d1b7edea210a. Broker source LIVE; account/positions/orders reconciled around 15:06:58EDT. Handoff PUBLISHED successfully with three definitions; queue marker authoritative.
 
-| Ticker | Qty | Mark/value | Decision |
-|---|---:|---:|---|
-| [HOOD](positions/HOOD.md) | 30 | $112.32 / $3,369.60 | HOLD above $112 daily-close review |
-| [MMED](positions/MMED.md) | 125 | $22.50 / $2,812.50 | HOLD; daily close remained above $22.40 |
-| [MU](positions/MU.md) | 6 | $975.07 / $5,850.42 | HOLD above $955; no trim before $1,000–$1,020 |
-| [NVDA](positions/NVDA.md) | 55 | $218.26 / $12,004.30 | HOLD inside $226/$210.50 GTC OCO |
-| [RBLX](positions/RBLX.md) | 75 | $45.50 / $3,412.61 | HOLD; bid below trim-review band |
-| [SMMT](positions/SMMT.md) | 500 | $17.70 / $8,850.00 | HOLD inside $18.50/$16.75 GTC OCO |
-| [COO](positions/COO.md) | +1/-1 | $0.65 / -$0.10 option marks | HOLD defined-risk Sep. 18 $55/$50 put spread |
-| [META](positions/META.md) | 30 pending | $644 limit | HOLD existing GTC bracket; 0/30 filled |
+Shortlist [data/stage1_shortlist.md](../data/stage1_shortlist.md): discovery completed NY2026-09-15; latest completed bars2026-09-14, experts generated2026-09-15T18:33:02Z. Forty names reviewed, current enrichment hash bf134bf28fcfac85750b769c13c4df9dc05ff03b00db1223212ff9cd27c8a82b.
 
-Open orders: META parent `7b8307ed-843f-4a0f-8bbc-ac18767df539` remains `new`, GTC $644 buy with held $678 target and $634.50 stop; NVDA parent `41aef279-077e-4007-afb3-6d7636b82bf4` remains `new`, GTC $226 target / $210.50 stop; SMMT parent `c9e3996c-4e38-47d5-b2a8-d816918d14e1` remains `new`, GTC $18.50 target / $16.75 stop. All quantities are exact and zero-filled. No stale entry was canceled because the META bracket was created the same day, remains the researched $640–$644 pullback, and retains protective held legs.
+Equity $101,333.37; cash $69,296.53; stock market value $31,890.33; net option mark $145. Daily equity change -$226.01/-0.22254% versus last_equity$101,559.38. Six stock positions, two option legs; one open parent order plus two held exits. Parallel snapshot marks differ from account-equity arithmetic by $1.51, normal time skew; no quantity/order ambiguity.
 
-Risk posture: selective aggressive with moderate caution and confidence moderate. Gross stock exposure is about 35.8% of equity; MU/NVDA semiconductor correlation, SMMT clinical/regulatory gap risk, COO spread liquidity/decay, and unprotected HOOD/MMED/MU/RBLX monitoring levels remain the main risks. No material breach. Reassess on MMED daily close below $22.40, NVDA/SMMT OCO trigger, COO $50–$51 target or daily close above $55.60, META fill/stop/target, or material event. No cash floor was imposed.
+| Exposure | Current plan |
+| --- | --- |
+| [SPY](positions/SPY.md) 13@$762.89 | HOLD core; close$750.50review; no secondtranche until post-Fed stable$748–751 or confirmed$760.80–764reclaim. |
+| [HOOD](positions/HOOD.md) 15@$104.34 | Sold15@$108.94; HOLDremainder, close$107.50review; no add without108.50/110reclaim. Scheduledbid116.30–117.50profitreview. |
+| [MSFT](positions/MSFT.md) 20@$497.4715 | BUYfilled under497.50cap. Close485.50invalidation; scheduledbid510–514trim10, remainder528–535;1–4weeks. |
+| [MU](positions/MU.md) 6@$939.993333 | HOLD; close930volumebeforeadd; scheduledbid955–965trim2–3; close894review/880structural. |
+| [RBLX](positions/RBLX.md) 50@$40.41 | HOLD runner; scheduledbid53.50–55profitreview; close46.80review/44.50structural. |
+| [ESI](positions/ESI.md) 75@$32.16 | Sep14fillconfirmed, no activeorder. HOLDtactical1–10sessions; close30.40review; scheduledbid34.50then36–37profitreview. |
+| [COO](positions/COO.md) Sep18long1$55put/short1$50put | HOLD,noadd. Entrydebit/maxloss195, mark145. Review50–51target/close55.60/structural57.40. ReviewSep16 and arrange pairedclosebeforeSep18expiry unlessrenewedexplicitdecision; noexercise/assignmentaction. |
+| [META](positions/META.md) zero shares, pending30@$644GTC | Parent7b8307ed-843f-4a0f-8bbc-ac18767df539 NEW0/30; heldtarget678/stop634.50. Retain,no chase. Onfillreview1–10sessions, close621structural. |
 
-Lessons applied: bounded/idempotent execution, current-quote reconciliation, option payoff/overlap mapping, explicit target activation, preserving daily-close invalidation, and persistent overnight protection. No new order, replacement, cancellation, or fill occurred.
+[MMED](positions/MMED.md) CLOSED125sold@$22.06today; exchange-offersupplychangedtacticalthesis. [NVDA](positions/NVDA.md) CLOSED: recoveredSep14stop55@$209.732181, oldHOLDcachecorrected. No newoptions; allcurrentstocks/optionshave separatedecisions in tickerfiles.
 
-Latest published trading handoff: `e1078b10-589a-4b8d-ae9a-dd2350362c2b`.
-Warnings: IEX returned zero asks and timestamps after the clock; SIP was unavailable (403 subscription restriction), so delayed-SIP quotes were used as labeled and not treated as contemporaneous execution proof. No direct Alpaca REST/CLI fallback was used. Dashboard sync succeeded after publication at 2026-09-12T12:47:44Z.
+Actionablewatchconditions (require fresh confirmation/sizing, not orders): DT52.50–53.50held or daily55.50volume>600kIEX; GSK48.80–49.50gapretest or daily50.55volume; MTDR60.50–62support or confirmed64.50breakout; NVDAconfirmedreversal/reclaim215then220.50–222.60; ENVA178–180bullreclaim or bearishdaily167–168/failed178–180bounce; GEVdaily897bullreclaim or bearish868break/failed895–915bounce. Otherscreeningdecisions in full log/coverageledger.
 
-Links: [2026-09-11 summary](logs/2026-09-11-summary.md) · [2026-09-11 full log](logs/2026-09-11.md) · [positions](positions/README.md)
+Risk: aggressive staged/moderateconfidence, cash-funded, no leverage/unboundedloss, no minimumcashfloor/fixedpositioncap. Temporary aggregate eventstress guardrail about$6,000 (~6%equity); currentstressincludingpendingMETAabout$5,310: SPY5%, HOOD/MU/RBLX15%, MSFT/ESI10%, COOfull195debit, META10%. Judgment notVaR/maximumstockloss/stopguarantee. PendingMETA19,320notionalfitscash. Breaches:none. RisksFedSep16, correlatedgrowth/AI, COOshortexpiry/pinrisk, quoteilliquidity. Reassess allholdings/openorder onfill/break and Sep16postFed; no newbinarybiotechwithoutpreciselysourcedeventtiming.
+
+Latest published handoff:2a8200b7-ace2-4e97-9606-d1b7edea210a, successfully attached HOOD/MMED/MSFT definitions and matching log/summary checkpoint. Prior17d021b8-789f-4ec1-8bd1-4b659fda4b56 alreadyprocessed; oldpendingheaderresolved. [Today summary](logs/2026-09-15-summary.md), [full log](logs/2026-09-15.md), [final evidence](../data/stage2/2026-09-15/2a8200b7-ace2-4e97-9606-d1b7edea210a/final-reconciliation-raw.json).
+
+Errors: staleinitialdiscovery/enrichmentfixedbycompletionrecheck/approvednetworkretry; sensitiveexternalresearchrequestrejectedandabandonedin favorofpublic-onlyprompt. ESI/NVDAstaleexecutioncachescorrected. No unresolvedbrokererror. Dashboard sync succeeded and uploaded snapshot 2026-09-15T19:11:15.409Z. Latest automationcache refresh follows publication.

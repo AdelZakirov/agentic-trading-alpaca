@@ -65,3 +65,9 @@ Use one common quote timestamp at every checkpoint, include proceeds for exited 
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: GTLB close `$47.285`; the after-close quote was wide at `$44.97/$49.40`, so the bar is a disclosed non-executable proxy.
 - `REAL_FULL_EXIT` remains fixed at `$7,113.00`. `HOLD_FULL`: 150 shares at the close proxy = `$7,092.75`, trailing real by `$20.25`; `HALF_EXIT`: `$3,555.75` proceeds plus 75 shares worth `$3,546.38` = `$7,102.13`, trailing real by `$10.88`.
 - The `$44.46` failure level was not breached by the close; the real full exit still leads both retained-exposure paths. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: GTLB close `$46.99`; this is a disclosed non-executable proxy.
+- `REAL_FULL_EXIT` remains fixed at `$7,113.00`, or `+$1.50` versus the `$7,111.50` decision-time reference. `HOLD_FULL`: 150 shares worth `$7,048.50`, or `-$63.00`; `HALF_EXIT`: `$3,555.75` proceeds plus 75 shares worth `$3,524.25` = `$7,080.00`, or `-$31.50`.
+- The real full exit led `HOLD_FULL` by `$64.50` and `HALF_EXIT` by `$33.00`. The `$44.46` failure level was not breached by the close. Comparison complete; no lesson change.

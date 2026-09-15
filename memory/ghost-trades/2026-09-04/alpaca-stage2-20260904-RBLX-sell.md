@@ -80,3 +80,9 @@ Compare every path from the same 250-share pre-trade exposure. Include sale proc
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: RBLX close `$44.85`; the after-close quote was wide at `$42.58/$47.41`, so the bar is a disclosed non-executable proxy.
 - Real path: `$4,251.50` proceeds plus 150 shares worth `$6,727.50` = `$10,979.00`, P/L `+$876.50` versus the `$10,102.50` original cost. `HOLD_250` and `NO_RECLAIM_NO_SALE`: `$11,212.50`, P/L `+$1,110.00`; `EXIT_ALL_250_AT_TRIGGER`: fixed `$10,628.75`, P/L `+$526.25`.
 - Full retention led the real trim by `$233.50`, while the real trim led the full exit by `$350.25`. The `$41.40` runner support remained intact. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: RBLX close `$45.495`; this is a disclosed non-executable proxy.
+- Real path: `$4,251.50` proceeds plus 150 shares worth `$6,824.25` = `$11,075.75`, P/L `+$973.25` versus the `$10,102.50` original cost. `HOLD_250` and `NO_RECLAIM_NO_SALE`: `$11,373.75`, P/L `+$1,271.25`; `EXIT_ALL_250_AT_TRIGGER`: fixed `$10,628.75`, P/L `+$526.25`.
+- Full retention led the real trim by `$298.00`; the real trim led full exit by `$447.00`. Runner support remained intact. Comparison complete; no lesson change.

@@ -64,5 +64,11 @@ HOOD's 2026-09-08 daily close at $117.37 activated its documented $117.50 residu
 ## 2026-09-10 close checkpoint
 
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: HOOD close `$113.33`; the after-close quote was wide at `$109.17/$120.65`, so the bar is a disclosed non-executable proxy.
-- Real path, including the separate 20-share management trim: `$3,049.60 + $2,337.00` proceeds plus 30 shares worth `$3,399.90` = `$8,786.50`, incremental P/L `-$344.75` versus the `$9,131.25` pre-trade reference. `HOLD_FULL_HOOD`: `$8,499.75` (`-$631.50`); `SELL_HALF_HOOD`: `$8,811.29` (`-$319.96`).
-- The larger fixed half-trim led the real path by `$24.79`; the real path led full retention by `$286.75`. The `$117.50` residual review remained active, while the `$112.50-$113.20` structural close failure was not confirmed. Next checkpoint: 2026-09-11 regular-market close.
+- `REAL_SELL_20`: `$2,337.00` proceeds plus 30 shares worth `$3,399.90` = `$5,736.90`, incremental P/L `-$106.60` versus the `$5,843.50` pre-trade reference. `HOLD_50`: `$5,666.50` (`-$177.00`); `SELL_HALF_25`: `$5,755.00` (`-$88.50`); `SELL_ALL_50`: `$5,843.50` (`$0`).
+- The fixed half-trim led the real path by `$18.10`, while full exit led it by `$106.60`. The residual review remained active and the structural band was not decisively broken. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: HOOD close `$112.59`; this is a disclosed non-executable proxy.
+- `REAL_SELL_20`: `$2,337.00` proceeds plus 30 shares worth `$3,377.70` = `$5,714.70`, incremental P/L `-$128.80`. `HOLD_50`: `$5,629.50` (`-$214.00`); `SELL_HALF_25`: `$5,736.50` (`-$107.00`); `SELL_ALL_50`: `$5,843.50` (`$0`).
+- The fixed half-trim led the real path by `$21.80`, while full exit led it by `$128.80`. The close sits inside the `$112.50-$113.20` structural review band. Comparison complete; no lesson change.

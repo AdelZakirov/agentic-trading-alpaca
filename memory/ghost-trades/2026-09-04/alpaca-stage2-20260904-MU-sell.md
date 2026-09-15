@@ -79,3 +79,9 @@ Compare every path from the same 12-share pre-trade exposure. Include sale proce
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: MU close `$980.47`; the after-close quote was wide at `$927.31/$1,027.38`, so the bar is a disclosed non-executable proxy.
 - Real path: `$5,994.18` sale proceeds plus six retained shares worth `$5,882.82` = `$11,877.00`, P/L `+$597.04` versus the `$11,279.96` original exposure. `HOLD_12`: `$11,765.64`, P/L `+$485.68`; `SELL_4`: `$11,839.88`, P/L `+$559.92`; `SELL_ALL_12`: fixed `$11,988.36`, P/L `+$708.40`.
 - The full exit led the real trim by `$111.36`; the real trim led `HOLD_12` by `$111.36` and `SELL_4` by `$37.12`. A 15-minute close below `$985` occurred at `15:15Z` (`$984.18`), so `MU_985_SUPPORT` activated; no hindsight execution is added. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- Observed at `2026-09-11T20:00:00Z` from the Alpaca IEX official 1Day bar: MU close `$975.12`; this is a disclosed non-executable proxy.
+- Real path: `$5,994.18` proceeds plus six shares worth `$5,850.72` = `$11,844.90`, P/L `+$564.94` versus the `$11,279.96` pre-trade exposure. `HOLD_12`: `$11,701.44`, P/L `+$421.48`; `SELL_4`: `$11,797.08`, P/L `+$517.12`; `SELL_ALL_12`: fixed `$11,988.36`, P/L `+$708.40`.
+- `SELL_ALL_12` led the real trim by `$143.46`; the real trim led `HOLD_12` by `$143.46` and `SELL_4` by `$47.82`. `MU_985_SUPPORT` remained activated, with no hindsight execution. Comparison complete; no lesson change.

@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "NVDA",
+    "analysis_type": "fundamental",
+    "prompt": "Public research as ofSeptember15 2026 around212. Stage1September14:day-3.3%,5days-8.3%, relativevolume0.76; Yahoo forwardPE13.6, revenuegrowth105.9%,EPS0qrevision+5.4%. Validate metric comparability and current earnings/catalysts versus semiconductor selling/Fed risks. Is1-4week long dip investable now or requireconfirmation? Give entrybounds/invalidation, adversegapscenario and stock/options merits.",
+    "previous_context": null
+  },
+  {
+    "ticker": "MSFT",
+    "analysis_type": "technical",
+    "prompt": "Public ticker analysis as ofSeptember15 2026 around498.14. CompletedSeptember14 relative strength:+2.05%day,+1.24%5days,+2.09%20days,1.73relativevolume. Assess whether fresh strength provides an actionable1-4week stockentry despite FedSeptember16, or requirepullback/confirmation. Derive objective entrybounds, targets, dailycloseinvalidation, adversegapscenario andstockversusoptions merits. Do not infer portfolio information.",
+    "previous_context": null
+  },
+  {
+    "ticker": "GSK",
+    "analysis_type": "technical",
+    "prompt": "Public GSK ADR analysis as ofSeptember15 2026 around50.11 followingfreshBerenbergupgrade. Fundamentalproposedentry49.40-50.20,target52.40then55,dailyclose47.80invalidation. Independently test base/reversal, volume andtimehorizon1-4weeks, optimalboundedentrynowversuswaiting, downsidegap, and stockversusOctober50/55callspreadmerit. Identify contradictions; no accountdata.",
+    "previous_context": null
+  },
+  {
+    "ticker": "DT",
+    "analysis_type": "technical",
+    "prompt": "Analyze public DT market structure as ofSeptember15 2026 around55.17 after analystattention. Fundamentalproposedpullbackentry52.50-53.50 orconfirmedvolumebreakoutabove55.50; targets60-65,dailyclose49.50-50invalidation. Test actionable timing for1-4weeks against FedSeptember16risk; give currentlevels, confirmation, gapdownside andstock/optionsmerit. No portfolio information.",
+    "previous_context": null
+  },
+  {
+    "ticker": "GEV",
+    "analysis_type": "technical",
+    "prompt": "Public GEV market analysis as ofSeptember15 2026 around879 followingSeptember14 -8.6% and2.02relativevolume on disputedgas-turbinebacklog. Fundamentalproposes870-885longreversal,target945then995,dailyclose840invalidation. Independently testcapitulationversuspersistentdowntrend, base confirmation, volume,1-4weekentrytiming, gaprisk, andstockversusdefinedriskoptions. Avoid treating analystconsensusasproof orplacingfirmprobabilitieswithoutvalidation.",
+    "previous_context": null
+  },
+  {
+    "ticker": "ENVA",
+    "analysis_type": "technical",
+    "prompt": "Public ENVA technicalanalysis as ofSeptember15 2026 around173.2 after targetcuts andwithdrawalofbankapplications. Fundamentalbullcaseentry171-174.5,dailyclose165invalidation,target190;bearcaseonlybelow167orrejection178,target152,invalidation185. Independentlytest current1-4weektrend/volume, whetheranytriggerisconfirmed, meanreversionversusbearcontinuation, and longputversus170/150putspreadmerit.",
+    "previous_context": null
+  }
+]

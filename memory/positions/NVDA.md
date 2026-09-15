@@ -1,15 +1,11 @@
 # NVDA
 
-## Current state
-Alpaca final reconciliation confirmed 55 shares at mark $218.26, market value $12,004.30, unrealized P/L +$15.95. Latest delayed-SIP quote was $218.34 bid / $218.40 ask. HOLD inside the exact GTC OCO: parent `41aef279-077e-4007-afb3-6d7636b82bf4` target $226.00 `new`, stop leg `8dc0aeb9-ed37-4e36-918f-c7297d998ede` at $210.50 `held`; 0 filled. No replacement, cancellation, add, or option order.
+Updated 2026-09-15T21:07:50+02:00; CLOSED, broker confirms zero shares and no active NVDA order.
 
-## Current plan
+Recovered STOP SELL 55 FILLED at $209.732181 on 2026-09-14T13:35:28.038901Z, stop leg 8dc0aeb9-ed37-4e36-918f-c7297d998ede. OCO target parent 41aef279-077e-4007-afb3-6d7636b82bf4 canceled. Old HOLD 55 cache superseded; no new exit today and no new re-entry submitted.
 
-HOLD 55. Цель $226, стоп $210.50; обе ноги переведены DAY→GTC, количество и уровни сохранены. Пересмотр 11 сентября, максимальный горизонт 24 сентября без новой оценки. Ниже $215 дополнительный обзор; добавлять до восстановления $220.50–$222.60 не планирую. Уверенность умеренная: диапазон, отрицательная краткосрочная динамика. Calls не открывать; 55 акций недостаточно для стандартного covered call.
+Forward valuation/growth case warrants watch, not automatic immediate re-entry after stop. Require a confirmed reversal and reclaim $215+, then prior $220.50–222.60 structure before sizing against live portfolio/MU correlation. A supported $205–212.50 dip needs fresh confirmation, not price alone. Current forward EPS denominator is helper/local estimate, not independently primary-verified.
 
+No options now: bearish trigger/bullish reversal not established; no delta added against existing semiconductor exposure.
 
-Fresh independent research: [181120-NVDA-technical.md](../research/2026-09-10/181120-NVDA-technical.md)
-
-## Memory provenance
-Migrated from existing records; no new broker reconciliation. Dates in the retained evidence govern freshness.
-[History](history/NVDA.jsonl) — load only for a specific past decision.
+[Latest fundamental](../research/2026-09-15/205809-NVDA-fundamental.md). [History](history/NVDA.jsonl).

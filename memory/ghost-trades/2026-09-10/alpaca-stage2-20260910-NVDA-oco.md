@@ -120,3 +120,9 @@ Protective order accepted; study active at acceptance, no stock fill.
 - Observed at `2026-09-10T20:00:00Z` from the Alpaca IEX official 1Day bar: NVDA close `$218.37`; the after-close quote had no ask and a `$209.47` bid, so the bar is a disclosed non-executable proxy.
 - The selected GTC OCO path is marked at `$12,010.35` for 55 shares, `+$2.20` versus the `$12,008.15` reference mark at acceptance. `KEEP_DAY` has the same marked value at this checkpoint but its DAY protection expired at the close; `WIDER_GTC` also has the same value, with a wider `$208.00` stop. No target or stop triggered, so the evidence currently distinguishes protection persistence and stop width, not P/L.
 - The study remains active through the predeclared `2026-09-11T15:45:00-04:00` endpoint. Next checkpoint: 2026-09-11 endpoint.
+
+## 2026-09-11 endpoint
+
+- The exact endpoint was `2026-09-11T19:45:00Z` (15:45 ET). Alpaca IEX 1-minute bar close `$218.80` is used as a disclosed non-executable proxy.
+- The selected GTC OCO path is marked at `$12,034.00`, or `+$25.85` versus the `$12,008.15` acceptance reference. `KEEP_DAY` and `WIDER_GTC` have the same marked value at this endpoint; no target or stop triggered before the endpoint, so the evidence distinguishes protection persistence and stop width but not P/L.
+- Comparison complete with partial endpoint data; no lesson change. Later broker activity after this endpoint does not alter the predeclared comparison window.

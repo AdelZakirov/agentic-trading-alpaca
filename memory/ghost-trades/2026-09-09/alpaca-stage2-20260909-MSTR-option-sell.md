@@ -63,3 +63,8 @@ Moneyheap technical and fundamental research both favored closing the final Sep.
 
 - `REAL_CLOSE_NOW` remains fixed at `$635` proceeds. No synchronized executable close was available for the Sep. 11 `$125/$135` spread or the Sep. 18 `$135/$145` roll through the configured Alpaca OPRA route, so `HOLD_TO_EXPIRY` and `ROLL_SEP18_135_145` remain UNSCORABLE.
 - MSTR's official 1Day underlying close was `$128.62` at the common `2026-09-10T20:00:00Z` checkpoint, disclosed only as context and not substituted for option values. No new lesson is supported. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- `REAL_CLOSE_NOW` remains fixed at `$635` proceeds. No synchronized executable historical market was available for the Sep. 11 `$125/$135` spread or the Sep. 18 `$135/$145` roll, so `HOLD_TO_EXPIRY` and `ROLL_SEP18_135_145` remain UNSCORABLE.
+- MSTR's official 1Day underlying close was `$130.96`, disclosed only as context and not substituted for option values. Comparison complete with partial data; no lesson change.

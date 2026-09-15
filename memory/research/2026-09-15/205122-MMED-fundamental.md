@@ -1,0 +1,129 @@
+# moneyheap research: MMED fundamental
+
+- Request time: 2026-09-15T20:51:22.284567+02:00
+- Ticker: MMED
+- Analysis type: fundamental
+- Endpoint: /v1/analysis/fundamental
+
+## Prompt
+
+Verify NASDAQ MMED is MiniMed Group, not MindMed. As ofSeptember15 2026 around22.0, September14 completed close21.98 below22.40 review level. Reassess fresh product/earnings evidence, IPO and precisely sourced lockup/secondary supply risks, short interest and1-10session hold versus exit. Do not use realized-loss aversion or cost-basis reasoning. Derive thesis invalidation and stock versus options choice. Public company research only.
+
+## Previous context
+
+null
+
+## Analysis
+
+### Verification Note: Entity & Symbol Disambiguation
+* **Ticker MMED on NASDAQ represents MiniMed Group, Inc.** (spun off from Medtronic plc in March 2026; CIK/HQ in Northridge, CA), **not Mind Medicine (MindMed) Inc.** (which trades under MNMD).
+
+---
+
+### 1. Fundamentals Snapshot
+
+* **Current Price (Sep 15, 2026):** $22.05 (Sep 14, 2026 Close: $21.97)
+* **Market Capitalization:** ~$6.21 Billion
+* **Enterprise Value (EV):** ~$6.03 Billion
+* **Revenue (TTM):** $3.22 Billion (+16.6% YoY growth)
+* **Gross Profitability:** Gross Margin at **56.89%** ($1.83B gross profit TTM)
+* **Operating / EBITDA Performance:** EBITDA of $286.0M (8.88% margin); Operating Margin positive at 0.47% (improving sequentially post-separation).
+* **Net Income / EPS:** Diluted TTM EPS of -$1.12 (GAAP net loss of -$314.0M due to one-off carve-out/restructuring and tax provisions); Forward EPS is projected at **$0.64 – $0.67**.
+* **Balance Sheet & Liquidity:**
+  * Cash & Equivalents: **$207.0 Million** ($0.74/share)
+  * Total Debt: **$59.0 Million** (Debt-to-Equity: 1.63%, highly conservative leverage post-spin)
+  * Current Ratio: **1.81x** | Quick Ratio: **1.27x**
+  * Operating Cash Flow: -$105.0 Million (improving as separation overhead subsides).
+
+---
+
+### 2. Valuation vs Peers / Sector
+
+MiniMed trades at a distinct discount to standalone diabetes technology peers on revenue and book multiples, reflecting its legacy corporate structure, carve-out overhang, and transition to standalone profitability:
+
+| Company | Ticker | Market Cap | P/S (TTM) | EV/EBITDA | Forward P/E | P/B Ratio |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **MiniMed Group** | **MMED** | **$6.21B** | **1.93x** | **21.10x** | **34.50x** | **1.71x** |
+| **Insulet Corp.** | **PODD** | $9.70B | ~4.80x | ~25.40x | 18.14x | 6.82x |
+| **DexCom Inc.** | **DXCM** | $32.90B | ~8.15x | ~26.80x | 27.91x | 12.55x |
+| **Tandem Diabetes** | **TNDM** | $1.15B | ~1.35x | N/A | 96.49x | 8.78x |
+
+* **Valuation Takeaway:** MMED is valued at **1.93x P/S** and **1.71x P/B**, offering deep asset and top-line discounts relative to Insulet (6.82x P/B) and DexCom (12.55x P/B).
+
+---
+
+### 3. Analysts (Consensus, Targets & Recommendations)
+
+* **Consensus Rating:** **Strong Buy** (Average Score: 1.50 / 5.0)
+* **Analyst Breakdown (11 Analysts):**
+  * 1 Strong Buy, 9 Buy, 1 Hold, 0 Sell, 1 Strong Sell
+* **Price Targets:**
+  * **Mean Target:** **$24.55** (+11.3% upside)
+  * **Median Target:** **$26.00** (+17.9% upside)
+  * **High Target:** **$28.00** (+27.0% upside)
+  * **Low Target:** **$15.00** (-32.0% downside)
+
+---
+
+### 4. News & Catalysts (Last 14 Days)
+
+#### Short Themes & Impact Summary
+1. **Medtronic Final Split-Off Exchange Offer:** Medtronic officially launched a tax-free exchange offer allowing MDT shareholders to tender MDT shares for MMED stock at an approximate 7% discount, aiming to distribute up to 225.36M shares (~80.1% outstanding).
+2. **Product Traction:** The rollout of the MiniMed 780G AID paired with Simplera Sync sensor and InPen smart systems continues to accelerate revenue growth (+16.6% YoY) and market share recovery.
+
+#### Full News List
+* **Medtronic launches exchange offer to complete separation of MiniMed**
+  * *Source:* Seeking Alpha | *Date:* Sep 14, 2026
+  * *Summary:* Medtronic initiated an exchange offer to split off its remaining 80.1% interest in MiniMed Group, offering a ~7% discount to MDT holders.
+  * *URL:* `https://seekingalpha.com/news/4642411-medtronic-launches-exchange-offer-to-complete-separation-of-minimed`
+* **MiniMed Files Form S-4 In Connection With Medtronic Exchange Offer**
+  * *Source:* RTTNews | *Date:* Sep 14, 2026
+  * *Summary:* MiniMed registered up to 225,361,295 shares of common stock on Form S-4 facilitating Medtronic’s complete divestiture.
+  * *URL:* `https://www.rttnews.com/3690758/minimed-files-form-s-4-in-connection-with-medtronic-exchange-offer.aspx`
+* **Medtronic Opens MiniMed Split-Off Exchange Offer With 7% Discount**
+  * *Source:* Securities.io | *Date:* Sep 14, 2026
+  * *Summary:* Details the terms of the exchange ratio and mechanics of the spin-off distribution.
+  * *URL:* `https://www.securities.io/medtronic-opens-minimed-split-off-exchange-offer-with-7-discount/`
+* **MiniMed’s (MMED) New Pump Lineup Is Finally Winning Patients Over**
+  * *Source:* Insider Monkey | *Date:* Sep 10, 2026
+  * *Summary:* MiniMed’s standalone Q2 operating performance confirmed customer conversion momentum behind the MiniMed 780G and Simplera Sync ecosystem.
+  * *URL:* `https://finance.yahoo.com/healthcare/articles/minimed-mmed-pump-lineup-finally-021126821.html`
+* **MiniMed (MMED) Soars on Revenue Growth, Price Target Hike**
+  * *Source:* Insider Monkey | *Date:* Sep 01, 2026
+  * *Summary:* Strong Q2 quarterly revenue growth of 16.6% triggered price target increases across Wall Street sell-side desks.
+  * *URL:* `https://finance.yahoo.com/markets/stocks/articles/minimed-mmed-soars-revenue-growth-033324812.html`
+
+---
+
+### 5. Tactical Reassessment: Supply Risks, Short Interest & Strategy
+
+#### A. Lockup & Secondary Supply Mechanics
+* **Supply Event:** On September 14, 2026, Medtronic formally launched an exchange offer for up to **225,361,295 shares** (80.1% of total shares outstanding).
+* **Market Friction:** Because MDT holders acquire MMED shares at a 7% relative discount, institutional arbitrageurs engage in "box/exchange arbitrage" (shorting MMED equity against MDT shares tendered to lock in the spread). This creates temporary mechanical selling pressure and float expansion until the offer closes.
+
+#### B. Short Interest Profile
+* **Current Short Interest:** **8.06 Million shares** (28.25% of current free float of ~28.47M shares; up from 6.03M shares in the previous cycle).
+* **Short Ratio (Days to Cover):** **6.66 days**.
+* **Dynamic:** While elevated short interest creates high short-term volatility, the high short float is largely driven by event-driven arbitrage hedging rather than purely unhedged structural short bets.
+
+#### C. 1–10 Session Tactical Outlook: Hold vs. Exit
+* **Review Level Assessment ($21.98 vs $22.40):** The close below $22.40 reflects the immediate supply overhang from the Sep 14 Form S-4 announcement. 
+* **Recommendation (1–10 Sessions): Tactical HOLD.**
+  * *Rationale:* Exiting solely due to a minor short-term technical breach ignores the finite timeline of the exchange offer pricing window. Once the exchange offer clears and the float expands, the structural arbitrage selling will abate.
+  * Fundamentals show double-digit top-line growth (16.6%), expanding gross margin (56.9%), low debt ($59M), and solid sell-side consensus ($24.55–$26.00).
+
+#### D. Thesis Invalidation & Position Structuring
+* **Thesis Invalidation Level:** A weekly close below **$19.00** (breaking below the 50-day moving average of $18.95 and violating post-earnings base support) or signs of market share loss in AID systems to DexCom/Insulet.
+* **Instruments Choice (Stock vs. Options):**
+  * **Common Stock:** Favorable for medium-to-long-term investors who can ride out the exchange-offer supply settlement.
+  * **Options Strategy:** Because implied volatility is elevated due to the arbitrage and short interest (28.25% float short), long equity holders should consider selling out-of-the-money covered calls (e.g., $25.00 strike) or selling $19.00 cash-secured puts to monetize high IV and buffer against short-term distribution dips.
+
+---
+
+### 6. Fundamentals Rating & Rationale
+
+### **Rating: Moderate (Positive Bias / Turnaround Growth)**
+
+* **Strong Revenue Rebound & Margins:** Revenue grew 16.6% YoY to $3.22B with healthy gross margins at 56.9%, confirming commercial adoption of the 780G and Simplera Sync systems.
+* **Clean Balance Sheet:** Carries minimal financial leverage ($59M total debt vs. $207M cash), insulating the standalone entity from credit stress.
+* **Near-Term Mechanical Overhang:** While fundamentally undervalued (1.93x P/S vs peers >4.5x), the active distribution of 225.4M shares via Medtronic's split-off exchange offer caps immediate upside until the transaction concludes.

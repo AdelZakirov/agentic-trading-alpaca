@@ -90,3 +90,8 @@ Ghosts never reach Alpaca or affect portfolio state, exposure, buying power, or 
 - NVDA's official 1Day close was `$218.37` at the common `2026-09-10T20:00:00Z` checkpoint; the after-close quote had no ask and a `$209.47` bid, so this is a disclosed non-executable underlying proxy.
 - The real stopped path remains fixed at approximately `-$125.88`; `NO_TRADE` remains `$0`; `HALF_SIZE_43` remains fixed at approximately `-$64.53` under the same stop. The option alternative remains UNSCORABLE because no synchronized executable trigger-time or close market was preserved.
 - The earlier $231.75 stop and $225 structural failure are historical context only; no retrospective path change is made. Next checkpoint: 2026-09-11 regular-market close.
+
+## 2026-09-11 close checkpoint and endpoint
+
+- NVDA's official 1Day close was `$218.17`, a disclosed non-executable underlying proxy. The real stopped path remains fixed at approximately `-$125.88`; `NO_TRADE` remains `$0`; `HALF_SIZE_43` remains fixed at approximately `-$64.53` under the same stop.
+- `SEP11_232_5_237_5_CALL_SPREAD` remains UNSCORABLE because no synchronized executable trigger-time or close market was preserved. The earlier stop and structural failure are historical context only. Comparison complete; no lesson change.
