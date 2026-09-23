@@ -6,7 +6,7 @@
 - creator_run_id: `82a814e3-95de-4208-a152-4a5737765c98`
 - decision_at: `2026-09-11T16:46:19+02:00` (Europe/Amsterdam)
 - ticker: `COO`
-- status: `ACTIVE`
+- status: `COMPLETE`
 - client_order_id: `alpaca-stage2-20260911-COO-buy`
 - broker_order_id: `1705976e-9a1c-43de-b784-0dc7536b1e4e`
 
@@ -82,3 +82,16 @@
 - Near-close indicative option quotes were timestamped `2026-09-14T19:59:59.96479891Z` for the long `$55` put (`$0.93` bid / `$1.68` ask) and `2026-09-14T19:59:35.05213903Z` for the short `$50` put (`$0.00` bid / `$0.07` ask). The conservative liquidation value was `$0.86` per spread, or `$86`, versus the `$195` debit, for real-path P/L of `-$109`.
 - A (outright Sep 18 `$55` put) marked at `$93` versus its fixed `$202.90` cost, P/L `-$109.90`. B (Oct 16 `$55/$50` spread) used near-close indicative bids/asks of `$1.87/$2.47` and `$0.23/$0.48`, marking at `$139` versus its fixed `$223` cost, P/L `-$84`. C (no trade): `$0`.
 - The options marks are indicative rather than firm OPRA quotes, so this checkpoint is `partial`; no lesson is supported from one mark. Next checkpoint: 2026-09-15 regular-market close, or earlier on a stated trigger.
+
+## 2026-09-15 close checkpoint
+
+- The September 15 IEX 1Day bar closed COO at `$53.26`, with a `$54.71` high and `$53.01` low. The near-close IEX quote at `2026-09-15T19:59:57.85957306Z` was `$53.03` bid / `$55.38` ask. No `$50.00-$51.00` target, daily-close invalidation above `$55.60`, or hard review above `$57.40` occurred.
+- Near-close indicative option snapshots marked the real spread using the long `$55` put at `$1.37` bid (`2026-09-15T19:59:59.957732318Z`) and the short `$50` put at `$0.07` ask (`2026-09-15T19:59:51.441446101Z`). Conservative value was `$130` versus the `$195` debit, or `-$65.00` gross P/L. A outright Sep 18 `$55` put was `-$65.90`; B Oct 16 `$55/$50` spread was `-$43.00`; C no trade was `$0.00`.
+- Because all option marks are indicative rather than firm OPRA quotes, this checkpoint is `partial`; it supports no lesson change. Next checkpoint: 2026-09-16 regular-market close, or earlier on a stated trigger.
+
+## 2026-09-16 separate close decision and completion
+
+- The separate COO management decision filled at `2026-09-16T15:03:59.886421657Z`. The real spread closed as a paired order: long 55 put sold at `$0.65`, short 50 put bought at `$0.05`, for a `$0.60` net credit. Against the `$1.95` debit, realized gross P/L was `-$135` before fees.
+- At the same executable fill timestamp, alternative A (outright Sep 18 55 put) can be marked at the actual `$0.65` 55-put sale against its fixed `$2.029` entry: `-$137.90` gross. Alternative C (no trade) remains `$0`. Alternative B (October 55/50 spread) is `UNSCORABLE`: no contemporaneous October leg quotes were available at the separate close decision, and no mark is fabricated.
+- The comparison is `partial` and complete at the separate close decision. The real spread narrowly beat the outright-put alternative on the available mark, while no trade preserved capital; this supports no new durable lesson beyond the existing bounded option and expiry-risk priors.
+- The original COO set is routed to the completed archive. The separately defined close-decision set remains active for its September 17 and September 18 checkpoints.

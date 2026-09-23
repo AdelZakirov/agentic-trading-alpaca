@@ -40,3 +40,15 @@ Indicative Oct16quote18:37:36Z22.5Pbid0.93/ask3.97 sizes40/53;20P18:51:09Zbid0.6
 - Reviewer status: `ACTIVE`; evaluation starts at the confirmed real fill `2026-09-15T18:56:47.635431998Z` and ends at the predeclared `2026-09-29` regular-session close. The historical exchange-offer event remains outside the comparison window as specified.
 - Read-only reconciliation through the project `alpaca_paper` server confirmed broker order `a74e2a30-cf84-40bb-9283-59469547fbfe` is `filled`, `SELL 125/125` MMED at average `$22.06` against the `$22.01` day limit. The current broker positions contain no MMED holding; no MMED order remains open.
 - The original alternatives and daily-close time basis are adopted unchanged. No checkpoint mark is recorded yet. Next checkpoint: `2026-09-15` regular-market close.
+
+## 2026-09-15 close checkpoint
+
+- Read-only broker reconciliation confirms all 125 MMED shares sold at `$22.06`; no MMED position remains. The September 15 IEX 1Day bar closed at `$22.00`, with a `$22.34` high and `$21.745` low. The last available near-close IEX quote at `2026-09-15T19:59:50.393060725Z` was `$21.92` bid / `$22.04` ask.
+- No daily close below `$21.80` and no `$24.55/$26.00` target touch occurred. Forward P/L from the predecision `$22.06` reference: real full exit `$0.00`; HOLD_ALL `-$17.50`; HALF_EXIT `-$8.82`.
+- The full exit led both retention alternatives at this interim checkpoint, but one decision episode is not a durable lesson. Next checkpoint: 2026-09-22 regular-session close (fifth-session checkpoint), or earlier on the original daily-close/target rules.
+
+## 2026-09-22 close checkpoint
+
+- The IEX 1Day bar closed at `$21.19` (high `$21.575`, low `$20.99`). The last stable near-close IEX quote at `2026-09-22T19:59:50.242116350Z` was `$21.18` bid x100 / `$21.20` ask x200; earlier ticks were tight, while a final outlier widened to `$21.04/$22.00`. Use the stable bid with a displayed-depth caveat.
+- Provisional close-mark P/L from the `$22.06` reference: actual full exit `$0`; HOLD_ALL `-$110`; HALF_EXIT (62 sold at `$22.06`, 63 retained) `-$55.44`. The close breached the predeclared daily-close `$21.80` review/invalidation threshold. Under the original rule, retained hypothetical shares exit at the next regular-session executable bid; these close marks are interim, not final. No extension to the October exchange-offer date is made.
+- Data quality is partial because displayed bid size is below the 125-share hold and a final quote outlier exists. Next checkpoint: first reliable regular-session bid on `2026-09-23` to apply the predeclared next-session exit.

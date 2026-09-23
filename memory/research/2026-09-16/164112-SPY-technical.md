@@ -1,0 +1,102 @@
+# moneyheap research: SPY technical
+
+- Request time: 2026-09-16T16:41:12.372778+02:00
+- Ticker: SPY
+- Analysis type: technical
+- Endpoint: /v1/analysis/technical
+
+## Prompt
+
+Public-market technical assessment of SPY as of September 16, 2026, using the latest available data. Focus on trend and regime, breadth/volatility, support and resistance, whether the market is extended or in a pullback, and whether a 2-8 week investor should enter near the current price or stage entries around defined levels. Consider the Federal Reserve decision scheduled today and distinguish confirmed observations from judgment. Provide actionable triggers and invalidation levels, but do not assume any private portfolio context.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Trend + Momentum Read
+
+* **Intermediate-to-Long-Term Trend:** **Bullish.** SPY remains comfortably above its rising **200-day SMA ($715.47)** and is currently testing its rising **50-day SMA ($759.26)**.
+* **Short-Term Trend / Market Structure:** **Corrective / Pullback within a Consolidation Range.** Since printing an all-time/swing high at **$779.37 on August 13, 2026**, SPY has carved out a sequence of minor lower highs ($774.02 on Sept 3) and is testing swing support in the **$756.18–$757.42** area.
+* **Momentum Indicators:**
+  * **RSI (14-Day):** **46.64** — Neutral-to-soft; consolidating in mid-range without reaching oversold territory ($<30$).
+  * **MACD (12, 26, 9):** MACD Line at **-0.29**, Signal Line at **1.30**, Histogram at **-1.58**. A negative spread below the signal line reflects ongoing short-term downward drift, with the MACD line recently slipping marginally below zero.
+  * **Stochastics (%K 15.45 / %D 20.44):** Tapping near the oversold threshold, signaling potential for a tactical bounce if support holds.
+
+---
+
+### 2. Regime: Trend vs. Chop
+
+* **Call:** **Chopping / Range-Bound Consolidation** with a slight short-term downward drift.
+* **Evidence:**
+  * **ADX (14-Day):** **11.44** (well below the 20.0–25.0 trend threshold), confirming the absence of a directional trend and indicating a range-bound regime.
+  * **Directional Movement:** **Minus_DI (32.57)** exceeds **Plus_DI (25.72)**, reflecting corrective pressure within the range rather than a broad-based structural breakdown.
+  * **Bollinger Bands (20-Day, 2σ):** Bandwidth has compressed to **2.2%** (Upper: $773.33, Middle: $764.91, Lower: $756.49), with price trading at $\%b = 0.18$ near the lower band envelope.
+
+---
+
+### 3. Timing: 2–8 Week Horizon Entry / Trim Strategy
+
+* **Market Extension Assessment:** The market is **not extended to the upside**; it is in a mature 4-week pullback testing the lower boundary of its multi-week base.
+* **Federal Reserve Catalyst (Today):** With the FOMC interest rate decision scheduled today, binary headline risk suggests avoiding lump-sum capital deployment ahead of the release.
+* **Recommended Staged Entry Plan:**
+  * **Tranche 1 (Tactical Probe — 30%–40% size):** Near current levels (**$757.00–$760.00**), capturing confluence support at the 50-day SMA and lower Bollinger Band.
+  * **Tranche 2A (Momentum Reversal Trigger — 60%–70% size):** On a post-Fed daily close above the **20-day EMA ($763.50)** and 20-day SMA ($764.90), confirming a structural reclaim.
+  * **Tranche 2B (Dip-Buying Contingency — 60%–70% size):** If the Fed sparks a liquidity flush down into secondary support (**$748.00–$751.00**), stage additions at that level.
+* **Trim / Profit Targets:**
+  * **Trim 1:** **$772.00–$774.00** (20-day upper Bollinger Band & early September pivot).
+  * **Trim 2:** **$778.00–$780.00** (August record highs / major resistance).
+
+---
+
+### 4. Risk: Invalidation, Stop Placement, and Position Sizing
+
+* **Volatility Baseline (14-Day ATR):** **$5.85** (0.77% of price).
+* **Stop / Invalidation Levels:**
+  * **Tactical / Tight Stop:** A sustained daily close below **$755.00** (violates the Sept 10/15 double test at $756.18 and the lower Bollinger Band).
+  * **Swing Invalidation (ATR-Aware):** **$747.50** (approx. $2.0 \times \text{ATR}$ below current price and just under the major $748–$750 August consolidation base).
+* **Position Sizing Formula:**
+  $$\text{Shares} = \left\lfloor \frac{\text{Risk Dollars}}{\text{Entry Price} - \text{Stop Price}} \right\rfloor$$
+  *(Example: For an entry at $759.50 with a stop at $747.50, risk per share is $12.00. A $10,000 risk budget allocates $\approx 833\text{ shares}$.)*
+
+---
+
+### 5. Support & Resistance Levels
+
+```
+[Resistance 2] $778.00 – $780.00 (All-time high / August 13 peak)
+[Resistance 1] $763.50 – $765.00 (20-day EMA @ $763.48 & 20-day SMA @ $764.91)
+-------------------- CURRENT PRICE: $759.58 --------------------
+[Support 1]    $756.00 – $759.25 (50-day SMA @ $759.26 & Lower BB @ $756.49)
+[Support 2]    $748.00 – $751.00 (August shelf & 2x ATR buffer zone)
+[Major Base]   $715.00 – $720.00 (Rising 200-day SMA @ $715.47)
+```
+
+* **Breakout Watchpoint:** Consecutive daily closes above **$765.00** clear short-term moving average resistance and open a move toward $774+.
+* **Breakdown Watchpoint:** Daily close below **$755.00** signals a loss of the 50-day SMA, targeting a flush to the $748.00–$751.00 demand shelf.
+
+---
+
+### 6. Volume & Confirmation
+
+* **Volume Trends:** Trading volume throughout late August and early September has remained steady-to-subdued (1.0M–1.5M range on IEX daily feed), indicative of consolidation and pre-FOMC positioning rather than institutional liquidation.
+* **Accumulation/Distribution:** Accumulation/Distribution Oscillator (**ADOSC: -847,342**) and **OBV (10.53M)** reflect mild distribution over the past week, consistent with the shallow drift into the 50-day average. A volume surge ($>1.5\times$ average) post-FOMC will be required to confirm directional continuation.
+
+---
+
+### 7. Peer / Index Context
+
+* **Invesco QQQ Trust (QQQ):** Trading near **$709.55**, holding above its September 14 low of $702.81, showing tech resilience and mirroring SPY's narrow base.
+* **iShares Russell 2000 ETF (IWM):** Trading at **$285.88**, consolidating near its recent low ($284.10), exhibiting higher sensitivity to interest rates ahead of the Fed decision.
+* **Takeaway:** Cross-asset breadth is cautious and tightly coiled across major US equity indices, awaiting interest rate clarity.
+
+---
+
+### 8. Final Technical Signal
+
+**Signal:** **Neutral / Constructively Bullish on Dips**
+
+* **Trend Alignment:** Primary intermediate and multi-month trends remain distinctly upward (price holds above rising 50-day and 200-day SMAs).
+* **Non-Extended Setup:** Low ADX (11.44) and compressed Bollinger Bands confirm SPY is in a consolidation phase near dynamic support ($756–$759), offering favorable risk/reward compared to buying extended highs.
+* **Catalyst Discipline:** Staging entries around defined technical triggers ($757–$760 initial probe, $763.50+ confirmation) allows 2–8 week investors to participate while mitigating intraday Fed volatility.

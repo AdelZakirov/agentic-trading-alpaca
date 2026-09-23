@@ -43,3 +43,15 @@ Missingdata: futuretriggerprice/fills/PnL unknown; quotationsindicativeandmodifi
 - Reviewer status: `ACTIVE`; evaluation starts at the confirmed real fill `2026-09-15T19:04:26.612224811Z` and ends at the predeclared `2026-10-13` regular-session close.
 - Read-only reconciliation through the project `alpaca_paper` server confirmed broker order `c2dc8110-ef7c-4b28-8f14-b4741526789d` is `filled`, `BUY 20/20` MSFT at average `$497.4715` against the `$497.50` day limit. The current broker position is `20` long shares; no MSFT order remains open.
 - The original alternatives, bounded entry cap, daily-close invalidation and target handling are adopted unchanged. No checkpoint mark is recorded yet. Next checkpoint: `2026-09-15` regular-market close.
+
+## 2026-09-15 close checkpoint
+
+- Read-only broker reconciliation confirms 20 MSFT shares bought at `$497.4715`; the current position remains 20 shares long. The September 15 IEX 1Day bar closed at `$497.105`, with a `$505.78` high and `$495.555` low. No daily close below `$485.50`, `$510-$514` executable trim, or post-Fed confirmation close above `$506.50` occurred.
+- The near-close IEX quote was anomalous: the final quote at `2026-09-15T19:59:59.877619627Z` was `$475.49` bid / `$501.11` ask, while the preceding quote was `$485.09/$500.00`; both materially conflict with the day bar and do not provide a clean executable close mark. The real and HALF_SIZE stock paths are therefore `UNSCORABLE` at this checkpoint. The non-executable bar proxy would be `-$7.33` and `-$3.66`, respectively, but is not counted as a score.
+- The indicative Oct 16 `$500/$520` call spread marked at `$7.22` (`$13.61` long bid minus `$6.39` short ask), or `$722` versus its `$841` fixed debit, for `-$119.00` partial P/L. NO_TRADE and WAIT_POST_FED remain `$0.00`; CALL_SPREAD is partial due to indicative quotes. No lesson change. Next checkpoint: 2026-09-22 regular-session close (fifth-following-session checkpoint), or earlier on a stated trigger.
+
+## 2026-09-22 close checkpoint
+
+- The IEX 1Day bar closed at `$498.00` (high `$508.00`, low `$493.705`). Recent near-close IEX quotes were not executable-quality: the 50-quote sample remained wide (minimum spread `$1.82`, median `$6.88`; newest `$493.78/$498.20`), materially conflicting with the bar close. The `$498` close is a non-executable proxy only; chosen and HALF_SIZE share-path P/L are `UNSCORABLE` (proxy-only `$10.57` and `$5.29`, respectively).
+- Daily closes Sep 16–22 were `$490.45`, `$497.67`, `$493.10`, `$501.64`, and `$498.00`; none confirmed the WAIT_POST_FED close-above-`$506.50` entry. No close invalidation below `$485.50` or executable `$510–$514` trim was established. NO_TRADE and WAIT_POST_FED remain flat at `$0`. The call-spread path remains unscorable without historical executable option-leg quotes.
+- Interim, partial-quality checkpoint; no lesson change. Next checkpoint: predeclared `2026-10-13` close, or earlier on an original trigger.

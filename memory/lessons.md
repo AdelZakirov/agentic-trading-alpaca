@@ -60,10 +60,10 @@ Operational and performance evidence are now tracked; weekly reports document co
 ## Reconcile expiring protection at the close
 
 - Status: active
-- Pattern / conditions: A late-session fill relies on day-only bracket exits but the holding plan does not authorize carry exposure overnight.
-- Lesson: Before the close, either exit, deliberately approve overnight retention with fresh risk levels, or replace expiring protection with an eligible persistent order. Never assume day legs remain active.
-- Evidence count: 1 completed decision set.
-- Supporting cases: [`SMMT pullback`](ghost-trades/2026-09-04/alpaca-stage2-20260904-SMMT-buy.md) — profitable entry, but both day exit legs expired/canceled and left unintended overnight exposure.
-- Contradicting cases: None yet.
-- Confidence: low
-- Last updated: 2026-09-08
+- Pattern / conditions: A bracket, hedge, or multi-leg option position is protected only until a cutoff or expiry that occurs before the next intended review.
+- Lesson: Before the cutoff, verify that protection survives the intended holding period. Otherwise exit, explicitly approve carry with fresh risk levels, or replace it with eligible persistent protection. For multi-leg options, manage the structure as paired legs and assess theta, assignment, exercise, and pin risk.
+- Evidence count: 2 completed decision sets.
+- Supporting cases: [`SMMT pullback`](ghost-trades/2026-09-04/alpaca-stage2-20260904-SMMT-buy.md) — day-only exits expired and left unintended overnight exposure; [`COO expiry close`](ghost-trades/2026-09-16/alpaca-stage2-20260916-COO-sell.md) — closing before expiry beat holding through expiry by $60 gross and removed assignment/pin risk.
+- Contradicting cases: None yet. [`NVDA protection duration`](ghost-trades/2026-09-10/alpaca-stage2-20260910-NVDA-oco.md) had equal endpoint P/L for GTC and DAY, but does not contradict the operational requirement.
+- Confidence: medium
+- Last updated: 2026-09-19

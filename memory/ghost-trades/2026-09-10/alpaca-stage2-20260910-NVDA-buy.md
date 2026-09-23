@@ -111,3 +111,34 @@ Reserved for the separate ghost reviewer.
 - IEX 1-minute bars after the final stop fill ranged from `$208.94` to `$212.745`; the near-close IEX quote at `2026-09-14T19:59:35.795470387Z` was `$210.82` bid / `$210.84` ask. No `$226.00` target touch was observed after the stop, and A1 remained unentered because the original `$220.50` hourly-confirmation condition was not established.
 - Real 55-share path: actual realized P/L `-$453.08` versus the `$217.97` fill. A2 (150 shares): `-$1,271.67`, using the confirmed stop execution price as a disclosed common-exit proxy for the unsubmitted larger position; this is not a 150-share broker fill. A3 (no new NVDA trade): `$0`. A1 remains `UNSCORABLE`/unentered.
 - The stop was triggered before this checkpoint, so no new lesson is supported. Next checkpoint for the remaining hypothetical paths: 2026-09-15 regular-market close.
+
+## 2026-09-15 close checkpoint
+
+- Read-only broker reconciliation still confirms the 55-share entry at `$217.97`, the separate 55-share stop fill at average `$209.732181` on September 14, and no remaining NVDA position. The real path is closed; the hypothetical paths remain active through the predeclared September 24 endpoint.
+- The September 15 IEX 1Day bar was `$212.165` close, `$213.93` high, and `$211.16` low. The near-close IEX quote at `2026-09-15T19:59:59.854566571Z` was `$211.63` bid / `$212.43` ask; the bid is used as the conservative executable mark. No hourly confirmation above `$220.50-$221.00`, `$226.00` target, or `$210.50` stop event occurred.
+- Gross P/L: real path remains the actual `-$453.08`; A2 (150 shares at fixed `$218.21`) is `-$987.00`; A3 no trade is `$0.00`; A1 remains `UNSCORABLE`/unentered because its confirmation condition did not occur. No 150-share fill is inferred.
+- This is an interim checkpoint and supports no lesson change. Next checkpoint for the remaining hypothetical paths: 2026-09-16 regular-session close.
+
+## 2026-09-16 close checkpoint
+
+- The September 16 Alpaca IEX 1Day bar closed at `$213.94` (high `$216.755`, low `$212.50`); the last IEX quote was `$213.20` bid / `$219.20` ask at `2026-09-16T19:59:59.996974243Z`. The quote is wide, so the bid is retained as the conservative executable mark and the daily bar is the disclosed close reference.
+- The real 55-share path remains closed at actual realized P/L `-$453.08`. A2 (150 shares at fixed `$218.21`) is `-$751.50` at the `$213.20` bid; A3 no trade remains `$0.00`. A1 remains unentered and `UNSCORABLE`: no hourly close above the original `$220.50-$221.00` confirmation band occurred. The `$210.50` stop and `$226.00` target did not trigger for the hypothetical paths.
+- This remains an interim checkpoint for the hypothetical paths and supports no lesson change. Next checkpoint: 2026-09-17 regular-session close.
+
+## 2026-09-17 close checkpoint
+
+- The September 17 Alpaca IEX 1Day bar closed at `$219.40` (high `$219.90`, low `$217.145`). A stable near-close IEX quote at `2026-09-17T19:59:59.917741Z` was `$219.35` bid / `$220.00` ask; the final `$218.00/$220.00` update was dislocated and is retained only as a data-quality caveat.
+- The real 55-share path remains closed at actual realized P/L `-$453.08`. A2 (150 shares at fixed `$218.21`) is `+$171.00` at the conservative `$219.35` bid; A3 no trade remains `$0.00`; A1 remains `UNSCORABLE` because no hourly close above the original `$220.50-$221.00` confirmation band occurred. No `$226.00` target or `$210.50` stop event occurred for the hypothetical paths.
+- This remains an interim checkpoint and supports no lesson change. Next checkpoint for the remaining hypothetical paths: 2026-09-18 regular-session close.
+
+## 2026-09-18 close checkpoint
+
+- The September 18 Alpaca IEX 1Day bar closed at `$222.04` (high `$222.69`, low `$218.04`). Near-close IEX quotes began around `$222.08/$222.09` but ended dislocated at `$219.15/$222.35`; the daily bar is retained as a disclosed non-executable close proxy.
+- The real 55-share path remains closed at actual realized P/L `-$453.08`. A2 (150 shares at fixed `$218.21`) is `+$574.50` at the `$222.04` bar proxy; A3 no trade remains `$0.00`. A1 remains unentered and `UNSCORABLE`: the first regular-session hourly bars stayed below the `$220.50-$221.00` close band, while the final 15:00–16:00 ET bar only closed above it after the regular-session entry window ended, with no predeclared next-session quote.
+- No `$226.00` target or `$210.50` daily-close invalidation occurred for the hypothetical paths. This interim checkpoint supports no lesson change. Next checkpoint: 2026-09-22 regular-session close.
+
+## 2026-09-22 close checkpoint
+
+- The 1Day IEX bar closed at `$228.85` (high `$229.97`, low `$226.59`). The near-close IEX quote at `2026-09-22T19:59:59.999108332Z` was `$228.81` bid / `$228.85` ask, 100 shares displayed on each side. The actual 55-share path remains closed at its confirmed `-$453.08` stop result.
+- A2's fixed 150-share entry at `$218.21` crossed the predeclared `$226` target during the regular session (the first 1-minute bar opened above target). Using the target price as a conservative exit floor gives hypothetical gross P/L `+$1,168.50`; this is not a broker fill. The first qualifying 1Hour bar (`2026-09-22T14:00Z`) closed at `$228.285`; the first post-close quote at `15:00:00.001668391Z` was `$228.27/$228.29`, already beyond A1's `$226` target. The original rules do not define a coherent entry/target sequence there, so A1 remains `UNSCORABLE` rather than assigning an invented position. A3 no trade remains `$0`.
+- No new lesson is supported by this single path. Next checkpoint remains the predeclared `2026-09-24` endpoint for the hypothetical alternatives.

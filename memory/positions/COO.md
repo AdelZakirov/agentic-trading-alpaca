@@ -1,9 +1,7 @@
 # COO
 
-Updated 2026-09-15T21:07:50+02:00; long 1 COO260918P00055000 at $2.00 / short 1 COO260918P00050000 at $0.05. Net entry debit $195, defined maximum debit loss $195; broker net market value $145. HOLD spread, no add or open COO order.
+Updated 2026-09-16T17:08:00+02:00; CLOSED. The full Sep 18 long 55 put / short 50 put spread closed at a $0.60 net credit on 2026-09-16T15:03:59.886421657Z. Original $0.64 close order 7005ae93-4364-43b6-b2aa-f601c950fb47 was replaced once; replacement 341117e2-7c5b-467e-82e3-b3fb5903936d filled. Broker reconciliation shows no COO position or open order.
 
-Bearish earnings/guidance reset remains intact; underlying indicative $53.35/$53.57 below $55.60 review and above $50 target. Sep18 puts indicative long $1.52/$1.83, short $0/$0.07; estimated liquidation credit $1.45 ($145), not firm executable OPRA. Illiquid short bid zero is not missing contract.
+Entry debit was $1.95; gross realized loss was $1.35 per spread, or $135 before fees. Cash increased by $59.95 on the close. The bearish thesis did not reach its $50-$51 target; with two days to expiry, theta, pin, exercise, and assignment risk dominated. No renewed option or stock decision.
 
-At scheduled management review downside $50–51, daily close above $55.60 or structural break $57.40. Review September 16 after Fed; arrange paired close before September 18 expiry unless an explicit renewed expiry decision is made. No exercise or assignment without explicit management; avoid expiration/pin risk. No stock position or new separate options.
-
-[Latest technical](../research/2026-09-11/164202-COO-technical.md). [Latest fundamental](../research/2026-09-11/164227-COO-fundamental.md). [History](history/COO.jsonl).
+[Close alternatives](../ghost-trades/2026-09-16/alpaca-stage2-20260916-COO-sell.md). [Latest technical](../research/2026-09-11/164202-COO-technical.md). [Latest fundamental](../research/2026-09-11/164227-COO-fundamental.md). [History](history/COO.jsonl).

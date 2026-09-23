@@ -1,6 +1,6 @@
 # Completed ghost-trade archive index
 
-- Updated: 2026-09-14 22:36 Europe/Amsterdam
+- Updated: 2026-09-22 22:20 Europe/Amsterdam
 - Scope: reviewed completed comparison sets; full evidence remains in each linked ghost file.
 
 | Ghost set | Ticker | Data quality | Evaluated at | Source |
@@ -33,3 +33,8 @@
 | [`alpaca-stage2-20260910-SMMT-sell`](2026-09-10/alpaca-stage2-20260910-SMMT-sell.md) | SMMT | partial | 2026-09-14 22:30 | 2026-09-10/alpaca-stage2-20260910-SMMT-sell.md |
 | [`alpaca-stage2-20260910-NVDA-oco`](2026-09-10/alpaca-stage2-20260910-NVDA-oco.md) | NVDA | partial | 2026-09-14 22:30 | 2026-09-10/alpaca-stage2-20260910-NVDA-oco.md |
 | [`alpaca-stage2-20260910-RBLX-sell`](2026-09-10/alpaca-stage2-20260910-RBLX-sell.md) | RBLX | partial | 2026-09-14 22:36 | 2026-09-10/alpaca-stage2-20260910-RBLX-sell.md |
+| [`alpaca-stage2-20260911-COO-bear-put-spread`](2026-09-11/alpaca-stage2-20260911-COO-bear-put-spread.md) | COO | partial | 2026-09-16 19:09 | 2026-09-11/alpaca-stage2-20260911-COO-bear-put-spread.md |
+| [`alpaca-stage2-20260916-CHYM-buy`](2026-09-16/alpaca-stage2-20260916-CHYM-buy.md) | CHYM | partial | 2026-09-17 09:34 | 2026-09-16/alpaca-stage2-20260916-CHYM-buy.md |
+| [`alpaca-stage2-20260914-RBLX-sell`](2026-09-14/alpaca-stage2-20260914-RBLX-sell.md) | RBLX | partial | 2026-09-19 09:24 | 2026-09-14/alpaca-stage2-20260914-RBLX-sell.md |
+| [`alpaca-stage2-20260916-COO-sell`](2026-09-16/alpaca-stage2-20260916-COO-sell.md) | COO | partial | 2026-09-19 09:24 | 2026-09-16/alpaca-stage2-20260916-COO-sell.md |
+| [`alpaca-stage2-20260915-HOOD-sell`](2026-09-15/alpaca-stage2-20260915-HOOD-sell.md) | HOOD | partial | 2026-09-22 22:20 | 2026-09-15/alpaca-stage2-20260915-HOOD-sell.md |

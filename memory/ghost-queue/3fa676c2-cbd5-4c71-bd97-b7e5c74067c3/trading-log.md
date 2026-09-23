@@ -1,0 +1,99 @@
+# Stage 2 trading log — 2026-09-18
+
+## Run 3fa676c2-cbd5-4c71-bd97-b7e5c74067c3 — 2026-09-18T16:49:17+02:00
+
+### Scope, safety, and recovery
+
+- Normal autonomous Stage 2 cycle; Alpaca paper only. `.env` matched `ALPACA_PAPER_TRADE=true` and `ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2` without exposing credentials.
+- A stale active queue run `bd2421f5-bfaa-4e83-bc5c-904661bce52b` had started 2026-09-17T18:39:55Z. Broker reconciliation found no orders or account activities after that time, no open orders, and no partial run artifacts; it was aborted and replaced by this run. Recovery is included in this completed handoff.
+- Alpaca clock at preflight: market open, New York date 2026-09-18, regular close 16:00 ET.
+
+### Stage 0-1 gates and enrichment
+
+- `data/daily_shortlist_state.json`: `last_completed_date=2026-09-18`, completed 10:14:11 ET.
+- `data/stage1_screen.json`: 190 nonempty candidates, actual completed bars through 2026-09-17.
+- `data/stage1_experts.json`: 3 nonempty expert candidates, generated 2026-09-18T14:05:08Z.
+- `data/stage1_shortlist.md`: matching 2026-09-17 completed-bar date and expert timestamp; community, expert, and technical sections present; 33 unique tickers.
+- Enrichment rebuilt for shortlist hash `ac42730138cbe5fc785b6b6e0b1ecb39e328bb9165ac5b4a929d8f47a435b831`, generated 2026-09-18T14:37:41Z. Initial sandbox DNS failure affected Yahoo 33/33; the single permitted network retry recovered 14 `ok` and 19 `partial`; technical data is current/`ok` for 33/33.
+
+### Pre-action broker state and posture
+
+- 10:33 ET: equity $101,574.21, cash $68,851.18, no open orders, no option positions. Long stock: ARQT 200, ESI 75, MSFT 20, MU 3, RBLX 50, SPY 13.
+- Post-Fed posture remained moderately risk-on but selective. The portfolio was under 33% invested with no leverage used, while near-term risks were correlated growth/AI exposure, MU earnings timing, ARQT biotech gaps, RBLX near a close-based review, and fresh-catalyst reversals that can fail quickly.
+- Constraints: keep each new idea near 5.4% notional; derive risk from daily-close invalidation; aggregate close-level downside near or below 2.5% of equity and a 10% simultaneous stock-gap stress near or below 5%; use DAY limits only; no chase beyond researched entry bounds; no options without trigger and executable economics.
+- Active lessons applied: broker state overrode stale memory; bounded idempotent orders and reconciliation were mandatory; catalyst/price freshness was checked; option payoff and overlap were compared; daily-close invalidations retained their stated time basis; no day protection was assumed.
+
+### Complete shortlist coverage ledger
+
+One disposition per 33 enriched tickers; `research` names received moneyheap analysis, while existing holdings were managed separately.
+
+| Ticker | Disposition | Evidence, uncertainty, and next condition |
+| --- | --- | --- |
+| MSFT | watch | Existing 20 shares; $491.11/$492.40 IEX, +2.7% 20d, 40d to estimated earnings. No add with current tech concentration; preserve $485.50 daily-close review. |
+| SPY | watch | Existing 13 shares; $759.02/$759.40 IEX, below $760.80-$764 reclaim. Hold core; add only after stable $748-$751 support or confirmed reclaim. |
+| AAPL | reject | +6.4% 20d and 2.19 ATR stretched, 34.7x forward P/E, analyst mean below price; no incremental edge versus existing tech exposure. |
+| QQQ | reject | Duplicates SPY/MSFT growth beta, only +0.1% over 20d and no distinct catalyst; no portfolio construction benefit. |
+| GOOG | watch | 24.2% revenue growth and 21.5% analyst upside conflict with no current breakout and existing megacap exposure; reconsider on defined support/breakout. |
+| MU | watch | Existing 3 shares; estimated earnings in 12 days after a strong run. Hold, no add, verify exact event date before Sep 29. |
+| INTC | reject | +17.1% 20d, +7.7% 1d, 2.0x volume and 2.79 ATR stretch at 52x forward P/E; chase risk dominates. |
+| WMT | reject | Revenue +5.9%, earnings -9.1%, -6.7% 20d, no fresh shortlist catalyst; weak 1-4 week asymmetry. |
+| AMD | reject | +16.9% 20d, +8.2% 5d, 3.15 ATR stretch and large existing AI/tech overlap; no chase. |
+| MA | watch | High-quality cash flow and 24.6x forward P/E, but -1.4% 20d and no actionable trigger; reconsider on support/reclaim. |
+| CCK | research | Fresh JPMorgan upgrade plus 16.5% revenue, 42.9% earnings growth, 12.1x forward P/E and 7.2% FCF yield. Bought 50; daily close <$106 invalidates. |
+| DT | research | Fresh Needham and prior Morgan Stanley upgrades, 16.2% growth, net cash and 26% FCF margin. Bought 100 at the $55 cap; close <$51.80 invalidates. |
+| ETSY | research | Fresh upgrades, 10.6x forward P/E, 13.7% short float and pullback support versus slow growth/debt. Bought 75; close <$69.20 invalidates. |
+| FLNC | research | Strong bearish trend but RSI/price extremely stretched. Oct 16 $8/$6 put spread was about $0.96 indicative debit, $7.04 breakeven, $96 max loss/$104 max profit; no trade until $7.85-$8.20 rejection or 30m close <$7. |
+| AN | insufficient_evidence | -15.2% 5d, 5.54x volume, 5.34 ATR displacement and 5.0x debt/equity after a shock. Needs stabilization and catalyst clarification before risk. |
+| FPS | research | Valid 5.59x-volume bullish squeeze but +30.4% 5d and near $40 resistance. No chase; watch $35-$36.50 retest or daily close >$40.50. |
+| MTZ | insufficient_evidence | -23.6% 20d bearish break and 3.70 ATR stretch conflict with 17x P/E and reported 94% target upside; catalyst/source mismatch needs research only after a base. |
+| ENVA | reject | -29.7% 20d, -19.3% 5d, 5.15 ATR displacement and 3.37x debt/equity; falling-knife risk without a reversal trigger. |
+| GNRC | watch | +18.4% 1d on 6.92x volume but still -1.5% 20d; wait for consolidation/retest rather than buy the event spike. |
+| TEM | reject | +31.3% 20d and 3.66 ATR stretch with negative FCF/ROE and analyst mean below price; poor entry asymmetry. |
+| ARE | watch | Bullish breakout and 14% FCF yield conflict with -11.9% revenue growth and analyst mean below price; require follow-through and fundamental clarification. |
+| TMUS | watch | -8.7% 20d bearish structure but 11.6x forward P/E and 45.9% analyst upside; wait for base/reversal confirmation. |
+| NVST | insufficient_evidence | -14.2% 20d, bearish break and 4.20 ATR stretch; potentially oversold but no fresh catalyst establishes timing. |
+| XRAY | insufficient_evidence | Revenue -4.1%, negative ROE and bearish break conflict with low multiple/target upside; no catalyst or reversal trigger. |
+| ARKG | reject | Adds high-beta biotech basket exposure beside ARQT with no distinct company catalyst or fundamental underwriting. |
+| ALHC | reject | -31.9% 20d, 9.1% ATR, 5.37 ATR displacement and 1.25x debt/equity; unresolved severe dislocation. |
+| WGS | reject | +31.7% 20d, 38.5% short float and 4.57 ATR stretch with negative FCF and analyst mean below price; squeeze chase risk. |
+| LAD | watch | 7.4x forward P/E and 7.9% FCF yield but -13.5% 20d, bearish structure and 2.58x debt/equity; require reversal. |
+| ATRO | insufficient_evidence | -20.3% 20d bearish break, 3.69 ATR stretch and only four analysts behind large target upside; catalyst not established. |
+| TMO | reject | +7.3% 20d bullish break but 2.68 ATR stretch and analyst mean below price; no favorable new-entry cushion. |
+| VBIL | reject | 7.0x relative volume produced only -0.03% 20d movement; low-volatility bond exposure does not meet the tactical return objective. |
+| ILMN | reject | +19.6% 20d, +21.9% 5d and 3.32 ATR stretch while analyst mean is 16.7% below price; no chase. |
+| ARQT | watch | Existing 200 shares; $25.93/$26.08 IEX, thesis intact and below $27.50 trim review. Hold, no add. |
+
+Exploration stopped because the remaining unresearched names were duplicate index/tech exposure, lacked a distinct current trigger, were already several ATR beyond support, or had unresolved shock/catalyst evidence unlikely to outrank the researched entries today.
+
+### Research and decisions
+
+- [DT fundamental](../research/2026-09-18/163920-DT-fundamental.md): strong cash generation/net cash and upgrade momentum, but near 52-week resistance. Stock BUY only at $55 or less; no option because shares fit the 1-4 week thesis without theta/cap.
+- [CCK fundamental](../research/2026-09-18/164020-CCK-fundamental.md): strong valuation/cash-flow rebound case despite leverage. Stock BUY; no option because stock liquidity and low close-level risk are preferable to added spread/expiry uncertainty.
+- [ETSY fundamental](../research/2026-09-18/164057-ETSY-fundamental.md): moderate reversal/squeeze case with valuation support, balanced by debt and slow marketplace growth. Stock BUY; no option because cash shares preserve upside and avoid high-beta IV/theta risk.
+- [FLNC technical](../research/2026-09-18/164140-FLNC-technical.md): bearish but too oversold to chase. Stock decision REJECT under long-only policy; option decision HOLD pending trigger. Indicative Oct 16 puts: $8 ask/bid $1.13/$1.07, $7 $0.57/$0.48, $6 $0.22/$0.17; IV about 79%-87% where available.
+- [FPS technical](../research/2026-09-18/164315-FPS-technical.md): bullish squeeze underway but current price is extended; stock decision WATCH, no immediate option edge.
+
+Existing-position decisions: HOLD ARQT, ESI, MSFT, MU, RBLX and SPY; no additions or option overlays. RBLX traded near/below its $46.80 daily-close review intraday, but the plan explicitly requires the close; $44.50 remains structural invalidation. No current target or daily-close invalidation was confirmed during this run.
+
+### Orders and reconciliation
+
+1. CCK BUY 50 DAY limit $109.70, client `alpaca-stage2-20260918-CCK-buy`, broker `b9ce8450-957f-4c83-8a6e-779adc509ba0`: FILLED 50/50 at $109.67 at 14:46:12Z. Three IEX observations showed a persistent abnormal bid but positive $109.69 ask; a tight delayed-SIP reference and bounded limit supported execution without market-order slippage.
+2. DT BUY 100 DAY limit $55.00, client `alpaca-stage2-20260918-DT-buy`, broker `57d56067-cb7d-40f4-9898-d19b752458a3`: FILLED 100/100 at $55.00 at 14:47:29Z.
+3. ETSY BUY 75 DAY limit $72.75, client `alpaca-stage2-20260918-ETSY-buy`, broker `9452399a-ed78-4cec-988c-b4967a56583f`: FILLED 75/75 at $72.71 at 14:47:56Z.
+
+Ghost definitions: [CCK](../ghost-trades/2026-09-18/alpaca-stage2-20260918-CCK-buy.md), [DT](../ghost-trades/2026-09-18/alpaca-stage2-20260918-DT-buy.md), [ETSY](../ghost-trades/2026-09-18/alpaca-stage2-20260918-ETSY-buy.md). Each was created before submission and updated only with confirmed execution facts before handoff.
+
+### Post-action state before final persistence
+
+- 10:48 ET: equity $101,595.57, cash $52,414.43, long market value $49,181.14, no open orders, nine stock positions and no options.
+- Invested exposure 48.41%; cash 51.59%. Approximate close/structural-review downside is $2,383 / 2.35% of equity; simultaneous 10% stock-gap stress is about $4,918 / 4.84%. No leverage, unbounded loss, or active aggregate breach.
+- Errors: initial Yahoo DNS restriction recovered on the one permitted retry. moneyheap local service was initially down, restarted successfully, and all five research requests persisted. No uncertain broker mutation or credential exposure.
+
+### Final reconciliation and handoff preparation
+
+- 10:52 ET broker truth: account ACTIVE/unblocked; equity $101,654.28, cash $52,414.43, long market value $49,239.85, buying power $347,529.31, options buying power $77,034.35.
+- Positions: ARQT 200, CCK 50, DT 100, ESI 75, ETSY 75, MSFT 20, MU 3, RBLX 50, SPY 13. No option positions and no open orders.
+- Account activities independently confirm exactly three fills for this run: CCK 50@$109.67, DT 100@$55.00, ETSY 75@$72.71. All quantities are available and no mutation is uncertain.
+- Prepared handoff `3fa676c2-cbd5-4c71-bd97-b7e5c74067c3` with the three pre-trade ghost definitions; publication follows checkpoint persistence.
+
+<!-- run-checkpoint: 2026-09-18T16:53:00+02:00 -->

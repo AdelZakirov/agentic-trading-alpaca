@@ -1438,5 +1438,255 @@
     "data_quality": "partial",
     "conclusion": "At the last valid 2026-09-11 checkpoint, full retention led the real trim by $25.88, A1 led by $5.88, and the real trim led A2 by $13.38. The declared 2026-09-12 endpoint was Saturday and remains unscorable; no later mark was substituted. No lesson change.",
     "lesson_ids": []
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260911-COO-bear-put-spread",
+    "source": "memory/ghost-trades/2026-09-11/alpaca-stage2-20260911-COO-bear-put-spread.md",
+    "review_status": "reviewed",
+    "decision_id": "alpaca-stage2-20260911-COO-bear-put-spread",
+    "ticker": "COO",
+    "evaluated_at": "2026-09-16T17:09:49Z",
+    "conditions": [
+      "post-earnings short-dated defined-risk options",
+      "Sep 18 55/50 bear put spread",
+      "separate expiry-risk close decision"
+    ],
+    "question": "Did the defined-risk 55/50 spread outperform the outright 55 put or waiting for an objective trigger before the separate close decision?",
+    "outcomes": [
+      {
+        "label": "real",
+        "pnl": -135.0,
+        "capital_at_risk": 195.0,
+        "scorable": true,
+        "reason": "Actual $1.95 debit and paired $0.60 credit close; gross USD P/L before fees."
+      },
+      {
+        "label": "A outright Sep 18 55 put",
+        "pnl": -137.9,
+        "capital_at_risk": 202.9,
+        "scorable": true,
+        "reason": "Fixed $2.029 entry and actual $0.65 55-put sale at the common close-fill timestamp; gross USD P/L before fees."
+      },
+      {
+        "label": "B Oct 16 55/50 spread",
+        "pnl": null,
+        "capital_at_risk": 223.0,
+        "scorable": false,
+        "reason": "No contemporaneous October leg quotes at the separate close decision; mark unavailable."
+      },
+      {
+        "label": "C no trade until objective trigger",
+        "pnl": 0.0,
+        "capital_at_risk": 0.0,
+        "scorable": true,
+        "reason": "No position or capital committed."
+      }
+    ],
+    "data_quality": "partial",
+    "conclusion": "From the confirmed Sep 11 spread fill through the Sep 16 paired close, the real spread narrowly beat the fixed-entry outright-put counterfactual, while no trade preserved capital. The October alternative is unscorable because its historical close mark is unavailable. This is a partial comparison and does not support a new durable lesson.",
+    "lesson_ids": []
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260916-CHYM-buy",
+    "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-CHYM-buy.md",
+    "review_status": "reviewed",
+    "decision_id": "alpaca-stage2-20260916-CHYM-buy",
+    "ticker": "CHYM",
+    "evaluated_at": "2026-09-17T09:34:13+02:00",
+    "conditions": [
+      "post-Fed event-risk starter",
+      "common stock",
+      "defined bracket stop",
+      "partial comparison"
+    ],
+    "question": "Did a bounded 100-share CHYM starter outperform no trade or a 200-share immediate entry, and was post-Fed confirmation preferable?",
+    "outcomes": [
+      {
+        "label": "real",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-CHYM-buy.md",
+        "pnl": -153.0,
+        "capital_at_risk": 152.0,
+        "scorable": true,
+        "reason": "Actual 100-share fill at $32.47 and confirmed bracket-stop exit at $30.94; gross USD P/L before fees."
+      },
+      {
+        "label": "A no pre-Fed trade",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-CHYM-buy.md",
+        "pnl": 0.0,
+        "capital_at_risk": 0.0,
+        "scorable": true,
+        "reason": "No position or capital committed."
+      },
+      {
+        "label": "B 200-share immediate entry",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-CHYM-buy.md",
+        "pnl": -306.0,
+        "capital_at_risk": 304.0,
+        "scorable": true,
+        "reason": "Fixed $32.47 hypothetical entry and confirmed $30.94 stop execution used as a common-exit proxy; not an inferred broker fill."
+      },
+      {
+        "label": "C post-Fed confirmation entry",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-CHYM-buy.md",
+        "pnl": null,
+        "capital_at_risk": null,
+        "scorable": false,
+        "reason": "No contemporaneous executable post-Fed ask/volume record establishes whether the predeclared support-based trigger activated before the later close invalidation."
+      }
+    ],
+    "data_quality": "partial",
+    "conclusion": "The 100-share starter lost $153, less than the 200-share counterfactual by $153 but more than no trade by $153. The comparison supports the predeclared bounded sizing discipline in this single event case; the post-Fed alternative remains unscorable and no durable lesson is warranted.",
+    "lesson_ids": []
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260914-RBLX-sell",
+    "source": "memory/ghost-trades/2026-09-14/alpaca-stage2-20260914-RBLX-sell.md",
+    "review_status": "reviewed",
+    "decision_id": "alpaca-stage2-20260914-RBLX-sell",
+    "ticker": "RBLX",
+    "evaluated_at": "2026-09-19T09:23:00+02:00",
+    "conditions": [
+      "overbought momentum trim",
+      "common-stock partial sale",
+      "dislocated IEX close book"
+    ],
+    "question": "Was selling 25 RBLX shares preferable to an immediate bid trim, a larger trim, or holding all?",
+    "outcomes": [
+      {
+        "label": "real",
+        "pnl": 623.0,
+        "capital_at_risk": null,
+        "scorable": true,
+        "reason": "25 shares sold at $50.50; 50 remaining marked at the $47.825 IEX daily-bar close proxy."
+      },
+      {
+        "label": "immediate-25-share-bid",
+        "pnl": 620.5,
+        "capital_at_risk": null,
+        "scorable": true,
+        "reason": "25 shares hypothetically sold at the contemporaneous $50.40 bid; 50 marked at the same close proxy."
+      },
+      {
+        "label": "immediate-50-share-bid",
+        "pnl": 684.88,
+        "capital_at_risk": null,
+        "scorable": true,
+        "reason": "50 shares hypothetically sold at the contemporaneous $50.40 bid; 25 marked at the same close proxy."
+      },
+      {
+        "label": "hold-75",
+        "pnl": 556.13,
+        "capital_at_risk": null,
+        "scorable": true,
+        "reason": "All 75 shares marked at the same close proxy."
+      }
+    ],
+    "data_quality": "partial",
+    "conclusion": "The chosen limit beat the same-size immediate-bid trim by $2.50, but the larger 50-share trim led by $61.88 at the common five-session end; full retention trailed by $66.88. The ranking relies on a disclosed non-executable daily-bar close proxy because the IEX near-close book was dislocated. No durable lesson change.",
+    "lesson_ids": []
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260916-COO-sell",
+    "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-COO-sell.md",
+    "review_status": "reviewed",
+    "decision_id": "alpaca-stage2-20260916-COO-sell",
+    "ticker": "COO",
+    "evaluated_at": "2026-09-19T09:23:00+02:00",
+    "conditions": [
+      "expiry-risk management",
+      "defined-risk put spread close",
+      "intrinsic expiration mark"
+    ],
+    "question": "Did closing the expiring COO 55/50 put spread outperform holding through expiration or rolling to October?",
+    "outcomes": [
+      {
+        "label": "real",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-COO-sell.md",
+        "pnl": -135.0,
+        "capital_at_risk": 195.0,
+        "scorable": true,
+        "reason": "Confirmed paired close at $0.60 net credit against the original $1.95 debit."
+      },
+      {
+        "label": "hold-one-more-session",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-COO-sell.md",
+        "pnl": null,
+        "capital_at_risk": 195.0,
+        "scorable": false,
+        "reason": "No firm historical OPRA executable sides for the predeclared September 17 close."
+      },
+      {
+        "label": "hold-through-expiration",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-COO-sell.md",
+        "pnl": -195.0,
+        "capital_at_risk": 195.0,
+        "scorable": true,
+        "reason": "COO remained above $55 at the predeclared 15:30 ET checkpoint, so the spread expired with zero intrinsic value."
+      },
+      {
+        "label": "roll-october-16",
+        "source": "memory/ghost-trades/2026-09-16/alpaca-stage2-20260916-COO-sell.md",
+        "pnl": null,
+        "capital_at_risk": null,
+        "scorable": false,
+        "reason": "The definition predeclared October leg quotes, IV, Greeks and debit as unavailable."
+      }
+    ],
+    "data_quality": "partial",
+    "conclusion": "The real paired close outperformed holding through expiration by $60 gross and removed assignment and pin risk. The one-session hold and October roll remain unscorable under their predeclared data gaps.",
+    "lesson_ids": [
+      "Reconcile expiring protection at the close"
+    ]
+  },
+  {
+    "ghost_id": "alpaca-stage2-20260915-HOOD-sell",
+    "source": "memory/ghost-trades/2026-09-15/alpaca-stage2-20260915-HOOD-sell.md",
+    "review_status": "reviewed",
+    "decision_id": "alpaca-stage2-20260915-HOOD-sell",
+    "ticker": "HOOD",
+    "evaluated_at": "2026-09-22T20:20:02Z",
+    "conditions": [
+      "30-share existing HOOD position",
+      "partial risk reduction before the common endpoint",
+      "regular-session IEX stock quote; historical option-leg marks unavailable"
+    ],
+    "question": "Did the Sep 15 15-share trim improve the predecision 30-share outcome versus holding all, exiting all, or retaining stock with the defined put spread?",
+    "outcomes": [
+      {
+        "label": "real",
+        "source": "memory/ghost-trades/2026-09-15/alpaca-stage2-20260915-HOOD-sell.md",
+        "pnl": 10.35,
+        "capital_at_risk": 3237.0,
+        "scorable": true,
+        "reason": "15 sold at $108.94 and 15 at $107.55; total forward proceeds exceed the predecision $107.90 bid reference by $10.35."
+      },
+      {
+        "label": "HOLD_ALL",
+        "source": "memory/ghost-trades/2026-09-15/alpaca-stage2-20260915-HOOD-sell.md",
+        "pnl": 468.3,
+        "capital_at_risk": 3237.0,
+        "scorable": true,
+        "reason": "30 shares marked at the stable near-close IEX bid $123.51 (size 100); no $107.50 close invalidation occurred."
+      },
+      {
+        "label": "EXIT_ALL",
+        "source": "memory/ghost-trades/2026-09-15/alpaca-stage2-20260915-HOOD-sell.md",
+        "pnl": 0.0,
+        "capital_at_risk": 0.0,
+        "scorable": true,
+        "reason": "Hypothetical full exit at the contemporaneous $107.90 bid; flat through the common endpoint."
+      },
+      {
+        "label": "HOLD_WITH_PUT_SPREAD",
+        "source": "memory/ghost-trades/2026-09-15/alpaca-stage2-20260915-HOOD-sell.md",
+        "pnl": null,
+        "capital_at_risk": 3645.0,
+        "scorable": false,
+        "reason": "No executable historical option-leg quotes at the common endpoint; indicative option estimates are not scored."
+      }
+    ],
+    "data_quality": "partial",
+    "conclusion": "Holding all 30 shares would have produced +$468.30 versus +$10.35 on the actual two-stage reduction and $0 on a full exit. That describes this endpoint, not proof the risk-reducing decision was wrong when made. The put-spread path is unscorable; one episode supports no durable lesson change.",
+    "lesson_ids": []
   }
 ]

@@ -1,9 +1,11 @@
 # MU
 
-Updated 2026-09-15T21:07:50+02:00; long 6 at $939.993333; no active MU order. HOLD, no add.
+Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`.
 
-Daily close above $930 with volume required before considering renewed add. At scheduled management executable bid $955–965 triggers trim 2–3, recheck quantity first. Daily close below $894 triggers review; $880 is structural exit-review level. These are scheduled/close-based management conditions, not broker stops or continuous-touch promises. Review September 16 after Fed; estimated September 30 earnings requires fresh date verification before event exposure. AI/memory correlation and MSFT/SPY indirect overlap constrain additions.
+Long 3 at $939.993333 after SELL 3 FILLED at $978.17 on 2026-09-17T14:46:54.522893Z, broker order `6a8c565f-27b3-402d-a6b1-5877dc005ce3`, client `alpaca-stage2-20260917-MU-sell`. Gross realized gain on the trim was about $114.53 before fees. No active MU order.
 
-No options: retained stock already expresses the thesis; no separate event-timed payoff advantage demonstrated.
+HOLD the remaining 3; no add. Fresh IEX bid/ask $1,092.17/$1,094.19 at 15:35:05 ET (80x40). Company-confirmed Sep 30 post-close earnings; retain the small runner toward $1,150-$1,180, then $1,250-$1,255, while preserving a $910 daily-close invalidation. Reassess no later than 2026-09-29 and do not carry through earnings without an explicit renewed event-risk decision. AI/memory correlation and an estimated 8%-12% earnings gap remain material.
 
-[Latest technical](../research/2026-09-14/182650-MU-technical.md). [History](history/MU.jsonl).
+No options: retained shares already express the upside thesis and added derivatives would increase AI/memory event overlap without a distinct edge.
+
+[Latest fundamental](../research/2026-09-21/175545-MU-fundamental.md). [Latest technical](../research/2026-09-14/182650-MU-technical.md). [Decision log](../logs/2026-09-21.md). [History](history/MU.jsonl).

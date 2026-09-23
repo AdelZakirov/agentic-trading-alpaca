@@ -394,13 +394,67 @@ def live_portfolio_data(base: dict) -> dict:
     return live
 
 
+def summary_material_actions(text: str) -> list[str]:
+    """Read both the legacy heading and the compact daily-summary action block."""
+    body = section(text, "Material actions")
+    compact_block_filled = False
+    if not body:
+        heading = re.search(r"(?m)^Material actions[^\n]*:[ \t]*$", text)
+        if heading:
+            compact_block_filled = bool(re.search(r"all broker FILLED", heading.group(0), flags=re.I))
+            lines = []
+            for line in text[heading.end():].splitlines():
+                if not line.strip() and not lines:
+                    continue
+                if not re.match(r"^[-*]\s+", line):
+                    break
+                lines.append(line)
+            body = "\n".join(lines)
+
+    actions = []
+    for line in bullets(body):
+        explicit = re.match(r"^(BUY|SELL|CLOSE|EXIT)\s+([A-Z0-9]+)\s+(.+)$", line, flags=re.I)
+        if explicit and re.search(r"\bFILLED\b", explicit.group(3), flags=re.I):
+            side, ticker, detail = explicit.groups()
+            if side.upper() == "BUY":
+                line = f"Bought {ticker} {detail}"
+            else:
+                verb = "Sold" if side.upper() == "SELL" else "Closed"
+                line = f"{ticker} {verb} {detail}"
+        ticker_first_filled = re.match(
+            r"^([A-Z0-9]+)\s+(BUY|SELL|EXIT)\s+(\d+(?:\.\d+)?)\s+(.+)$",
+            line,
+            flags=re.I,
+        )
+        if ticker_first_filled and re.search(r"\bFILLED\b", ticker_first_filled.group(4), flags=re.I):
+            ticker, side, quantity, detail = ticker_first_filled.groups()
+            detail = re.sub(r"\bFILLED\b\s*", "", detail, count=1, flags=re.I).lstrip()
+            if side.upper() == "BUY":
+                line = f"Bought {quantity} {ticker} shares {detail}".rstrip()
+            else:
+                verb = "Sold" if side.upper() == "SELL" else "Closed"
+                line = f"{ticker} {verb} {quantity} shares {detail}".rstrip()
+        compact = re.match(
+            r"^([A-Z0-9]+)\s+(buy|sell|exit)\s*(\d+(?:\.\d+)?)\s*@\s*\$([\d,.]+)(.*)$",
+            line,
+            flags=re.I,
+        )
+        if compact and compact_block_filled:
+            ticker, side, quantity, price, detail = compact.groups()
+            price = price.rstrip(",.")
+            prefix = f"Bought {quantity} {ticker} shares" if side.lower() == "buy" else f"{ticker} Sold {quantity} shares"
+            line = f"{prefix} at ${price}; {detail.lstrip(',; ')}"
+        actions.append(line)
+    return actions
+
+
 def summary_data(portfolio: dict) -> dict:
     summary_paths = sorted((ROOT / "memory/logs").glob("*-summary.md"), reverse=True)
     summary_path = summary_paths[0] if summary_paths else ROOT / "memory/logs/latest.md"
     text = read_text(summary_path)
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", summary_path.name)
     summary_date = date_match.group(1) if date_match else datetime.now().strftime("%Y-%m-%d")
-    material = bullets(section(text, "Material actions"))
+    material = summary_material_actions(text)
     buys = [line for line in material if line.lower().startswith("bought ")]
     submitted = [line for line in material if line.lower().startswith("submitted ")]
     pnl_by_ticker: dict[str, float] = {}
@@ -416,11 +470,14 @@ def summary_data(portfolio: dict) -> dict:
     buy_details = []
     bought_tickers = []
     for line in buys:
-        match = re.match(r"Bought\s+(.+?)(?:\.\s+Thesis:|;|$)", line, flags=re.I)
-        buy_details.append(match.group(1).rstrip(".") if match else re.sub(r"^Bought\s+", "", line, flags=re.I))
+        detail = re.sub(r"^Bought\s+", "", line, flags=re.I)
+        detail = re.split(r";|\.\s+", detail, maxsplit=1)[0].rstrip(".").strip()
+        buy_details.append(detail)
         ticker_match = re.search(r"\b([A-Z]{2,5})\s+shares", line)
+        if not ticker_match:
+            ticker_match = re.match(r"Bought\s+([A-Z0-9]+)\b", line, flags=re.I)
         if ticker_match:
-            bought_tickers.append(ticker_match.group(1))
+            bought_tickers.append(ticker_match.group(1).upper())
     buy_text = " and ".join(buy_details)
     sold_lines = [line for line in material if re.search(r"\b(Sold|Closed)\b", line, flags=re.I)]
     sale_details = []
@@ -430,7 +487,7 @@ def summary_data(portfolio: dict) -> dict:
         action_match = re.search(r"\b(Sold|Closed)\s+(.+?)(?:\s+under broker order|;|$)", line, flags=re.I)
         if action_match:
             verb = action_match.group(1).lower()
-            detail = action_match.group(2).strip()
+            detail = action_match.group(2).strip().rstrip(".")
             sale_details.append(f"{verb} {ticker} {detail}")
     action_text = ""
     if sale_details:
@@ -440,7 +497,7 @@ def summary_data(portfolio: dict) -> dict:
         submitted_text = " I also submitted an order that stayed open and unfilled, so it is not a position."
     movement = ""
     if drag and help_item:
-        movement = f" {help_item[0]} helped most at {money(help_item[1], signed=True)}, while {drag[0]} was the main drag at {money(drag[1], signed=True)}."
+        movement = f" Unrealized position P&L ranges from {money(help_item[1], signed=True)} on {help_item[0]} to {money(drag[1], signed=True)} on {drag[0]}; these are not today’s contributions."
     risk_text = ""
     if risk_line:
         risk_text = " I’m keeping an eye on " + re.sub(r"^Main risks:\s*", "", risk_line).rstrip(".") + "."
@@ -455,15 +512,15 @@ def summary_data(portfolio: dict) -> dict:
         held_verb = "kept the remaining" if sold_lines else "left the existing"
         held_text = " I " + held_verb + " " + ", ".join(existing[:-1]) + (f" and {existing[-1]}" if len(existing) > 1 else existing[0]) + " positions in place."
 
-    account_state = "is currently at" if portfolio.get("live") and portfolio.get("session", {}).get("isOpen") else "ended at"
+    refresh = portfolio.get("lastAccountRefresh", "")
+    as_of = f" ({refresh})" if refresh and refresh != "—" else ""
     voice = (
-        "Today was busy but fairly controlled. "
-        + (f"I bought {buy_text}." if buy_text else "I didn’t find anything convincing enough to buy, so I mostly stayed put.")
+        (f"Today I bought {buy_text}." if buy_text else "No confirmed stock purchases are recorded in this summary.")
         + action_text
         + held_text
         + submitted_text
-        + f" The account {account_state} {portfolio['equity']}, "
-        + f"with the overall return at {portfolio['return'].split('(')[0].strip()}."
+        + f" The latest account snapshot{as_of} shows equity of {portfolio['equity']}, "
+        + f"with an overall return of {portfolio['return'].split('(')[0].strip()} versus the initial $100,000, not today’s return."
         + movement
         + risk_text
     )
@@ -472,7 +529,10 @@ def summary_data(portfolio: dict) -> dict:
         "voice": voice,
         "material": material,
         "source": summary_path.relative_to(ROOT).as_posix(),
-        "updated": next((line.replace("Updated:", "").strip() for line in text.splitlines() if line.startswith("- Updated:")), ""),
+        "updated": next(
+            (match.group(1) for line in text.splitlines() if (match := re.match(r"^(?:-\s+)?Updated:\s*(.+)$", line))),
+            "",
+        ),
     }
 
 

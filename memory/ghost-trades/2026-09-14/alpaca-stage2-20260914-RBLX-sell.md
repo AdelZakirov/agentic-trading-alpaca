@@ -6,7 +6,7 @@
 - creator_run_id: `f69753d6-76b4-4255-b370-bdb39af6070f`
 - decision_at: `2026-09-14T12:28:32-04:00` (America/New_York)
 - ticker: `RBLX`
-- status: `WAITING_FOR_FILL`
+- status: `COMPLETE`
 - client_order_id: `alpaca-stage2-20260914-RBLX-sell`
 - broker_order_id: null
 
@@ -101,3 +101,27 @@ RBLX is a 75-share long position entered at $40.41 with a broker quote of $50.40
 - Normalized gross P/L from the original `$40.41` cost basis, before fees, using the conservative close bid for remaining shares: chosen real path `+$794.25` (25 shares sold at `$50.50` plus 50 marked at `$51.25`); immediate 25-share bid trim `+$791.75`; immediate 50-share bid trim `+$770.50`; hold 75 `+$813.00`. The full hold led by `$18.75` at this first checkpoint; the chosen limit execution led the same-size immediate-bid alternative by `$2.50`.
 - Conclusion so far: the trim filled as intended and preserved participation, but the first close favors holding the full position on raw P/L. This is an interim checkpoint, not a final decision-quality conclusion; no lesson change.
 - Next checkpoint: first later daily close, or immediately if the original `$46.80`/`$44.50` close or `$53.50-$55.00` touch rule activates.
+
+## 2026-09-15 close checkpoint
+
+- Individual broker-order reconciliation confirms the chosen 25-share sale filled at `$50.50`; the real position remains 50 shares long. The September 15 IEX 1Day bar was `$50.235` close, `$51.22` high, and `$49.94` low. The final near-close IEX quote at `2026-09-15T19:59:59.804558998Z` was `$48.61` bid / `$52.55` ask; the wide bid/ask is retained as a data-quality caveat and the bid is used as the conservative executable mark.
+- No daily close below `$46.80` or `$44.50`, and no `$53.50-$55.00` continuation touch, occurred. Normalized gross P/L from the original `$40.41` cost basis: chosen real path `+$662.25`; immediate 25-share bid trim `+$659.75`; immediate 50-share bid trim `+$704.50`; hold 75 `+$615.00`. The larger trim led at this interim mark; the chosen limit beat the same-size immediate-bid alternative by `$2.50`.
+- The dislocated IEX bid makes this checkpoint `partial`, not a final decision-quality result. No lesson change. Next checkpoint: 2026-09-16 regular-session close, or earlier on an original trigger.
+
+## 2026-09-16 close checkpoint
+
+- The September 16 Alpaca IEX 1Day bar closed at `$47.435` (high `$50.34`, low `$47.24`); the last IEX quote was `$47.26` bid / `$49.96` ask at `2026-09-16T19:59:59.546470069Z`. The wide quote is retained as a data-quality caveat and the bid is used for the conservative remaining-share mark.
+- No daily close below `$46.80` or `$44.50`, and no `$53.50-$55.00` continuation touch, occurred. Normalized gross P/L from the original `$40.41` cost basis: chosen real path `+$594.75`; immediate 25-share bid trim `+$592.25`; immediate 50-share bid trim `+$670.75`; hold 75 `+$513.75`. The chosen limit still beat the same-size immediate-bid alternative by `$2.50`, while the larger trim led by `$76.00` at this interim mark.
+- This remains an interim checkpoint with a dislocated IEX spread and supports no lesson change. Next checkpoint: 2026-09-17 regular-session close.
+
+## 2026-09-17 close checkpoint
+
+- The September 17 Alpaca IEX 1Day bar closed at `$47.50` (high `$48.725`, low `$46.90`). Near-close IEX quotes were materially dislocated (`$45.42` bid against `$47.52-$49.97` asks), so the bar close is retained as a disclosed non-executable proxy rather than using the anomalous bid.
+- No daily close below `$46.80` or `$44.50`, and no `$53.50-$55.00` continuation touch, occurred. Normalized gross P/L from the original `$40.41` cost basis: chosen real path `+$606.75`; immediate 25-share bid trim `+$604.25`; immediate 50-share bid trim `+$676.75`; hold 75 `+$531.75`. The chosen limit remains `$2.50` ahead of the same-size immediate-bid alternative; the larger trim leads at this interim mark.
+- This is an interim, partial-quality checkpoint because executable close-side evidence is dislocated. No lesson change. Next checkpoint and common end: 2026-09-18 regular-session close.
+
+## 2026-09-18 close and completion
+
+- Read-only broker reconciliation confirms the chosen 25-share sale remained filled at `$50.50`, with 50 shares still held. The September 18 IEX 1Day bar closed at `$47.825` (high `$48.135`, low `$46.315`). Near-close quotes were again dislocated, including a final `$46.06/$48.99`; the bar close is used only as a disclosed non-executable proxy.
+- Normalized gross P/L from the original 75-share `$40.41` cost basis: chosen real path `+$623.00` (25 sold at `$50.50`, 50 marked at `$47.825`); immediate 25-share bid trim `+$620.50`; immediate 50-share bid trim `+$684.88`; hold 75 `+$556.13`.
+- The chosen limit beat the same-size immediate-bid alternative by `$2.50`, while the larger 50-share trim led the real path by `$61.88` at the common end and full retention trailed by `$66.88`. No `$46.80`/`$44.50` invalidation or `$53.50-$55.00` continuation touch occurred. This completes the predeclared five-session comparison; data quality is `partial` because the close-side IEX book was not executable. No durable lesson change.

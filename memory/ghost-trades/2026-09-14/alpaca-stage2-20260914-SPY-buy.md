@@ -83,3 +83,27 @@
 - Normalized gross P/L from each defined entry, before fees, using the conservative close bid: chosen real 13-share path `-$30.16`; double-size-now 26-share path `-$56.16`; no trade `$0.00`; pullback-only starter remains unfilled at `$0.00` because its `$757.50` activation did not occur.
 - Conclusion so far: the staged entry reduced event exposure versus the double-size alternative but still trailed retaining cash at the first close; the evidence is an interim checkpoint and does not yet judge the 2–8 week core-beta thesis. No lesson change.
 - Next checkpoint: the next scheduled daily close, or immediately if SPY closes below `$750.50` or trades at/exceeds `$779.00` under the original rules.
+
+## 2026-09-15 close checkpoint
+
+- Read-only broker reconciliation confirms the chosen 13-share entry at `$762.89`; the current broker position remains 13 shares long. The September 15 IEX 1Day bar was `$757.42` close, `$760.32` high, and `$756.18` low. The near-close IEX quote at `2026-09-15T19:59:59.669837827Z` was `$757.36` bid / `$757.45` ask.
+- The regular-session low crossed the predeclared `$757.50` activation, so `wait-for-757.50` is now a 13-share hypothetical entered at its fixed `$757.50` price. The `$750.50` daily-close invalidation and `$779.00` target did not trigger.
+- Normalized gross P/L: chosen real path `-$71.89`; double-size-now `-$139.62`; pullback-only starter `-$1.82`; no trade `$0.00`. The pullback alternative led this checkpoint, while the staged entry still reduced loss versus immediate double size. Interim evidence supports no lesson change. Next checkpoint: 2026-09-16 regular-session close (third trading-day checkpoint), or earlier on an original trigger.
+
+## 2026-09-16 close checkpoint
+
+- The September 16 Alpaca IEX 1Day bar closed at `$754.05` (high `$761.63`, low `$749.675`); the last IEX quote was `$754.05` bid / `$756.37` ask at `2026-09-16T19:59:59.997017481Z`.
+- The `$750.50` daily-close invalidation and `$779.00` target did not trigger. Normalized gross P/L: chosen 13-share path `-$114.92`; double-size-now 26-share path `-$225.68`; pullback-only 13-share starter `-$44.85` from its fixed `$757.50` activation; no trade `$0.00`. The pullback alternative still leads this checkpoint, while staged sizing reduces loss versus double size. No lesson change.
+- Next checkpoint: 2026-09-17 regular-session close.
+
+## 2026-09-17 close checkpoint
+
+- The September 17 Alpaca IEX 1Day bar closed at `$762.64` (high `$763.57`, low `$759.98`). The near-close IEX quote at `2026-09-17T19:59:59.999821Z` was `$762.62` bid / `$762.79` ask.
+- The `$750.50` daily-close invalidation and `$779.00` target did not trigger. Normalized gross P/L: chosen 13-share path `-$3.51`; double-size-now 26-share path `-$2.86`; pullback-only 13-share starter `+$66.56` from its fixed `$757.50` activation; no trade `$0.00`. No lesson change.
+- This completes the defined third-trading-day checkpoint. Next checkpoint: 2026-09-22 regular-session close.
+
+## 2026-09-22 close checkpoint
+
+- The Alpaca IEX 1Day bar closed at `$773.44` (high `$775.12`, low `$772.605`). The stable near-close IEX quote at `2026-09-22T19:59:59.995958413Z` was `$773.37/$773.44`, with displayed size 1,480/1,280. This is sufficient for all compared stock quantities.
+- Gross P/L at the bid: chosen 13 shares `+$136.24`; immediate 26-share alternative `+$276.64`; pullback-only 13 shares, activated earlier at `$757.50`, `+$206.31`; no trade `$0`. The close did not breach `$750.50` and did not reach the `$779` common-end trigger. The bar high exceeded the `$774` first-review level, but no historical bid-at-touch was established, so it is recorded as proximity, not an assumed executable exit.
+- Interim result supports no lesson change. Next checkpoint: final `2026-09-25` close.
