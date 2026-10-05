@@ -5,7 +5,7 @@
 - creator_run_id: `3fa676c2-cbd5-4c71-bd97-b7e5c74067c3`
 - decision_at: `2026-09-18T16:44:20+02:00`
 - ticker: `CCK`
-- status: `ACTIVE`
+- status: `COMPLETE`
 - client_order_id: `alpaca-stage2-20260918-CCK-buy`
 - broker_order_id: `b9ce8450-957f-4c83-8a6e-779adc509ba0`
 
@@ -52,3 +52,11 @@
 - `no-trade`: scoreable zero P/L.
 - conclusion: The first checkpoint shows a small mark-to-market loss for the chosen size; no decision-quality conclusion or lesson change is supported yet.
 - next_checkpoint: `2026-09-25 close`.
+
+## 2026-09-25 terminal comparison
+
+- Trigger and common exit: Alpaca paper IEX bar closed at $105.71 on Sep 24, below the declared $106 close invalidation. The selected sale order filled 50 at $106.51 at 2026-09-25T14:39:09.670532Z; use that actual same-time fill as the disclosed exit proxy for comparable retained-share paths. This is not a Sep 25 closing mark.
+- Outcomes: chosen 50 shares from $109.67: -$158.00 gross. Half-size 25 shares from $109.67: -$79.00. Deeper-pullback 50 shares entered on the Sep 24 IEX ask $107.49 x100 at 2026-09-24T15:23:54.387121Z; after the same close invalidation its proxy exit at $106.51 gives -$49.00. No-trade: $0.00. No target was reached.
+- The Sep 25 IEX daily bar later closed at $108.15 after the exits; it is post-exit context and does not reopen either path.
+- Decision review: Thesis/research and forecast were mixed within this short window; the rebound thesis was invalidated before its targets. Common stock and no-option choice fit the bounded-risk plan. Entry timing at $109.67 was worse than the later $107.49 pullback quote. The 25-share alternative halved the loss; chosen size stayed within its stated close-level risk. The broker fill at $106.51 confirms the exit was executable after the close-based signal. No separate lesson change from this set.
+- Assessment complete; data quality partial because the hypothetical entry is an IEX-only quote, while the exit is a confirmed paper fill. Next checkpoint: none.

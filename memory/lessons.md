@@ -49,14 +49,13 @@ Operational and performance evidence are now tracked; weekly reports document co
 ## Preserve the stated time basis of invalidation
 
 - Status: active
-- Pattern / conditions: A trade plan defines an invalidation using a daily close or another explicit confirmation window.
-- Lesson: Do not silently convert that condition into an intraday exit. If new evidence warrants earlier de-risking, record the thesis change and compare it explicitly with the original time-based rule.
-- Evidence count: 1 completed decision episode.
-- Supporting cases: [`PCG entry`](ghost-trades/2026-08-31/alpaca-stage2-20260831-PCG-buy.md) and [`PCG exit`](ghost-trades/2026-09-01/alpaca-stage2-20260901-PCG-sell.md) — an intraday exit preceded a documented close/reclaim recovery.
+- Pattern / conditions: A real trade or comparison path defines invalidation using a daily close or another explicit price/time rule.
+- Lesson: Apply that same declared rule to every comparable path and freeze a path after its specified exit; do not reopen it without a predeclared re-entry. If new evidence warrants earlier de-risking, record a separate scenario instead of changing the original rule.
+- Evidence count: 2 independent decision sets.
+- Supporting cases: [PCG entry](ghost-trades/2026-08-31/alpaca-stage2-20260831-PCG-buy.md) and [PCG exit](ghost-trades/2026-09-01/alpaca-stage2-20260901-PCG-sell.md) — an intraday exit preceded a documented close/reclaim recovery; [NVDA support entry](ghost-trades/2026-09-10/alpaca-stage2-20260910-NVDA-buy.md) — the full-size ghost path shared the Sep 14 stop and should not have remained active in later marks.
 - Contradicting cases: None yet.
 - Confidence: low
-- Last updated: 2026-09-08
-
+- Last updated: 2026-09-24
 ## Reconcile expiring protection at the close
 
 - Status: active

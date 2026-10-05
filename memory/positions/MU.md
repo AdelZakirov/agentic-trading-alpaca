@@ -1,11 +1,11 @@
 # MU
 
-Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`.
+Updated 2026-10-02T19:46:31.551436+02:00; Alpaca paper MCP; normal run 2c215101-4a65-42a2-b094-f832bb6de4ac.
 
-Long 3 at $939.993333 after SELL 3 FILLED at $978.17 on 2026-09-17T14:46:54.522893Z, broker order `6a8c565f-27b3-402d-a6b1-5877dc005ce3`, client `alpaca-stage2-20260917-MU-sell`. Gross realized gain on the trim was about $114.53 before fees. No active MU order.
+Long **3 shares** at average $939.990; broker mark $1079.0800, value $3,237.24, unrealized P/L $+417.27 at 2026-10-02T13:42:10.12481259-04:00. Latest IEX quote 2026-10-02T17:42:19.383831961Z: bid/ask $1078.5/$1100 (sizes 40/80); no open order in this ticker. Completed October1 IEX close $1098.15; October2 bars are partial.
 
-HOLD the remaining 3; no add. Fresh IEX bid/ask $1,092.17/$1,094.19 at 15:35:05 ET (80x40). Company-confirmed Sep 30 post-close earnings; retain the small runner toward $1,150-$1,180, then $1,250-$1,255, while preserving a $910 daily-close invalidation. Reassess no later than 2026-09-29 and do not carry through earnings without an explicit renewed event-risk decision. AI/memory correlation and an estimated 8%-12% earnings gap remain material.
+Stock decision: **HOLD 3; no add**. Micron's fiscal Q4 release reports $54.23B revenue, $43.97B operating cash flow, $33.20B adjusted free cash flow, and fiscal Q1 2027 revenue guidance of $61.5B ± $1.5B. These facts renew the AI-memory thesis after the September 30 event; they do not establish the next price move. The 15:23 ET IEX bid/ask tightened to $1,087.26/$1,095.00; it remains below the profit-review band and does not justify adding. A completed daily close below $910 triggers bounded exit review; a material guidance, margin or capex deterioration triggers an immediate thesis review. At an observed executable bid $1,150–$1,180 review profit taking, then $1,250–$1,255 for the runner. Review at the October 1 completed close and no later than October 8. Three-share size keeps a 20% gap near $648; full $2,819.97 cost remains at risk. Broad growth overlap with SPY, MSFT, DT and DOCS limits further additions.
 
-No options: retained shares already express the upside thesis and added derivatives would increase AI/memory event overlap without a distinct edge.
+Option decision: **NO NEW OPTION**. A 100-share contract dwarfs the owned three shares and adds IV/theta risk without a distinct edge.
 
-[Latest fundamental](../research/2026-09-21/175545-MU-fundamental.md). [Latest technical](../research/2026-09-14/182650-MU-technical.md). [Decision log](../logs/2026-09-21.md). [History](history/MU.jsonl).
+[Official Q4 results](https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx) · [Primary checks](../research/2026-10-01/primary-source-notes.md) · [Broker proof](../research/2026-10-01/broker-final-ffc0f743.json) · [History](history/MU.jsonl).

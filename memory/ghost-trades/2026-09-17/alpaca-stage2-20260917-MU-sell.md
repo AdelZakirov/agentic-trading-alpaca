@@ -6,7 +6,7 @@
 - creator_run_id: `0f174d8e-9089-4bd4-8018-b349778a8ea2`
 - decision_at: `2026-09-17T16:43:34+02:00`
 - ticker: `MU`
-- status: `WAITING_FOR_FILL`
+- status: COMPLETE
 - client_order_id: `alpaca-stage2-20260917-MU-sell`
 - broker_order_id: `6a8c565f-27b3-402d-a6b1-5877dc005ce3`
 
@@ -80,3 +80,17 @@
 - The September 17 Alpaca IEX 1Day bar closed at `$976.92` (high `$985.96`, low `$954.025`). The stable near-close IEX quote at `2026-09-17T19:59:53.655817Z` was `$975` bid / `$983` ask; the wide spread is retained as a data-quality caveat.
 - At the conservative `$975` bid, the real half-trim path is `+$219.55` from the `$939.993333` average basis; HOLD_ALL is `+$210.04`; SELL_2_RETAIN_4 is `+$200.04`; and SELL_ALL is `+$180.04`. The real path leads each alternative partly because its confirmed sale filled at `$978.17`, above the original `$970` simulated bid. No `$894` close invalidation or `$1,015-$1,040` target review occurred.
 - This remains an interim checkpoint and supports no lesson change. Next checkpoint: 2026-09-24 regular-session close.
+
+## 2026-09-24 close checkpoint
+
+- Common observation: Alpaca IEX 1Day bar closed at $1,080.11. The final regular-session quote at 2026-09-24T19:59:59.975623167Z was $1,064.50 bid x80 / $1,082.00 ask x120; the $17.50 spread is wide, so results are partial-quality and use the conservative IEX bid.
+- Reconciled real path: 3 shares sold at $978.17 and 3 remain. Realized plus marked gross P/L is +$488.05: $114.53 realized against the $939.993333 basis, plus $373.52 on the remaining shares at the $1,064.50 bid. HOLD_ALL is +$747.04; SELL_2_RETAIN_4 is +$558.04 using the original $970 simulated sale; SELL_ALL is +$180.04.
+- The $1,015-$1,040 profit-review band was first reached Sep 18 (high $1,016.28, close $1,015.53). It was reviewed here; no automatic hypothetical sale is defined. The $894 close invalidation did not occur. Comparison remains ACTIVE through Sep 29; no lesson change. Next checkpoint: Sep 29 close.
+
+## 2026-09-29 final checkpoint and review
+
+- Alpaca IEX daily bar: close `$1,064.975`, high `$1,082.62`, low `$1,057.965`. The last coherent near-close quote before later IEX outliers was `$1,065.00` bid x80 / `$1,075.00` ask x80 at `2026-09-29T19:59:53.226416706Z`; the `$10` spread is wide, so this is a partial-quality mark. Depth covers the tested six-share alternatives.
+- Gross P/L from the original `$939.993333` average basis: real half-trim plus three shares marked at `$1,065.00`, `+$489.55`; `HOLD_ALL`, `+$750.04`; `SELL_2_RETAIN_4`, `+$560.04`; `SELL_ALL` at the original `$970` simulated bid, `+$180.04`. The `$1,015–$1,040` review band had already been reached and reviewed; the `$894` close invalidation did not occur. No new fill or hypothetical execution is inferred.
+- Assessment: `COMPLETE` / `REVIEWED` at the declared pre-earnings end date. Original question: did halving MU exposure before earnings balance participation and event risk better than a one-third trim, full hold, or full exit?
+- Decision review: research/thesis and forecast were mixed—the rebound persisted and full hold had the highest mark, while earnings exposure remained; stock strategy and half sizing reduced event concentration while retaining upside; timing surrendered upside versus holding but the actual fill at `$978.17` beat the `$970` limit; execution was good. Strike/expiration selection was not applicable.
+- Data quality: partial because IEX was a single exchange and the `$10` near-close spread was wide. Supported conclusion is limited to the declared endpoint: `HOLD_ALL` led on gross P/L, with the real trim ahead of the two-share trim and full exit. No durable lesson change.

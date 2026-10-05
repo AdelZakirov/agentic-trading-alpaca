@@ -1,11 +1,9 @@
 # NVDA
 
-Updated 2026-09-15T21:07:50+02:00; CLOSED, broker confirms zero shares and no active NVDA order.
+Updated 2026-09-28T18:22:29.441586+02:00; CLOSED/WATCH, zero brokerexposure andnoopenorder; run `3392dda4-ef42-486f-a2a1-e172b49ed51a`. PriorSep14stopclosed55shares; no newre-entry submitted.
 
-Recovered STOP SELL 55 FILLED at $209.732181 on 2026-09-14T13:35:28.038901Z, stop leg 8dc0aeb9-ed37-4e36-918f-c7297d998ede. OCO target parent 41aef279-077e-4007-afb3-6d7636b82bf4 canceled. Old HOLD 55 cache superseded; no new exit today and no new re-entry submitted.
+ConfirmedSep17/21reclaims andFridaycompletedclose225.04supportconstructivetrend; current~230isbetweenpreferred **$224–$226 supportedpullback** and **dailycloseabove$234.75–$235 breakout**. Requireoneofthosefreshprice/setupevidencesbeforeanysize. A prospective newtrade woulduse **$221 daily-close** invalidation and$234.5–$235then$242–$245/$250profitreviews, with size derivedagainstcurrentMU/MSFT/SPYoverlap. These are conditionalnewthesislevels, not reopeningtheoldstoppedpath.
 
-Forward valuation/growth case warrants watch, not automatic immediate re-entry after stop. Require a confirmed reversal and reclaim $215+, then prior $220.50–222.60 structure before sizing against live portfolio/MU correlation. A supported $205–212.50 dip needs fresh confirmation, not price alone. Current forward EPS denominator is helper/local estimate, not independently primary-verified.
+StockWATCH/NO_ORDER. OptionNO_NEW_OPTION: no extraAIderivativedelta neartherangeceilingbeforeSep29MUeventreview. MoneyheapforwardEPS15.68isconsensus/helperdata,notindependentlyprimaryconfirmed;12month327.70targetisnot1-4weekforecast.
 
-No options now: bearish trigger/bullish reversal not established; no delta added against existing semiconductor exposure.
-
-[Latest fundamental](../research/2026-09-15/205809-NVDA-fundamental.md). [History](history/NVDA.jsonl).
+[Fundamental](../research/2026-09-28/175759-NVDA-fundamental.md) · [Technical](../research/2026-09-28/175820-NVDA-technical.md) · [History](history/NVDA.jsonl).

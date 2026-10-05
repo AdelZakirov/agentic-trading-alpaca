@@ -6,7 +6,7 @@
 - creator_run_id: `0f174d8e-9089-4bd4-8018-b349778a8ea2`
 - decision_at: `2026-09-17T16:43:34+02:00`
 - ticker: `ARQT`
-- status: `WAITING_FOR_FILL`
+- status: `ACTIVE`
 - client_order_id: `alpaca-stage2-20260917-ARQT-buy`
 - broker_order_id: `50df6ebd-cbbb-40c0-8ca9-a2c426026369`
 
@@ -96,3 +96,16 @@
 
 - Alpaca paper order `cf80b4ec-00d4-4bae-b3ee-15a2a4671906` and its four FILL activities confirm that 100 shares were sold at $27.95 on 2026-09-22, for $2,795 gross proceeds. The remaining broker position is 100 shares at the original $24.50 average entry, fully available.
 - This records a real-path reduction for subsequent common-window accounting; it is not a new mark or a checkpoint. Include the sale proceeds when comparing retained shares with the original alternatives. Next scheduled checkpoint remains 2026-09-24 close.
+
+## 2026-09-24 close checkpoint
+
+- Common observation: Alpaca IEX 1Day bar closed at $26.28. The last stable near-close quote was 2026-09-24T19:59:54.393068655Z at $26.27 bid x200 / $26.31 ask x100. Later IEX updates at 19:59:54.616680357Z and 19:59:57.510424584Z were dislocated ($22.39 bid and then $30.11 ask); use the earlier stable bid as a partial-quality mark, not an exact closing quote.
+- Reconciled real path includes the confirmed sale of 100 shares at $27.95 on Sep 22 and 100 shares remaining. Gross P/L is +$522.00: $345.00 realized plus $177.00 on the remainder at the $26.27 bid. NO_TRADE is $0.00; the 100-share HALF_SIZE pullback path, with no preset automatic trim at its review target, is +$177.00.
+- The Sep 22 high $28.285 and close $27.75 crossed the $27.50 target-review level. The original wording calls for review, not an assumed fill; none is added to the half-size path. The $22.40 close invalidation did not occur. BREAKOUT_CONFIRMATION remains UNSCORABLE: its above-average-volume condition has no defined lookback/baseline, so no qualifying entry or comparison start is fabricated. The October call spread remains UNSCORABLE under the original indicative-only data.
+- Comparison remains ACTIVE through Oct 15. No new durable lesson. Next checkpoint: Oct 1 close.
+
+### 2026-10-01 close checkpoint
+
+- Common observation: Alpaca paper IEX 1Day bar closed at `$25.28` (high `$26.39`, low `$25.25`). The last coherent near-close quote before later dislocations was `$25.28` bid x100 / `$25.50` ask x100 at `2026-10-01T19:59:54.039050307Z`; later bids fell to `$22.01` against `$25.50` asks. This is a partial-quality, single-exchange mark, six seconds before the close; bid size covers the actual 100-share remainder.
+- Gross P/L from the original `$24.50` basis: real path `+$423.00` (100 sold at `$27.95`, plus 100 marked at `$25.28`); HALF_SIZE `+$78.00`; NO_TRADE `$0.00`. BREAKOUT_CONFIRMATION remains `UNSCORABLE` because its above-average-volume baseline was undefined and no qualifying entry was established. The October call spread remains `UNSCORABLE` under its original indicative-only pricing.
+- No `$22.40` close invalidation or `$27.50` target touch occurred. No lesson change. Next checkpoint: October 8 close; final review remains October 15.

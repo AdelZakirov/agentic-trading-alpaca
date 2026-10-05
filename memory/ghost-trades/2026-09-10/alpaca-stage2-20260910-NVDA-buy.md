@@ -6,9 +6,9 @@
 - creator_run_id: `45ae68f1-2d99-4eba-9817-fda55708ae20`
 - decision_at: `2026-09-10T16:48:23+02:00` (Europe/Amsterdam)
 - ticker: `NVDA`
-- status: `ACTIVE`
+- status: `COMPLETE`
 - client_order_id: `alpaca-stage2-20260910-NVDA-buy`
-- broker_order_id: null
+- broker_order_id: 3a13b8ad-5410-4e82-ba96-90957d414da5
 
 ## Original decision
 
@@ -142,3 +142,14 @@ Reserved for the separate ghost reviewer.
 - The 1Day IEX bar closed at `$228.85` (high `$229.97`, low `$226.59`). The near-close IEX quote at `2026-09-22T19:59:59.999108332Z` was `$228.81` bid / `$228.85` ask, 100 shares displayed on each side. The actual 55-share path remains closed at its confirmed `-$453.08` stop result.
 - A2's fixed 150-share entry at `$218.21` crossed the predeclared `$226` target during the regular session (the first 1-minute bar opened above target). Using the target price as a conservative exit floor gives hypothetical gross P/L `+$1,168.50`; this is not a broker fill. The first qualifying 1Hour bar (`2026-09-22T14:00Z`) closed at `$228.285`; the first post-close quote at `15:00:00.001668391Z` was `$228.27/$228.29`, already beyond A1's `$226` target. The original rules do not define a coherent entry/target sequence there, so A1 remains `UNSCORABLE` rather than assigning an invented position. A3 no trade remains `$0`.
 - No new lesson is supported by this single path. Next checkpoint remains the predeclared `2026-09-24` endpoint for the hypothetical alternatives.
+
+## Correction at final review — 2026-09-24
+
+- The original A2 full-size alternative specified the same $210.50 stop as the real path. The confirmed real stop filled all 55 shares on Sep 14 at a $209.732181 average. A2 therefore exited at that same observed stop execution as a disclosed hypothetical proxy, for 150 x ($209.732181 - $218.21) = -$1,271.67 gross. It did not remain invested through Sep 24 and could not later reach the $226 target without a predeclared re-entry.
+- Earlier Sep 15-22 checkpoint marks that treated A2 as active after the Sep 14 stop are superseded; they did not apply the original shared exit rule. No replacement scenario is invented.
+
+## Final comparison and review — 2026-09-24
+
+- The common evaluation window ended at the Sep 24 regular-session close. Paper MCP order and FILL records confirm the real 55-share entry at $217.97 and 55-share stop exit at $209.732181. Real gross P/L is -$453.08. The original 150-share A2 path, using the real stop execution as a disclosed proxy, is -$1,271.67. A3 NO_TRADE is $0.00. A1 hourly confirmation remains UNSCORABLE: its qualifying entry and a coherent entry-to-target sequence were never established.
+- Decision review: thesis/research mixed (the support break triggered the declared stop, then price later recovered); forecast mixed (the expected rebound followed the stop); instrument choice worked for transparent risk; strike/expiration not applicable; timing mixed; sizing/risk worked by limiting the stopped exposure to 55 shares, although stop slippage widened loss by about $42 beyond the planned $410.85 risk; entry execution was orderly and the stop exit averaged below $210.50.
+- Supported conclusion: the chosen probe lost less than the 150-share same-stop scenario, while no trade avoided the loss. This single case does not establish a market edge. It exposed a review-process failure to freeze a comparable path after its predeclared stop; the active invalidation lesson was strengthened at low confidence. No checkpoint remains; lifecycle status COMPLETE.

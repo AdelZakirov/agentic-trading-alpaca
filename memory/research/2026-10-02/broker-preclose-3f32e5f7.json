@@ -1,0 +1,264 @@
+{
+  "run_id": "3f32e5f7-5938-45aa-950a-e823810f1571",
+  "observed_at_utc": "2026-10-02T19:20:01Z",
+  "feed": "iex",
+  "clock": {
+    "timestamp": "2026-10-02T15:20:01.889140816-04:00",
+    "is_open": true,
+    "next_close": "2026-10-02T16:00:00-04:00"
+  },
+  "account": {
+    "status": "ACTIVE",
+    "trading_blocked": false,
+    "account_blocked": false,
+    "equity": "100727.23",
+    "cash": "51257.16",
+    "buying_power": "330648.02",
+    "long_market_value": "49470.07",
+    "short_market_value": "0",
+    "last_equity": "100574.6"
+  },
+  "positions": [
+    {
+      "symbol": "ARQT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "100",
+      "qty_available": "100",
+      "avg_entry_price": "24.5",
+      "market_value": "2517",
+      "unrealized_pl": "67",
+      "current_price": "25.17"
+    },
+    {
+      "symbol": "CF",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "40",
+      "qty_available": "40",
+      "avg_entry_price": "115.86",
+      "market_value": "4643.3",
+      "unrealized_pl": "8.9",
+      "current_price": "116.0825"
+    },
+    {
+      "symbol": "DOCS",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "150",
+      "qty_available": "150",
+      "avg_entry_price": "28.34",
+      "market_value": "4212",
+      "unrealized_pl": "-39",
+      "current_price": "28.08"
+    },
+    {
+      "symbol": "DT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "50",
+      "qty_available": "50",
+      "avg_entry_price": "55",
+      "market_value": "2954",
+      "unrealized_pl": "204",
+      "current_price": "59.08"
+    },
+    {
+      "symbol": "ENS",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "30",
+      "qty_available": "30",
+      "avg_entry_price": "195.46",
+      "market_value": "5896.5",
+      "unrealized_pl": "32.7",
+      "current_price": "196.55"
+    },
+    {
+      "symbol": "MAC",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "200",
+      "qty_available": "200",
+      "avg_entry_price": "22.6",
+      "market_value": "4606",
+      "unrealized_pl": "86",
+      "current_price": "23.03"
+    },
+    {
+      "symbol": "MSFT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "10",
+      "qty_available": "10",
+      "avg_entry_price": "497.473",
+      "market_value": "5151.5",
+      "unrealized_pl": "176.77",
+      "current_price": "515.15"
+    },
+    {
+      "symbol": "MU",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "3",
+      "qty_available": "3",
+      "avg_entry_price": "939.99",
+      "market_value": "3222.405",
+      "unrealized_pl": "402.435",
+      "current_price": "1074.135"
+    },
+    {
+      "symbol": "NNE",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "300",
+      "qty_available": "300",
+      "avg_entry_price": "17.15",
+      "market_value": "4719.66",
+      "unrealized_pl": "-425.34",
+      "current_price": "15.7322"
+    },
+    {
+      "symbol": "PK",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "100",
+      "qty_available": "100",
+      "avg_entry_price": "15.55",
+      "market_value": "1547.5",
+      "unrealized_pl": "-7.5",
+      "current_price": "15.475"
+    },
+    {
+      "symbol": "SPY",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "13",
+      "qty_available": "13",
+      "avg_entry_price": "762.89",
+      "market_value": "10002.3625",
+      "unrealized_pl": "84.7925",
+      "current_price": "769.4125"
+    }
+  ],
+  "open_orders": [],
+  "reconciled_prior_entry_order": {
+    "id": "171ac764-17db-4110-8295-bef429965bf1",
+    "client_order_id": "alpaca-stage2-20261002-ENS-buy",
+    "symbol": "ENS",
+    "side": "buy",
+    "status": "filled",
+    "qty": "30",
+    "filled_qty": "30",
+    "filled_avg_price": "195.46",
+    "type": "limit",
+    "time_in_force": "day",
+    "limit_price": "195.5",
+    "submitted_at": "2026-10-02T17:38:01.814984262Z",
+    "filled_at": "2026-10-02T18:02:25.892015109Z",
+    "fills": [
+      {
+        "id": "20261002140224856::f237e650-18fc-4ab6-8564-d0cff1fe0ac3",
+        "activity_type": "FILL",
+        "order_id": "171ac764-17db-4110-8295-bef429965bf1",
+        "symbol": "ENS",
+        "side": "buy",
+        "qty": "15",
+        "price": "195.46",
+        "transaction_time": "2026-10-02T18:02:24.856571Z"
+      },
+      {
+        "id": "20261002140225892::b4f1dd97-7410-4594-a866-54d0031cd81e",
+        "activity_type": "FILL",
+        "order_id": "171ac764-17db-4110-8295-bef429965bf1",
+        "symbol": "ENS",
+        "side": "buy",
+        "qty": "15",
+        "price": "195.46",
+        "transaction_time": "2026-10-02T18:02:25.892015Z"
+      }
+    ]
+  },
+  "quotes": {
+    "ENS": {
+      "bp": 192,
+      "ap": 196.97,
+      "bs": 100,
+      "as": 100,
+      "t": "2026-10-02T19:20:08.002437844Z"
+    },
+    "NNE": {
+      "bp": 15.72,
+      "ap": 15.74,
+      "bs": 300,
+      "as": 100,
+      "t": "2026-10-02T19:19:56.8158982Z"
+    },
+    "CF": {
+      "bp": 116.02,
+      "ap": 116.13,
+      "bs": 100,
+      "as": 100,
+      "t": "2026-10-02T19:20:07.773718348Z"
+    },
+    "MAC": {
+      "bp": 23.02,
+      "ap": 23.03,
+      "bs": 600,
+      "as": 400,
+      "t": "2026-10-02T19:20:06.947930763Z"
+    },
+    "SPY": {
+      "bp": 769.41,
+      "ap": 769.43,
+      "bs": 40,
+      "as": 80,
+      "t": "2026-10-02T19:20:09.052771589Z"
+    },
+    "ARQT": {
+      "bp": 25.16,
+      "ap": 25.17,
+      "bs": 200,
+      "as": 100,
+      "t": "2026-10-02T19:20:07.670801994Z"
+    },
+    "DOCS": {
+      "bp": 28.07,
+      "ap": 28.1,
+      "bs": 400,
+      "as": 400,
+      "t": "2026-10-02T19:20:07.215420133Z"
+    },
+    "MU": {
+      "bp": 1066.45,
+      "ap": 1074.32,
+      "bs": 40,
+      "as": 40,
+      "t": "2026-10-02T19:20:03.343676599Z"
+    },
+    "MSFT": {
+      "bp": 514.29,
+      "ap": 515.17,
+      "bs": 80,
+      "as": 40,
+      "t": "2026-10-02T19:20:08.324426515Z"
+    },
+    "PK": {
+      "bp": 15.47,
+      "ap": 15.48,
+      "bs": 3400,
+      "as": 1200,
+      "t": "2026-10-02T19:20:09.571021525Z"
+    },
+    "DT": {
+      "bp": 59.07,
+      "ap": 59.11,
+      "bs": 300,
+      "as": 100,
+      "t": "2026-10-02T19:20:09.096226921Z"
+    }
+  },
+  "data_limitations": {
+    "sip": "HTTP 403: subscription does not permit querying recent SIP data; current quotes use IEX and are not consolidated-market quotes."
+  }
+}

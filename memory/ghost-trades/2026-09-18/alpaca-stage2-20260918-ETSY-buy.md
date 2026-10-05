@@ -5,7 +5,7 @@
 - creator_run_id: `3fa676c2-cbd5-4c71-bd97-b7e5c74067c3`
 - decision_at: `2026-09-18T16:44:20+02:00`
 - ticker: `ETSY`
-- status: `ACTIVE`
+- status: `COMPLETE`
 - client_order_id: `alpaca-stage2-20260918-ETSY-buy`
 - broker_order_id: `9452399a-ed78-4cec-988c-b4967a56583f`
 
@@ -51,3 +51,11 @@
 - `no-trade`: scoreable zero P/L.
 - conclusion: The first checkpoint is modestly favorable for the chosen entry, but it does not support a decision-quality conclusion or lesson change.
 - next_checkpoint: `2026-09-25 close`.
+
+## 2026-09-25 terminal comparison
+
+- Trigger and common exit: the IEX bar closed at $68.99 on Sep 24, below the original $69.20 invalidation. The chosen sale filled 75 at $70.62 at 2026-09-25T14:41:05.290197Z; use that actual same-time fill as the disclosed proxy for comparable exits after the close signal.
+- Outcomes: chosen 75 shares from $72.71: -$156.75 gross. Half-size 40 shares from $72.71: -$83.60. Reclaim-entry triggered after the Sep 22 close at $75.15; the first Sep 23 IEX ask within the $76 cap was $75.68 x100 at 2026-09-23T13:30:02.696946Z. The Sep 24 close was below its $71 invalidation; the same sale fill proxy gives -$379.50. No-trade: $0.00. No target was reached.
+- The Sep 25 IEX bar later closed at $68.46 after the exits; this is post-exit context.
+- Decision review: the reversal thesis and short-window forecast were mixed; the close-based invalidation and Arete downgrade supported exiting. Common stock without a new option was appropriate. The initial entry preceded a quick breakdown; the confirmation alternative entered at a higher price and lost more. Half-size reduced the absolute loss; execution improved on the $70.20 limit, with 75 shares filled at $70.62. No separate lesson change from this set.
+- Assessment complete; data quality partial because the conditional entry is IEX-only and the hypothetical exits use a confirmed related broker fill. Next checkpoint: none.

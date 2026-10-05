@@ -1,11 +1,13 @@
 # MSFT
 
-Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`.
+Updated 2026-10-02T19:46:31.551436+02:00; Alpaca paper MCP; normal run 2c215101-4a65-42a2-b094-f832bb6de4ac.
 
-Long 20 shares at $497.4715, cost $9,949.43. BUY 20 day limit $497.50 FILLED on 2026-09-15T19:04:26.612224811Z; order c2dc8110-ef7c-4b28-8f14-b4741526789d, client alpaca-stage2-20260915-MSFT-buy. No active MSFT order, no stop/target standing order, no replacement/chase.
+Long **10 shares** at average $497.473; broker mark $514.2100, value $5,142.10, unrealized P/L $+167.37 at 2026-10-02T13:42:10.12481259-04:00. Latest IEX quote 2026-10-02T17:42:21.211164912Z: bid/ask $513.51/$514.29 (sizes 80/80); no open order in this ticker. Completed October1 IEX close $512.71; October2 bars are partial.
 
-Cash-funded starter, 1–4-week horizon. Fresh IEX bid/ask $498.87/$499.98 at 15:35:05 ET (40x80), above the $485.50 daily-close invalidation and below the $510-$514 trim band. HOLD, no add; a close below $485.50 triggers a next-session bounded review, not an intraday stop. Remaining target is $528-$535 subject to higher lows. Tech-factor and overnight index gap risk remain the main portfolio interaction.
+Stock decision: **HOLD**, no add. Confidence in unchanged plan moderate; current mark alone does not replace a daily-close rule. 10-share runner after Sep25 trim; AI/software exposure overlaps MU/SPY/DT.
 
-No options: Oct16 500/520 call spread indicative $8.41 debit, max loss $841, max profit $1,159, expiry breakeven $508.41; at $510 expiry profit $159 versus roughly $250 on stock. Shares preserve time and $535 extension without theta/cap.
+Daily close below $485.50 triggers review. Reassess after confirmed close above ~$518; $528–$535 profit band. Renew before estimated late-October earnings.
 
-[Latest technical](../research/2026-09-15/205827-MSFT-technical.md). [History](history/MSFT.jsonl).
+Option decision: **NO NEW OPTION**. Retained cash shares express the thesis; no distinct derivative edge or need for extra correlated delta/theta.
+
+[Latest relevant research](../research/2026-09-25/164744-MSFT-technical.md) · [Sep28 audit](../logs/2026-09-28.md) · [History](history/MSFT.jsonl).

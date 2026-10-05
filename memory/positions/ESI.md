@@ -1,9 +1,11 @@
 # ESI
 
-Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`.
+Updated 2026-09-28T18:22:29.441586+02:00; **CLOSED**, paperMCP run `3392dda4-ef42-486f-a2a1-e172b49ed51a`. Broker haszeroESIsharesandnoorder.
 
-Long 40 at$32.16 after Sep14 entry. Partial trim SELL35 DAY limit$35.15, broker `608ca399-3331-471a-94c5-e3a520ca36d3`, FILLED35@$35.17 Sep22 19:18:49Z; gross realized gain$105.35 before fees. No active ESI order. Fresh IEX bid/ask$35.24/$35.27 at15:35:04 ET (400x200); HOLD remaining40, no add.
+SELL40 DAYlimit35.1, brokeraf81f800-b0d0-48ce-801b-6a22053f0870, clientalpaca-stage2-20260928-ESI-sell, **FILLED40@$35.1** at2026-09-28T15:05:15.37464557Z. Exactorder-specificFILLactivitiesmatched; grossrealizedgain$117.60beforefees.
 
-Tactical oversold rebound after Buy reinstatement. $34.50 first profit review was reached and acted on. Daily close below$30.40 triggers review. Reassess runner no later than Sep28; absent a renewed thesis, exit at a bounded price by that horizon. Leverage ~3.4x and semiconductor-cycle/MU overlap limit additions. No distinct option edge.
+Sep28 originalexit-or-renewdeadline; reboundfirsttargethadbeentrimmedandnoverifiednewnear-termcatalystjustifiedrenewal. Positivebusinessfundamentalsremain; thiswasnotathesis-collapseclaim.
 
-[Latest fundamental](../research/2026-09-14/182522-ESI-fundamental.md). [Sep22 decision](../logs/2026-09-22.md). [Ghost alternatives](../ghost-trades/2026-09-22/alpaca-stage2-20260922-ESI-sell.md). [History](history/ESI.jsonl).
+StockNO_POSITION/NO_NEW_ORDER. Watchnewprimaryoperating/estimateevidenceorconfirmedgrowth-ledreclaimbeforeproposinganothertrade; no automaticrenewal. SeparateoptionNO_NEW_OPTION; no pairedderivative.
+
+[Latestresearch](../research/2026-09-28/165635-ESI-fundamental.md) · [Audit](../logs/2026-09-28.md) · [Alternatives](../ghost-trades/2026-09-28/alpaca-stage2-20260928-ESI-sell.md) · [History](history/ESI.jsonl).

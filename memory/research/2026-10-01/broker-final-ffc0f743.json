@@ -1,0 +1,189 @@
+{
+  "captured_at": "2026-10-01T20:37:02+02:00",
+  "source": "Alpaca paper MCP",
+  "run_id": "ffc0f743-9be7-4d3b-8a7b-61097cd33fb2",
+  "clock": {
+    "is_open": true,
+    "next_close": "2026-10-01T16:00:00-04:00",
+    "next_open": "2026-10-02T09:30:00-04:00",
+    "timestamp": "2026-10-01T14:36:25.898920782-04:00"
+  },
+  "account": {
+    "status": "ACTIVE",
+    "trading_blocked": false,
+    "account_blocked": false,
+    "equity": "100673.26",
+    "last_equity": "100613.49",
+    "cash": "53040.97",
+    "long_market_value": "47632.29",
+    "buying_power": "332945.48",
+    "options_trading_level": 3
+  },
+  "positions": [
+    {
+      "symbol": "ARQT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "100",
+      "qty_available": "100",
+      "avg_entry_price": "24.5",
+      "market_value": "2576.5",
+      "unrealized_pl": "126.5"
+    },
+    {
+      "symbol": "CADL",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "400",
+      "qty_available": "400",
+      "avg_entry_price": "11.44",
+      "market_value": "4144",
+      "unrealized_pl": "-432"
+    },
+    {
+      "symbol": "CF",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "40",
+      "qty_available": "40",
+      "avg_entry_price": "115.86",
+      "market_value": "4558.4",
+      "unrealized_pl": "-76"
+    },
+    {
+      "symbol": "DOCS",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "150",
+      "qty_available": "150",
+      "avg_entry_price": "28.34",
+      "market_value": "4252.5",
+      "unrealized_pl": "1.5"
+    },
+    {
+      "symbol": "DT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "50",
+      "qty_available": "50",
+      "avg_entry_price": "55",
+      "market_value": "2952",
+      "unrealized_pl": "202"
+    },
+    {
+      "symbol": "MAC",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "200",
+      "qty_available": "200",
+      "avg_entry_price": "22.6",
+      "market_value": "4498",
+      "unrealized_pl": "-22"
+    },
+    {
+      "symbol": "MSFT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "10",
+      "qty_available": "10",
+      "avg_entry_price": "497.473",
+      "market_value": "5162.7",
+      "unrealized_pl": "187.97"
+    },
+    {
+      "symbol": "MU",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "3",
+      "qty_available": "3",
+      "avg_entry_price": "939.99",
+      "market_value": "3239.88",
+      "unrealized_pl": "419.91"
+    },
+    {
+      "symbol": "NNE",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "300",
+      "qty_available": "300",
+      "avg_entry_price": "17.15",
+      "market_value": "4752",
+      "unrealized_pl": "-393"
+    },
+    {
+      "symbol": "PK",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "100",
+      "qty_available": "100",
+      "avg_entry_price": "15.55",
+      "market_value": "1556",
+      "unrealized_pl": "1"
+    },
+    {
+      "symbol": "SPY",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "13",
+      "qty_available": "13",
+      "avg_entry_price": "762.89",
+      "market_value": "9940.32",
+      "unrealized_pl": "22.75"
+    }
+  ],
+  "open_orders": [],
+  "docs_order": {
+    "id": "36e082c8-885a-45f5-ae64-8038912fdd92",
+    "client_order_id": "alpaca-stage2-20261001-DOCS-buy",
+    "created_at": "2026-10-01T18:32:59.851311626Z",
+    "updated_at": "2026-10-01T18:33:00.378789341Z",
+    "submitted_at": "2026-10-01T18:32:59.862305897Z",
+    "filled_at": "2026-10-01T18:33:00.377189775Z",
+    "expired_at": null,
+    "canceled_at": null,
+    "failed_at": null,
+    "replaced_at": null,
+    "replaced_by": null,
+    "replaces": null,
+    "asset_id": "4061b9dd-80cc-4588-890e-a6a417d12a7b",
+    "symbol": "DOCS",
+    "asset_class": "us_equity",
+    "notional": null,
+    "qty": "150",
+    "filled_qty": "150",
+    "filled_avg_price": "28.34",
+    "order_class": "",
+    "order_type": "limit",
+    "type": "limit",
+    "side": "buy",
+    "position_intent": "buy_to_open",
+    "time_in_force": "day",
+    "limit_price": "28.36",
+    "stop_price": null,
+    "status": "filled",
+    "extended_hours": false,
+    "legs": null,
+    "trail_percent": null,
+    "trail_price": null,
+    "hwm": null,
+    "subtag": null,
+    "source": null,
+    "expires_at": "2026-10-01T20:00:00Z"
+  },
+  "docs_fill_activities": [
+    {
+      "id": "20261001143300377::41df91f8-9ae5-4184-a38f-eb7a22ae0af5",
+      "activity_type": "FILL",
+      "transaction_time": "2026-10-01T18:33:00.37719Z",
+      "type": "fill",
+      "price": "28.34",
+      "qty": "150",
+      "side": "buy",
+      "symbol": "DOCS",
+      "leaves_qty": "0",
+      "order_id": "36e082c8-885a-45f5-ae64-8038912fdd92",
+      "cum_qty": "150",
+      "order_status": "filled"
+    }
+  ]
+}

@@ -55,3 +55,8 @@ Missingdata: futuretriggerprice/fills/PnL unknown; quotationsindicativeandmodifi
 - The IEX 1Day bar closed at `$498.00` (high `$508.00`, low `$493.705`). Recent near-close IEX quotes were not executable-quality: the 50-quote sample remained wide (minimum spread `$1.82`, median `$6.88`; newest `$493.78/$498.20`), materially conflicting with the bar close. The `$498` close is a non-executable proxy only; chosen and HALF_SIZE share-path P/L are `UNSCORABLE` (proxy-only `$10.57` and `$5.29`, respectively).
 - Daily closes Sep 16–22 were `$490.45`, `$497.67`, `$493.10`, `$501.64`, and `$498.00`; none confirmed the WAIT_POST_FED close-above-`$506.50` entry. No close invalidation below `$485.50` or executable `$510–$514` trim was established. NO_TRADE and WAIT_POST_FED remain flat at `$0`. The call-spread path remains unscorable without historical executable option-leg quotes.
 - Interim, partial-quality checkpoint; no lesson change. Next checkpoint: predeclared `2026-10-13` close, or earlier on an original trigger.
+
+## 2026-09-25 real-path update
+
+- Project alpaca_paper order a302bcd8-feb9-4477-a412-561c1638bf44 and its order-specific FILL activity confirm 10 shares sold at $515.15 on 2026-09-25T14:52:04.459590Z. Ten shares remain at broker average $497.473 as of the Sep 28 12:37 ET position snapshot; no open MSFT order remained.
+- This is a real-path trim at the predeclared $510–$514 review band, not a new checkpoint. Keep the original alternatives and $485.50 daily-close invalidation. Next checkpoint remains 2026-10-13 close.

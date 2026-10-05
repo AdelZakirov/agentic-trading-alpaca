@@ -44,3 +44,20 @@ No order submitted at definition time; fills null. Chosen buy uses actual broker
 
 - The same-session real path is closed: 400 shares bought at `$20.95` and sold at `$20.55`, gross `-$160` before fees. The half-size alternative using the same observed entry and exit prices is `-$80`; no-trade is `$0`. The confirmation alternative stayed untriggered because the session high was `$20.99`, below `$21.15`.
 - No hypothetical fill beyond the bounded actual executions is inferred. This is an interim checkpoint; no lesson change. Next checkpoint: `2026-09-23` close (+1 session), then Sep 29 / Oct 2 / Oct 20 under the original schedule.
+
+### 2026-09-23 +1-session checkpoint
+
+- Project `alpaca_paper` historical IEX quote at `2026-09-23T19:59:59.805782808Z` was ET `$20.49/$20.50` bid/ask, with 3,700 bid shares; the IEX daily bar closed at `$20.49`. The Sep 23 hourly bars never closed above the `$21.15` confirmation threshold (maximum hourly close `$20.67`, high `$20.70`); the prior Sep 22 high was `$20.99`.
+- All filled paths had already exited under the original `$20.55` stop rule: real `-$160`, HALF_SIZE `-$80`; NO_TRADE and untriggered CONFIRMATION_ENTRY remain `$0`. The breakout alternative did not activate. No lesson change; IEX depth was adequate for the tested ET quantities.
+- Next checkpoint: Sep 29 (+5 trading days), then the pre-transfer and final dates already defined.
+
+### 2026-09-29 +5-session checkpoint
+
+- The IEX daily bar closed at `$19.90`; the near-close quote at `2026-09-29T19:59:59.995515338Z` was `$19.90/$19.91` with 3,300/900 shares displayed. Hourly IEX bars from September 24–29 never closed above the `$21.15` confirmation threshold (maximum `$20.615`), so `CONFIRMATION_ENTRY` did not activate.
+- The real 400-share path and `HALF_SIZE` had already exited under the original `$20.55` stop on September 22 (`-$160` and `-$80` respectively); `NO_TRADE` remains `$0`. No later entry or re-entry is inferred. Comparison remains active through its original October 20 horizon; next scheduled review is October 2.
+
+### 2026-10-02 pre-transfer checkpoint
+
+- Common Alpaca paper IEX quote `2026-10-02T19:59:59.758927Z` was `$20.48 x2900` bid / `$20.49 x1300` ask. The real path remains fixed at `-$160` after 400 shares were stopped at `$20.55`; the half-size path remains `-$80`, and no-trade remains `$0`.
+- The confirmation-entry alternative did not activate: the 62 IEX hourly bars from September 22 through October 2 had a maximum completed hourly close of `$20.95` (high `$20.99`), below `$21.15`. Current Alpaca positions and open orders contain no ET position or order. No re-entry is assumed.
+- The October 2 review is not the final endpoint; the original horizon remains October 20. Next checkpoint: October 20 close. No lesson change.

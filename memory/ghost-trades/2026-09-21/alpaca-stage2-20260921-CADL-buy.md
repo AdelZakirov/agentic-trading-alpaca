@@ -6,7 +6,7 @@
 - creator_run_id: `1ab9f116-3114-4552-9a99-b51180dc2935`
 - decision_at: `2026-09-21T18:05:48+02:00`
 - ticker: `CADL`
-- status: `ACTIVE`
+- Status: COMPLETE
 - client_order_id: `alpaca-stage2-20260921-CADL-buy`
 - broker_order_id: `f32f3a02-517d-41b2-a2ca-a334da34371f`
 
@@ -85,3 +85,28 @@
 - The IEX 1Day bar closed at `$11.86` (high `$11.96`, low `$11.20`). The stable near-close quote at `2026-09-22T19:59:54.542170930Z` was `$11.85` bid x100 / `$11.91` ask x200; late quotes dislocated, so this is a partial-depth mark.
 - Gross mark-to-bid P/L: chosen 400 shares `+$164`; half-size 200 shares `+$82`; no trade `$0`. The pullback-only alternative did not activate because the session low stayed above its `$11.15` ask trigger. Neither the `$10.40` daily-close invalidation nor the first `$12.20` target-review band was reached.
 - Interim partial-quality checkpoint, no lesson change. Next checkpoint: fifth-session `2026-09-28` close.
+
+## 2026-09-28 fifth-session checkpoint
+
+- The Alpaca IEX daily bar closed at `$11.20` (high `$11.52`, low `$11.035`); the tight pre-close quote at `2026-09-28T19:59:46.179594Z` was `$11.18` bid x200 / `$11.20` ask x1,300. Later bids were dislocated, so this is a partial-depth mark: it supports the 200-share half-size comparison, not all 400 chosen shares.
+- Gross mark-to-bid P/L at `$11.18`: chosen 400 shares `-$104`; half-size 200 shares `-$52`; no-trade `$0`. The `$10.40` close invalidation and `$13.75` end target did not trigger.
+- The pullback ask trigger occurred on Sep 24. The first reliable IEX ask at or below `$11.15` was `$11.15` x100 against a `$11.10` bid at `2026-09-24T13:51:29.501384309Z`; 100 displayed shares do not support the original 400-share entry, so this path remains `UNSCORABLE` with no assumed fill.
+- Partial-quality checkpoint; no lesson change. Next checkpoint: tenth-session `2026-10-05` close.
+
+## October 1 invalidation and October 2 completed review
+
+- The October 1 Alpaca IEX daily bar close of `$10.16` crossed the original `$10.40` daily-close invalidation. On October 2, Alpaca paper order `ebd6974e-da7a-4df2-8210-6005c65f29d8` sold the real 400 shares at `$10.20`; order-specific FILL activities of 123 and 277 shares total 400, and the position is absent afterward. Real gross P/L from the `$11.44` basis is `-$496` before fees.
+- The 200-share half-size path entered at `$11.44` and followed the same close invalidation. After dislocated opening quotes, the first coherent IEX bid with sufficient 200-share depth was `$10.00 x500` (ask `$10.30 x100`) at `2026-10-02T13:30:04.549530Z`. Its gross P/L is `-$288`. No-trade remains `$0`.
+- The pullback-only path's September 24 ask trigger had only 100 shares displayed against the specified 400-share entry. No full-size fill can be supported, so that path remains `UNSCORABLE` with no P/L.
+- This ends the set at the declared close invalidation. Results mix size and exit timing: the real full-size exit was later in the session at `$10.20`, while the half-size path uses the first size-supported post-close-rule bid. The actual decision lost more dollars because it carried twice the shares, but this does not isolate a sizing effect. The no-trade comparison avoids the loss; the pullback path is unavailable.
+- Assessment completed 2026-10-03; set status `COMPLETE`. No durable lesson change.
+
+### Decision-quality assessment
+
+- Thesis / research: mixed — the catalyst and balance-sheet thesis did not prevent the price breakdown; the later close and fresh technical review supported exiting.
+- Forecast: could improve — the expected near-term recovery did not hold above the predeclared invalidation.
+- Instrument / strategy: mixed — cash shares matched the multiweek thesis, but the full-size position carried more dollar exposure than the half-size path.
+- Strike / expiration: not applicable — no option was selected.
+- Timing: mixed — the close-based rule was respected; the actual `$10.20` fill was 20 cents above the early `$10.00` bid, while the alternative uses its predeclared next-session exit rule.
+- Sizing / risk: mixed — full size lost `$496` versus `$288` for half size, but the exits differ in time and are not a clean size-only experiment.
+- Execution: worked — the full 400-share fill is broker-confirmed at `$10.20` with matching FILL activities; no price is inferred from order status alone.

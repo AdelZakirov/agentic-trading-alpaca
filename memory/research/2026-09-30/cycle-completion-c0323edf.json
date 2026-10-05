@@ -1,0 +1,21 @@
+{
+  "run_id": "c0323edf-44f5-469c-a26d-86c326f5a680",
+  "completed_at": "2026-09-30T22:11:48+02:00",
+  "mode": "normal",
+  "outcome": "completed_no_orders",
+  "shortlist_coverage": 32,
+  "advanced_candidates": 5,
+  "successful_moneyheap_responses": 6,
+  "selected_investment": "NICE BUY 30 limit 111.50",
+  "execution": "NOT_SUBMITTED: persistent wide IEX ask above entry bound, repeated final quote timestamp, regular session ended",
+  "equity": 100683.74,
+  "cash": 57291.97,
+  "stock_positions": 10,
+  "option_positions": 0,
+  "open_orders": 0,
+  "handoff_published": true,
+  "attached_definitions": ["memory/ghost-trades/2026-09-30/alpaca-stage2-20260930-NICE-buy.md"],
+  "dashboard_sync": {"ok": true, "updated_at": "2026-09-30T20:11:27.221Z", "local_path": "/Users/adel/Projects/machine-earning-site/public/data/dashboard.json", "hosted_endpoint": "https://machine-earning.adelzakirov.chatgpt.site/api/dashboard"},
+  "next_priority": ["October 1 MU official earnings/guidance review", "October 1 CADL closing-price validation: IEX close 10.43 versus 10.40 invalidation"],
+  "reconciliation_warning": "Inherited 822 local cash reconstruction difference; broker cash controls. Final positions/account marks differed 0.53 due asynchronous marking."
+}

@@ -51,3 +51,16 @@
 - `no-trade`: scoreable zero P/L.
 - conclusion: The first checkpoint is favorable for the chosen stock entry, but the short window does not support a decision-quality conclusion or lesson change.
 - next_checkpoint: `2026-09-25 close`.
+
+## 2026-09-25 close checkpoint
+
+- Common mark: Alpaca IEX quote at 2026-09-25T19:59:59.838704630Z was $55.79 bid x100 / $60.94 ask x100; the daily bar closed at $57.95. The spread is dislocated, so the bid is a conservative partial mark. No $51.80 close invalidation, $62/$64 target, or $53.75 pullback entry occurred.
+- Real path: the confirmed Sep 23 trim sold 50 at $58.97 ($198.50 realized); 50 shares remained at the $55.79 bid for $39.50 unrealized, total +$238.00 gross.
+- Pullback-entry remained untriggered: Sep 18–25 regular-session lows stayed above $53.75. Breakout-entry followed the Sep 23 close above $57.25 and its first Sep 24 ask within the $58 cap was $57.98 x300 at 2026-09-24T13:46:32.397194375Z; at the common bid it is -$219.00. No-trade is $0.00.
+- Partial-quality interim checkpoint; no lesson change. Next checkpoint: 2026-10-02 close.
+
+## 2026-10-02 tenth-session checkpoint
+
+- Common IEX near-close quote `2026-10-02T19:59:56.605173Z`: `$59.22 x100` bid / `$59.29 x100` ask. The displayed bid covers the 50 real shares and 100-share breakout alternative; the mark is single-venue. October 2 IEX daily bar closed `$59.29` (high `$60.21`, low `$58.92`).
+- Real path: 100 bought at `$55.00`, 50 sold at `$58.97`, 50 marked at `$59.22`; gross P/L is `+$409.50`. The already-triggered breakout-entry path bought 100 at `$57.98` and is `+$124.00` at the same bid. The `$53.75` pullback entry remained untriggered; no-trade is `$0`.
+- The `$51.80` close invalidation and `$62-$64` target were not reached. The executable bid is above the predeclared `$58.50` review level; record that review trigger without inferring a new broker action. Interim result favors the original `$55` entry over the later breakout entry, but is not terminal evidence. Next checkpoint: October 16 close. No lesson change.

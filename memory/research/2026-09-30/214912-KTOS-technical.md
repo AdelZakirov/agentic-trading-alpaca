@@ -1,0 +1,107 @@
+# moneyheap research: KTOS technical
+
+- Request time: 2026-09-30T21:49:12.802695+02:00
+- Ticker: KTOS
+- Analysis type: technical
+- Endpoint: /v1/analysis/technical
+
+## Prompt
+
+As of September 30 2026, assess Kratos near $42.8 after bearish 20-day compression break with 2.55x volume and 15.5% 20-day loss. Is a 1-2 week bearish continuation thesis still valid or exhausted? Identify current support, reversal invalidation, targets, intraday/market corroboration and data timestamps. Compare buying an October16 $43 put versus a $43/$38 put debit spread, using ONLY these contemporaneous indicative quotes: $43 put bid1.83 ask2.17 IV56.25% theta-0.0606; $38 put bid0.27 ask0.52 IV58.28%. Max long-put debit217/contract, spread debit190/max gain310, breakeven41.10. No short stock permitted. Evaluate whether expected downside and theta/spread friction justify trading; avoid treating indicative quotes as firm OPRA.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Trend & Momentum Read
+* **Multi-Week Trend:** Strong bearish breakdown. KTOS has transitioned from a tight 20-day horizontal compression ($45.00–$48.50) into an active downward impulse, registering a ~15.5% loss over the past 20 sessions and closing at **$42.95** on September 30, 2026.
+* **Momentum Indicators (Daily):**
+  * **RSI (14-period):** **29.40** (entering deeply oversold territory below 30.0).
+  * **Stochastic (%K 3, %D 3, Slow 14):** %K = **3.30**, %D = **10.02** (extreme oversold state).
+  * **MACD (12, 26, 9):** MACD line at **-2.18**, Signal line at **-1.93**, Histogram at **-0.26** (expanding downward divergence confirming acceleration).
+  * **Bollinger Bands (20, 2.0):** Upper = $49.88, Middle = $46.73, Lower = $43.58. KTOS closed below the lower band (%B = **-0.10**), reflecting severe downward band-walking.
+  * **Linear Regression Slope (20-period):** **-0.198**, reflecting accelerating negative drift.
+
+---
+
+### 2. Regime Call: Trend vs. Chop
+* **Regime Call:** **Early-Stage Bearish Trend (Breakout from Consolidation)**.
+* **Evidence:** 
+  * **ADX (14-period):** **19.15** (rebounding from 16.0 range troughs as directional energy expands).
+  * **Directional Movement:** **-DI at 31.42** completely dominates **+DI at 15.92**, confirming directional selling pressure out of the 20-day shelf.
+  * **1–2 Week Continuation vs. Exhaustion:** While the breakdown is **technically valid** and the larger trend points downward, the immediate 1–3 day setup shows **short-term momentum exhaustion/stretch** (RSI < 30, Stoch %K < 5, price extended 1.5% below the lower Bollinger Band). A brief mean-reversion retest of broken support ($44.00–$44.80) is likely before the next 1–2 week leg lower unfolds.
+
+---
+
+### 3. Timing & Setup
+* **Bearish Setup / Trigger:** Avoid chasing fresh short/put exposure at $42.80–$42.95 due to oversold conditions and high IV. Wait for a dead-cat bounce / relief push into resistance to initiate bearish continuation trades:
+  * **Bearish Entry Trigger:** Failed retest / rejection wick in the **$44.00–$44.80** zone, or a decisive daily breakdown below the intraday low of **$42.54**.
+  * **Trim / Take-Profit Trigger:** Scale out at primary downside targets (**$40.00** psychological / **$38.50** 2.0x ATR extension).
+* **Mean-Reversion Long (Counter-Trend Speculation Only):** Only triggered if price reclaims and closes back above **$43.60** (lower Bollinger Band) with a bullish Stochastic crossover.
+
+---
+
+### 4. Risk & Invalidation Framing
+* **ATR (14-period):** **$2.21** (~5.15% of stock price).
+* **Bearish Invalidation / Stop Level:** A daily close back inside the prior compression range above **$45.20** (prior breakdown pivot and ~1.0x ATR above current price).
+* **Position Sizing Framework:**
+  * Risk per share = $45.20 (Stop) - $42.95 (Entry) = **$2.25/share**.
+  * For a standard $1,000 risk budget: $\text{Shares} = \lfloor 1000 / 2.25 \rfloor = 444 \text{ shares}$.
+
+---
+
+### 5. Key Levels & Targets (As of Sept 30, 2026 Close)
+* **Immediate Resistance 1 (Prior Support):** **$43.58–$44.00** (Lower Bollinger Band & Sept 28 low).
+* **Major Breakdown Invalidation Resistance 2:** **$44.87–$45.20** (Base of the 20-day compression range).
+* **Immediate Support 1:** **$42.54** (Sept 30 intraday low).
+* **Downside Target 1:** **$40.00** (Key psychological round number).
+* **Downside Target 2:** **$38.50–$38.52** (2.0x ATR extension target: $\$42.945 - 2 \times \$2.2104$).
+
+---
+
+### 6. Volume & Confirmation
+* **Volume Surge on Breakdown:**
+  * **Sept 28:** 110,942 shares (initiating break below $45.00).
+  * **Sept 29:** **276,999 shares** (**2.55x** the 20-day baseline average, high distribution).
+  * **Sept 30:** **224,159 shares** (continued heavy institutional distribution).
+* **Accumulation/Distribution Metrics:**
+  * **OBV:** **-1,449,326** (steep downtrend confirming active liquidation).
+  * **Chaikin A/D Oscillator (ADOSC 3,10):** **-215,548** (deeply negative).
+  * **MFI (14):** **25.79** (persistent capital outflow).
+
+---
+
+### 7. Peer / Sector Context Takeaway
+* **Peer Comparison (AVAV):** AeroVironment (AVAV) also experienced heavy distribution into late September, falling from $163.43 on Sept 17 to close at $142.99 on Sept 30 (-12.5%), showing broad defense-tech / unmanned systems weakness rather than isolated single-stock anomaly.
+
+---
+
+### 8. Options Evaluation: October 16 $43 Put vs. $43/$38 Put Debit Spread
+
+*(Contemporaneous Indicative Quotes: 16 calendar days / 12 trading days to expiry; Oct 16)*
+* **$43 Put (Long):** Bid $1.83 / Ask $2.17 | IV 56.25% | Theta -$0.0606/day
+* **$38 Put (Short):** Bid $0.27 / Ask $0.52 | IV 58.28%
+
+| Metric | Outright Oct16 $43 Put | Oct16 $43/$38 Put Debit Spread |
+| :--- | :--- | :--- |
+| **Max Debit / Outlay** | **$2.17** ($217 / contract) | **$1.90** ($2.17 ask - $0.27 bid = $190 / contract) |
+| **Max Potential Gain** | Theoretical downside to $0 | **$3.10** ($310 / contract, 163% max ROI) |
+| **Breakeven (at Expiry)** | **$40.83** ($43.00 - $2.17; -4.9% from $42.95) | **$41.10** ($43.00 - $1.90; -4.3% from $42.95) |
+| **Theta Decay Drag** | Severe (-$6.06/day per contract; ~2.8%/day) | Moderated by short $38 put |
+| **Spread Slippage Friction** | $0.34 wide bid-ask (17% frictional drag) | **Extremely high** (Selling $38 at $0.27 bid vs $0.52 ask loses $0.25 in slippage) |
+
+#### Trading Assessment & Friction Takeaway:
+1. **Frictional Penalty of the Spread:** Because the $38 put has a wide bid/ask ($0.27 / $0.52), crossing the spread to sell at the $0.27 bid provides only a **$0.27 debit reduction** while capping potential gains at $38.00. 
+2. **IV & Theta Risk:** With elevated IV (56%–58%) and steep theta (-$0.0606), buying outright puts into a daily RSI of 29.4 creates high vulnerability to an IV crush and time decay during any multi-day consolidation.
+3. **Verdict:** **Neither option structure provides a high-probability risk/reward at natural bid/ask prices.** If taking the trade, do not execute at market/ask: **work a limit order on the $43/$38 spread near mid-price (~$1.60–$1.65 debit)** to neutralize theta and IV crush while targeting the $38.50 support zone.
+
+---
+
+### Final Technical Signal
+**BEARISH (Tactically Oversold — Await Pullback/Retest)**
+
+* **Heavy Institutional Breakdown:** Clear break of the 20-day shelf on 2.55x volume with expanding negative MACD and dominant -DI (31.42).
+* **Valid Multi-Week Downside Targets:** Structural continuation targets point to $40.00 and $38.50.
+* **Immediate Exhaustion Risk:** Deeply oversold daily oscillators (RSI 29.4, Stoch %K 3.3, %B -0.10) make chasing at market unfavorable; short continuation entries must wait for a $44.00–$44.80 retest or mid-market spread limit fills.

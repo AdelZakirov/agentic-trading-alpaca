@@ -6,7 +6,7 @@
 - creator_run_id: `17d021b8-789f-4ec1-8bd1-4b659fda4b56`
 - decision_at: `2026-09-14T18:58:50+02:00`
 - ticker: `SPY`
-- status: `WAITING_FOR_FILL`
+- status: `COMPLETE`
 - client_order_id: `alpaca-stage2-20260914-SPY-buy`
 - broker_order_id: `8a92ac2c-5cb4-4128-9b33-855d7f69baac`
 
@@ -107,3 +107,10 @@
 - The Alpaca IEX 1Day bar closed at `$773.44` (high `$775.12`, low `$772.605`). The stable near-close IEX quote at `2026-09-22T19:59:59.995958413Z` was `$773.37/$773.44`, with displayed size 1,480/1,280. This is sufficient for all compared stock quantities.
 - Gross P/L at the bid: chosen 13 shares `+$136.24`; immediate 26-share alternative `+$276.64`; pullback-only 13 shares, activated earlier at `$757.50`, `+$206.31`; no trade `$0`. The close did not breach `$750.50` and did not reach the `$779` common-end trigger. The bar high exceeded the `$774` first-review level, but no historical bid-at-touch was established, so it is recorded as proximity, not an assumed executable exit.
 - Interim result supports no lesson change. Next checkpoint: final `2026-09-25` close.
+
+## 2026-09-25 final comparison and review
+
+- Common mark: Sep 25 near-close Alpaca IEX quote at 2026-09-25T19:59:59.959576535Z was $771.29 bid x1,480 / $771.36 ask x40. The Sep 25 IEX daily bar closed at $771.35. No $750.50 close invalidation or $779 target was reached.
+- Outcomes at the common bid: chosen 13 shares from $762.89: +$109.20 gross; immediate 26-share alternative from $762.73: +$222.56; pullback-only 13 shares activated at $757.50: +$179.27; no-trade: $0.00. Current paper position remained 13 SPY shares; no open orders.
+- Decision review: the staged core thesis and ETF instrument were reasonable around the Fed event, and no target or invalidation forced a change. The 10-session result favored more exposure and the earlier pullback entry in absolute dollars; the selected smaller starter also carried less nominal close-level risk. Timing and sizing were therefore mixed, not proven inferior without a risk preference. Execution and common marks were clean. No lesson change.
+- Assessment complete; data quality scoreable. Evaluation ended at the declared Sep 25 close; next checkpoint: none.

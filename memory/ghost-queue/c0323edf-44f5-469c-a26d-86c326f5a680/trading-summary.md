@@ -1,0 +1,17 @@
+# September30 trading summary
+
+Updated: 2026-09-30T22:09:59.278912+02:00
+
+Covers full log through: 2026-09-30T22:09:59.278912+02:00
+
+[Full log](2026-09-30.md)
+
+Normal paper cycle `c0323edf-44f5-469c-a26d-86c326f5a680` completed its decision/reconciliation work after repaired fresh discovery gates. All32 shortlist names triaged; five advanced candidates researched via six serial moneyheap responses. No orders submitted and holdings unchanged. Final equity$100,683.74, cash$57,291.97,10stocks/0options/0openorders; last-equity mark$-231.57, not realized cycle tradingP/L.
+
+NICE BUY30<=111.50 selected but NOT_SUBMITTED: IEX initially111.20/111.44, then ask112.34 with widening1.08-1.24 spreads; final validation repeated prior timestamp near close. No duplicate or uncertain mutation. New decision and fresh quotes required October1. Primary cashflow/raised guidance plus technical base support a measured recovery; GAAP margins/EPS weakened and upgrade publication date conflicts. Dailyclose105 invalidation,118.30/124.50-128 target reviews,October16 deadline only if later entered. [NICE state](../positions/NICE.md) · [Unsubmitted alternatives](../ghost-trades/2026-09-30/alpaca-stage2-20260930-NICE-buy.md).
+
+PriorityOctober1: MU3 explicitly carried through today's16:30 ET earnings; verify official results/HBM/guidance/capex with broker price.20%gap~639/30%~959; no options hedge. CADL400 daily IEXclose10.43 remains just above10.40 invalidation; verify completed close evidence for next-session exit review. Fresh company September30 immune/ASTRO update retains plannedQ4BLA. NNEclose15.825 above15.30. Other holdings unchanged; CF next reviewOctober2. Current portfolio posture roughly$6,874/6.8% illustrative adverse scenario, no loss bound; cash-funded/no leverage, no biotech/MU adds before event reassessment.
+
+GO requires11.60-11.75 confirmation; CCL needs base/retest after surge, shared travel/consumer risk; KTOS puts rejected for timing/theta/spread friction after examiningOct16 strikes35-45 and43/38 spread. QURE company data corrects incomplete moneyheap endpoint and BLA assumptions: no validated bearish-FDA-failure or bullish-rebound entry. Remaining strong candidates VIAV/AIG/IOVA/FICO/NESR and TP are explicitly insufficient_evidence due near-close time, not proven inferior. [Coverage](../research/2026-09-30/shortlist-coverage.csv) · [Primary corrections](../research/2026-09-30/primary-source-notes.md).
+
+Handoff `c0323edf-44f5-469c-a26d-86c326f5a680` prepared for publication after this checkpoint with one NOT_SUBMITTED NICE study; ghost_queue finish result is authoritative. Research saved in [today's folder](../research/2026-09-30/). Broker cash reconciles with accountlongvalue; positions/account marks differ$0.53. Existing822 local reconstruction difference remains; broker cash controls. Yahoo10ok/22partial without request errors; one expert source unavailable; GO search unavailable internally. No tests were needed for a trading/research cycle with no code edits. Dashboard refresh follows persistence and is reporting only.

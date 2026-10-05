@@ -1,0 +1,215 @@
+{
+  "clock": {
+    "is_open": true,
+    "next_close": "2026-09-29T16:00:00-04:00",
+    "next_open": "2026-09-30T09:30:00-04:00",
+    "timestamp": "2026-09-29T13:01:32.067921992-04:00"
+  },
+  "account": {
+    "status": "ACTIVE",
+    "equity": "100823.87",
+    "last_equity": "101137.45",
+    "cash": "57291.98",
+    "buying_power": "338362",
+    "long_market_value": "43531.89",
+    "options_buying_power": "76790.92",
+    "trading_blocked": false,
+    "account_blocked": false
+  },
+  "positions": [
+    {
+      "symbol": "ARQT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "100",
+      "qty_available": "100",
+      "avg_entry_price": "24.5",
+      "market_value": "2704",
+      "unrealized_pl": "254",
+      "current_price": "27.04"
+    },
+    {
+      "symbol": "CADL",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "400",
+      "qty_available": "400",
+      "avg_entry_price": "11.44",
+      "market_value": "4256",
+      "unrealized_pl": "-320",
+      "current_price": "10.64"
+    },
+    {
+      "symbol": "CF",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "40",
+      "qty_available": "40",
+      "avg_entry_price": "115.86",
+      "market_value": "4677.2",
+      "unrealized_pl": "42.8",
+      "current_price": "116.93"
+    },
+    {
+      "symbol": "DT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "50",
+      "qty_available": "50",
+      "avg_entry_price": "55",
+      "market_value": "2856.5",
+      "unrealized_pl": "106.5",
+      "current_price": "57.13"
+    },
+    {
+      "symbol": "MAC",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "200",
+      "qty_available": "200",
+      "avg_entry_price": "22.6",
+      "market_value": "4534",
+      "unrealized_pl": "14",
+      "current_price": "22.67"
+    },
+    {
+      "symbol": "MSFT",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "10",
+      "qty_available": "10",
+      "avg_entry_price": "497.473",
+      "market_value": "5082",
+      "unrealized_pl": "107.27",
+      "current_price": "508.2"
+    },
+    {
+      "symbol": "MU",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "3",
+      "qty_available": "3",
+      "avg_entry_price": "939.99",
+      "market_value": "3203.97",
+      "unrealized_pl": "384",
+      "current_price": "1067.99"
+    },
+    {
+      "symbol": "NNE",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "300",
+      "qty_available": "300",
+      "avg_entry_price": "17.15",
+      "market_value": "4752",
+      "unrealized_pl": "-393",
+      "current_price": "15.84"
+    },
+    {
+      "symbol": "PK",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "100",
+      "qty_available": "100",
+      "avg_entry_price": "15.55",
+      "market_value": "1552.5",
+      "unrealized_pl": "-2.5",
+      "current_price": "15.525"
+    },
+    {
+      "symbol": "SPY",
+      "asset_class": "us_equity",
+      "side": "long",
+      "qty": "13",
+      "qty_available": "13",
+      "avg_entry_price": "762.89",
+      "market_value": "9914.58",
+      "unrealized_pl": "-2.99",
+      "current_price": "762.66"
+    }
+  ],
+  "open_orders": [],
+  "order_statuses": [
+    {
+      "id": "19819f81-37d8-433a-b2aa-8208871b3c92",
+      "client_order_id": "alpaca-stage2-20260929-PK-buy",
+      "symbol": "PK",
+      "status": "filled",
+      "qty": "100",
+      "filled_qty": "100",
+      "filled_avg_price": "15.55",
+      "filled_at": "2026-09-29T16:51:13.325714028Z",
+      "canceled_at": null
+    },
+    {
+      "id": "e74dcb9a-eac5-419c-bf71-34cc7f328b05",
+      "client_order_id": "alpaca-stage2-20260929-RGA-buy",
+      "symbol": "RGA",
+      "status": "canceled",
+      "qty": "20",
+      "filled_qty": "0",
+      "filled_avg_price": null,
+      "filled_at": null,
+      "canceled_at": "2026-09-29T17:01:57.511018819Z"
+    }
+  ],
+  "fill_activities": [
+    {
+      "id": "20260929125113325::eb973e74-782f-4c79-bb23-558efe364660",
+      "activity_type": "FILL",
+      "transaction_time": "2026-09-29T16:51:13.325714Z",
+      "type": "fill",
+      "price": "15.55",
+      "qty": "19",
+      "side": "buy",
+      "symbol": "PK",
+      "leaves_qty": "0",
+      "order_id": "19819f81-37d8-433a-b2aa-8208871b3c92",
+      "cum_qty": "100",
+      "order_status": "filled"
+    },
+    {
+      "id": "20260929125112649::27daa5bc-a2f0-46aa-a863-1fc1ce8d3933",
+      "activity_type": "FILL",
+      "transaction_time": "2026-09-29T16:51:12.649585Z",
+      "type": "partial_fill",
+      "price": "15.55",
+      "qty": "2",
+      "side": "buy",
+      "symbol": "PK",
+      "leaves_qty": "19",
+      "order_id": "19819f81-37d8-433a-b2aa-8208871b3c92",
+      "cum_qty": "81",
+      "order_status": "partially_filled"
+    },
+    {
+      "id": "20260929125111784::be606b90-345d-45bd-92a1-2ddd3e6bd229",
+      "activity_type": "FILL",
+      "transaction_time": "2026-09-29T16:51:11.784841Z",
+      "type": "partial_fill",
+      "price": "15.55",
+      "qty": "27",
+      "side": "buy",
+      "symbol": "PK",
+      "leaves_qty": "21",
+      "order_id": "19819f81-37d8-433a-b2aa-8208871b3c92",
+      "cum_qty": "79",
+      "order_status": "partially_filled"
+    },
+    {
+      "id": "20260929125111146::28cad219-7f28-4888-b9ca-603ce41282a7",
+      "activity_type": "FILL",
+      "transaction_time": "2026-09-29T16:51:11.146901Z",
+      "type": "partial_fill",
+      "price": "15.55",
+      "qty": "52",
+      "side": "buy",
+      "symbol": "PK",
+      "leaves_qty": "48",
+      "order_id": "19819f81-37d8-433a-b2aa-8208871b3c92",
+      "cum_qty": "52",
+      "order_status": "partially_filled"
+    }
+  ],
+  "rga_fill_activities": []
+}

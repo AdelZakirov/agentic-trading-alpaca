@@ -1,11 +1,16 @@
 # NNE
 
-Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`.
+Updated 2026-10-02T19:46:31.551436+02:00; Alpaca paper MCP; normal run 2c215101-4a65-42a2-b094-f832bb6de4ac.
 
-Long 300 at $17.15 after BUY order `1e9654c5-6fac-4d84-b0ca-2fb7f259cec2`, client `alpaca-stage2-20260921-NNE-buy`, filled 300/300 at 2026-09-21T16:09:40.915187282Z. No active NNE order. HOLD, no add.
+Long **300 shares** at average $17.150; broker mark $15.6808, value $4,704.24, unrealized P/L $-440.76 at 2026-10-02T13:42:10.12481259-04:00. Latest IEX quote 2026-10-02T17:42:12.928871245Z: bid/ask $15.67/$15.69 (sizes 200/100); no open order in this ticker. Completed October1 IEX close $15.72; October2 bars are partial.
 
-One-to-four-week mean-reversion/catalyst trade: about $10.83/share cash, negligible debt, 34.8% short float, fresh Needham Buy/$33 and a defended $15.04-$15.41 base support positive tactical asymmetry. Fresh IEX bid/ask $17.26/$17.31 at 15:34:53 ET (200x100); HOLD, no add. Daily close below $15.30 invalidates; $14.90 is structural failure. Review at $18.50-$18.80, then $19.80-$20.50, and on material NRC, financing, governance or sector-sentiment news. Pre-revenue development, regulatory, dilution-history and beta 5.4 gap risks remain material.
+Stock decision: **HOLD**, no add. Confidence in unchanged plan moderate; current mark alone does not replace a daily-close rule. Original1-4week base/cash/short-interest thesis remains; reactor development remains pre-commercial; the acquired STS logistics business has revenue. Regulatory, dilution, governance, fuel-asset acquisition and high-beta gap risks persist.
 
-No options: shares avoid extreme small-cap event IV, theta and expiry mismatch with a development-stage thesis.
+Daily close below $15.30 invalidates; $14.90 structural failure. Observe $18.50–$18.80 then $19.80–$20.50 profit review; reassess NRC/financing news.
 
-[Latest fundamental](../research/2026-09-21/175753-NNE-fundamental.md). [Latest technical](../research/2026-09-21/180202-NNE-technical.md). [Decision log](../logs/2026-09-21.md). [History](history/NNE.jsonl).
+Option decision: **NO NEW OPTION**. Retained cash shares express the thesis; no distinct derivative edge or need for extra correlated delta/theta.
+
+[Latest relevant research](../research/2026-09-21/175753-NNE-fundamental.md) · [Sep28 audit](../logs/2026-09-28.md) · [History](history/NNE.jsonl).
+
+
+October2 primary review: October1 fuel-processing asset agreement and acquired STS revenue correct the earlier blanket pre-revenue description; reactor deployment/licensing risk remains. [Primary checks](../research/2026-10-02/primary-source-notes.md).

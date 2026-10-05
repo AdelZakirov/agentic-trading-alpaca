@@ -1,9 +1,11 @@
 # RBLX
 
-Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`. Long 50 at $40.41, runner after prior September 14 trim; no active order. Fresh IEX bid/ask $50.06/$50.99 at 15:35:46 ET (100x100); last trade $50.065, so the displayed ask is wide/dislocated. HOLD, no add.
+Updated 2026-09-28T18:22:29.441586+02:00; **CLOSED**, paperMCP run `3392dda4-ef42-486f-a2a1-e172b49ed51a`. Broker haszeroRBLXsharesandnoorder.
 
-Executable bid $53.50-$55 triggers additional profit-taking assessment; $57.60-$58.40 is the next resistance band. Daily close below $46.80 triggers next-session review; $44.50 remains structural invalidation. Fresh technical evidence confirms a bullish trend but near-term extension into supply, so preserve the daily-close basis and original runner thesis with no standing stop/target. Growth correlation and overnight gap risk remain material.
+SELL50 DAYlimit42.6, broker11ef0ea5-56f0-427e-9a79-d120c5f58394, clientalpaca-stage2-20260928-RBLX-sell, **FILLED50@$42.76** at2026-09-28T15:01:23.256261249Z. Exactorder-specificFILLactivitiesmatched; grossrealizedgain$117.50beforefees.
 
-No options: standard covered call needs 100 shares; naked short calls forbidden and extra bullish delta/theta unnecessary.
+Sep25 completedclose46.46 below46.80review; currentpricealso below44.50structuralfailure. Appliedoriginalclosebasis.
 
-[Latest technical](../research/2026-09-21/175617-RBLX-technical.md). [History](history/RBLX.jsonl).
+StockNO_POSITION/NO_NEW_ORDER. Newlongrequiresfreshsupportedbase/reclaim46.00-46.50; oldrunnerisclosedandcannotreopenbychangingitsstop. SeparateoptionNO_NEW_OPTION; no pairedderivative.
+
+[Latestresearch](../research/2026-09-28/165532-RBLX-technical.md) · [Audit](../logs/2026-09-28.md) · [Alternatives](../ghost-trades/2026-09-28/alpaca-stage2-20260928-RBLX-sell.md) · [History](history/RBLX.jsonl).

@@ -73,3 +73,9 @@
 
 - The Alpaca paper order `257f6b31-f9be-4b28-9d7c-53fea8de9112` is `canceled`, 0/200 filled, with `canceled_at=2026-09-22T15:45:08.457624365Z`. The order-specific FILL activity query returned no fills, and the current positions response contains no EGO position.
 - Lifecycle state: `NO_FILL`. The chosen and half-size paths have no fill-anchored start and remain unscored. No comparison start was inferred. The no-trade path is scheduled to begin at the predeclared 2026-09-22 close; the preferred pullback remains eligible only after a $42.50-$43.10 trade followed by intraday stabilization through the 2026-09-25 close.
+
+## Sep 25 conditional-window review — completed 2026-09-29
+
+- The chosen order was canceled with 0/200 filled; order-specific FILL activities were empty, and no EGO position remained. The real and half-size paths therefore have no common fill start and remain unscorable.
+- The Sep 23 IEX daily bar reached `$42.495` and closed `$42.86`, inside the pullback band. The first stable quote in-band was `$43.03` ask x100 / `$42.86` bid x100 at `2026-09-23T13:35:21.112763953Z`; another stable quote was `$42.85` ask / `$42.79` bid x100 at `13:44:16.640726927Z`. The original phrase “intraday stabilization” has no objective duration or size rule; displayed ask depth was also half the specified 200-share entry. No 200-share hypothetical fill is assigned, and the pullback outcome remains `UNSCORABLE`.
+- NO_TRADE starts at the Sep 22 close and remains `$0` through the Sep 25 pullback-window expiry. The eligible window has ended; review status is `COMPLETE` while the real order lifecycle remains `NO_FILL`. No comparison start was fabricated and no lesson changed.

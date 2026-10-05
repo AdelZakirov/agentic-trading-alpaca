@@ -5,7 +5,7 @@
 - creator_run_id: 0593e73b-6b59-4624-b8e2-3174b6eaa24f
 - decision_at: 2026-09-22T21:16:20+02:00
 - ticker: ET
-- status: ACTIVE
+- status: COMPLETE
 - client_order_id: alpaca-stage2-20260922-ET-sell
 - broker_order_id: null
 
@@ -40,3 +40,20 @@ No sell submitted at definition time; fill/ID null.
 - At the endpoint IEX quote `2026-09-22T19:59:59.980236535Z`, ET was `$20.45` bid x5,000 / `$20.46` ask x2,800. HOLD_TO_CLOSE on 400 shares from `$20.95` is `-$200`; the actual full exit at `$20.55` is `-$160`.
 - HALF_EXIT (200 sold at the decision-time `$20.54` bid; 200 marked at `$20.45`) is `-$182`. STOP_LIMIT_20_50 was eligible at the decision quote and would be marketable within its `$20.50` floor; conservatively marking 400 at `$20.54` gives `-$164` (hypothetical, not a broker fill). Quote depth supports all tested quantities.
 - Interim scorable stock comparison, no lesson change. Next checkpoint: `2026-09-23` close (+1 session), with the +5-session checkpoint Sep 29.
+
+### 2026-09-23 +1-session checkpoint
+
+- Project `alpaca_paper` historical IEX quote at `2026-09-23T19:59:59.805782808Z` was ET `$20.49/$20.50` bid/ask, bid size 3,700; the IEX daily bar closed at `$20.49`. All paths in this comparison were already closed by the Sep 22 decision/close.
+- Outcomes remain real `-$160`, HOLD_TO_CLOSE `-$200`, HALF_EXIT `-$182`, and STOP_LIMIT_20_50 `-$164` under the previously recorded conservative hypothetical fill. No lesson change; the near-close IEX depth was adequate. Next checkpoint: Sep 29 (+5 sessions).
+
+## 2026-09-29 five-session post-exit checkpoint
+
+- Alpaca IEX daily bar closed at `$19.90`; the final regular-session quote at `2026-09-29T19:59:59.995515338Z` was `$19.90` bid x3,300 / `$19.91` ask x900. The five-session endpoint is liquid enough for all 400 shares.
+- The original same-day alternatives remain frozen at their declared exits: actual `-$160`; `HOLD_TO_CLOSE` `-$200`; `HALF_EXIT` `-$182`; `STOP_LIMIT_20_50` `-$164` (hypothetical, not a broker fill). As a separate post-exit reference, holding the original 400 shares from `$20.95` through the September 29 close would be `-$420`, `$260` below the actual exit result. That reference is not a newly defined alternative.
+
+## Completed comparison review — 2026-09-29
+
+- Assessment: `COMPLETE` / `REVIEWED`. Original question: did selling after the `$20.55` intraday break protect better than holding to close, exiting half, or preserving a `$20.50` stop-limit floor?
+- Data quality: scorable for the defined same-day alternatives and five-session post-exit reference; September 22 executions/marks are recorded in the prior checkpoints, and the September 29 IEX book had a one-cent spread and ample displayed depth.
+- Decision review: thesis/research and timing worked—the declared invalidation was acted on while executable; the near-term downside forecast was directionally right through September 29; stock exit strategy and full de-risking matched the stated risk response; execution worked at `$20.55`, one cent better than the `$20.54` limit. Strike/expiration selection was not applicable.
+- Supported conclusion: the actual exit beat each original same-day alternative by `$4` to `$40`, and the five-session mark shows a further `$260` gross loss would have accrued on 400 shares left open. This supports the existing time-basis lesson but is closely paired with the same-day ET entry episode; no independent lesson count is added.

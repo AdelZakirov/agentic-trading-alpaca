@@ -24,6 +24,7 @@ Current portfolio quantities and risk: [portfolio state](../portfolio-state.md).
 - [HOOD](HOOD.md)
 - [INTC](INTC.md)
 - [MMED](MMED.md)
+- [MAC](MAC.md)
 - [META](META.md)
 - [MSTR](MSTR.md)
 - [MSFT](MSFT.md)
@@ -44,3 +45,11 @@ Current portfolio quantities and risk: [portfolio state](../portfolio-state.md).
 - [TTWO](TTWO.md)
 - [ULTA](ULTA.md)
 - [ARQT](ARQT.md)
+- [UNG](UNG.md)
+- [CF](CF.md)
+- [PK](PK.md)
+- [RGA](RGA.md)
+- [NICE](NICE.md) — selected entry not submitted; conditional watch
+- [DOCS](DOCS.md) — 150-share open position
+
+- [ENS](ENS.md) — 30 shares long; confirmed filled

@@ -5,7 +5,7 @@
 - creator_run_id: 2a8200b7-ace2-4e97-9606-d1b7edea210a
 - decision_at: 2026-09-15T20:54:40+02:00
 - ticker: MMED
-- status: ACTIVE
+- status: COMPLETE
 - broker_order_id: `a74e2a30-cf84-40bb-9283-59469547fbfe`
 
 ## Original decision
@@ -52,3 +52,17 @@ Indicative Oct16quote18:37:36Z22.5Pbid0.93/ask3.97 sizes40/53;20P18:51:09Zbid0.6
 - The IEX 1Day bar closed at `$21.19` (high `$21.575`, low `$20.99`). The last stable near-close IEX quote at `2026-09-22T19:59:50.242116350Z` was `$21.18` bid x100 / `$21.20` ask x200; earlier ticks were tight, while a final outlier widened to `$21.04/$22.00`. Use the stable bid with a displayed-depth caveat.
 - Provisional close-mark P/L from the `$22.06` reference: actual full exit `$0`; HOLD_ALL `-$110`; HALF_EXIT (62 sold at `$22.06`, 63 retained) `-$55.44`. The close breached the predeclared daily-close `$21.80` review/invalidation threshold. Under the original rule, retained hypothetical shares exit at the next regular-session executable bid; these close marks are interim, not final. No extension to the October exchange-offer date is made.
 - Data quality is partial because displayed bid size is below the 125-share hold and a final quote outlier exists. Next checkpoint: first reliable regular-session bid on `2026-09-23` to apply the predeclared next-session exit.
+
+## 2026-09-23 next-session exit checkpoint
+
+- The Sep 22 close below `$21.80` activated the original next-session exit rule. The opening IEX quote stream contained severe outliers, including `$18.23` bids against asks above `$21`; the first coherent quote with bid depth covering all 125 shares was `2026-09-23T13:42:43.611988659Z`: IEX bid `$21.05 x200`, ask `$21.19 x100` (14-cent spread). This is a single-exchange mark, not a consolidated market quote.
+- At that predeclared exit mark, forward P/L from the `$22.06` reference is: real full exit `$0.00`; HOLD_ALL `-$126.25`; HALF_EXIT `-$63.63` (62 sold at `$22.06`, 63 sold at `$21.05`). The retained paths exit on this checkpoint under the original rule; no target touch occurred.
+- Data quality remains partial because of the opening IEX outliers and single-exchange feed. This is an interim checkpoint; the fixed evaluation end remains Sep 29 close. No durable lesson change.
+
+## Completed comparison review — 2026-09-29
+
+- Assessment: `COMPLETE` / `REVIEWED`. Original question: did the full exit after the newly confirmed exchange-offer supply change outperform retaining all or half for the declared ten-session window?
+- Outcomes from the common `$22.06` executable-bid reference: real full exit `$0.00`; `HOLD_ALL` `-$126.25`; `HALF_EXIT` `-$63.63`. The September 22 close below `$21.80` ended both retained paths at the first reliable next-session IEX bid of `$21.05` on September 23. The paths stayed frozen through the September 29 end date; no post-window extension is included.
+- Data quality: partial. The threshold close is a daily IEX bar and the exit was a single-exchange IEX quote after opening outliers; displayed bid depth covered 125 shares, but SIP was unavailable.
+- Decision review: thesis/research worked—the material supply change was verified; forecast was mixed—the exact short-term path was uncertain, but the declared horizon captured the deterioration; strategy and sizing worked for the stated event-risk objective; timing and execution worked—the 125-share fill at `$22.06` exceeded the `$22.01` limit and preceded the retained-path exits. Strike/expiration selection was not applicable because no option was chosen.
+- Supported conclusion: full exit beat both original retention alternatives in this episode. This is one event-driven decision, not evidence that every supply-related exit should be complete. No durable lesson change.

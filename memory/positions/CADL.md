@@ -1,11 +1,11 @@
 # CADL
 
-Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`.
+Updated 2026-10-02T19:27:34.182894+02:00; normal Stage 2 run 2c215101-4a65-42a2-b094-f832bb6de4ac.
 
-Long 400 at $11.44 after BUY order `f32f3a02-517d-41b2-a2ca-a334da34371f`, client `alpaca-stage2-20260921-CADL-buy`, filled 400/400 at 2026-09-21T16:07:07.327104258Z. No active CADL order. HOLD, no add.
+**CLOSED**, zero shares and no open order after Alpaca reconciliation. Sold all 400 at $10.20 via DAY limit, client alpaca-stage2-20261002-CADL-sell, broker ebd6974e-da7a-4df2-8210-6005c65f29d8. Order status filled; order-specific activities 123 + 277 confirm 400. Proceeds $4,080; basis $4,576; gross realized loss $496 before fees.
 
-One-to-four-week biotech catalyst trade: peer-reviewed Phase 3 prostate-cancer data, a planned year-end CAN-2409 BLA, fresh BofA Buy/$18, about $152M net cash and 20.6% short float support a rebound from a stabilizing base. Fresh IEX bid/ask $11.92/$11.94 at 15:34:59 ET (100x200); HOLD, no add. Daily close below $10.40 invalidates; $9.80 is structural failure. Review at $12.20-$12.50, then $13.50-$14.00, and on material regulatory or financing news. Pre-commercial binary-event and biotech-gap risk remain material.
+Stock decision: SELL 400 executed. The prior completed-close review rule activated at October 1 close $10.16 below $10.40. Current price remained below the threshold; fresh research confirmed weak trend, distribution and no reclaim. The year-end CAN-2409 BLA thesis did not justify renewing a failed tactical setup. No automatic re-entry; only a future eligible shortlist and a fresh completed reclaim above $10.50-$10.60 could warrant new research.
 
-No options: shares avoid high biotech IV, theta and capped upside while matching the 1-4 week catalyst horizon.
+Option decision: NO_NEW_OPTION. Exiting an invalidated long is not a separately validated bearish trade; binary biotech/regulatory gap and IV/decay risks do not establish an option edge.
 
-[Latest fundamental](../research/2026-09-21/175646-CADL-fundamental.md). [Latest technical](../research/2026-09-21/180047-CADL-technical.md). [Decision log](../logs/2026-09-21.md). [History](history/CADL.jsonl).
+[Fresh technical research](../research/2026-10-02/192155-CADL-technical.md) · [Broker fill proof](../research/2026-10-02/broker-cadl-fill-2c215101.json) · [History](history/CADL.jsonl).

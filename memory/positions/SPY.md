@@ -1,9 +1,13 @@
 # SPY
 
-Updated 2026-09-22T21:37:05+02:00; broker source LIVE; management-only run `cb002c1d-650d-4340-8576-9ca3384c71a2`. Long 13 at $762.89; no active SPY order. Fresh IEX bid/ask $774.86/$774.89 at 15:35:06 ET (280x280); the $774 bid review activated, but HOLD core exposure because price remains below $779 and broad-index exposure offsets single-name risk. No add.
+Updated 2026-10-02T19:46:31.551436+02:00; Alpaca paper MCP; normal run 2c215101-4a65-42a2-b094-f832bb6de4ac.
 
-2–8-week staged core-beta horizon. The current bid is below the $760.80–764 reclaim region, so no add. Daily close below $750.50 triggers review; executable bid $774 then $779 triggers profit/rebalance assessment, not automatic continuous-touch sales. Cash availability alone does not activate entry. Overnight macro/index gap risk is diversified but still affects the correlated growth holdings.
+Long **13 shares** at average $762.890; broker mark $768.6800, value $9,992.84, unrealized P/L $+75.27 at 2026-10-02T13:42:10.12481259-04:00. Latest IEX quote 2026-10-02T17:42:21.580654158Z: bid/ask $768.57/$768.63 (sizes 240/40); no open order in this ticker. Completed October1 IEX close $764.1; October2 bars are partial.
 
-No options: core cash stock preferred to short-horizon theta/IV exposure. Portfolio underinvestment considered separately from ticker overlap; staging is temporary event control, not a cash-floor policy.
+Stock decision: **HOLD**, no add. Confidence in unchanged plan moderate; current mark alone does not replace a daily-close rule. 13-share2-8week core-beta holding. Cash availability alone does not activate an add; broad macro exposure overlaps growth positions.
 
-[Latest technical](../research/2026-09-15/205058-SPY-technical.md). [Latest fundamental](../research/2026-09-14/185715-SPY-fundamental.md). [History](history/SPY.jsonl).
+Daily close below $750.50 triggers review. Observed executable bid $774 then $779 triggers profit/rebalance assessment at a management review; no unseen continuous touch assumed.
+
+Option decision: **NO NEW OPTION**. Retained cash shares express the thesis; no distinct derivative edge or need for extra correlated delta/theta.
+
+[Latest relevant research](../research/2026-09-15/205058-SPY-technical.md) · [Sep28 audit](../logs/2026-09-28.md) · [History](history/SPY.jsonl).

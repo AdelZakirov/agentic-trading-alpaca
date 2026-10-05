@@ -1,0 +1,86 @@
+[
+  {
+    "ticker": "ACN",
+    "type": "technical",
+    "markdown_path": "memory/research/2026-10-02/192854-ACN-technical.md",
+    "response_json_path": "memory/research/2026-10-02/192854-ACN-technical.json"
+  },
+  {
+    "ticker": "ENS",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/192913-ENS-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/192913-ENS-fundamental.json"
+  },
+  {
+    "ticker": "ENS",
+    "type": "technical",
+    "markdown_path": "memory/research/2026-10-02/192929-ENS-technical.md",
+    "response_json_path": "memory/research/2026-10-02/192929-ENS-technical.json"
+  },
+  {
+    "ticker": "OXY",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/192951-OXY-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/192951-OXY-fundamental.json"
+  },
+  {
+    "ticker": "HPE",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193007-HPE-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193007-HPE-fundamental.json"
+  },
+  {
+    "ticker": "ORA",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193025-ORA-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193025-ORA-fundamental.json"
+  },
+  {
+    "ticker": "NKE",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193046-NKE-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193046-NKE-fundamental.json"
+  },
+  {
+    "ticker": "MAT",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193118-MAT-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193118-MAT-fundamental.json"
+  },
+  {
+    "ticker": "SNPS",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193141-SNPS-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193141-SNPS-fundamental.json"
+  },
+  {
+    "ticker": "LQDA",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193201-LQDA-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193201-LQDA-fundamental.json"
+  },
+  {
+    "ticker": "NKTR",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193221-NKTR-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193221-NKTR-fundamental.json"
+  },
+  {
+    "ticker": "UTHR",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193242-UTHR-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193242-UTHR-fundamental.json"
+  },
+  {
+    "ticker": "FICO",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193334-FICO-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193334-FICO-fundamental.json"
+  },
+  {
+    "ticker": "MKC",
+    "type": "fundamental",
+    "markdown_path": "memory/research/2026-10-02/193358-MKC-fundamental.md",
+    "response_json_path": "memory/research/2026-10-02/193358-MKC-fundamental.json"
+  }
+]

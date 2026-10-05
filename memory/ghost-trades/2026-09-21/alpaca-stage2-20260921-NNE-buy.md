@@ -85,3 +85,9 @@
 - The IEX 1Day bar closed at `$17.31` (high `$17.42`, low `$16.68`). The stable near-close quote at `2026-09-22T19:59:54.383639586Z` was `$17.21` bid x100 / `$17.32` ask x100; the displayed bid depth is below either held-size comparison.
 - Gross mark-to-bid P/L: chosen 300 shares `+$18`; half-size 150 shares `+$9`; no trade `$0`. The confirmation alternative did not activate: close `$17.31` and high `$17.42` both remained below `$17.65`. The `$15.30` daily-close invalidation and `$20.25` end trigger did not occur.
 - Interim partial-quality checkpoint, no lesson change. Next checkpoint: fifth-session `2026-09-28` close.
+
+## 2026-09-28 fifth-session checkpoint
+
+- The Alpaca IEX daily bar closed at `$16.17` (high `$16.69`, low `$16.10`); the near-close bid was `$16.16` x100 at `2026-09-28T19:59:48.527719596Z`. Displayed depth is below both the 150-share half-size and 300-share chosen comparison.
+- Gross mark-to-bid P/L at `$16.16`: chosen 300 shares `-$297`; half-size 150 shares `-$148.50`; no-trade `$0`. No close below `$15.30` or trade at the `$20.25` end trigger occurred. The confirmation alternative remained unentered: Sep 22–28 daily closes stayed below `$17.65`; no fill is assumed.
+- Partial-quality checkpoint; no lesson change. Next checkpoint: tenth-session `2026-10-05` close.

@@ -6,7 +6,7 @@
 - creator_run_id: `f69753d6-76b4-4255-b370-bdb39af6070f`
 - decision_at: `2026-09-14T12:31:31-04:00` (America/New_York)
 - ticker: `ESI`
-- status: `ACTIVE`
+- status: `COMPLETE`
 - client_order_id: `alpaca-stage2-20260914-ESI-buy`
 - broker_order_id: null
 
@@ -138,3 +138,14 @@ ESI has a fresh Goldman Sachs Buy reinstatement at $44, strong reported growth a
 - The IEX 1Day bar closed at `$35.18` (high `$35.36`, low `$33.52`). The stable near-close quote at `2026-09-22T19:59:56.115642253Z` was `$35.18` bid x100 / `$35.31` ask x100, sufficient for the remaining 40 shares and the 75-share comparison.
 - Including actual proceeds from selling 35 at `$35.17`, the chosen 75-share path is `+$226.15`; holding all 75 to the bid would be `+$226.50`; the smaller 40-share entry would be `+$120.80`; no trade `$0`. The `$34.50` review level was exceeded; the `$30.40` daily-close invalidation did not occur. The conditional AVT comparison remains unentered/unscorable.
 - Interim result, partial overall quality due to the AVT alternative, and no lesson change. Next checkpoint: final `2026-09-25` close.
+
+## 2026-09-25 final comparison and review
+
+- Common mark: Alpaca IEX quote at 2026-09-25T19:59:59.315797273Z was $35.57 bid x200 / $37.11 ask x100; the Sep 25 IEX daily bar closed at $35.69. The quote spread was wide, so use the bid conservatively and classify the mark as partial. The $30.40 close invalidation was not reached; the $34.50 target-review level had already been touched on Sep 22.
+- Outcomes: chosen 75 shares from $32.16, including 35 sold at $35.17 and 40 marked at $35.57: +$241.75 gross. Smaller 40-share path from $32.16: +$136.40. AVT alternative: UNSCORABLE; its required stabilization-and-entry trigger was not defined or recorded. No-trade: $0.00. The observed ESI position at this evaluation end was 40 shares; its later Sep 28 exit is outside this comparison window.
+- Decision review: the analyst-upgrade rebound thesis reached its first review target and the stock instrument captured the move. The entry timing preceded the rebound; the smaller size produced a similar per-share return with less capital at risk. The 35-share realization was confirmed and the remaining shares are marked at a wide IEX-only close quote. The AVT comparison remains a data gap. No separate lesson change.
+- Assessment complete; data quality partial. Evaluation ended at the declared Sep 25 close; next checkpoint: none.
+
+## 2026-09-28 post-window real-path update
+
+- Independent Alpaca paper reconciliation confirms the remaining 40 shares were sold at `$35.10` in full on Sep 28. This occurred after the comparison ended at the Sep 25 close and does not change its scored alternatives or partial-quality assessment.

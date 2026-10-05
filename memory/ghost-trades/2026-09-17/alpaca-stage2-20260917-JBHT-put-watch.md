@@ -91,3 +91,15 @@
 - The September 17 Alpaca IEX 1Day bar closed at `$236.92` (high `$242.38`, low `$236.89`). The near-close IEX book was dislocated (`$226.10` bid / `$252.27` ask), so no executable option or stock mark is inferred.
 - The stock did not confirm with a daily close below `$235`, and it did not invalidate with a close above `$248`. The deliberate no-trade decision remains `+$0.00`; immediate put and put-spread alternatives remain `UNSCORABLE` under the predeclared indicative-only data, and the confirmed-spread alternative was not activated.
 - This is an interim checkpoint and supports no lesson change. Next checkpoint: 2026-09-24 regular-session close.
+
+## 2026-09-24 close checkpoint
+
+- Alpaca IEX 1Day bar closed at $229.22 (low $229.16). The first close below $235 was Sep 18 at $234.40, which triggered the confirmed 240/220 spread alternative for the next session, Sep 21.
+- No JBHT stock or option position/order is present in the read-only paper account reconciliation. The historical Sep 21 indicative option entry quote required by the original rule is unavailable; do not assign an entry price or comparison start. Alternative C remains UNSCORABLE. Immediate put and spread paths A/B remain UNSCORABLE under the original indicative-only pricing; the defined NO_TRADE path remains $0.00. The $248 invalidation was not reached.
+- This set remains NOT_SUBMITTED and separate from filled-trade statistics. No historical alternative is reconstructed. Next checkpoint: Oct 1 close; common evaluation end remains Oct 16 expiry.
+
+### 2026-10-01 close catch-up
+
+- Alpaca paper IEX 1Day bar closed at `$227.26` (high `$227.52`, low `$222.99`). The near-close IEX book was severely dislocated at `$213.85` bid / `$237.26` ask; no stock or option mark is inferred.
+- The Sep 18 close below `$235` had triggered C, but the required Sep 21 indicative option quote remains unavailable. A/B remain `UNSCORABLE` under the original indicative-only pricing; C remains `UNSCORABLE` with no invented entry. NO_TRADE remains `$0.00`. The `$248` close invalidation did not occur; this remains a not-submitted study, separate from filled-trade results.
+- No lesson change. Next checkpoint: October 16 expiry review.

@@ -1,33 +1,37 @@
 # Portfolio state
 
-Generated 2026-09-22T21:37:05+02:00; latest management-only Stage 2 run `cb002c1d-650d-4340-8576-9ca3384c71a2`. Broker source LIVE; account, all positions, open orders, today's activities and recent order terminals reconciled at 15:34:58 ET. Paper safety gate passed. Cash has an unresolved $822 ledger mismatch described below.
+- Generated 2026-10-02T21:27:44+02:00; management-only run 3f32e5f7-5938-45aa-950a-e823810f1571; broker clock 2026-10-02 15:20 ET, regular session open.
+- Latest shortlist remains October 2, hash a8ade825bdae104b1c544b4ef4b674904dae01cb4c57e4c20d595b09e414985b; this management run did not require a new shortlist.
+- ACTIVE, unblocked paper account: equity **$100,727.23**, cash **$51,257.16**, long market value **$49,470.07**, short market value $0, daily return **+$152.63 / +0.152%** versus last equity. **11 stocks, 0 options, 0 open orders.** Broker cash/equity are authoritative.
 
-Shortlist [data/stage1_shortlist.md](../data/stage1_shortlist.md): discovery completed NY 2026-09-22; actual completed bars through 2026-09-21, experts generated 2026-09-22T14:18:04Z. Thirty-six unique names reviewed. Current enrichment has 36 rows, hash `da9b26c6ac634184ee0ff781e3e31f8a5049914b26c9a3a608be443e0a37a235`, generated 2026-09-22T14:37:47.502949Z; Yahoo 18 ok/18 partial after one permitted network retry, technical 34 ok/1 partial/1 missing.
+## Holdings and orders
 
-Equity $102,550.22; broker cash $45,737.38; stock market value $56,812.84; daily equity change +$174.71/+0.171%; eleven stock positions; no options; no open orders. Buying power $342,025.46. Gross realized across today's prior follow-up: +$290.35 before fees, separate from daily equity change.
+| Symbol | Shares | Latest IEX bid/ask | Stock plan | Options |
+|---|---:|---:|---|---|
+| [ARQT](positions/ARQT.md) | 100 | $25.16 / $25.17 | HOLD; close below $22.40 review; $30–$31.50 profit review; Oct 15 deadline. | NO NEW OPTION |
+| [CF](positions/CF.md) | 40 | $116.02 / $116.13 | HOLD; close below $111.25 review; at $122 bid review selling 20; Oct 16 exit-or-renew. | NO NEW OPTION |
+| [DOCS](positions/DOCS.md) | 150 | $28.07 / $28.10 | HOLD; close below $26.80 review; $31.50–$32 half-sale review; Oct 8/29 checks. | NO NEW OPTION |
+| [DT](positions/DT.md) | 50 | $59.07 / $59.11 | HOLD; close below $55.80 review; $62–$64 profit review; renew before November earnings. | NO NEW OPTION |
+| [ENS](positions/ENS.md) | 30 | $192.00 / $196.97 | HOLD; close below $185 review; $203.65–$205 half-sale review, then $214.50–$217; Oct 5/8 and Oct 29 checks. | NO NEW OPTION |
+| [MAC](positions/MAC.md) | 200 | $23.02 / $23.03 | HOLD; close below $21.50 review; $24–$24.50 then $25.50–$26 profit review; Oct 22 deadline. | NO NEW OPTION |
+| [MSFT](positions/MSFT.md) | 10 | $514.29 / $515.17 | HOLD; close below $485.50 review; close above $518 reassess; $528–$535 profit review. | NO NEW OPTION |
+| [MU](positions/MU.md) | 3 | $1,066.45 / $1,074.32 | HOLD; close below $910 review; $1,150–$1,180 profit review; Oct 8 check. | NO NEW OPTION |
+| [NNE](positions/NNE.md) | 300 | $15.72 / $15.74 | HOLD; close below $15.30 invalidates; $14.90 structural failure; $18.50–$18.80 then $19.80–$20.50 profit review. | NO NEW OPTION |
+| [PK](positions/PK.md) | 100 | $15.47 / $15.48 | HOLD; close below $14.60 review; $16.20 then $17.25 profit review; Oct 16 review/Oct 23 renewal. | NO NEW OPTION |
+| [SPY](positions/SPY.md) | 13 | $769.41 / $769.43 | HOLD; close below $750.50 review; $774/$779 profit or rebalance review. | NO NEW OPTION |
 
-| Exposure | Current plan |
-| --- | --- |
-| [ARQT](positions/ARQT.md) 100@$24.50 | Half trim FILLED 100@$27.95. HOLD remaining runner, no add. Mark $28.175; daily close $22.40 invalidation, next $30-$31.50 review; final Oct 15. |
-| [CADL](positions/CADL.md) 400@$11.44 | HOLD, no add. Mark $11.93; daily close $10.40 invalidation/$9.80 structural; $12.20-$12.50 then $13.50-$14 profit review. |
-| [CCK](positions/CCK.md) 50@$109.67 | HOLD, no add. Mark $110.20; daily close $106 invalidation; $116.50 then $121 profit review; exit before late-October earnings absent renewal. |
-| [DT](positions/DT.md) 100@$55.00 | HOLD, no add. Mark $57.16; daily close $51.80 invalidation; $58.50 then $62-$64 profit review. |
-| [ESI](positions/ESI.md) 40@$32.16 | Partial trim FILLED 35@$35.17. HOLD 40, no add. Mark $35.245; daily close $30.40 review; reassess by Sep 28. |
-| [ETSY](positions/ETSY.md) 75@$72.71 | HOLD, no add. Mark $74.27; daily close $69.20 invalidation; $80.50-$81 then $88-$90 profit review. |
-| [MSFT](positions/MSFT.md) 20@$497.4715 | HOLD, no add. Mark $498.889; daily close $485.50 invalidation; $510-$514 trim review, remainder $528-$535. |
-| [MU](positions/MU.md) 3@$939.99 | HOLD, no add. Mark $1,093.84; daily close $910 invalidation; $1,150-$1,180 then $1,250-$1,255; mandatory Sep 29 review before Sep 30 post-close earnings. |
-| [NNE](positions/NNE.md) 300@$17.15 | HOLD, no add. Mark $17.265; daily close $15.30 invalidation/$14.90 structural; $18.50-$18.80 then $19.80-$20.50 profit review. |
-| [RBLX](positions/RBLX.md) 50@$40.41 | HOLD runner. Mark $50.065; executable bid $53.50-$55 triggers trim review; daily close below $46.80 review, $44.50 structural. |
-| [SPY](positions/SPY.md) 13@$762.89 | HOLD core after the $774 bid review activated; mark $774.86, still below $779 next review. Daily close below $750.50 review; no intraday add. |
-| [EGO](positions/EGO.md) | Previous BUY200 limit43.95 broker `257f6b31-f9be-4b28-9d7c-53fea8de9112` CANCELED,0 filled. No position/order. |
-| [ET](positions/ET.md) | BUY400@$20.95 FILLED, then tactical invalidation triggered. SELL400@$20.55 FILLED. CLOSED, gross -$160 before fees; no order/protection outstanding. |
+Prior ENS entry order 171ac764-17db-4110-8295-bef429965bf1 (client alpaca-stage2-20261002-ENS-buy) is broker-confirmed filled 30/30 at $195.46 through two 15-share FILL activities at 14:02:24.856 and 14:02:25.892 ET. The current position matches; no orders remain open. No brokerage mutation occurred in this management run.
 
-Candidate watches: EAT only with a clean executable book and held $206.50-$208.50 retest; RMBS at $97-$99 support or close above $108; AKAM at $113.70-$115.30 or confirmed above $119.50; COHU $57.50-$58.50 holding or reassess after close >$62.60; NVDA $220.50-$223.50 or close >$234.75. GRAL Oct 16 105/95 put-spread review only after daily close below $104. SNDK remains rejected before MU earnings. Do not automatically re-enter ET after today's failed setup; review Oct 5 listing transfer if revisited.
+## Risk posture and event risk
 
-Risk posture: cautious after ET support failed the same session; no further risk-increasing order today. Current long exposure 55.4% and broker cash 44.6% of equity; cash is not a deployment target. Approximate downside to documented close/review levels $4,376/4.27%; current 10% stock-gap stress $5,681/5.54%. No leverage or aggregate breach. Main risks are correlated tech/memory, the Sep 23-25 Trump-Xi visit and AI/trade headlines, tomorrow's PMI/Fed speakers, MU Sep 30 earnings, ARQT/CADL biotech gaps, NNE regulatory/development beta, consumer beta, and RBLX supply. Reassess on any documented close trigger, ARQT/ESI next targets, Sep 28 ESI horizon, Sep 29 MU review, cash-ledger resolution, or material regime/correlation change.
+Moderate confidence; no leverage, default cash floor, or uniform position cap. Growth/AI overlap across MSFT, MU, DT, DOCS and SPY; ARQT clinical/commercial, NNE regulatory/acquisition/dilution, and MAC/PK rate and consumer risks remain. No close-based invalidation or target was triggered at the pre-close snapshot.
 
-Active lessons applied: stable client ID, bounded day limit and broker reconciliation; current event timing and prices refreshed; quote dislocation validated with a sequence; daily-close invalidations preserved; target activation explicit; stock and options compared separately; no protection assumed. No lesson contradicted the chosen action.
+Illustrative differentiated stress: 15% on holdings except ARQT, NNE, and ENS; 20% on ARQT and ENS; 30% on NNE implies about **$8,549 / 8.49% of equity**. A uniform 30% shock implies about **$14,841 / 14.73%**. These are judgments, not probabilities or loss bounds. Reassess after a close-based trigger, material company news, quote deterioration, or correlated shock.
 
-Latest trading handoff `cb002c1d-650d-4340-8576-9ca3384c71a2`; management-only run had no new ghost definitions. Prior same-day handoff `0593e73b-6b59-4624-b8e2-3174b6eaa24f` retains ET entry/exit and ARQT/ESI trim definitions. [Today summary](logs/2026-09-22-summary.md), [full log](logs/2026-09-22.md), [shortlist reassessment](research/2026-09-22/shortlist-independent-review.md).
+The September employment report released today showed payrolls +29,000, unemployment 4.2%, and combined July/August revisions of -60,000. The next notable macro event is ISM Services on Monday, October 5 at 10:00 ET; weekend gaps remain possible. [BLS release](https://www.bls.gov/news.release/archives/empsit_10022026.htm) · [ISM calendar](https://www.ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar/).
 
-Errors/warnings: broker cash $45,737.38 is $822 below the $46,559.38 predicted from starting cash and all confirmed fills; no non-trade activity or reported fees explains it. Use the broker amount conservatively and audit before another add. IEX EAT quote remains dislocated. No uncertain mutation, credential exposure or duplicate order.
+IEX is the only available current quote feed; SIP returned HTTP 403 because the subscription does not permit recent SIP data. The ENS IEX book was particularly wide and MU's displayed spread was about $7.87; no order was justified. See [broker pre-close snapshot](research/2026-10-02/broker-preclose-3f32e5f7.json). Inherited **$822 local cash-reconstruction discrepancy** remains unresolved; broker cash controls.
+
+Latest published handoff: 3f32e5f7-5938-45aa-950a-e823810f1571.
+
+[Today summary](logs/2026-10-02-summary.md) · [Full log](logs/2026-10-02.md) · [Broker proof](research/2026-10-02/broker-preclose-3f32e5f7.json) · [Position links](positions/README.md).

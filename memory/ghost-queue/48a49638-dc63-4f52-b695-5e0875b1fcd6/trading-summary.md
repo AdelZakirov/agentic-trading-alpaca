@@ -1,0 +1,13 @@
+# Stage 2 September 29 current summary
+
+Updated: 2026-09-29T19:04:55.207170+02:00 (Europe/Amsterdam)  
+Covers full log through: 2026-09-29T19:04:55.207170+02:00  
+[Full audit](2026-09-29.md).
+
+- Same-day Stage 0–1 gate passed; 39 shortlist names screened, 11 moneyheap-researched. [Disposition ledger](../research/2026-09-29/shortlist-coverage.csv) has exactly one row/name. Yahoo fields were partial for 26/39; API lacked fresh technical history. Those are unknowns, not negative calls.
+- **PK BUY 100@$15.55 FILLED** with exact 100-share FILL reconciliation and $1,555 cash debit. Two-to-four-week hotel/renovation thesis; close <$14.60 prompts exit review, observed bid $16.20 then $17.25 profit review, Oct23 exit/renew. Declared $0.25 dividend record Sep30/pay Oct15 is not free P/L. [PK plan](../positions/PK.md) and [pretrade alternatives](../ghost-trades/2026-09-29/alpaca-stage2-20260929-PK-buy.md).
+- **RGA BUY 20@$252.50 CANCELED with zero fills** after repeated $240.11/$265.08 IEX quote; no RGA position/order. Broker canceled at 13:01:57 ET. New entry needs stable executable quotes, <=$252.50 bound and a fresh decision. [RGA plan](../positions/RGA.md) and [pretrade alternatives](../ghost-trades/2026-09-29/alpaca-stage2-20260929-RGA-buy.md) (reviewer NO_FILL).
+- **MU HOLD 3 through Sep30 after-market earnings** explicitly accepted: primary company confirms 16:30 ET call and strong Q3, but a 20% gap costs about $640 and daily-close invalidation cannot protect against it. Review official report and broker price Oct1; no options hedge at a 3-share scale. [MU plan](../positions/MU.md).
+- All other nine previously held positions were reviewed against Sep28 closes and held; no other order/option. PEP Oct16 127/122 indicative put spread cost ~$205 and breaks even ~$124.95 at expiry, close to $124–126 support, so no bearish option order. DASH, GEN, TFX need their documented activation triggers; RCL, FSLR and NU lack a reliable current base/clarity. No forced cash deployment.
+- Final 13:02 ET broker proof: equity **$100,823.87**, cash **$57,291.98**, 10 stocks, zero options/open orders; intraday mark -$313.58 vs broker last equity. [Reconciled proof](../research/2026-09-29/broker-final-48a49638.json). Illustrative adverse stress ~$7.0k/7.0% equity; >30% gaps can be worse. Inherited $822 local reconstruction discrepancy remains; broker cash controls.
+- Current trading handoff `48a49638-dc63-4f52-b695-5e0875b1fcd6` is prepared with two new definitions, awaiting ghost_queue finish. On success the reviewer owns those files and future lesson updates. No option positions, unsettled mutations, or duplicate orders.

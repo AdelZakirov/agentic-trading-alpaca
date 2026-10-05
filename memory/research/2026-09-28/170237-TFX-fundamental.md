@@ -1,0 +1,123 @@
+# moneyheap research: TFX fundamental
+
+- Request time: 2026-09-28T17:02:37.915542+02:00
+- Ticker: TFX
+- Analysis type: fundamental
+- Endpoint: /v1/analysis/fundamental
+
+## Prompt
+
+As of September 28, 2026, evaluate Teleflex after fresh analyst upgrades. Verify dated corporate events, divestitures or business transformation, sustainable earnings/FCF, debt, valuation and next earnings timing. Explain the conflict between positive analyst revisions and the recent price drawdown, and main adverse scenarios for a 1-4 week thesis. Public information only.
+
+## Previous context
+
+null
+
+## Analysis
+
+### 1. Fundamentals Snapshot
+
+* **Current Price & Valuation**: $125.86 | Market Cap: $5.33B | Enterprise Value (EV): $7.79B
+* **Profitability & Growth**:
+  * **Revenue (TTM)**: $2.25B (YoY Quarterly Revenue Growth: +28.9% driven by inorganic vascular contributions)
+  * **Gross Margin**: 55.11% | **Operating Margin**: 10.06% | **EBITDA Margin**: 17.92% ($403.9M EBITDA)
+  * **GAAP EPS (TTM)**: -$0.52 (depressed by discontinued operations, restructuring, and M&A write-offs)
+  * **Forward EPS**: $10.95 | **Forward P/E**: 11.49x
+* **Balance Sheet & Cash Flow**:
+  * **Total Cash**: $323.94M ($7.65/share)
+  * **Total Debt**: $2.94B (Net Debt: ~$2.61B; Debt-to-Equity: 101.10%)
+  * **Operating Cash Flow (TTM)**: $403.20M | **Free Cash Flow (TTM)**: $179.54M
+  * **Liquidity**: Current Ratio of 2.60x; Quick Ratio of 0.96x
+  * **Dividend**: $1.36/share (1.11% yield; 5-year average yield 0.70%)
+
+---
+
+### 2. Valuation vs. Peers & Sector
+
+| Metric | Teleflex (NYSE: TFX) | Becton, Dickinson (NYSE: BDX) | STERIS plc (NYSE: STE) | Sector Context (MedTech / Supplies) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Market Cap** | $5.33B | $49.78B | $20.48B | Mid-Cap MedTech |
+| **Forward P/E** | **11.49x** | 13.75x | 17.15x | TFX trades at a ~20–35% discount |
+| **EV / EBITDA** | **19.28x** | ~14–16x | ~16–18x | Elevated due to debt and integration costs |
+| **Price-to-Sales (TTM)**| **2.37x** | 2.45x | 3.65x | Inline-to-discounted |
+| **Price-to-Book** | **1.84x** | 2.04x | 2.84x | Favorable relative to tangible asset backing |
+
+---
+
+### 3. Analysts (Consensus, Targets & Recommendations)
+
+* **Consensus Breakdown**: 4 Strong Buy, 1 Buy, 8 Hold, 0 Sell (13 tracked ratings; Hold-to-Buy bias).
+* **Price Targets**:
+  * **Mean Target**: $153.55 (+22.0% upside)
+  * **Median Target**: $155.00 (+23.1% upside)
+  * **High Target**: $170.00 (+35.1% upside)
+  * **Low Target**: $138.00 (+9.6% upside)
+* **Market Sentiment & Short Interest**: Short interest stands at ~4.00M shares (**14.82% of float**; Short Ratio: 6.71 days), highlighting active bearish positioning despite constructive broker sentiment.
+
+---
+
+### 4. News: Themes & Impact Summary
+
+#### Summary of News Themes:
+1. **Product Pipeline & Commercialization**: Teleflex showcased its next-generation vascular portfolio, including the Dynetic-35 balloon-expandable stent at CIRSE 2026, confirming its commercial pivot toward higher-growth cardiovascular/vascular access.
+2. **Transition Friction vs. Buyback Support**: Following Q2 earnings, management balanced a trimmed full-year bottom-line guidance with increased share repurchase activity while absorbing integration costs from the BIOTRONIK vascular acquisition.
+
+#### News Items:
+* **Here Are Monday’s Top Wall Street Analyst Research Calls: Applied Digital, Autod...**
+  * *Source*: 24/7 Wall St. | *Date*: September 28, 2026
+  * *Summary*: Wall Street analysts issued late-Q3 upgrades and rating revisions across healthcare and technology names.
+  * *URL*: `https://finance.yahoo.com/markets/stocks/articles/monday-top-wall-street-analyst-121206803.html`
+* **Surgical Equipment & Consumables - Specialty Stocks Q2 Earnings Review: Teleflex (NYSE:TFX) Shines**
+  * *Source*: Yahoo Finance | *Date*: September 8, 2026
+  * *Summary*: Industry review of specialty medtech Q2 performance highlighting Teleflex's top-line revenue strength relative to peers.
+  * *URL*: `https://finance.yahoo.com/healthcare/articles/surgical-equipment-consumables-specialty-stocks-201838769.html`
+* **Teleflex Inc. stock gains attention as new Dynetic-35 stent debuts at CIRSE 2026**
+  * *Source*: ad-hoc-news | *Date*: September 5, 2026
+  * *Summary*: Teleflex presented its new Dynetic-35 peripheral balloon-expandable stent system at CIRSE 2026 in Copenhagen to strengthen its vascular intervention line.
+  * *URL*: `https://www.ad-hoc-news.de/boerse/news/corporate-news/teleflex-inc-stock-gains-attention-as-new-dynetic-35-stent-debuts-at/70058974`
+* **Teleflex (TFX): Guidance Cut Meets A Bigger Buyback Push**
+  * *Source*: Insider Monkey | *Date*: September 3, 2026
+  * *Summary*: Analysis of TFX’s Q2 earnings showing that despite a cut in full-year EPS guidance, management stepped up capital returns through share repurchases.
+  * *URL*: `https://www.insidermonkey.com/blog/teleflex-tfx-guidance-cut-meets-a-bigger-buyback-push-1827571/`
+* **Teleflex: Strong Company Undergoing Messy Transition, Hold**
+  * *Source*: Seeking Alpha | *Date*: August 22, 2026
+  * *Summary*: Examines the post-merger integration friction with BIOTRONIK’s vascular intervention unit and the short-term impact on operating leverage.
+  * *URL*: `https://seekingalpha.com/article/4939415-teleflex-stock-strong-company-undergoing-messy-transition-hold`
+* **Teleflex stock holds steady after strong Q2 revenue jump**
+  * *Source*: ad-hoc-news | *Date*: August 19, 2026
+  * *Summary*: Teleflex traded sideways after beating consensus quarterly revenue estimates while lowering full-year margin expectations.
+  * *URL*: `https://www.ad-hoc-news.de/boerse/news/corporate-news/teleflex-stock-holds-steady-after-strong-q2-revenue-jump/69978187`
+
+---
+
+### 5. Detailed Thematic & Transformation Analysis
+
+#### Business Transformation & Divestitures
+* **Portfolio Shift**: Teleflex has been divesting legacy non-core product lines (reflected in historical discontinued operations charges of -$964.2M) while redeploying capital toward interventional vascular technologies (e.g., the acquisition of BIOTRONIK’s vascular intervention assets and newly introduced systems like Dynetic-35 and MANTA vascular closure).
+* **Integration Overhead**: The transition is currently in a "friction phase," incurring one-off write-offs ($108.1M), restructuring charges ($29.3M), and temporary margin dilution.
+
+#### Sustainable Earnings & Free Cash Flow
+* **Cash Flow Resiliency**: Despite GAAP accounting losses from discontinued assets (-$0.52 TTM EPS), Teleflex generates **$403.2M in annual operating cash flow** and **$179.5M in FCF**, comfortably supporting its $1.36 annual dividend ($57.6M payout commitment) and ongoing buyback program.
+* **Debt Load**: Total debt stands at **$2.94B** against $323.9M in cash (Net Debt ~$2.61B; Net Debt/EBITDA ~6.4x on TTM reported EBITDA, or ~4.5x on normalized forward EBITDA). While debt is substantial, a current ratio of 2.60x provides near-term liquidity cover.
+
+#### Next Earnings Timing
+* **Q3 2026 Earnings Date**: Scheduled for **October 29, 2026** (pre-market estimated).
+
+#### Conflict Between Analyst Upgrades & Price Drawdown
+* **Analyst Perspective**: Revisions and upgrades focus on the long-term earnings power ($10.95 forward EPS), a low forward P/E (~11.5x vs. historical medtech average ~18–20x), and commercial expansion into vascular interventions.
+* **Market Price Drawdown ($145.00 → $125.86)**: The 13.2% retreat reflects market skepticism over the recent full-year guidance cut, high leverage ($2.94B debt) in a high-rate environment, BIOTRONIK integration friction, and active short pressure (14.8% short interest).
+
+#### Main Adverse Scenarios for a 1–4 Week Thesis
+1. **Pre-Earnings Derisking**: Lack of intermediate catalysts before the October 29 report may allow short sellers (14.8% of float) to keep price action pinned below the 50-day moving average ($133.93).
+2. **Margin Drag & Guidance Uncertainty**: Slower-than-expected resolution of integration bottlenecks could trigger further conservative revisions into Q3 reporting.
+3. **Macro Interest Rate Sensitivity**: Elevated net debt ($2.61B) creates vulnerability to any upward yields or risk-off medtech sentiment.
+
+---
+
+### 6. Fundamentals Rating & Rationale
+
+**Rating**: **Moderate**
+
+* **Attractive Valuation vs. Forward Earnings**: TFX trades at an undemanding 11.5x forward P/E and 1.84x P/B, offering a 22% discount to mean Wall Street targets ($153.55).
+* **Solid FCF Generation**: Healthy operating cash flow ($403.2M) and positive FCF ($179.5M) sustain dividends and share repurchases despite temporary GAAP accounting losses.
+* **Balance Sheet Leverage & Integration Risk**: High net debt ($2.61B) coupled with near-term margin compression from the vascular integration warrants near-term caution ahead of late-October earnings.
